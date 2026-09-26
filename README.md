@@ -7,14 +7,14 @@ Israeli Ministry of Education's official Python A program
 
 ## Current build status
 
-**6 of 30 official double meetings are built** (Unit 1 complete, Units 2 and 3
+**6 of 30 official double meetings are built** (Units 1 and 2 complete, Unit 3
 built and awaiting approval), plus the school-added Unit 0. See [`course-map.md`](course-map.md) for the full
 unit-by-unit breakdown, and each unit's `unit-strategy.md` for
 what's built vs. still missing within that unit.
 
 - [Unit 0 — Environment Setup](units/u0-environment-setup) — school addition, outside the official 30 meetings; complete (1/1 meeting)
 - [Unit 1 — Introduction to Python](units/u1-introduction-python) — complete (1/1 meeting)
-- [Unit 2 — Turtle & Graphics](units/u2-turtle-graphics) — built, awaiting approval (3/3 meetings, all slides and briefs done)
+- [Unit 2 — Turtle & Graphics](units/u2-turtle-graphics) — complete (3/3 meetings)
 - [Unit 3 — Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) — built, awaiting approval (2/2 meetings; m1 slides done, m2 still PowerPoint)
 - Units 4–9 — not yet started
 

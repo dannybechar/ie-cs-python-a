@@ -5,6 +5,7 @@ Full framing strategy: [`docs/annual-strategy.md`](docs/annual-strategy.md).
 
 | # | Unit | Hours | Meetings | Built |
 |---|---|---:|---:|---|
+| 0 | [Environment Setup](units/u0-environment-setup) — *school addition* | — | 1 | ⚠️ slides pending |
 | 1 | [Introduction to Python / Environment](units/u1-introduction-environment) | 2 | 1 | ✅ 1/1 |
 | 2 | [Turtle & Graphics](units/u2-turtle-graphics) | 6 | 3 | ⚠️ 1/3 (m3 only) |
 | 3 | [Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) | 4 | 2 | ⚠️ 1/2 (m2 only) |
@@ -15,6 +16,10 @@ Full framing strategy: [`docs/annual-strategy.md`](docs/annual-strategy.md).
 | 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 | 4 | ❌ 0/4 |
 | 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 | 6 | ❌ 0/6 |
 |  | **TOTAL** | **60** | **30** | **3/30 meetings built** |
+
+Unit 0 is a school addition outside the official 60 hours: one lab meeting
+to install and check the environment before Unit 1 (it covers Chapter 1
+goals 1–2, "install" and "run the working environment").
 
 Each unit folder's `unit-strategy.md` has the full official scope,
 per-meeting breakdown, exit criteria, depth boundary and enrichment notes

@@ -36,7 +36,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |---|---|---|
 | Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
 | Teacher | [`m3-lesson-he.pptx`](m3-lesson-he.pptx) | Hebrew slides (PowerPoint, not yet converted) |
-| Student | [`m3-lab-brief-he.pdf`](m3-lab-brief-he.pdf) / [`.docx`](m3-lab-brief-he.docx) | Hebrew lab brief (not yet converted to Markdown) |
+| Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
 | Student | [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py) | Starter file |
 | Teacher | [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py) | Assessment solution |

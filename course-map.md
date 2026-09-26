@@ -57,7 +57,6 @@ Official topics that no planned meeting fully covers yet. Details are in each un
 | Unit | Gap | Fix to plan |
 |---|---|---|
 | 1 | Compound output (several values in one `print`) | Add to U1 m1 or U3 m1 |
-| 1 | Lesson notes, lab brief and code describe an older lesson than the slides | Rewrite them to match `m1-slides-he.pdf` |
 | 3 | Teaching variables using Turtle | Add to U3 m1 |
 | 6 | Writing strings using Turtle | Add to U6 m3 or m4 |
 | 7 | Algorithmic problems using Turtle | Add to U7 m2 or m3 |
@@ -109,7 +108,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | Unit | Meeting | Minutes | Theory / Practice | Structure | Source | Notes |
 |---|---|---:|---:|---|---|---|
 | 0 | m1 Install, check, save | 90 | 0 / 90 | Lab + Lab | [`m1-lesson-notes.md`](units/u0-environment-setup/m1-lesson-notes.md) | Outside the 60 h budget |
-| 1 | m1 First program | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u1-introduction-python/m1-lesson-notes.md) | Slides: NotebookLM deck `m1-slides-he.pdf` (20 slides, 85 min + 5 buffer). Lesson notes, brief and code still describe the older lesson |
+| 1 | m1 First program | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u1-introduction-python/m1-lesson-notes.md) | Slides: NotebookLM deck `m1-slides-he.pdf` (20 slides, 85 min + 5 buffer); notes, brief and code rewritten to match |
 | 2 | m1 First moves | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u2-turtle-graphics/m1-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m1-slides-he.pdf` (23 slides, 90 min) |
 | 2 | m2 Pen, appearance and stamps | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u2-turtle-graphics/m2-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides pending |
 | 2 | m3 Geometry challenge | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | |

@@ -26,6 +26,7 @@ Also listed for this chapter in the program overview (p.3–5):
 - What a program is, as a sequence of instructions.
 - Opening a file, running, saving — as the lab routine only. Installing the environment and learning its parts is done in [Unit 0](../u0-environment-setup).
 - `print()`.
+- Reading error messages (`NameError`, `SyntaxError`, `IndentationError`).
 - Instruction count and the meaning of execution order.
 - Comments using `#`.
 - A function with no parameters and no return value.
@@ -33,14 +34,12 @@ Also listed for this chapter in the program overview (p.3–5):
 - read → predict → run.
 
 ## 45 minutes — lab
-Progressive task:
-1. Run starter file.
-2. Modify output.
-3. Predict output.
-4. Add comment.
-5. Organize statements in a function.
-6. Call the function.
-7. Save under a new name.
+Following the class deck ([`m1-slides-he.pdf`](m1-slides-he.pdf), slides 14–20):
+1. Inside or outside? — indentation decides what belongs to the function.
+2. The dragon story — trace the order when definitions and calls are mixed.
+3. Launch challenge — turn `rocket.py` into a `launch()` function, step by step.
+4. Exit mission — `introduce_me()`, with a written output prediction.
+5. Save under a new name.
 
 ## Exit criteria
 The student can: `Open → Read → Predict → Modify → Run → Check → Comment → Save`.

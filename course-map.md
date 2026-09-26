@@ -5,7 +5,7 @@ Full framing strategy: [`docs/annual-strategy.md`](docs/annual-strategy.md).
 
 | # | Unit | Hours | Meetings | Built |
 |---|---|---:|---:|---|
-| 0 | [Environment Setup](units/u0-environment-setup) — *school addition* | — | 1 | ⚠️ slides pending |
+| 0 | [Environment Setup](units/u0-environment-setup) — *school addition* | — | 1 | ✅ 1/1 |
 | 1 | [Introduction to Python](units/u1-introduction-python) | 2 | 1 | ✅ 1/1 |
 | 2 | [Turtle & Graphics](units/u2-turtle-graphics) | 6 | 3 | ⚠️ 1/3 (m3 only) |
 | 3 | [Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) | 4 | 2 | ⚠️ 1/2 (m2 only) |

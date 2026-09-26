@@ -7,7 +7,7 @@ Chapter 1 also says the environment is taught "in the lab, with an explanation o
 and that the environment itself should not get special importance. Unit 1 then takes over with
 open → run → save and first code.
 
-**Build status:** ⚠️ partial — lesson notes, lab brief and check script are built; slides (`m1-slides-he.md`) are pending.
+**Build status:** ✅ complete — [Meeting 1 — install, check, save](README.md)
 
 ## Why a separate meeting
 Unit 1's 90 minutes are fully used by output, comments and a first function. Installing the tool,

@@ -12,7 +12,7 @@ Israeli Ministry of Education's official Python A program
 unit-by-unit breakdown, and each unit's `unit-strategy.md` for
 what's built vs. still missing within that unit.
 
-- [Unit 0 — Environment Setup](units/u0-environment-setup) — school addition, outside the official 30 meetings; slides pending
+- [Unit 0 — Environment Setup](units/u0-environment-setup) — school addition, outside the official 30 meetings; complete (1/1 meeting)
 - [Unit 1 — Introduction to Python](units/u1-introduction-python) — complete (1/1 meeting)
 - [Unit 2 — Turtle & Graphics](units/u2-turtle-graphics) — partial (only Meeting 3, the geometry challenge/assessment)
 - [Unit 3 — Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) — partial (only Meeting 2, input→calculation→output)
@@ -51,8 +51,9 @@ units/
   `-he` suffix since directory names are English.
 - Markdown is the source format, so everything renders on GitHub. Slides
   are Marp Markdown; printable PDFs and `.pptx` are generated from the
-  Markdown when needed, not committed. Original ministry documents stay
-  in their original format.
+  Markdown when needed, not committed. Exceptions: original ministry
+  documents stay in their original format, and slide decks made outside
+  the repo (e.g. in NotebookLM) are committed as `m{K}-slides-he.pdf`.
 - Hebrew in Markdown: start every Hebrew line with a Hebrew word (GitHub
   picks each paragraph's direction from its first letter). Put code in
   fenced blocks. Wrap tables and numbered/bulleted lists in

@@ -3,7 +3,7 @@
 **4h = 1 Theory + 3 Labs = 2 double meetings**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 3. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** 🔶 built, awaiting teacher approval — both meetings built, 180 minutes (45 theory / 135 practice). See [README.md](README.md).
+**Build status:** ✅ complete and approved — both meetings built, 180 minutes (45 theory / 135 practice). See [README.md](README.md).
 
 ## Official topics and hours
 

@@ -108,7 +108,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 1 | m1 First program | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u1-introduction-python/m1-lesson-notes.md) | Slides: NotebookLM deck `m1-slides-he.pdf` (20 slides, 85 min + 5 buffer); notes, brief and code rewritten to match |
 | 2 | m1 First moves | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u2-turtle-graphics/m1-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m1-slides-he.pdf` (23 slides, 90 min) |
 | 2 | m2 Pen, appearance and stamps | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u2-turtle-graphics/m2-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m2-slides-he.pdf` (15 slides, 90 min) |
-| 2 | m3 Geometry challenge | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | |
+| 2 | m3 Geometry challenge | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
 | 3 | m1 The rover's memory | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u3-variables-io-arithmetic/m1-lesson-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides pending (NotebookLM folder ready) |
 | 3 | m2 Input to result | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | |
 

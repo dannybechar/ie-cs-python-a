@@ -25,6 +25,7 @@ docs/
   annual-strategy.md        — year-wide pedagogical strategy (phases, assessment, enrichment, exit profile)
   annual-work-plan-he.docx  — official annual work plan (Hebrew)
   ministry-source/          — the official ministry PDFs this course answers to
+  reviews/                  — external lesson reviews, one folder per review
 themes/
   g7-rtl.css                — Marp theme for the Hebrew slide decks (RTL text, LTR code)
 units/

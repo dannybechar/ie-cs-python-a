@@ -110,7 +110,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 2 | m2 Pen, appearance and stamps | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u2-turtle-graphics/m2-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m2-slides-he.pdf` (15 slides, 90 min) |
 | 2 | m3 Geometry challenge | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
 | 3 | m1 The rover's memory | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u3-variables-io-arithmetic/m1-lesson-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides: `m1-slides-he.pdf` (22 slides) |
-| 3 | m2 Input to result | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | |
+| 3 | m2 Input to result | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min); lab brief converted to Markdown |
 
 ## Keeping this up to date
 

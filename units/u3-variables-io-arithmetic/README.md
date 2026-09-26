@@ -23,7 +23,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | For | File | What it is |
 |---|---|---|
 | Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
-| Teacher | [`m2-lesson-he.pptx`](m2-lesson-he.pptx) | Hebrew slides (PowerPoint, not yet converted) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slides (22 slides, made in NotebookLM; slides 5, 10, 13, 15, 16 corrected, exit answer 22 added) |
 | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`m2-exit-check-he.png`](m2-exit-check-he.png) | Exit check |
 | Student | [`Arithmetic_Starter.py`](Arithmetic_Starter.py) | Starter file |

@@ -5,6 +5,23 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 1. Framin
 
 **Build status:** ✅ complete — [Meeting 1 — first program](README.md)
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.6. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| הכרת סביבת העבודה — getting to know the working environment | 1 | 1 | 90 | m1 (install and tour: [Unit 0](../u0-environment-setup), outside the 60 h) | ✅ |
+| **Total** | **1** | **1** | **90** | | |
+
+Also listed for this chapter in the program overview (p.3–5):
+
+- Simple output (`print`) → m1 ✅
+- ⚠️ **Compound output** (הוראות פלט מורכבות — several values in one `print`) → not in any lesson yet; add to m1 or Unit 3 m1
+- Conventions: documentation, indentation → m1 ✅; file names → Unit 0 ✅
+- Function structure and call; function with no parameters and no return value → m1 ✅
+
 ## 45 minutes — knowledge delivery
 - What a program is, as a sequence of instructions.
 - Opening a file, running, saving — as the lab routine only. Installing the environment and learning its parts is done in [Unit 0](../u0-environment-setup).

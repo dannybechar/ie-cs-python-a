@@ -5,6 +5,19 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 9. Framin
 
 **Build status:** ❌ not started.
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.19. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| תכנות מונחה אירועים — לשם מה? — why event-driven | 1 | 0 | 45 | m1 | ⏳ |
+| אירוע לחיצת עכבר: הגדרת אירוע ורישום דמות ומסך — mouse click events | 1 | 4 | 225 | m2, m5, m6 | ⏳ |
+| אירוע לחיצת מקש מקלדת: הגדרת אירוע ורישום — keyboard events | 1 | 2 | 135 | m3, m5 | ⏳ |
+| מימוש אנימציה (בשילוב טיימר) — animation with a timer | 1 | 2 | 135 | m4, m6 | ⏳ |
+| **Total** | **4** | **8** | **540** | | |
+
 ## Meeting 1 — Knowledge + Lab
 - event-driven paradigm.
 - event, listener, callback/action.

@@ -5,6 +5,23 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 7. Framin
 
 **Build status:** ❌ not started.
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.15. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| מונה — counter | 0 | 2 | 90 | m1, m2 | ⏳ |
+| צובר — accumulator | 0 | 1 | 45 | m1, m2 | ⏳ |
+| מספר אקראי — random number | 1 | 2 | 135 | m1, m2 | ⏳ |
+| **Total** | **1** | **5** | **270** | | |
+
+Also listed for this chapter in the program overview (p.3–5):
+
+- ⚠️ **Algorithmic problems using Turtle** → not explicit in the plan; add to m2 or m3
+- Note: the plan also teaches a **minimum / maximum** pattern, which is not in the official topic list. It is a school addition and must fit inside this unit's 270 minutes.
+
 ## Meeting 1 — Knowledge + Lab
 - counter.
 - accumulator.

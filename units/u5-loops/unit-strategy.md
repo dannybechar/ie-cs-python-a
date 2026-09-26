@@ -5,6 +5,22 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 5. Framin
 
 **Build status:** ❌ not started.
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.12. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| ביצוע חוזר לשם מה? — why repetition | 1 | 0 | 45 | m1 | ⏳ |
+| ביצוע חוזר מוגבל מראש, מותנה — bounded and conditional loops | 1 | 6 | 315 | m1–m4 | ⏳ |
+| **Total** | **2** | **6** | **360** | | |
+
+Also listed for this chapter in the program overview (p.3–5):
+
+- Rolling repeated execution (ביצוע חוזר מתגלגל) → m2 ⏳
+- Loops using Turtle → m3 ⏳
+
 ## Meeting 1 — Knowledge + Lab
 - why repetition is needed.
 - bounded repetition.

@@ -5,6 +5,22 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 4. Framin
 
 **Build status:** ❌ not started.
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.10. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| ביטויים בוליאניים — boolean expressions | 1 | 2 | 135 | m1, m2 (`and`, `or`) | ⏳ |
+| משפטי תנאי — conditional statements | 1 | 2 | 135 | m1, m2, m3 | ⏳ |
+| **Total** | **2** | **4** | **270** | | |
+
+Also listed for this chapter in the program overview (p.3–5):
+
+- Nested conditionals → m2 ⏳
+- Conditions using Turtle → m3 ⏳
+
 ## Meeting 1 — Knowledge + Lab
 - boolean expressions.
 - comparison operators.

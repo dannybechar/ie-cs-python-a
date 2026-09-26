@@ -15,6 +15,13 @@ see [`../course-map.md`](../course-map.md) for the full list.
 - Default double meeting: **45 min knowledge delivery + 45 min lab**.
 - Where a unit has more practical hours than theory hours, the remaining
   meetings are **Lab + Lab**.
+- Deadline: all units are taught before the Ministry's Python A exam,
+  estimated for May 2027 (circular תשפ"ז).
+- Unit 0 (environment setup) is one school-added meeting outside the 60
+  hours, so the year has 31 meetings.
+- Time and topic coverage are tracked in [`../course-map.md`](../course-map.md)
+  (time budget, schedule, open gaps) and in each unit's `unit-strategy.md`
+  ("Official topics and hours").
 - Enrichment does not receive separate hours.
 - Old Python C serves only as an **Extension Bank** for strong students.
 - Do not systematically pre-teach core topics of follow-on programs purely

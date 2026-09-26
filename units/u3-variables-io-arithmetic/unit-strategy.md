@@ -5,6 +5,23 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 3. Framin
 
 **Build status:** ⚠️ partial — only Meeting 2 (`m2-*` files: input to result) is built (Meeting 2 of 2). Meeting 1 (value → variable name → input → output) is not yet authored.
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.8. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| משתנים וטיפוסי נתונים — variables and data types | 1 | 1 | 90 | m1 | ⏳ |
+| קלט / פלט — input / output | 0 | 1 | 45 | m1, practiced in m2 | ⏳ / ✅ |
+| פעולות בסיסיות על טיפוסי נתונים מספריים — basic numeric operations | 0 | 1 | 45 | m2 | ✅ |
+| **Total** | **1** | **3** | **180** | | |
+
+Also listed for this chapter in the program overview (p.3–5):
+
+- `//` and `%` → m2 ✅
+- ⚠️ **Teaching variables using Turtle** → not in the plan yet; add to m1
+
 ## Meeting 1 — Knowledge + Lab
 - data vs variable.
 - assignment.

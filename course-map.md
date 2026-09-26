@@ -31,6 +31,70 @@ year is 31 meetings.
 their Lab + Lab meetings are built. Their first meetings, still to be written, should carry the
 45 theory minutes.
 
+## Deadline and pace
+
+- **Deadline:** the Ministry's Python A exam (בחינת מפמ"ר) is estimated for **May 2027**, with the exact date to be sent during the year
+  ([`ministry-circular-tashpaz-he.pdf`](docs/ministry-source/ministry-circular-tashpaz-he.pdf), p.2).
+  All 9 units must be taught before it, not by the end of June.
+- **Meetings needed:** 31 = 30 official + Unit 0.
+- **Meetings available:** *to fill in from the school calendar*: first lesson date, meetings per week, and holidays/trips before the exam.
+  Rough estimate: at **one double meeting a week**, from early October 2026 to the end of April 2027 there are about 30 weeks,
+  minus about 3–4 weeks of Hanukkah and Passover breaks, so **about 26–27 meetings, plus 1–3 in May**. That is probably
+  **fewer than 31**. If the class meets once a week, plan now which meetings to merge or shorten.
+- **Check after every lesson:** meetings left in the schedule below ≤ meetings left before the exam.
+
+## Open coverage gaps
+
+Official topics that no planned meeting fully covers yet. Details are in each unit's `unit-strategy.md`, under "Official topics and hours".
+
+| Unit | Gap | Fix to plan |
+|---|---|---|
+| 1 | Compound output (several values in one `print`) | Add to U1 m1 or U3 m1 |
+| 1 | The NotebookLM deck for class runs about 100–115 min, not 90 | Correction plan in Downloads (`notebooklm-unit1-deck-fixes.md`) |
+| 3 | Teaching variables using Turtle | Add to U3 m1 |
+| 6 | Writing strings using Turtle | Add to U6 m3 or m4 |
+| 7 | Algorithmic problems using Turtle | Add to U7 m2 or m3 |
+| 7 | Min/max pattern is taught but not in the official list | Keep only if it fits in the 270 minutes |
+| 8 | Functions without parameters: 3 official practice hours, only reviewed in the plan | Include them in the m3/m4 labs |
+
+## Schedule
+
+All 31 meetings in teaching order. Fill in **Target week** once the school calendar is known, and **Taught on** after each lesson.
+
+| # | Meeting | Content | Built | Target week | Taught on |
+|---:|---|---|---|---|---|
+| 1 | U0 m1 | Install, check, save | ✅ | | |
+| 2 | U1 m1 | First program: print, comments, first function | ✅ | | |
+| 3 | U2 m1 | Turtle library, work surface, movement | ⏳ | | |
+| 4 | U2 m2 | Pen and shape attributes | ⏳ | | |
+| 5 | U2 m3 | Geometry challenge | ✅ | | |
+| 6 | U3 m1 | Variables, types, input, friendly output | ⏳ | | |
+| 7 | U3 m2 | Input → calculation → output | ✅ | | |
+| 8 | U4 m1 | Boolean expressions, simple conditional | ⏳ | | |
+| 9 | U4 m2 | else, and/or, nesting | ⏳ | | |
+| 10 | U4 m3 | Integrated decisions (Turtle) | ⏳ | | |
+| 11 | U5 m1 | Why loops; for and range | ⏳ | | |
+| 12 | U5 m2 | while, stop condition | ⏳ | | |
+| 13 | U5 m3 | Loops with Turtle | ⏳ | | |
+| 14 | U5 m4 | Tracing and loop challenge | ⏳ | | |
+| 15 | U6 m1 | str, indexing, len, + * in | ⏳ | | |
+| 16 | U6 m2 | Slicing and string methods | ⏳ | | |
+| 17 | U6 m3 | String manipulation problems | ⏳ | | |
+| 18 | U6 m4 | Text-processing challenge | ⏳ | | |
+| 19 | U7 m1 | Counter, accumulator, random | ⏳ | | |
+| 20 | U7 m2 | Combined pattern problems | ⏳ | | |
+| 21 | U7 m3 | Algorithmic challenge | ⏳ | | |
+| 22 | U8 m1 | Why functions; parameters | ⏳ | | |
+| 23 | U8 m2 | Scope, local vs global | ⏳ | | |
+| 24 | U8 m3 | Parameterized Turtle functions | ⏳ | | |
+| 25 | U8 m4 | Integrated modular task | ⏳ | | |
+| 26 | U9 m1 | Why event-driven; first interactive program | ⏳ | | |
+| 27 | U9 m2 | Mouse events (onclick) | ⏳ | | |
+| 28 | U9 m3 | Keyboard events (onkey, listen) | ⏳ | | |
+| 29 | U9 m4 | Animation with a timer | ⏳ | | |
+| 30 | U9 m5 | Build an interactive game | ⏳ | | |
+| 31 | U9 m6 | Final project and assessment | ⏳ | | |
+
 ## Meeting log
 
 One row per built meeting. Minutes come from the **Duration** and **Structure** lines of its lesson notes.
@@ -45,10 +109,16 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 ## Keeping this up to date
 
 When a meeting is added or its timing changes:
-1. Add or update its row in the **Meeting log**.
+1. Add or update its row in the **Meeting log**, and mark it ✅ in the **Schedule**.
 2. Update that unit's **Planned minutes**, **Remaining** and **Built** in the time budget, and the totals.
 3. A unit's planned minutes must not exceed its official minutes. If they would, cut the lesson or
    note the overrun in the unit row with the reason.
+4. Update the status of the topics it covers in the unit's `unit-strategy.md` ("Official topics and hours"),
+   and remove any gap it closes from **Open coverage gaps**.
+
+After each lesson is taught:
+1. Fill in **Taught on** in the **Schedule**.
+2. Recheck **Deadline and pace**: meetings left in the schedule must not exceed meetings left before the exam.
 
 Each unit folder's `unit-strategy.md` has the full official scope,
 per-meeting breakdown, exit criteria, depth boundary and enrichment notes

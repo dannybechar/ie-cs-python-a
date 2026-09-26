@@ -5,6 +5,19 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 2. Framin
 
 **Build status:** ⚠️ partial — only Meeting 3 (`m3-*` files: geometry challenge) is built (Meeting 3 of 3). Meetings 1–2 (Turtle environment basics; pen/attribute control) are not yet authored.
 
+## Official topics and hours
+
+From the Chapter hours table in [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) p.7. Minutes = hours × 45.
+Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
+
+| Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
+|---|---:|---:|---:|---|---|
+| הכרת הספרייה turtle — the turtle library | 1 | 1 | 90 | m1 | ⏳ |
+| יצירת משטח עבודה וסמן — work surface and pen | 0 | 1 | 45 | m1, m2 | ⏳ |
+| הוראות תנועה, מיקום ושינוי כיוון — movement, position, direction | 0 | 2 | 90 | m1, practiced in m3 | ⏳ / ✅ |
+| שינוי מאפייני דמות — changing shape attributes | 0 | 1 | 45 | m2, practiced in m3 | ⏳ / ✅ |
+| **Total** | **1** | **5** | **270** | | |
+
 ## Meeting 1 — Knowledge + Lab
 - import / basic Turtle environment.
 - `Screen` and turtle.

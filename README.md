@@ -46,6 +46,10 @@ units/
   meeting's `m{K}-lesson-notes.md`), `_Reference` is the model solution.
 - All of a unit's files sit flat in the unit folder; the `m{K}-` prefix
   says which meeting a file belongs to.
+- Every lesson's notes state its **Duration** and **Structure**. When a
+  meeting is added or retimed, log it in [`course-map.md`](course-map.md)
+  and keep each unit's planned minutes within its official minutes
+  (1 academic hour = 45 minutes).
 - No version suffixes in filenames — git history is the version record.
 - Hebrew-facing files (decks, lab briefs, exit checks) keep an explicit
   `-he` suffix since directory names are English.

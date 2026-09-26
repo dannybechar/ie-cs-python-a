@@ -383,7 +383,7 @@ Use one starter file that evolves through the lab.
 
 ## Starter filename
 
-`G7_U3_M2_Arithmetic_Starter.py`
+[`Arithmetic_Starter.py`](Arithmetic_Starter.py)
 
 Starter:
 
@@ -686,14 +686,13 @@ Do not introduce conditions, loops, collections, error handling, or advanced mat
 
 ---
 
-# 13. Required Lesson Assets
+# 13. Lesson Assets
 
-- teacher deck in Hebrew
-- `G7_U3_M2_Arithmetic_Starter.py`
-- student lab brief in Hebrew
-- PDF version of the lab brief
-- `G7_U3_M2_Packing_Reference_v1.py`
-- visual exit-check image A/B/C
+- Hebrew slides: `m2-slides-he.pdf` (NotebookLM, pending)
+- [`Arithmetic_Starter.py`](Arithmetic_Starter.py)
+- [`m2-lab-brief-he.md`](m2-lab-brief-he.md) — Hebrew lab brief
+- [`Packing_Reference.py`](Packing_Reference.py)
+- [`m2-exit-check-he.png`](m2-exit-check-he.png) — visual exit check A/B/C
 
 ---
 

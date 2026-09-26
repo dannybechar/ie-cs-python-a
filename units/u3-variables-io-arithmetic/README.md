@@ -24,7 +24,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |---|---|---|
 | Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
 | Teacher | [`m2-lesson-he.pptx`](m2-lesson-he.pptx) | Hebrew slides (PowerPoint, not yet converted) |
-| Student | [`m2-lab-brief-he.pdf`](m2-lab-brief-he.pdf) / [`.docx`](m2-lab-brief-he.docx) | Hebrew lab brief (not yet converted to Markdown) |
+| Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`m2-exit-check-he.png`](m2-exit-check-he.png) | Exit check |
 | Student | [`Arithmetic_Starter.py`](Arithmetic_Starter.py) | Starter file |
 | Teacher | [`Packing_Reference.py`](Packing_Reference.py) | Packing calculator solution |

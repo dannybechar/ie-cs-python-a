@@ -1,7 +1,7 @@
 # G7 Unit 1 Lesson Strategy v4
 
 ## Grade 7 / Python A
-### Unit 1 — Introduction to Python / Environment
+### Unit 1 — Introduction to Python
 
 **Status:** Approved baseline after external review  
 **Duration:** 90 minutes  
@@ -15,7 +15,7 @@
 
 Core content only:
 
-- working environment: open, run, save as
+- the open → run → save as routine, using the environment set up in [Unit 0](../u0-environment-setup) (installing and touring the tool is not repeated here)
 - sequential instructions
 - `print()`
 - comments using `#`

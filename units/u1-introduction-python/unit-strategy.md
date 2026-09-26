@@ -1,13 +1,13 @@
-# Unit 1 — Introduction to Python / Environment
+# Unit 1 — Introduction to Python
 
 **2h = 1 Theory + 1 Lab = one double meeting**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 1. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** ✅ complete — [Meeting 1 — environment and first program](README.md)
+**Build status:** ✅ complete — [Meeting 1 — first program](README.md)
 
 ## 45 minutes — knowledge delivery
 - What a program is, as a sequence of instructions.
-- Opening a file/project, running, saving.
+- Opening a file, running, saving — as the lab routine only. Installing the environment and learning its parts is done in [Unit 0](../u0-environment-setup).
 - `print()`.
 - Instruction count and the meaning of execution order.
 - Comments using `#`.

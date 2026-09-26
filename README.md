@@ -13,7 +13,7 @@ unit-by-unit breakdown, and each unit's `unit-strategy.md` for
 what's built vs. still missing within that unit.
 
 - [Unit 0 — Environment Setup](units/u0-environment-setup) — school addition, outside the official 30 meetings; slides pending
-- [Unit 1 — Introduction to Python / Environment](units/u1-introduction-environment) — complete (1/1 meeting)
+- [Unit 1 — Introduction to Python](units/u1-introduction-python) — complete (1/1 meeting)
 - [Unit 2 — Turtle & Graphics](units/u2-turtle-graphics) — partial (only Meeting 3, the geometry challenge/assessment)
 - [Unit 3 — Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) — partial (only Meeting 2, input→calculation→output)
 - Units 4–9 — not yet started

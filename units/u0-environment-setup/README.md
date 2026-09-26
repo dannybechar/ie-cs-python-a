@@ -22,7 +22,7 @@ The deck follows the lesson flow in [`m1-lesson-notes.md`](m1-lesson-notes.md), 
 same wording as [`m1-lab-brief-he.md`](m1-lab-brief-he.md).
 
 - **File:** `m1-slides-he.md`, a Marp deck with `theme: g7-rtl` ([`themes/g7-rtl.css`](../../themes/g7-rtl.css)).
-  Use [`../u1-introduction-environment/m1-slides-he.md`](../u1-introduction-environment/m1-slides-he.md) as the model.
+  Use [`../u1-introduction-python/m1-slides-he.md`](../u1-introduction-python/m1-slides-he.md) as the model.
 - **Language:** Hebrew, with code, menu names and file names in English.
 - **Hebrew formatting** (from the root [README](../../README.md)): start every Hebrew line with a Hebrew word,
   and wrap tables and lists in `<div dir="rtl">` … `</div>` with blank lines inside.

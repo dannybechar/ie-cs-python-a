@@ -1,8 +1,8 @@
-# Unit 1 — Introduction to Python / Environment
+# Unit 1 — Introduction to Python
 
 Unit scope and meeting breakdown: [`unit-strategy.md`](unit-strategy.md)
 
-## Meeting 1 — Environment and First Program
+## Meeting 1 — First Program
 
 90 minutes (45 knowledge + guided practice, 45 lab)
 

@@ -26,7 +26,7 @@ see [`../course-map.md`](../course-map.md) for the full list.
 
 | # | Unit | Hours | Theory / Practice | 90-min Meetings | Strategic Goal |
 |---|---|---:|---:|---:|---|
-| 1 | Introduction to Python / Environment | 2 | 1 / 1 | 1 | Working environment, output, documentation, basic function and calling |
+| 1 | Introduction to Python | 2 | 1 / 1 | 1 | Output, documentation, basic function and calling |
 | 2 | Turtle & Graphics | 6 | 1 / 5 | 3 | Sequential code, graphics, movement and changing attributes |
 | 3 | Variables, Input/Output & Arithmetic | 4 | 1 / 3 | 2 | Variables, types, input/output and calculations |
 | 4 | Conditional Execution | 6 | 2 / 4 | 3 | Boolean thinking and conditional execution |
@@ -40,7 +40,9 @@ see [`../course-map.md`](../course-map.md) for the full list.
 ## 3. Pedagogical Phases
 
 ### Phase 1 – Foundation – 12h
-Units 1–3: Environment → Turtle → Variables
+Units 1–3: First program → Turtle → Variables
+(preceded by Unit 0, a school-added setup lab outside the 60 hours:
+install, check and save in the working environment)
 
 ### Phase 2 – Control Flow – 14h
 Units 4–5: Conditions → Loops

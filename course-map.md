@@ -16,13 +16,13 @@ Status: ✅ built and approved by the teacher · 🔶 built, awaiting teacher ap
 | 1 | [Introduction to Python](units/u1-introduction-python) | 2 (1 / 1) | 90 (45 / 45) | 1 | 90 (45 / 45) | 0 | ✅ 1/1 |
 | 2 | [Turtle & Graphics](units/u2-turtle-graphics) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | ✅ 3/3 |
 | 3 | [Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) | 4 (1 / 3) | 180 (45 / 135) | 2 | 180 (45 / 135) | 0 | ✅ 2/2 |
-| 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 0 | 270 | ❌ 0/3 |
+| 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 90 (45 / 45) | 180 | 🔶 1/3 (m1 awaiting approval) |
 | 5 | [Repetition / Loops](units/u5-loops) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
 | 6 | [Strings](units/u6-strings) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
 | 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 0 | 270 | ❌ 0/3 |
 | 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
 | 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 (4 / 8) | 540 (180 / 360) | 6 | 0 | 540 | ❌ 0/6 |
-|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **540 (135 / 405)** | **2,160** | **6/30 meetings built** |
+|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **630 (180 / 450)** | **2,070** | **7/30 meetings built** |
 
 Unit 0 is a school addition outside the official 60 hours: one lab meeting
 to install and check the environment before Unit 1 (it covers Chapter 1
@@ -73,9 +73,9 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 5 | U2 m3 | Geometry challenge | ✅ | Nov 1, 2026 | |
 | 6 | U3 m1 | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | |
 | 7 | U3 m2 | Input → calculation → output | ✅ | Nov 15, 2026 | |
-| 8 | U4 m1 | Boolean expressions, simple conditional | ⏳ | Nov 22, 2026 | |
-| 9 | U4 m2 | else, and/or, nesting | ⏳ | Nov 29, 2026 | |
-| 10 | U4 m3 | Integrated decisions (Turtle) | ⏳ | Dec 13, 2026 | |
+| 8 | U4 m1 | Boolean expressions, truth tables, and/or | 🔶 | Nov 22, 2026 | |
+| 9 | U4 m2 | if and if/else, input filter | ⏳ | Nov 29, 2026 | |
+| 10 | U4 m3 | Compound conditions, nesting, Turtle | ⏳ | Dec 13, 2026 | |
 | 11 | U5 m1 | Why loops; for and range | ⏳ | Dec 20, 2026 | |
 | 12 | U5 m2 | while, stop condition | ⏳ | Dec 27, 2026 | |
 | 13 | U5 m3 | Loops with Turtle | ⏳ | Jan 3, 2027 | |
@@ -111,6 +111,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 2 | m3 Geometry challenge | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
 | 3 | m1 The rover's memory | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u3-variables-io-arithmetic/m1-lesson-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides: `m1-slides-he.pdf` (22 slides) |
 | 3 | m2 Input to result | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min); lab brief converted to Markdown |
+| 4 | m1 The rover's sensors | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u4-conditional-execution/m1-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
 
 ## Keeping this up to date
 

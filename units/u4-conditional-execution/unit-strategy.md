@@ -3,7 +3,7 @@
 **6h = 2 Theory + 4 Labs = 3 double meetings**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 4. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** ⚠️ partial — Meeting 1 built (🔶 awaiting approval); Meetings 2–3 planned. Inspired by the teacher's raw decks (`chapter4_session1–3`).
+**Build status:** ⚠️ partial — Meetings 1–2 built (🔶 awaiting approval); Meeting 3 planned. Inspired by the teacher's raw decks (`chapter4_session1–3`).
 
 ## Official topics and hours
 
@@ -13,7 +13,7 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 | Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
 |---|---:|---:|---:|---|---|
 | ביטויים בוליאניים — boolean expressions | 1 | 2 | 135 | m1 (45 T + 45 P), m3 (45 P) | 🔶 m1 built |
-| משפטי תנאי — conditional statements | 1 | 2 | 135 | m2 (45 T + 45 P), m3 (45 P) | ⏳ |
+| משפטי תנאי — conditional statements | 1 | 2 | 135 | m2 (45 T + 45 P), m3 (45 P) | 🔶 m2 built |
 | **Total** | **2** | **4** | **270** | | |
 
 Also listed for this chapter in the program overview (p.3–5):

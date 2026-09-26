@@ -16,9 +16,18 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
 | Teacher | slides | Pending (NotebookLM) |
 
-## Meeting 2 — if and if/else
+## Meeting 2 — The Rover Decides (if and if/else)
 
-Planned.
+90 minutes: 45 knowledge + 45 lab · **if → false skips → indentation → if/else → input filter → errors**
+
+| For | File | What it is |
+|---|---|---|
+| Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
+| Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
+| Student | [`Decisions_Starter.py`](Decisions_Starter.py) | Delivery trace warm-up |
+| Student | [`ScoreBug_Starter.py`](ScoreBug_Starter.py) | Program with three kinds of bugs to fix one at a time |
+| Teacher | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
+| Teacher | slides | Pending (NotebookLM) |
 
 ## Meeting 3 — Compound conditions, nesting and Turtle
 

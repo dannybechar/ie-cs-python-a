@@ -3,7 +3,7 @@
 **6h = 1 Theory + 5 Labs = 3 double meetings**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 2. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** ⚠️ partial — only Meeting 3 (`m3-*` files: geometry challenge) is built (Meeting 3 of 3). Meetings 1–2 (Turtle environment basics; pen/attribute control) are not yet authored.
+**Build status:** ✅ complete — all 3 meetings built, 270 minutes (45 theory / 225 practice). See [README.md](README.md).
 
 ## Official topics and hours
 
@@ -12,10 +12,10 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 
 | Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
 |---|---:|---:|---:|---|---|
-| הכרת הספרייה turtle — the turtle library | 1 | 1 | 90 | m1 | ⏳ |
-| יצירת משטח עבודה וסמן — work surface and pen | 0 | 1 | 45 | m1, m2 | ⏳ |
-| הוראות תנועה, מיקום ושינוי כיוון — movement, position, direction | 0 | 2 | 90 | m1, practiced in m3 | ⏳ / ✅ |
-| שינוי מאפייני דמות — changing shape attributes | 0 | 1 | 45 | m2, practiced in m3 | ⏳ / ✅ |
+| הכרת הספרייה turtle — the turtle library | 1 | 1 | 90 | m1 | ✅ |
+| יצירת משטח עבודה וסמן — work surface and pen | 0 | 1 | 45 | m1, m2 | ✅ |
+| הוראות תנועה, מיקום ושינוי כיוון — movement, position, direction | 0 | 2 | 90 | m1, practiced in m3 | ✅ |
+| שינוי מאפייני דמות — changing shape attributes | 0 | 1 | 45 | m2, practiced in m3 | ✅ |
 | **Total** | **1** | **5** | **270** | | |
 
 ## Meeting 1 — Knowledge + Lab

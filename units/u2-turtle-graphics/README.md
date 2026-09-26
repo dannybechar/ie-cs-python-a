@@ -1,0 +1,42 @@
+# Unit 2 — Turtle & Graphics
+
+Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
+
+6 academic hours = 3 meetings = 270 minutes (45 theory / 225 practice).
+
+## Meeting 1 — First Moves
+
+90 minutes: 45 knowledge + 45 lab · **Move → Turn → Predict → Build**
+
+| For | File | What it is |
+|---|---|---|
+| Teacher | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan: human-turtle hook, turning, square, lab (staircase, triangle, letter if time) |
+| Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
+| Student | [`TurtleFirstMoves_Starter.py`](TurtleFirstMoves_Starter.py) | Starter file |
+| Teacher | [`TurtleFirstMoves_Reference.py`](TurtleFirstMoves_Reference.py) | Solutions, one function per task |
+| Teacher | slides | Pending (NotebookLM) |
+
+## Meeting 2 — Pen, Appearance and Stamps
+
+90 minutes: Lab + Lab · **movement → pen state → appearance → marker**
+
+| For | File | What it is |
+|---|---|---|
+| Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan: three short demos, each followed by a task; one function per task |
+| Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
+| Student | [`TurtlePenStamp_Starter.py`](TurtlePenStamp_Starter.py) | Starter file (warm-up as a function) |
+| Teacher | [`TurtlePenStamp_Reference.py`](TurtlePenStamp_Reference.py) | Solutions, one function per task |
+| Teacher | slides | Pending (NotebookLM) |
+
+## Meeting 3 — Geometry Challenge
+
+90 minutes: Lab + Lab · integration and rectangle micro-assessment
+
+| For | File | What it is |
+|---|---|---|
+| Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
+| Teacher | [`m3-lesson-he.pptx`](m3-lesson-he.pptx) | Hebrew slides (PowerPoint, not yet converted) |
+| Student | [`m3-lab-brief-he.pdf`](m3-lab-brief-he.pdf) / [`.docx`](m3-lab-brief-he.docx) | Hebrew lab brief (not yet converted to Markdown) |
+| Student | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
+| Student | [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py) | Starter file |
+| Teacher | [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py) | Assessment solution |

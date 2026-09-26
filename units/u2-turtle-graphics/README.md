@@ -26,7 +26,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`TurtlePenStamp_Starter.py`](TurtlePenStamp_Starter.py) | Starter file (warm-up as a function) |
 | Teacher | [`TurtlePenStamp_Reference.py`](TurtlePenStamp_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slides (15 slides, made in NotebookLM; slides 2, 6, 10, 15 corrected) |
 
 ## Meeting 3 — Geometry Challenge
 

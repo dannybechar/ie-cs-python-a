@@ -37,10 +37,13 @@ their Lab + Lab meetings are built. Their first meetings, still to be written, s
   ([`ministry-circular-tashpaz-he.pdf`](docs/ministry-source/ministry-circular-tashpaz-he.pdf), p.2).
   All 9 units must be taught before it, not by the end of June.
 - **Meetings needed:** 31 = 30 official + Unit 0.
-- **Meetings available:** *to fill in from the school calendar*: first lesson date, meetings per week, and holidays/trips before the exam.
-  Rough estimate: at **one double meeting a week**, from early October 2026 to the end of April 2027 there are about 30 weeks,
-  minus about 3–4 weeks of Hanukkah and Passover breaks, so **about 26–27 meetings, plus 1–3 in May**. That is probably
-  **fewer than 31**. If the class meets once a week, plan now which meetings to merge or shorten.
+- **Meetings available:** one double meeting a week, starting the week of **Sunday, Oct 4, 2026** (after the Sukkot break).
+  Skipping the Hanukkah week (Dec 6) and the Passover break (weeks of Apr 11, 18 and 25, 2027), there are
+  **26 meetings by the end of April** and 31 only by the **week of May 30, 2027**. The break weeks are approximate:
+  confirm them against the school's official calendar. Single-day closures (e.g. election day, Purim, Memorial Day)
+  can cost more meetings, depending on the class's weekday.
+- **Gap:** 31 meetings are needed, so **meetings 27–31 (Unit 9 m2–m6) fall in May**, the exam month. If the exam is early
+  in May, up to 5 meetings of Unit 9 would come after it. Decide before winter which meetings to merge, or find extra time.
 - **Check after every lesson:** meetings left in the schedule below ≤ meetings left before the exam.
 
 ## Open coverage gaps
@@ -61,39 +64,39 @@ Official topics that no planned meeting fully covers yet. Details are in each un
 
 All 31 meetings in teaching order. Fill in **Target week** once the school calendar is known, and **Taught on** after each lesson.
 
-| # | Meeting | Content | Built | Target week | Taught on |
+| # | Meeting | Content | Built | Target week (starts Sunday) | Taught on |
 |---:|---|---|---|---|---|
-| 1 | U0 m1 | Install, check, save | ✅ | | |
-| 2 | U1 m1 | First program: print, comments, first function | ✅ | | |
-| 3 | U2 m1 | Turtle library, work surface, movement | ⏳ | | |
-| 4 | U2 m2 | Pen and shape attributes | ⏳ | | |
-| 5 | U2 m3 | Geometry challenge | ✅ | | |
-| 6 | U3 m1 | Variables, types, input, friendly output | ⏳ | | |
-| 7 | U3 m2 | Input → calculation → output | ✅ | | |
-| 8 | U4 m1 | Boolean expressions, simple conditional | ⏳ | | |
-| 9 | U4 m2 | else, and/or, nesting | ⏳ | | |
-| 10 | U4 m3 | Integrated decisions (Turtle) | ⏳ | | |
-| 11 | U5 m1 | Why loops; for and range | ⏳ | | |
-| 12 | U5 m2 | while, stop condition | ⏳ | | |
-| 13 | U5 m3 | Loops with Turtle | ⏳ | | |
-| 14 | U5 m4 | Tracing and loop challenge | ⏳ | | |
-| 15 | U6 m1 | str, indexing, len, + * in | ⏳ | | |
-| 16 | U6 m2 | Slicing and string methods | ⏳ | | |
-| 17 | U6 m3 | String manipulation problems | ⏳ | | |
-| 18 | U6 m4 | Text-processing challenge | ⏳ | | |
-| 19 | U7 m1 | Counter, accumulator, random | ⏳ | | |
-| 20 | U7 m2 | Combined pattern problems | ⏳ | | |
-| 21 | U7 m3 | Algorithmic challenge | ⏳ | | |
-| 22 | U8 m1 | Why functions; parameters | ⏳ | | |
-| 23 | U8 m2 | Scope, local vs global | ⏳ | | |
-| 24 | U8 m3 | Parameterized Turtle functions | ⏳ | | |
-| 25 | U8 m4 | Integrated modular task | ⏳ | | |
-| 26 | U9 m1 | Why event-driven; first interactive program | ⏳ | | |
-| 27 | U9 m2 | Mouse events (onclick) | ⏳ | | |
-| 28 | U9 m3 | Keyboard events (onkey, listen) | ⏳ | | |
-| 29 | U9 m4 | Animation with a timer | ⏳ | | |
-| 30 | U9 m5 | Build an interactive game | ⏳ | | |
-| 31 | U9 m6 | Final project and assessment | ⏳ | | |
+| 1 | U0 m1 | Install, check, save | ✅ | Oct 4, 2026 | |
+| 2 | U1 m1 | First program: print, comments, first function | ✅ | Oct 11, 2026 | |
+| 3 | U2 m1 | Turtle library, work surface, movement | ⏳ | Oct 18, 2026 | |
+| 4 | U2 m2 | Pen and shape attributes | ⏳ | Oct 25, 2026 | |
+| 5 | U2 m3 | Geometry challenge | ✅ | Nov 1, 2026 | |
+| 6 | U3 m1 | Variables, types, input, friendly output | ⏳ | Nov 8, 2026 | |
+| 7 | U3 m2 | Input → calculation → output | ✅ | Nov 15, 2026 | |
+| 8 | U4 m1 | Boolean expressions, simple conditional | ⏳ | Nov 22, 2026 | |
+| 9 | U4 m2 | else, and/or, nesting | ⏳ | Nov 29, 2026 | |
+| 10 | U4 m3 | Integrated decisions (Turtle) | ⏳ | Dec 13, 2026 | |
+| 11 | U5 m1 | Why loops; for and range | ⏳ | Dec 20, 2026 | |
+| 12 | U5 m2 | while, stop condition | ⏳ | Dec 27, 2026 | |
+| 13 | U5 m3 | Loops with Turtle | ⏳ | Jan 3, 2027 | |
+| 14 | U5 m4 | Tracing and loop challenge | ⏳ | Jan 10, 2027 | |
+| 15 | U6 m1 | str, indexing, len, + * in | ⏳ | Jan 17, 2027 | |
+| 16 | U6 m2 | Slicing and string methods | ⏳ | Jan 24, 2027 | |
+| 17 | U6 m3 | String manipulation problems | ⏳ | Jan 31, 2027 | |
+| 18 | U6 m4 | Text-processing challenge | ⏳ | Feb 7, 2027 | |
+| 19 | U7 m1 | Counter, accumulator, random | ⏳ | Feb 14, 2027 | |
+| 20 | U7 m2 | Combined pattern problems | ⏳ | Feb 21, 2027 | |
+| 21 | U7 m3 | Algorithmic challenge | ⏳ | Feb 28, 2027 | |
+| 22 | U8 m1 | Why functions; parameters | ⏳ | Mar 7, 2027 | |
+| 23 | U8 m2 | Scope, local vs global | ⏳ | Mar 14, 2027 | |
+| 24 | U8 m3 | Parameterized Turtle functions | ⏳ | Mar 21, 2027 | |
+| 25 | U8 m4 | Integrated modular task | ⏳ | Mar 28, 2027 | |
+| 26 | U9 m1 | Why event-driven; first interactive program | ⏳ | Apr 4, 2027 | |
+| 27 | U9 m2 | Mouse events (onclick) | ⏳ | May 2, 2027 ⚠️ May | |
+| 28 | U9 m3 | Keyboard events (onkey, listen) | ⏳ | May 9, 2027 ⚠️ May | |
+| 29 | U9 m4 | Animation with a timer | ⏳ | May 16, 2027 ⚠️ May | |
+| 30 | U9 m5 | Build an interactive game | ⏳ | May 23, 2027 ⚠️ May | |
+| 31 | U9 m6 | Final project and assessment | ⏳ | May 30, 2027 ⚠️ May | |
 
 ## Meeting log
 

@@ -14,7 +14,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief: rover log, mission card, types detective, turtle square |
 | Student | [`Variables_Starter.py`](Variables_Starter.py) | Rover log for the trace-table warm-up |
 | Teacher | [`Variables_Reference.py`](Variables_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (22 slides, made in NotebookLM from 15; 7 question/answer slides added, footers added) |
 
 ## Meeting 2 — From Input to Result
 

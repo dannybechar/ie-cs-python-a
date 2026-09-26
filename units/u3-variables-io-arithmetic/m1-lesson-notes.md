@@ -102,6 +102,28 @@ Even when the user types `12`, `input()` gives the text `"12"`. To get a number:
 
 ---
 
+## 5a. The class deck
+
+[`m1-slides-he.pdf`](m1-slides-he.pdf) — 22 slides. Every prediction question is on its own slide, followed by its answer:
+
+| Slides | Section | Timing below |
+|---|---|---|
+| 1–3 | Title · predict `fuel` / `"fuel"` · answer | 0–5 |
+| 4–6 | Data and variables · legal names? · naming rules | 5–12 |
+| 7–8 | Trace table (empty) · answer 80 → 50 | 12–17 |
+| 9–11 | Four types · card sort · answer | 17–25 |
+| 12 | Friendly output | 25–32 |
+| 13–15 | Input · "type 12 — what prints?" · answer + `int` / `float` | 32–40 |
+| 16 | `ValueError` | 40–45 |
+| 17–18 | Rover log (empty table) · answer with types | 45–52 |
+| 19 | Tasks 1 and 2 (mission card, types detective) | 52–72 |
+| 20 | Task 3 + document and save | 72–86 |
+| 21–22 | Exit check · answer | 86–90 |
+
+The deck has no separate "lab missions" overview slide: explain the lab from slide 17 (one function per task, one active call).
+
+---
+
 # 6. First 45 Minutes — Knowledge + Guided Practice
 
 ## 0–5 min — Hook: predict

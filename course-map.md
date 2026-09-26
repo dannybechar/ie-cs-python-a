@@ -37,11 +37,14 @@ their Lab + Lab meetings are built. Their first meetings, still to be written, s
   ([`ministry-circular-tashpaz-he.pdf`](docs/ministry-source/ministry-circular-tashpaz-he.pdf), p.2).
   All 9 units must be taught before it, not by the end of June.
 - **Meetings needed:** 31 = 30 official + Unit 0.
-- **Meetings available:** one double meeting a week, starting the week of **Sunday, Oct 4, 2026** (after the Sukkot break).
-  Skipping the Hanukkah week (Dec 6) and the Passover break (weeks of Apr 11, 18 and 25, 2027), there are
-  **26 meetings by the end of April** and 31 only by the **week of May 30, 2027**. The break weeks are approximate:
-  confirm them against the school's official calendar. Single-day closures (e.g. election day, Purim, Memorial Day)
-  can cost more meetings, depending on the class's weekday.
+- **Meetings available:** one double meeting a week, on **Sundays**, starting **Sunday, Oct 4, 2026** (after the Sukkot break).
+  Skipping the Hanukkah Sunday (Dec 6) and the Passover break (Sundays Apr 11, 18 and 25, 2027), there are
+  **26 meetings by the end of April** and 31 only by **Sunday, May 30, 2027**.
+  Sunday-specific checks, to confirm against the school's official calendar:
+  - **Oct 4** is the day after Simchat Torah (Isru Chag). If school is closed, every meeting moves one week later and meeting 31 falls on June 6.
+  - **Apr 11** may still be a school day before the Passover break. If so, one meeting is gained.
+  - The other holidays before the exam fall on weekdays, not Sundays: election day (Oct 27), Purim (Mar 23),
+    Holocaust Remembrance Day (May 4), Memorial/Independence Day (May 11–12) and Lag BaOmer (May 25).
 - **Gap:** 31 meetings are needed, so **meetings 27–31 (Unit 9 m2–m6) fall in May**, the exam month. If the exam is early
   in May, up to 5 meetings of Unit 9 would come after it. Decide before winter which meetings to merge, or find extra time.
 - **Check after every lesson:** meetings left in the schedule below ≤ meetings left before the exam.

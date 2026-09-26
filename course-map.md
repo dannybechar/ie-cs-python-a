@@ -16,6 +16,6 @@ Full framing strategy: [`docs/annual-strategy.md`](docs/annual-strategy.md).
 | 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 | 6 | ❌ 0/6 |
 |  | **TOTAL** | **60** | **30** | **3/30 meetings built** |
 
-Each unit folder's `strategy/unit-strategy.md` has the full official scope,
+Each unit folder's `unit-strategy.md` has the full official scope,
 per-meeting breakdown, exit criteria, depth boundary and enrichment notes
 for that unit.

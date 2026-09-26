@@ -1,7 +1,7 @@
 # Unit 4 — Conditional Execution
 
 **6h = 2 Theory + 4 Labs = 3 double meetings**
-Source: [`python-a.pdf`](../../../docs/ministry-source/python-a.pdf) Unit 4. Framing: [`../../../docs/annual-strategy.md`](../../../docs/annual-strategy.md).
+Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 4. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
 **Build status:** ❌ not started.
 

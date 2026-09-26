@@ -1,7 +1,7 @@
 # Unit 9 — Event-Driven Programming
 
 **12h = 4 Theory + 8 Labs = 6 double meetings**
-Source: [`python-a.pdf`](../../../docs/ministry-source/python-a.pdf) Unit 9. Framing: [`../../../docs/annual-strategy.md`](../../../docs/annual-strategy.md).
+Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 9. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
 **Build status:** ❌ not started.
 

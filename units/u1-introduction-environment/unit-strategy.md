@@ -1,9 +1,9 @@
 # Unit 1 — Introduction to Python / Environment
 
 **2h = 1 Theory + 1 Lab = one double meeting**
-Source: [`python-a.pdf`](../../../docs/ministry-source/python-a.pdf) Unit 1. Framing: [`../../../docs/annual-strategy.md`](../../../docs/annual-strategy.md).
+Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 1. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** ✅ complete — [`m1-environment-and-first-program`](../m1-environment-and-first-program)
+**Build status:** ✅ complete — [Meeting 1 — environment and first program](README.md)
 
 ## 45 minutes — knowledge delivery
 - What a program is, as a sequence of instructions.

@@ -1,0 +1,67 @@
+/*
+ * @theme g7-rtl
+ *
+ * Marp theme for the Grade 7 Hebrew lesson decks.
+ * Slides read right-to-left; code, output and workflow lines stay left-to-right.
+ */
+
+@import 'default';
+
+section {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Segoe UI', 'Arial Hebrew', Arial, sans-serif;
+  font-size: 30px;
+  padding: 60px 70px;
+}
+
+h1 {
+  font-size: 1.6em;
+  color: #1f4e79;
+}
+
+h2 {
+  font-size: 1.1em;
+  color: #555;
+  font-weight: normal;
+}
+
+pre,
+code {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+}
+
+pre {
+  font-size: 0.85em;
+}
+
+/* Title slide: <!-- _class: lead --> */
+section.lead {
+  justify-content: center;
+  text-align: center;
+}
+
+section.lead h1 {
+  font-size: 2em;
+}
+
+/*
+ * Lines such as the Open → Read → ... workflow: wrap in <p dir="ltr">.
+ * (dir is used instead of a class because GitHub keeps dir but strips class.)
+ */
+p[dir='ltr'] {
+  text-align: center;
+  font-weight: bold;
+  color: #1f4e79;
+}
+
+table {
+  direction: rtl;
+  margin: 0 auto;
+}
+
+footer {
+  direction: ltr;
+}

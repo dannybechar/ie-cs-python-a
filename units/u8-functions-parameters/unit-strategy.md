@@ -1,7 +1,7 @@
 # Unit 8 — Functions with Parameters
 
 **8h = 2 Theory + 6 Labs = 4 double meetings**
-Source: [`python-a.pdf`](../../../docs/ministry-source/python-a.pdf) Unit 8. Framing: [`../../../docs/annual-strategy.md`](../../../docs/annual-strategy.md).
+Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 8. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
 **Build status:** ❌ not started.
 

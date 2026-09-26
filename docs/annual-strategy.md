@@ -2,7 +2,7 @@
 
 Source of truth: [`ministry-source/python-a.pdf`](ministry-source/python-a.pdf).
 Per-unit detail (official scope, meeting breakdown, exit criteria, depth
-boundary, enrichment) lives in each unit's own `strategy/unit-strategy.md` —
+boundary, enrichment) lives in each unit's own `unit-strategy.md` —
 see [`../course-map.md`](../course-map.md) for the full list.
 
 ## 1. Foundational Decisions

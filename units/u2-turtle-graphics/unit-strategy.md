@@ -1,9 +1,9 @@
 # Unit 2 — Turtle & Graphics
 
 **6h = 1 Theory + 5 Labs = 3 double meetings**
-Source: [`python-a.pdf`](../../../docs/ministry-source/python-a.pdf) Unit 2. Framing: [`../../../docs/annual-strategy.md`](../../../docs/annual-strategy.md).
+Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 2. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** ⚠️ partial — only [`m3-geometry-challenge`](../m3-geometry-challenge) is built (Meeting 3 of 3). Meetings 1–2 (Turtle environment basics; pen/attribute control) are not yet authored.
+**Build status:** ⚠️ partial — only Meeting 3 (`m3-*` files: geometry challenge) is built (Meeting 3 of 3). Meetings 1–2 (Turtle environment basics; pen/attribute control) are not yet authored.
 
 ## Meeting 1 — Knowledge + Lab
 - import / basic Turtle environment.

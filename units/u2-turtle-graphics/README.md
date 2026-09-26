@@ -14,7 +14,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`TurtleFirstMoves_Starter.py`](TurtleFirstMoves_Starter.py) | Starter file |
 | Teacher | [`TurtleFirstMoves_Reference.py`](TurtleFirstMoves_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (23 slides, rover theme, made in NotebookLM; slides 8, 12, 14, 17, 19 corrected and exit check 22–23 added) |
 
 ## Meeting 2 — Pen, Appearance and Stamps
 

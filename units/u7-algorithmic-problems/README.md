@@ -16,7 +16,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Counters_Starter.py`](Counters_Starter.py) | Warm-up: a counter with two bugs |
 | Teacher | [`Counters_Reference.py`](Counters_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
 
 ## Unit 7.2 — Algorithmic Problems
 

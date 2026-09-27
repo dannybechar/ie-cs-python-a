@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Loops Inside Loops — Nesting, Rolling Execution and the Unit Checkpoint (Mission 14)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (27 min guided practice, then 63 min lab with the unit checkpoint)  
 **Minutes (theory / practice):** 0 / 90  

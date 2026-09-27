@@ -3,7 +3,7 @@
 **8h = 2 Theory + 6 Labs = 4 double meetings**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 5. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** 🔶 complete — all 4 meetings built, awaiting approval. Inspired by the teacher's raw decks (`unit5_meeting1–4`).
+**Build status:** ✅ complete — all 4 meetings built and approved by the teacher. Inspired by the teacher's raw decks (`unit5_meeting1–4`).
 
 ## Official topics and hours
 
@@ -12,14 +12,14 @@ Status: ✅ approved · 🔶 built, awaiting approval · ⏳ planned, not built 
 
 | Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
 |---|---:|---:|---:|---|---|
-| ביצוע חוזר לשם מה? — why repetition | 1 | 0 | 45 | 5.1 (45 T) | 🔶 |
-| ביצוע חוזר מוגבל מראש, מותנה — bounded and conditional loops | 1 | 6 | 315 | 5.1 (45 P), 5.2 (90 P), 5.3 (45 T + 45 P), 5.4 (90 P) | 🔶 |
+| ביצוע חוזר לשם מה? — why repetition | 1 | 0 | 45 | 5.1 (45 T) | ✅ |
+| ביצוע חוזר מוגבל מראש, מותנה — bounded and conditional loops | 1 | 6 | 315 | 5.1 (45 P), 5.2 (90 P), 5.3 (45 T + 45 P), 5.4 (90 P) | ✅ |
 | **Total** | **2** | **6** | **360** | | |
 
 Also listed for this chapter in the program overview (p.3–5):
 
-- Rolling repeated execution (ביצוע חוזר מתגלגל) → 5.4 (tracing) 🔶
-- Loops using Turtle → 5.2 (polygons, spiral, star), 5.4 (flower) 🔶
+- Rolling repeated execution (ביצוע חוזר מתגלגל) → 5.4 (tracing) ✅
+- Loops using Turtle → 5.2 (polygons, spiral, star), 5.4 (flower) ✅
 
 ## Unit 5.1 — Knowledge + Lab: for and range
 - why repetition; pseudo-code "repeat n times".

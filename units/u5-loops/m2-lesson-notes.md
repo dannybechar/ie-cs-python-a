@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: The Rover Draws in Steps — `range(start, stop, step)` and Turtle (Mission 12)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (26 min guided practice, then 64 min lab)  
 **Minutes (theory / practice):** 0 / 90  

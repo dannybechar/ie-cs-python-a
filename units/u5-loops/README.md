@@ -30,7 +30,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Ranges_Starter.py`](Ranges_Starter.py) | Task 1: a `range` boundary bug |
 | Teacher | [`Ranges_Reference.py`](Ranges_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
 
 ## Unit 5.3 — Repetition / Loops
 

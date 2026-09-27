@@ -19,10 +19,10 @@ Status: ✅ built and approved by the teacher · 🔶 built, awaiting teacher ap
 | 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 270 (90 / 180) | 0 | ✅ 3/3 |
 | 5 | [Repetition and Loops](units/u5-loops) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | ✅ 4/4 |
 | 6 | [Strings](units/u6-strings) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | 🔶 4/4 (awaiting approval) |
-| 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 0 | 270 | ❌ 0/3 |
-| 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
+| 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | 🔶 3/3 (awaiting approval) |
+| 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | 🔶 4/4 (awaiting approval) |
 | 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 (4 / 8) | 540 (180 / 360) | 6 | 0 | 540 | ❌ 0/6 |
-|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **1,530 (405 / 1,125)** | **1,170** | **17/30 meetings built** |
+|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **2,160 (540 / 1,620)** | **540** | **24/30 meetings built** |
 
 Unit 0 is a school addition outside the official 60 hours: one lab meeting
 to install and check the environment before Unit 1 (it covers Chapter 1
@@ -55,8 +55,7 @@ Official topics that no planned meeting fully covers yet. Details are in each un
 
 | Unit | Gap | Fix to plan |
 |---|---|---|
-| 7 | Algorithmic problems using Turtle | Add to U7 m2 or m3 |
-| 8 | Functions without parameters: 3 official practice hours, only reviewed in the plan | Include them in the m3/m4 labs |
+| 7 | Min/max has no line in the hours table; as built it takes 45 practice minutes from random numbers | Teacher to confirm (see the Unit 7 plan) |
 
 ## Schedule
 
@@ -82,13 +81,13 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 16 | 6.2 Strings | + and *, strings vs numbers, in, loop over characters | 🔶 | Jan 24, 2027 | |
 | 17 | 6.3 Strings | Slicing: start, end, step, reverse | 🔶 | Jan 31, 2027 | |
 | 18 | 6.4 Strings | String operations, Turtle write, unit checkpoint | 🔶 | Feb 7, 2027 | |
-| 19 | 7.1 Algorithmic Problems | Counter, accumulator, random | ⏳ | Feb 14, 2027 | |
-| 20 | 7.2 Algorithmic Problems | Combined pattern problems | ⏳ | Feb 21, 2027 | |
-| 21 | 7.3 Algorithmic Problems | Algorithmic challenge | ⏳ | Feb 28, 2027 | |
-| 22 | 8.1 Functions with Parameters | Why functions; parameters | ⏳ | Mar 7, 2027 | |
-| 23 | 8.2 Functions with Parameters | Scope, local vs global | ⏳ | Mar 14, 2027 | |
-| 24 | 8.3 Functions with Parameters | Parameterized Turtle functions | ⏳ | Mar 21, 2027 | |
-| 25 | 8.4 Functions with Parameters | Integrated modular task | ⏳ | Mar 28, 2027 | |
+| 19 | 7.1 Algorithmic Problems | Counter pattern, two counters | 🔶 | Feb 14, 2027 | |
+| 20 | 7.2 Algorithmic Problems | Accumulator, average, minimum and maximum | 🔶 | Feb 21, 2027 | |
+| 21 | 7.3 Algorithmic Problems | Random numbers, simulation, Turtle random walk, checkpoint | 🔶 | Feb 28, 2027 | |
+| 22 | 8.1 Functions with Parameters | Why functions; definition vs call; main() | 🔶 | Mar 7, 2027 | |
+| 23 | 8.2 Functions with Parameters | Functions without parameters; input inside; Turtle house | 🔶 | Mar 14, 2027 | |
+| 24 | 8.3 Functions with Parameters | Parameters and arguments; Turtle sizes | 🔶 | Mar 21, 2027 | |
+| 25 | 8.4 Functions with Parameters | Scope, global, Turtle spiral, checkpoint | 🔶 | Mar 28, 2027 | |
 | 26 | 9.1 Event-Driven Programming | Why event-driven; first interactive program | ⏳ | Apr 4, 2027 | |
 | 27 | 9.2 Event-Driven Programming | Mouse events (onclick) | ⏳ | May 2, 2027 ⚠️ May | |
 | 28 | 9.3 Event-Driven Programming | Keyboard events (onkey, listen) | ⏳ | May 9, 2027 ⚠️ May | |
@@ -120,6 +119,13 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 6 | 6.2 Strings | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u6-strings/m2-lesson-notes.md) | From the teacher's raw deck; slides: `m2-slides-he.pdf` (18 slides, 90 min; NotebookLM, patched) |
 | 6 | 6.3 Strings | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u6-strings/m3-lesson-notes.md) | From the teacher's raw deck; slides: `m3-slides-he.pdf` (20 slides, 90 min; NotebookLM, patched) |
 | 6 | 6.4 Strings | 90 | 0 / 90 | Lab + Lab | [`m4-lesson-notes.md`](units/u6-strings/m4-lesson-notes.md) | Unit checkpoint (practical + theory), Turtle `write`; slides pending (NotebookLM folder ready, 20 slides) |
+| 7 | 7.1 Algorithmic Problems | 90 | 0 / 90 | Lab + Lab | [`m1-lesson-notes.md`](units/u7-algorithmic-problems/m1-lesson-notes.md) | From the teacher's raw deck (lists replaced); slides pending (NotebookLM folder ready, 17 slides) |
+| 7 | 7.2 Algorithmic Problems | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u7-algorithmic-problems/m2-lesson-notes.md) | From the teacher's raw deck (lists replaced); slides pending (NotebookLM folder ready, 19 slides) |
+| 7 | 7.3 Algorithmic Problems | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u7-algorithmic-problems/m3-lesson-notes.md) | Unit checkpoint; Turtle random walk; slides pending (NotebookLM folder ready, 19 slides) |
+| 8 | 8.1 Functions with Parameters | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u8-functions-parameters/m1-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 20 slides) |
+| 8 | 8.2 Functions with Parameters | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u8-functions-parameters/m2-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 17 slides) |
+| 8 | 8.3 Functions with Parameters | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u8-functions-parameters/m3-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 19 slides) |
+| 8 | 8.4 Functions with Parameters | 90 | 0 / 90 | Lab + Lab | [`m4-lesson-notes.md`](units/u8-functions-parameters/m4-lesson-notes.md) | Unit checkpoint; slides pending (NotebookLM folder ready, 18 slides) |
 
 ## Keeping this up to date
 

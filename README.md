@@ -7,7 +7,7 @@ Israeli Ministry of Education's official Python A program
 
 ## Current build status
 
-**17 of 30 official double meetings are built** (Units 1–6 complete), plus the school-added Unit 0. See [`course-map.md`](course-map.md) for the full
+**24 of 30 official double meetings are built** (Units 1–8 complete), plus the school-added Unit 0. See [`course-map.md`](course-map.md) for the full
 unit-by-unit breakdown, and each unit's `unit-strategy.md` for
 what's built vs. still missing within that unit.
 
@@ -18,7 +18,9 @@ what's built vs. still missing within that unit.
 - [Unit 4 — Conditional Execution](units/u4-conditional-execution) — complete (3/3 meetings)
 - [Unit 5 — Repetition and Loops](units/u5-loops) — complete (4/4 meetings)
 - [Unit 6 — Strings](units/u6-strings) — complete (4/4 meetings), awaiting approval
-- Units 7–9 — not yet started
+- [Unit 7 — Algorithmic Problems](units/u7-algorithmic-problems) — complete (3/3 meetings), awaiting approval
+- [Unit 8 — Functions with Parameters](units/u8-functions-parameters) — complete (4/4 meetings), awaiting approval
+- Unit 9 — not yet started
 
 ## Repository layout
 

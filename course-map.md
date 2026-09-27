@@ -17,12 +17,12 @@ Status: ✅ built and approved by the teacher · 🔶 built, awaiting teacher ap
 | 2 | [Turtle & Graphics](units/u2-turtle-graphics) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | ✅ 3/3 |
 | 3 | [Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) | 4 (1 / 3) | 180 (45 / 135) | 2 | 180 (45 / 135) | 0 | ✅ 2/2 |
 | 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 270 (90 / 180) | 0 | 🔶 3/3 (awaiting approval) |
-| 5 | [Repetition / Loops](units/u5-loops) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
+| 5 | [Repetition / Loops](units/u5-loops) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | 🔶 4/4 (awaiting approval) |
 | 6 | [Strings](units/u6-strings) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
 | 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 0 | 270 | ❌ 0/3 |
 | 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
 | 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 (4 / 8) | 540 (180 / 360) | 6 | 0 | 540 | ❌ 0/6 |
-|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **810 (225 / 585)** | **1,890** | **9/30 meetings built** |
+|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **1,170 (315 / 855)** | **1,530** | **13/30 meetings built** |
 
 Unit 0 is a school addition outside the official 60 hours: one lab meeting
 to install and check the environment before Unit 1 (it covers Chapter 1
@@ -76,10 +76,10 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 8 | 4.1 Conditional Execution | Boolean expressions, truth tables, and/or | 🔶 | Nov 22, 2026 | |
 | 9 | 4.2 Conditional Execution | if and if/else, input filter | 🔶 | Nov 29, 2026 | |
 | 10 | 4.3 Conditional Execution | Compound conditions, nesting, Turtle, checkpoint | 🔶 | Dec 13, 2026 | |
-| 11 | 5.1 Repetition / Loops | Why loops; for and range | ⏳ | Dec 20, 2026 | |
-| 12 | 5.2 Repetition / Loops | while, stop condition | ⏳ | Dec 27, 2026 | |
-| 13 | 5.3 Repetition / Loops | Loops with Turtle | ⏳ | Jan 3, 2027 | |
-| 14 | 5.4 Repetition / Loops | Tracing and loop challenge | ⏳ | Jan 10, 2027 | |
+| 11 | 5.1 Repetition / Loops | Why loops; for and range, loop variable, running total | 🔶 | Dec 20, 2026 | |
+| 12 | 5.2 Repetition / Loops | range with a step; Turtle polygons, spiral, star | 🔶 | Dec 27, 2026 | |
+| 13 | 5.3 Repetition / Loops | while, update, sentinel, for vs while | 🔶 | Jan 3, 2027 | |
+| 14 | 5.4 Repetition / Loops | Nested loops, rolling execution, checkpoint | 🔶 | Jan 10, 2027 | |
 | 15 | 6.1 Strings | str, indexing, len, + * in | ⏳ | Jan 17, 2027 | |
 | 16 | 6.2 Strings | Slicing and string methods | ⏳ | Jan 24, 2027 | |
 | 17 | 6.3 Strings | String manipulation problems | ⏳ | Jan 31, 2027 | |
@@ -114,6 +114,10 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 4 | 4.1 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u4-conditional-execution/m1-lesson-notes.md) | Inspired by the teacher's raw deck; slides: `m1-slides-he.pdf` (23 slides, 90 min; NotebookLM, patched) |
 | 4 | 4.2 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m2-lesson-notes.md`](units/u4-conditional-execution/m2-lesson-notes.md) | Inspired by the teacher's raw deck; slides: `m2-slides-he.pdf` (25 slides, 90 min; NotebookLM, patched) |
 | 4 | 4.3 Conditional Execution | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u4-conditional-execution/m3-lesson-notes.md) | Unit checkpoint (practical + tracing); slides: `m3-slides-he.pdf` (16 slides, 90 min; NotebookLM, patched) |
+| 5 | 5.1 Repetition / Loops | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u5-loops/m1-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 20 slides) |
+| 5 | 5.2 Repetition / Loops | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u5-loops/m2-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 17 slides) |
+| 5 | 5.3 Repetition / Loops | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u5-loops/m3-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 20 slides) |
+| 5 | 5.4 Repetition / Loops | 90 | 0 / 90 | Lab + Lab | [`m4-lesson-notes.md`](units/u5-loops/m4-lesson-notes.md) | Unit checkpoint (practical + theory); slides pending (NotebookLM folder ready, 18 slides) |
 
 ## Keeping this up to date
 

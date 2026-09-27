@@ -35,6 +35,14 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 ## Unit 4.3 — Conditional Execution
 
-**Topic:** Compound conditions, nesting and Turtle
+**Topic:** The Rover at the Junction — compound conditions, nesting and Turtle (Mission 10)
 
-Planned.
+90 minutes: Lab + Lab · **and/or in if → one-level nesting → Turtle by choice → unit checkpoint**
+
+| For | File | What it is |
+|---|---|---|
+| Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan, including the checkpoint |
+| Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
+| Student | [`Shapes_Starter.py`](Shapes_Starter.py) | Draws both shapes; students add the conditions |
+| Teacher | [`Conditions_Reference.py`](Conditions_Reference.py) | Solutions, one function per task |
+| Teacher | slides | Pending (NotebookLM) |

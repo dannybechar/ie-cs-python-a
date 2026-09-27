@@ -20,7 +20,7 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 Also listed for this chapter in the program overview (p.3–5):
 
 - ⚠️ **Algorithmic problems using Turtle** → not explicit in the plan; add to m2 or m3
-- Note: the plan also teaches a **minimum / maximum** pattern, which is not in the official topic list. It is a school addition and must fit inside this unit's 270 minutes.
+- **Minimum / maximum** — official goals 3 and 5 (p.15), taught with the counter and accumulator hours.
 
 ## Unit 7.1 — Knowledge + Lab
 - counter.

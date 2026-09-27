@@ -16,7 +16,7 @@ Status: ✅ built and approved by the teacher · 🔶 built, awaiting teacher ap
 | 1 | [Introduction to Python](units/u1-introduction-python) | 2 (1 / 1) | 90 (45 / 45) | 1 | 90 (45 / 45) | 0 | ✅ 1/1 |
 | 2 | [Turtle & Graphics](units/u2-turtle-graphics) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | ✅ 3/3 |
 | 3 | [Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) | 4 (1 / 3) | 180 (45 / 135) | 2 | 180 (45 / 135) | 0 | ✅ 2/2 |
-| 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 270 (90 / 180) | 0 | 🔶 3/3 (awaiting approval) |
+| 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 270 (90 / 180) | 0 | ✅ 3/3 |
 | 5 | [Repetition / Loops](units/u5-loops) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | 🔶 4/4 (awaiting approval) |
 | 6 | [Strings](units/u6-strings) | 8 (2 / 6) | 360 (90 / 270) | 4 | 0 | 360 | ❌ 0/4 |
 | 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 0 | 270 | ❌ 0/3 |
@@ -73,9 +73,9 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 5 | 2.3 Turtle & Graphics | Geometry challenge | ✅ | Nov 1, 2026 | |
 | 6 | 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | |
 | 7 | 3.2 Variables, Input/Output & Arithmetic | Input → calculation → output | ✅ | Nov 15, 2026 | |
-| 8 | 4.1 Conditional Execution | Boolean expressions, truth tables, and/or | 🔶 | Nov 22, 2026 | |
-| 9 | 4.2 Conditional Execution | if and if/else, input filter | 🔶 | Nov 29, 2026 | |
-| 10 | 4.3 Conditional Execution | Compound conditions, nesting, Turtle, checkpoint | 🔶 | Dec 13, 2026 | |
+| 8 | 4.1 Conditional Execution | Boolean expressions, truth tables, and/or | ✅ | Nov 22, 2026 | |
+| 9 | 4.2 Conditional Execution | if and if/else, input filter | ✅ | Nov 29, 2026 | |
+| 10 | 4.3 Conditional Execution | Compound conditions, nesting, Turtle, checkpoint | ✅ | Dec 13, 2026 | |
 | 11 | 5.1 Repetition / Loops | Why loops; for and range, loop variable, running total | 🔶 | Dec 20, 2026 | |
 | 12 | 5.2 Repetition / Loops | range with a step; Turtle polygons, spiral, star | 🔶 | Dec 27, 2026 | |
 | 13 | 5.3 Repetition / Loops | while, update, sentinel, for vs while | 🔶 | Jan 3, 2027 | |

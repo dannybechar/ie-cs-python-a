@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: The Rover at the Junction — Compound Conditions, Nesting and Turtle (Mission 10)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (27 min guided practice, then 63 min lab with the unit checkpoint)  
 **Minutes (theory / practice):** 0 / 90  

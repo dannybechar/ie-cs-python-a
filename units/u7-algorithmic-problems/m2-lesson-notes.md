@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Sum, Average and Extremes — Accumulator, Minimum and Maximum (Mission 20)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (35 min guided practice, then 55 min lab)  
 **Minutes (theory / practice):** 0 / 90  

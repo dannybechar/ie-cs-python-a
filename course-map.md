@@ -19,7 +19,7 @@ Status: ✅ built and approved by the teacher · 🔶 built, awaiting teacher ap
 | 4 | [Conditional Execution](units/u4-conditional-execution) | 6 (2 / 4) | 270 (90 / 180) | 3 | 270 (90 / 180) | 0 | ✅ 3/3 |
 | 5 | [Repetition and Loops](units/u5-loops) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | ✅ 4/4 |
 | 6 | [Strings](units/u6-strings) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | ✅ 4/4 |
-| 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | 🔶 3/3 (awaiting approval) |
+| 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | ✅ 3/3 |
 | 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | 🔶 4/4 (awaiting approval) |
 | 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 (4 / 8) | 540 (180 / 360) | 6 | 540 (180 / 360) | 0 | 🔶 6/6 (awaiting approval) |
 |  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **2,700 (720 / 1,980)** | **0** | **30/30 meetings built** |
@@ -55,7 +55,7 @@ Official topics that no planned meeting fully covers yet. Details are in each un
 
 | Unit | Gap | Fix to plan |
 |---|---|---|
-| 7 | Min/max has no line in the hours table; as built it takes 45 practice minutes from random numbers | Teacher to confirm (see the Unit 7 plan) |
+| — | None: every official topic is covered by a built meeting | — |
 
 ## Schedule
 
@@ -81,9 +81,9 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 16 | 6.2 Strings | + and *, strings vs numbers, in, loop over characters | ✅ | Jan 24, 2027 | |
 | 17 | 6.3 Strings | Slicing: start, end, step, reverse | ✅ | Jan 31, 2027 | |
 | 18 | 6.4 Strings | String operations, Turtle write, unit checkpoint | ✅ | Feb 7, 2027 | |
-| 19 | 7.1 Algorithmic Problems | Counter pattern, two counters | 🔶 | Feb 14, 2027 | |
-| 20 | 7.2 Algorithmic Problems | Accumulator, average, minimum and maximum | 🔶 | Feb 21, 2027 | |
-| 21 | 7.3 Algorithmic Problems | Random numbers, simulation, Turtle random walk, checkpoint | 🔶 | Feb 28, 2027 | |
+| 19 | 7.1 Algorithmic Problems | Counter pattern, two counters | ✅ | Feb 14, 2027 | |
+| 20 | 7.2 Algorithmic Problems | Accumulator, average, minimum and maximum | ✅ | Feb 21, 2027 | |
+| 21 | 7.3 Algorithmic Problems | Random numbers, simulation, Turtle random walk, checkpoint | ✅ | Feb 28, 2027 | |
 | 22 | 8.1 Functions with Parameters | Why functions; definition vs call; main() | 🔶 | Mar 7, 2027 | |
 | 23 | 8.2 Functions with Parameters | Functions without parameters; input inside; Turtle house | 🔶 | Mar 14, 2027 | |
 | 24 | 8.3 Functions with Parameters | Parameters and arguments; Turtle sizes | 🔶 | Mar 21, 2027 | |

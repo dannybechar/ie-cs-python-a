@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: How Many Times? — the Counter Pattern (Mission 19)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (30 min guided practice, then 60 min lab)  
 **Minutes (theory / practice):** 0 / 90  

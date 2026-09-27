@@ -3,7 +3,7 @@
 **6h = 1 Theory + 5 Labs = 3 double meetings**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 7. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** 🔶 complete — all 3 meetings built, awaiting approval. Inspired by the teacher's raw decks (`unit7_meeting1–3`).
+**Build status:** ✅ complete — all 3 meetings built and approved by the teacher. Inspired by the teacher's raw decks (`unit7_meeting1–3`).
 
 ## Official topics and hours
 
@@ -12,17 +12,17 @@ Status: ✅ approved · 🔶 built, awaiting approval · ⏳ planned, not built 
 
 | Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
 |---|---:|---:|---:|---|---|
-| מונה — counter | 0 | 2 | 90 | 7.1 (90 P) | 🔶 |
-| צובר — accumulator | 0 | 1 | 45 | 7.2 (45 P) | 🔶 |
-| מספר אקראי — random number | 1 | 2 | 135 | 7.3 (45 T + 45 P); 7.2 (45 P, see below) | ⚠️ |
+| מונה — counter | 0 | 2 | 90 | 7.1 (90 P) | ✅ |
+| צובר — accumulator | 0 | 1 | 45 | 7.2 (45 P) | ✅ |
+| מספר אקראי — random number | 1 | 2 | 135 | 7.3 (45 T + 45 P); 7.2 (45 P, see below) | ✅ |
 | **Total** | **1** | **5** | **270** | | |
 
 Also listed for this chapter in the program overview (p.3–5) and goals (p.15):
 
-- **Minimum / maximum** — official goals 3 and 5, but the hours table has no line for them → 7.2 (45 P) 🔶
-- Algorithmic problems using Turtle → 7.3 (random walk with a counter and an accumulator) 🔶
+- **Minimum / maximum** — official goals 3 and 5, but the hours table has no line for them → 7.2 (45 P) ✅
+- Algorithmic problems using Turtle → 7.3 (random walk with a counter and an accumulator) ✅
 
-⚠️ **Hours decision for the teacher:** minimum and maximum need their own 45 minutes, and the hours table gives them none. As built, 7.2 spends 45 practice minutes on them, so random numbers get 45 theory + 45 practice instead of 45 + 90. The unit total (270) and its theory/practice split still match. The alternative is to cut min/max to a short part of 7.2 and move random numbers earlier.
+**Hours decision (approved by the teacher):** 7.2 spends 45 practice minutes on minimum and maximum, so random numbers get 45 theory + 45 practice instead of 45 + 90. The unit total (270) and its theory/practice split still match.
 
 ## Unit 7.1 — Lab + Lab: the counter
 - start at 0 before the loop, add 1 inside an `if`, print after the loop.

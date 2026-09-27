@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Roll the Dice — Random Numbers, Simulations and the Unit Checkpoint (Mission 21)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab with the unit checkpoint  
 **Minutes (theory / practice):** 45 / 45  

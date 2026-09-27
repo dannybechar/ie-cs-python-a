@@ -44,7 +44,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Slicing_Starter.py`](Slicing_Starter.py) | Task 1: `word[1:4]` misses index 4 |
 | Teacher | [`Slicing_Reference.py`](Slicing_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (20 slides, NotebookLM, patched) |
 
 ## Unit 6.4 — Strings
 

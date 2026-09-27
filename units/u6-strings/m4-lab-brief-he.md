@@ -38,7 +38,8 @@ turtle.write("Hello", align="center", font=("Arial", 24, "normal"))
 פתחו את `Methods_Starter.py`, הריצו והקלידו `Yes`:
 
 ```python
-# Warm-up: the user types Yes, but the program says Rejected. Why?
+# Warm-up: the user types Yes,
+# but the program says Rejected. Why?
 answer = input("Answer: ")
 if answer == "yes":
     print("Accepted")

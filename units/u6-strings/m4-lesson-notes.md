@@ -84,7 +84,8 @@ Starter: [`Methods_Starter.py`](Methods_Starter.py). Reference: [`Methods_Refere
 ## 30–34 — Warm-up: why Rejected?
 
 ```python
-# Warm-up: the user types Yes, but the program says Rejected. Why?
+# Warm-up: the user types Yes,
+# but the program says Rejected. Why?
 answer = input("Answer: ")
 if answer == "yes":
     print("Accepted")

@@ -58,4 +58,4 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m4-lab-brief-he.md`](m4-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Methods_Starter.py`](Methods_Starter.py) | Warm-up: `Yes` is rejected (capitals) |
 | Teacher | [`Methods_Reference.py`](Methods_Reference.py) | Solutions and checkpoint A, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m4-slides-he.pdf`](m4-slides-he.pdf) | Hebrew slide deck (20 slides, NotebookLM, patched) |

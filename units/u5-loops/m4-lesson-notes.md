@@ -1,4 +1,4 @@
-# Unit 5.4 — Repetition / Loops
+# Unit 5.4 — Repetition and Loops
 
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Loops Inside Loops — Nesting, Rolling Execution and the Unit Checkpoint (Mission 14)

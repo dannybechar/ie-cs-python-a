@@ -1,4 +1,4 @@
-# Unit 5.1 — Repetition / Loops
+# Unit 5.1 — Repetition and Loops
 
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: The Rover Repeats — Why Loops, `for` and `range` (Mission 11)

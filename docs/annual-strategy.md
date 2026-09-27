@@ -37,7 +37,7 @@ see [`../course-map.md`](../course-map.md) for the full list.
 | 2 | Turtle & Graphics | 6 | 1 / 5 | 3 | Sequential code, graphics, movement and changing attributes |
 | 3 | Variables, Input/Output & Arithmetic | 4 | 1 / 3 | 2 | Variables, types, input/output and calculations |
 | 4 | Conditional Execution | 6 | 2 / 4 | 3 | Boolean thinking and conditional execution |
-| 5 | Repetition / Loops | 8 | 2 / 6 | 4 | for/while, stop conditions, tracing and repeated execution |
+| 5 | Repetition and Loops | 8 | 2 / 6 | 4 | for/while, stop conditions, tracing and repeated execution |
 | 6 | Strings | 8 | 2 / 6 | 4 | Indexing, slicing, string operations and text processing |
 | 7 | Algorithmic Problems | 6 | 1 / 5 | 3 | Counter, accumulator, min/max, random and solution patterns |
 | 8 | Functions with Parameters | 8 | 2 / 6 | 4 | Modularity, parameters, scope and reuse |

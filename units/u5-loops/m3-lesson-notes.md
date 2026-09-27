@@ -1,4 +1,4 @@
-# Unit 5.3 — Repetition / Loops
+# Unit 5.3 — Repetition and Loops
 
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Until the Job Is Done — the `while` Loop (Mission 13)

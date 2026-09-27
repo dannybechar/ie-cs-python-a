@@ -1,4 +1,4 @@
-# Unit 5.2 — Repetition / Loops
+# Unit 5.2 — Repetition and Loops
 
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: The Rover Draws in Steps — `range(start, stop, step)` and Turtle (Mission 12)

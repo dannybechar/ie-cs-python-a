@@ -1,10 +1,10 @@
-# Unit 5 — Repetition / Loops
+# Unit 5 — Repetition and Loops
 
 Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 8 academic hours = 4 meetings = 360 minutes (90 theory / 270 practice).
 
-## Unit 5.1 — Repetition / Loops
+## Unit 5.1 — Repetition and Loops
 
 **Topic:** The Rover Repeats — why loops, `for` and `range` (Mission 11)
 
@@ -18,7 +18,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`Loops_Reference.py`](Loops_Reference.py) | Solutions, one function per task |
 | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (20 slides, NotebookLM, patched) |
 
-## Unit 5.2 — Repetition / Loops
+## Unit 5.2 — Repetition and Loops
 
 **Topic:** The Rover Draws in Steps — `range(start, stop, step)` and Turtle (Mission 12)
 
@@ -32,7 +32,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`Ranges_Reference.py`](Ranges_Reference.py) | Solutions, one function per task |
 | Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
 
-## Unit 5.3 — Repetition / Loops
+## Unit 5.3 — Repetition and Loops
 
 **Topic:** Until the Job Is Done — the `while` loop (Mission 13)
 
@@ -46,7 +46,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`While_Reference.py`](While_Reference.py) | Solutions, one function per task |
 | Teacher | slides | Pending (NotebookLM) |
 
-## Unit 5.4 — Repetition / Loops
+## Unit 5.4 — Repetition and Loops
 
 **Topic:** Loops Inside Loops — nesting, rolling execution and the unit checkpoint (Mission 14)
 

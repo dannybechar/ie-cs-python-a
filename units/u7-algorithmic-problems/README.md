@@ -44,4 +44,4 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Random_Starter.py`](Random_Starter.py) | Bonus: `randint` called twice |
 | Teacher | [`Random_Reference.py`](Random_Reference.py) | Solutions and checkpoint A, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |

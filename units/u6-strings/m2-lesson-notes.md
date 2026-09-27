@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Building Messages — `+`, `*`, `in` and a Loop over Characters (Mission 16)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (31 min guided practice, then 59 min lab)  
 **Minutes (theory / practice):** 0 / 90  

@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: The Rover's Message — Strings, `len` and Indexes (Mission 15)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45  

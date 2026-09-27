@@ -17,7 +17,7 @@ what's built vs. still missing within that unit.
 - [Unit 3 — Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic) — complete (2/2 meetings)
 - [Unit 4 — Conditional Execution](units/u4-conditional-execution) — complete (3/3 meetings)
 - [Unit 5 — Repetition and Loops](units/u5-loops) — complete (4/4 meetings)
-- [Unit 6 — Strings](units/u6-strings) — complete (4/4 meetings), awaiting approval
+- [Unit 6 — Strings](units/u6-strings) — complete (4/4 meetings)
 - [Unit 7 — Algorithmic Problems](units/u7-algorithmic-problems) — complete (3/3 meetings), awaiting approval
 - [Unit 8 — Functions with Parameters](units/u8-functions-parameters) — complete (4/4 meetings), awaiting approval
 - Unit 9 — not yet started

@@ -21,8 +21,8 @@ Status: ✅ built and approved by the teacher · 🔶 built, awaiting teacher ap
 | 6 | [Strings](units/u6-strings) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | ✅ 4/4 |
 | 7 | [Algorithmic Problems](units/u7-algorithmic-problems) | 6 (1 / 5) | 270 (45 / 225) | 3 | 270 (45 / 225) | 0 | 🔶 3/3 (awaiting approval) |
 | 8 | [Functions with Parameters](units/u8-functions-parameters) | 8 (2 / 6) | 360 (90 / 270) | 4 | 360 (90 / 270) | 0 | 🔶 4/4 (awaiting approval) |
-| 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 (4 / 8) | 540 (180 / 360) | 6 | 0 | 540 | ❌ 0/6 |
-|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **2,160 (540 / 1,620)** | **540** | **24/30 meetings built** |
+| 9 | [Event-Driven Programming](units/u9-event-driven-programming) | 12 (4 / 8) | 540 (180 / 360) | 6 | 540 (180 / 360) | 0 | 🔶 6/6 (awaiting approval) |
+|  | **TOTAL (units 1–9)** | **60 (16 / 44)** | **2,700 (720 / 1,980)** | **30** | **2,700 (720 / 1,980)** | **0** | **30/30 meetings built** |
 
 Unit 0 is a school addition outside the official 60 hours: one lab meeting
 to install and check the environment before Unit 1 (it covers Chapter 1
@@ -88,12 +88,12 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 23 | 8.2 Functions with Parameters | Functions without parameters; input inside; Turtle house | 🔶 | Mar 14, 2027 | |
 | 24 | 8.3 Functions with Parameters | Parameters and arguments; Turtle sizes | 🔶 | Mar 21, 2027 | |
 | 25 | 8.4 Functions with Parameters | Scope, global, Turtle spiral, checkpoint | 🔶 | Mar 28, 2027 | |
-| 26 | 9.1 Event-Driven Programming | Why event-driven; first interactive program | ⏳ | Apr 4, 2027 | |
-| 27 | 9.2 Event-Driven Programming | Mouse events (onclick) | ⏳ | May 2, 2027 ⚠️ May | |
-| 28 | 9.3 Event-Driven Programming | Keyboard events (onkey, listen) | ⏳ | May 9, 2027 ⚠️ May | |
-| 29 | 9.4 Event-Driven Programming | Animation with a timer | ⏳ | May 16, 2027 ⚠️ May | |
-| 30 | 9.5 Event-Driven Programming | Build an interactive game | ⏳ | May 23, 2027 ⚠️ May | |
-| 31 | 9.6 Event-Driven Programming | Final project and assessment | ⏳ | May 30, 2027 ⚠️ May | |
+| 26 | 9.1 Event-Driven Programming | Why event-driven; event, listener, response; first click | 🔶 | Apr 4, 2027 | |
+| 27 | 9.2 Event-Driven Programming | Clicking the rover: onclick, (x, y), state | 🔶 | May 2, 2027 ⚠️ May | |
+| 28 | 9.3 Event-Driven Programming | Clicking the screen: onscreenclick, goto, stamps | 🔶 | May 9, 2027 ⚠️ May | |
+| 29 | 9.4 Event-Driven Programming | Keyboard: listen, onkey, borders | 🔶 | May 16, 2027 ⚠️ May | |
+| 30 | 9.5 Event-Driven Programming | Animation with a timer: ontimer, bounce, stop/start | 🔶 | May 23, 2027 ⚠️ May | |
+| 31 | 9.6 Event-Driven Programming | Final game project and checkpoint | 🔶 | May 30, 2027 ⚠️ May | |
 
 ## Meeting log
 
@@ -126,6 +126,12 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 8 | 8.2 Functions with Parameters | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u8-functions-parameters/m2-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 17 slides) |
 | 8 | 8.3 Functions with Parameters | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u8-functions-parameters/m3-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 19 slides) |
 | 8 | 8.4 Functions with Parameters | 90 | 0 / 90 | Lab + Lab | [`m4-lesson-notes.md`](units/u8-functions-parameters/m4-lesson-notes.md) | Unit checkpoint; slides pending (NotebookLM folder ready, 18 slides) |
+| 9 | 9.1 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u9-event-driven-programming/m1-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 18 slides) |
+| 9 | 9.2 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m2-lesson-notes.md`](units/u9-event-driven-programming/m2-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 18 slides) |
+| 9 | 9.3 Event-Driven Programming | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u9-event-driven-programming/m3-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 17 slides) |
+| 9 | 9.4 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m4-lesson-notes.md`](units/u9-event-driven-programming/m4-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 19 slides) |
+| 9 | 9.5 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m5-lesson-notes.md`](units/u9-event-driven-programming/m5-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 18 slides) |
+| 9 | 9.6 Event-Driven Programming | 90 | 0 / 90 | Lab + Lab | [`m6-lesson-notes.md`](units/u9-event-driven-programming/m6-lesson-notes.md) | Final checkpoint (the game); slides pending (NotebookLM folder ready, 15 slides) |
 
 ## Keeping this up to date
 

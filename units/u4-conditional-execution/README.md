@@ -45,4 +45,4 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Shapes_Starter.py`](Shapes_Starter.py) | Draws both shapes; students add the conditions |
 | Teacher | [`Conditions_Reference.py`](Conditions_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (16 slides, NotebookLM, patched) |

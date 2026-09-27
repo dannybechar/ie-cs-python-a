@@ -30,7 +30,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Accumulators_Starter.py`](Accumulators_Starter.py) | Warm-up: `total = 0` inside the loop |
 | Teacher | [`Accumulators_Reference.py`](Accumulators_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
 
 ## Unit 7.3 — Algorithmic Problems
 

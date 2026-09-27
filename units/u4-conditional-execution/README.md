@@ -16,7 +16,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Booleans_Starter.py`](Booleans_Starter.py) | Trace warm-up |
 | Teacher | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (23 slides, NotebookLM, patched) |
 
 ## Unit 4.2 — Conditional Execution
 

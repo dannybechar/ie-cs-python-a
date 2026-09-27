@@ -111,7 +111,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 2 | 2.3 Turtle & Graphics | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
 | 3 | 3.1 Variables, Input/Output & Arithmetic | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u3-variables-io-arithmetic/m1-lesson-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides: `m1-slides-he.pdf` (22 slides) |
 | 3 | 3.2 Variables, Input/Output & Arithmetic | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min); lab brief converted to Markdown |
-| 4 | 4.1 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u4-conditional-execution/m1-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
+| 4 | 4.1 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u4-conditional-execution/m1-lesson-notes.md) | Inspired by the teacher's raw deck; slides: `m1-slides-he.pdf` (23 slides, 90 min; NotebookLM, patched) |
 | 4 | 4.2 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m2-lesson-notes.md`](units/u4-conditional-execution/m2-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
 
 ## Keeping this up to date

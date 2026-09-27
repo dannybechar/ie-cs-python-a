@@ -22,19 +22,19 @@ Also listed for this chapter in the program overview (p.3–5):
 - ⚠️ **Algorithmic problems using Turtle** → not explicit in the plan; add to m2 or m3
 - Note: the plan also teaches a **minimum / maximum** pattern, which is not in the official topic list. It is a school addition and must fit inside this unit's 270 minutes.
 
-## Meeting 1 — Knowledge + Lab
+## Unit 7.1 — Knowledge + Lab
 - counter.
 - accumulator.
 - minimum / maximum pattern.
 - random number.
 - identify the pattern before writing code.
 
-## Meeting 2 — Lab + Lab
+## Unit 7.2 — Lab + Lab
 - problems combining loops + conditions + counters/accumulators.
 - tracing and pattern recognition.
 - random-driven small programs.
 
-## Meeting 3 — Lab + Lab
+## Unit 7.3 — Lab + Lab
 - high-level algorithmic challenge.
 - explain the chosen pattern.
 - practical + tracing assessment.

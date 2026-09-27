@@ -1,8 +1,7 @@
-# G7 Unit 3 Meeting 1 Lesson Strategy v1
+# Unit 3.1 — Variables, Input/Output & Arithmetic
 
-## Grade 7 / Python A
-### Unit 3 — Variables, Input/Output & Arithmetic
-### Meeting 1 — The Rover's Memory (Mission 5)
+## Grade 7 / Python A · Lesson Strategy v1
+### Topic: The Rover's Memory (Mission 5)
 
 **Status:** Draft, awaiting teacher approval  
 **Duration:** 90 minutes  
@@ -17,8 +16,8 @@
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| **M1 (this)** | **value → variable → type → input → output** | 45 / 45 |
-| M2 (built) | input → convert → calculate → assign → output | 0 / 90 |
+| **3.1 (this)** | **value → variable → type → input → output** | 45 / 45 |
+| 3.2 (built) | input → convert → calculate → assign → output | 0 / 90 |
 
 M2 opens by "reactivating the variable model without reteaching Meeting 1". It assumes students already know:
 assignment and reassignment (`score = 7`, then `score = 9`), friendly output (`print("Score:", score)`), that `input()` returns text and must be converted with `int(...)` or `float(...)`, and trace tables. M1 teaches exactly these, **without arithmetic** — calculations start in M2.

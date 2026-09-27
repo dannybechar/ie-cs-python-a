@@ -4,7 +4,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 4 academic hours = 2 meetings = 180 minutes (45 theory / 135 practice).
 
-## Meeting 1 — The Rover's Memory
+## Unit 3.1 — Variables, Input/Output & Arithmetic
+
+**Topic:** The Rover's Memory
 
 90 minutes: 45 knowledge + 45 lab · **value → variable → type → input → output** (no arithmetic yet)
 
@@ -16,7 +18,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`Variables_Reference.py`](Variables_Reference.py) | Solutions, one function per task |
 | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (22 slides, made in NotebookLM from 15; 7 question/answer slides added, footers added) |
 
-## Meeting 2 — From Input to Result
+## Unit 3.2 — Variables, Input/Output & Arithmetic
+
+**Topic:** From Input to Result
 
 90 minutes: Lab + Lab · **input → convert → calculate → assign → output**
 

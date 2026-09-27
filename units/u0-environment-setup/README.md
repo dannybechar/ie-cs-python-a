@@ -3,7 +3,9 @@
 School addition: the first lab meeting of the year, before Unit 1.
 Unit scope and Ministry source: [`unit-strategy.md`](unit-strategy.md)
 
-## Meeting 1 — Install, Check, Save
+## Unit 0.1 — Environment Setup
+
+**Topic:** Install, Check, Save
 
 90 minutes, Lab + Lab
 

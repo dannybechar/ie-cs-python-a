@@ -3,7 +3,7 @@
 **2h = 1 Theory + 1 Lab = one double meeting**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 1. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** ✅ complete — [Meeting 1 — first program](README.md)
+**Build status:** ✅ complete — [Unit 1.1 — Introduction to Python](README.md)
 
 ## Official topics and hours
 

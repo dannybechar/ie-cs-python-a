@@ -4,7 +4,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 6 academic hours = 3 meetings = 270 minutes (45 theory / 225 practice).
 
-## Meeting 1 — First Moves
+## Unit 2.1 — Turtle & Graphics
+
+**Topic:** First Moves
 
 90 minutes: 45 knowledge + 45 lab · **Move → Turn → Predict → Build**
 
@@ -16,7 +18,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`TurtleFirstMoves_Reference.py`](TurtleFirstMoves_Reference.py) | Solutions, one function per task |
 | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (23 slides, rover theme, made in NotebookLM; slides 8, 12, 14, 17, 19 corrected and exit check 22–23 added) |
 
-## Meeting 2 — Pen, Appearance and Stamps
+## Unit 2.2 — Turtle & Graphics
+
+**Topic:** Pen, Appearance and Stamps
 
 90 minutes: Lab + Lab · **movement → pen state → appearance → marker**
 
@@ -28,7 +32,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`TurtlePenStamp_Reference.py`](TurtlePenStamp_Reference.py) | Solutions, one function per task |
 | Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slides (15 slides, made in NotebookLM; slides 2, 6, 10, 15 corrected) |
 
-## Meeting 3 — Geometry Challenge
+## Unit 2.3 — Turtle & Graphics
+
+**Topic:** Geometry Challenge
 
 90 minutes: Lab + Lab · integration and rectangle micro-assessment
 

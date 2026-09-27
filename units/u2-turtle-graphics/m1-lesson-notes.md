@@ -1,8 +1,7 @@
-# G7 Unit 2 Meeting 1 Lesson Strategy v2
+# Unit 2.1 — Turtle & Graphics
 
-## Grade 7 / Python A
-### Unit 2 — Turtle & Graphics
-### Meeting 1 — First Moves
+## Grade 7 / Python A · Lesson Strategy v2
+### Topic: First Moves
 
 **Status:** Revised after external review (v2)  
 **Duration:** 90 minutes  
@@ -19,9 +18,9 @@ Unit 2 has 6 academic hours (1 theory, 5 practice) across 3 double meetings:
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| **M1 (this)** | **Move → Turn → Predict → Build** | 45 / 45 |
-| M2 | movement → pen state → appearance → marker | 0 / 90 |
-| M3 (built) | Read → Predict → Debug → Modify → Build → Explain; rectangle micro-assessment | 0 / 90 |
+| **2.1 (this)** | **Move → Turn → Predict → Build** | 45 / 45 |
+| 2.2 | movement → pen state → appearance → marker | 0 / 90 |
+| 2.3 (built) | Read → Predict → Debug → Modify → Build → Explain; rectangle micro-assessment | 0 / 90 |
 
 M3 assumes students already know: `import turtle`, `turtle.Screen()`, `turtle.shape("turtle")`, `forward`, `left`, `right`, `penup`, `pendown`, `pencolor`, `pensize`, `stamp`, `hideturtle`, `showturtle`, `turtle.done()`. M1 teaches the first half of that list; M2 teaches the rest.
 

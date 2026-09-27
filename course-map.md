@@ -66,37 +66,37 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 
 | # | Meeting | Content | Built | Target week (starts Sunday) | Taught on |
 |---:|---|---|---|---|---|
-| 1 | U0 m1 | Install, check, save | ✅ | Oct 4, 2026 | |
-| 2 | U1 m1 | First program: print, comments, first function | ✅ | Oct 11, 2026 | |
-| 3 | U2 m1 | Turtle library, work surface, movement | ✅ | Oct 18, 2026 | |
-| 4 | U2 m2 | Pen and shape attributes | ✅ | Oct 25, 2026 | |
-| 5 | U2 m3 | Geometry challenge | ✅ | Nov 1, 2026 | |
-| 6 | U3 m1 | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | |
-| 7 | U3 m2 | Input → calculation → output | ✅ | Nov 15, 2026 | |
-| 8 | U4 m1 | Boolean expressions, truth tables, and/or | 🔶 | Nov 22, 2026 | |
-| 9 | U4 m2 | if and if/else, input filter | 🔶 | Nov 29, 2026 | |
-| 10 | U4 m3 | Compound conditions, nesting, Turtle | ⏳ | Dec 13, 2026 | |
-| 11 | U5 m1 | Why loops; for and range | ⏳ | Dec 20, 2026 | |
-| 12 | U5 m2 | while, stop condition | ⏳ | Dec 27, 2026 | |
-| 13 | U5 m3 | Loops with Turtle | ⏳ | Jan 3, 2027 | |
-| 14 | U5 m4 | Tracing and loop challenge | ⏳ | Jan 10, 2027 | |
-| 15 | U6 m1 | str, indexing, len, + * in | ⏳ | Jan 17, 2027 | |
-| 16 | U6 m2 | Slicing and string methods | ⏳ | Jan 24, 2027 | |
-| 17 | U6 m3 | String manipulation problems | ⏳ | Jan 31, 2027 | |
-| 18 | U6 m4 | Text-processing challenge | ⏳ | Feb 7, 2027 | |
-| 19 | U7 m1 | Counter, accumulator, random | ⏳ | Feb 14, 2027 | |
-| 20 | U7 m2 | Combined pattern problems | ⏳ | Feb 21, 2027 | |
-| 21 | U7 m3 | Algorithmic challenge | ⏳ | Feb 28, 2027 | |
-| 22 | U8 m1 | Why functions; parameters | ⏳ | Mar 7, 2027 | |
-| 23 | U8 m2 | Scope, local vs global | ⏳ | Mar 14, 2027 | |
-| 24 | U8 m3 | Parameterized Turtle functions | ⏳ | Mar 21, 2027 | |
-| 25 | U8 m4 | Integrated modular task | ⏳ | Mar 28, 2027 | |
-| 26 | U9 m1 | Why event-driven; first interactive program | ⏳ | Apr 4, 2027 | |
-| 27 | U9 m2 | Mouse events (onclick) | ⏳ | May 2, 2027 ⚠️ May | |
-| 28 | U9 m3 | Keyboard events (onkey, listen) | ⏳ | May 9, 2027 ⚠️ May | |
-| 29 | U9 m4 | Animation with a timer | ⏳ | May 16, 2027 ⚠️ May | |
-| 30 | U9 m5 | Build an interactive game | ⏳ | May 23, 2027 ⚠️ May | |
-| 31 | U9 m6 | Final project and assessment | ⏳ | May 30, 2027 ⚠️ May | |
+| 1 | 0.1 Environment Setup | Install, check, save | ✅ | Oct 4, 2026 | |
+| 2 | 1.1 Introduction to Python | First program: print, comments, first function | ✅ | Oct 11, 2026 | |
+| 3 | 2.1 Turtle & Graphics | Turtle library, work surface, movement | ✅ | Oct 18, 2026 | |
+| 4 | 2.2 Turtle & Graphics | Pen and shape attributes | ✅ | Oct 25, 2026 | |
+| 5 | 2.3 Turtle & Graphics | Geometry challenge | ✅ | Nov 1, 2026 | |
+| 6 | 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | |
+| 7 | 3.2 Variables, Input/Output & Arithmetic | Input → calculation → output | ✅ | Nov 15, 2026 | |
+| 8 | 4.1 Conditional Execution | Boolean expressions, truth tables, and/or | 🔶 | Nov 22, 2026 | |
+| 9 | 4.2 Conditional Execution | if and if/else, input filter | 🔶 | Nov 29, 2026 | |
+| 10 | 4.3 Conditional Execution | Compound conditions, nesting, Turtle | ⏳ | Dec 13, 2026 | |
+| 11 | 5.1 Repetition / Loops | Why loops; for and range | ⏳ | Dec 20, 2026 | |
+| 12 | 5.2 Repetition / Loops | while, stop condition | ⏳ | Dec 27, 2026 | |
+| 13 | 5.3 Repetition / Loops | Loops with Turtle | ⏳ | Jan 3, 2027 | |
+| 14 | 5.4 Repetition / Loops | Tracing and loop challenge | ⏳ | Jan 10, 2027 | |
+| 15 | 6.1 Strings | str, indexing, len, + * in | ⏳ | Jan 17, 2027 | |
+| 16 | 6.2 Strings | Slicing and string methods | ⏳ | Jan 24, 2027 | |
+| 17 | 6.3 Strings | String manipulation problems | ⏳ | Jan 31, 2027 | |
+| 18 | 6.4 Strings | Text-processing challenge | ⏳ | Feb 7, 2027 | |
+| 19 | 7.1 Algorithmic Problems | Counter, accumulator, random | ⏳ | Feb 14, 2027 | |
+| 20 | 7.2 Algorithmic Problems | Combined pattern problems | ⏳ | Feb 21, 2027 | |
+| 21 | 7.3 Algorithmic Problems | Algorithmic challenge | ⏳ | Feb 28, 2027 | |
+| 22 | 8.1 Functions with Parameters | Why functions; parameters | ⏳ | Mar 7, 2027 | |
+| 23 | 8.2 Functions with Parameters | Scope, local vs global | ⏳ | Mar 14, 2027 | |
+| 24 | 8.3 Functions with Parameters | Parameterized Turtle functions | ⏳ | Mar 21, 2027 | |
+| 25 | 8.4 Functions with Parameters | Integrated modular task | ⏳ | Mar 28, 2027 | |
+| 26 | 9.1 Event-Driven Programming | Why event-driven; first interactive program | ⏳ | Apr 4, 2027 | |
+| 27 | 9.2 Event-Driven Programming | Mouse events (onclick) | ⏳ | May 2, 2027 ⚠️ May | |
+| 28 | 9.3 Event-Driven Programming | Keyboard events (onkey, listen) | ⏳ | May 9, 2027 ⚠️ May | |
+| 29 | 9.4 Event-Driven Programming | Animation with a timer | ⏳ | May 16, 2027 ⚠️ May | |
+| 30 | 9.5 Event-Driven Programming | Build an interactive game | ⏳ | May 23, 2027 ⚠️ May | |
+| 31 | 9.6 Event-Driven Programming | Final project and assessment | ⏳ | May 30, 2027 ⚠️ May | |
 
 ## Meeting log
 
@@ -104,15 +104,15 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 
 | Unit | Meeting | Minutes | Theory / Practice | Structure | Source | Notes |
 |---|---|---:|---:|---|---|---|
-| 0 | m1 Install, check, save | 90 | 0 / 90 | Lab + Lab | [`m1-lesson-notes.md`](units/u0-environment-setup/m1-lesson-notes.md) | Outside the 60 h budget |
-| 1 | m1 First program | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u1-introduction-python/m1-lesson-notes.md) | Slides: NotebookLM deck `m1-slides-he.pdf` (20 slides, 85 min + 5 buffer); notes, brief and code rewritten to match |
-| 2 | m1 First moves | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u2-turtle-graphics/m1-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m1-slides-he.pdf` (23 slides, 90 min) |
-| 2 | m2 Pen, appearance and stamps | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u2-turtle-graphics/m2-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m2-slides-he.pdf` (15 slides, 90 min) |
-| 2 | m3 Geometry challenge | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
-| 3 | m1 The rover's memory | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u3-variables-io-arithmetic/m1-lesson-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides: `m1-slides-he.pdf` (22 slides) |
-| 3 | m2 Input to result | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min); lab brief converted to Markdown |
-| 4 | m1 The rover's sensors | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u4-conditional-execution/m1-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
-| 4 | m2 The rover decides | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m2-lesson-notes.md`](units/u4-conditional-execution/m2-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
+| 0 | 0.1 Environment Setup | 90 | 0 / 90 | Lab + Lab | [`m1-lesson-notes.md`](units/u0-environment-setup/m1-lesson-notes.md) | Outside the 60 h budget |
+| 1 | 1.1 Introduction to Python | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u1-introduction-python/m1-lesson-notes.md) | Slides: NotebookLM deck `m1-slides-he.pdf` (20 slides, 85 min + 5 buffer); notes, brief and code rewritten to match |
+| 2 | 2.1 Turtle & Graphics | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u2-turtle-graphics/m1-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m1-slides-he.pdf` (23 slides, 90 min) |
+| 2 | 2.2 Turtle & Graphics | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u2-turtle-graphics/m2-lesson-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m2-slides-he.pdf` (15 slides, 90 min) |
+| 2 | 2.3 Turtle & Graphics | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u2-turtle-graphics/m3-lesson-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
+| 3 | 3.1 Variables, Input/Output & Arithmetic | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u3-variables-io-arithmetic/m1-lesson-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides: `m1-slides-he.pdf` (22 slides) |
+| 3 | 3.2 Variables, Input/Output & Arithmetic | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u3-variables-io-arithmetic/m2-lesson-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min); lab brief converted to Markdown |
+| 4 | 4.1 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u4-conditional-execution/m1-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
+| 4 | 4.2 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m2-lesson-notes.md`](units/u4-conditional-execution/m2-lesson-notes.md) | Inspired by the teacher's raw deck; slides pending (NotebookLM folder ready) |
 
 ## Keeping this up to date
 

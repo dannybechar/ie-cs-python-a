@@ -2,7 +2,9 @@
 
 Unit scope and meeting breakdown: [`unit-strategy.md`](unit-strategy.md)
 
-## Meeting 1 — My First Program (Missions 1+2)
+## Unit 1.1 — Introduction to Python
+
+**Topic:** My First Program (Missions 1+2)
 
 90 minutes (45 knowledge + guided practice, 45 lab)
 

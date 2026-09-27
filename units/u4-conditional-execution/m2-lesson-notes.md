@@ -1,8 +1,7 @@
-# G7 Unit 4 Meeting 2 Lesson Strategy v1
+# Unit 4.2 — Conditional Execution
 
-## Grade 7 / Python A
-### Unit 4 — Conditional Execution
-### Meeting 2 — The Rover Decides: `if` and `if/else` (Mission 9)
+## Grade 7 / Python A · Lesson Strategy v1
+### Topic: The Rover Decides: `if` and `if/else` (Mission 9)
 
 **Status:** Draft, awaiting teacher approval  
 **Duration:** 90 minutes  
@@ -18,9 +17,9 @@
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| M1 | comparisons → True/False → and/or → truth tables → order | 45 / 45 |
-| **M2 (this)** | **`if` → false skips → indentation → `if/else` → input filter → errors** | 45 / 45 |
-| M3 | compound conditions in `if`, one-level nesting, Turtle, checkpoint | 0 / 90 |
+| 4.1 | comparisons → True/False → and/or → truth tables → order | 45 / 45 |
+| **4.2 (this)** | **`if` → false skips → indentation → `if/else` → input filter → errors** | 45 / 45 |
+| 4.3 | compound conditions in `if`, one-level nesting, Turtle, checkpoint | 0 / 90 |
 
 M1 built the questions (`True`/`False`). M2 lets the answer **choose what runs**. `and` appears only inside the range check of the input filter, exactly as in M1 (`x >= 1 and x <= 10`); compound conditions are the focus of M3.
 

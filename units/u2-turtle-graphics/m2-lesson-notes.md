@@ -1,8 +1,7 @@
-# G7 Unit 2 Meeting 2 Lesson Strategy v2
+# Unit 2.2 — Turtle & Graphics
 
-## Grade 7 / Python A
-### Unit 2 — Turtle & Graphics
-### Meeting 2 — Pen, Appearance and Stamps
+## Grade 7 / Python A · Lesson Strategy v2
+### Topic: Pen, Appearance and Stamps
 
 **Status:** Revised after external review (v2)  
 **Duration:** 90 minutes  
@@ -17,9 +16,9 @@
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| M1 | Move → Turn → Predict → Build | 45 / 45 |
-| **M2 (this)** | **movement → pen state → appearance → marker** | 0 / 90 |
-| M3 (built) | Read → Predict → Debug → Modify → Build → Explain; rectangle micro-assessment | 0 / 90 |
+| 2.1 | Move → Turn → Predict → Build | 45 / 45 |
+| **2.2 (this)** | **movement → pen state → appearance → marker** | 0 / 90 |
+| 2.3 (built) | Read → Predict → Debug → Modify → Build → Explain; rectangle micro-assessment | 0 / 90 |
 
 M2 adds the rest of the commands M3 expects: `penup`, `pendown`, `pencolor`, `pensize`, `stamp`, `hideturtle`, `showturtle`, plus `shape` with other shapes. M3's integrated path (stamp → line → pen up → move → pen down → line) must feel familiar after today.
 

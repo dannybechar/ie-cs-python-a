@@ -18,19 +18,19 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 | שינוי מאפייני דמות — changing shape attributes | 0 | 1 | 45 | m2, practiced in m3 | ✅ |
 | **Total** | **1** | **5** | **270** | | |
 
-## Meeting 1 — Knowledge + Lab
+## Unit 2.1 — Knowledge + Lab
 - import / basic Turtle environment.
 - `Screen` and turtle.
 - movement, direction, angle, distance.
 - first geometric output.
 
-## Meeting 2 — Lab + Lab
+## Unit 2.2 — Lab + Lab
 - pen / turtle attributes.
 - visibility, stamp, color, size where relevant.
 - build geometric figures from sequential instructions.
 - emphasize documentation and readable code.
 
-## Meeting 3 — Lab + Lab
+## Unit 2.3 — Lab + Lab
 - integrated geometric challenge.
 - changing parameters and predicting the effect.
 - practical micro-assessment: create a required shape from specifications.

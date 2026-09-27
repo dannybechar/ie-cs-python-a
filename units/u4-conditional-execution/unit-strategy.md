@@ -21,21 +21,21 @@ Also listed for this chapter in the program overview (p.3–5):
 - Nested conditionals (one level) → m3 ⏳
 - Conditions using Turtle → m3 ⏳
 
-## Meeting 1 — Knowledge + Lab: the rover's sensors
+## Unit 4.1 — Knowledge + Lab: the rover's sensors
 - comparison operators `== != > < >= <=`, `=` vs `==`.
 - results are `bool`; storing them in variables; string equality.
 - `and`, `or` and their truth tables; a condition from a truth table.
 - order: arithmetic → comparison → `and` → `or`.
 - lab: trace, sensor check, fix `input` vs number, truth tables both ways.
 
-## Meeting 2 — Knowledge + Lab: if and if/else
+## Unit 4.2 — Knowledge + Lab: if and if/else
 - `if`: condition, colon, indented body; a false condition skips the body.
 - `if/else`: exactly one branch runs.
 - even/odd with `%`, pass/fail, the `>=` boundary.
 - simple input filter: valid / invalid (no re-asking).
 - common errors: `=` in a condition, missing colon, missing indentation.
 
-## Meeting 3 — Lab + Lab: compound conditions, nesting, Turtle
+## Unit 4.3 — Lab + Lab: compound conditions, nesting, Turtle
 - `and` / `or` inside `if`.
 - one-level nesting; when a compound condition can replace it.
 - conditions with Turtle (module-level `turtle.*` calls only).

@@ -4,7 +4,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 6 academic hours = 3 meetings = 270 minutes (90 theory / 180 practice).
 
-## Meeting 1 — The Rover's Sensors (boolean expressions)
+## Unit 4.1 — Conditional Execution
+
+**Topic:** The Rover's Sensors (boolean expressions)
 
 90 minutes: 45 knowledge + 45 lab · **comparisons → True/False → and/or → truth tables → order**
 
@@ -16,7 +18,9 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
 | Teacher | slides | Pending (NotebookLM) |
 
-## Meeting 2 — The Rover Decides (if and if/else)
+## Unit 4.2 — Conditional Execution
+
+**Topic:** The Rover Decides (if and if/else)
 
 90 minutes: 45 knowledge + 45 lab · **if → false skips → indentation → if/else → input filter → errors**
 
@@ -29,6 +33,8 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
 | Teacher | slides | Pending (NotebookLM) |
 
-## Meeting 3 — Compound conditions, nesting and Turtle
+## Unit 4.3 — Conditional Execution
+
+**Topic:** Compound conditions, nesting and Turtle
 
 Planned.

@@ -1,8 +1,7 @@
-# G7 Unit 1 Lesson Strategy v5
+# Unit 1.1 — Introduction to Python
 
-## Grade 7 / Python A
-### Unit 1 — Introduction to Python
-### Meeting 1 — My First Program (Missions 1+2)
+## Grade 7 / Python A · Lesson Strategy v5
+### Topic: My First Program (Missions 1+2)
 
 **Status:** Rewritten to match the class slide deck [`m1-slides-he.pdf`](m1-slides-he.pdf) (20 slides)  
 **Duration:** 90 minutes  

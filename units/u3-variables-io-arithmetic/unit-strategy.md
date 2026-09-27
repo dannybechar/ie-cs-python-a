@@ -22,7 +22,7 @@ Also listed for this chapter in the program overview (p.3–5):
 - `//` and `%` → m2 ✅
 - Teaching variables using Turtle → m1 Task 3 (`side` drives the square) ✅, and m2's bridge back to Turtle
 
-## Meeting 1 — Knowledge + Lab
+## Unit 3.1 — Knowledge + Lab
 - data vs variable.
 - assignment.
 - basic types: integer, decimal, string, boolean.
@@ -32,7 +32,7 @@ Also listed for this chapter in the program overview (p.3–5):
 - friendly output.
 - first variable-based program.
 
-## Meeting 2 — Lab + Lab
+## Unit 3.2 — Lab + Lab
 - arithmetic operations.
 - `//` and `%`.
 - input → calculation → output.

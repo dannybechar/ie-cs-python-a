@@ -1,8 +1,7 @@
-# G7 Unit 2 Meeting 3 Lesson Strategy v2
+# Unit 2.3 — Turtle & Graphics
 
-## Grade 7 / Python A
-### Unit 2 — Turtle & Graphics
-### Meeting 3 — Geometry Challenge
+## Grade 7 / Python A · Lesson Strategy v2
+### Topic: Geometry Challenge
 
 **Status:** Approved strategy after critical review; ready for asset creation  
 **Duration:** 90 minutes  

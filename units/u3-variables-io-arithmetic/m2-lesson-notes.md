@@ -1,8 +1,7 @@
-# G7 Unit 3 Meeting 2 Lesson Strategy v2
+# Unit 3.2 — Variables, Input/Output & Arithmetic
 
-## Grade 7 / Python A
-### Unit 3 - Variables, Input/Output & Arithmetic
-### Meeting 2 - From Input to Result
+## Grade 7 / Python A · Lesson Strategy v2
+### Topic: From Input to Result
 
 **Status:** Approved strategy after critical review; ready for asset creation  
 **Duration:** 90 minutes  

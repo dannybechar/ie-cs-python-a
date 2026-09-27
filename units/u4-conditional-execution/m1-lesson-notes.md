@@ -1,8 +1,7 @@
-# G7 Unit 4 Meeting 1 Lesson Strategy v1
+# Unit 4.1 — Conditional Execution
 
-## Grade 7 / Python A
-### Unit 4 — Conditional Execution
-### Meeting 1 — The Rover's Sensors: Boolean Expressions (Mission 8)
+## Grade 7 / Python A · Lesson Strategy v1
+### Topic: The Rover's Sensors: Boolean Expressions (Mission 8)
 
 **Status:** Draft, awaiting teacher approval  
 **Duration:** 90 minutes  
@@ -18,9 +17,9 @@
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| **M1 (this)** | **comparisons → True/False → and/or → truth tables → order** | 45 / 45 |
-| M2 | `if` and `if/else`, indentation, input filter | 45 / 45 |
-| M3 | compound conditions in `if`, one-level nesting, Turtle, checkpoint | 0 / 90 |
+| **4.1 (this)** | **comparisons → True/False → and/or → truth tables → order** | 45 / 45 |
+| 4.2 | `if` and `if/else`, indentation, input filter | 45 / 45 |
+| 4.3 | compound conditions in `if`, one-level nesting, Turtle, checkpoint | 0 / 90 |
 
 M1 builds the boolean language that M2 and M3 put inside `if`. **No `if` yet** — every result is printed as `True` or `False`.
 

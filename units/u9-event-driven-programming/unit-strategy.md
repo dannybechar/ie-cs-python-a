@@ -18,31 +18,31 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 | מימוש אנימציה (בשילוב טיימר) — animation with a timer | 1 | 2 | 135 | m4, m6 | ⏳ |
 | **Total** | **4** | **8** | **540** | | |
 
-## Meeting 1 — Knowledge + Lab
+## Unit 9.1 — Knowledge + Lab
 - event-driven paradigm.
 - event, listener, callback/action.
 - first interactive program.
 
-## Meeting 2 — Knowledge + Lab
+## Unit 9.2 — Knowledge + Lab
 - mouse events.
 - click on turtle / click on screen.
 - `onclick`.
 
-## Meeting 3 — Knowledge + Lab
+## Unit 9.3 — Knowledge + Lab
 - keyboard events.
 - `onkey`.
 - `listen`.
 
-## Meeting 4 — Knowledge + Lab
+## Unit 9.4 — Knowledge + Lab
 - animation / waiting.
 - `wait` and timing concepts according to the official material.
 - combine event + state/change over time.
 
-## Meeting 5 — Lab + Lab
+## Unit 9.5 — Lab + Lab
 - build an interactive game/animation.
 - incremental development and debugging.
 
-## Meeting 6 — Lab + Lab
+## Unit 9.6 — Lab + Lab
 - final integrated project.
 - modify/test/debug.
 - practical assessment.

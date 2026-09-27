@@ -21,14 +21,14 @@ Also listed for this chapter in the program overview (p.3–5):
 - Rolling repeated execution (ביצוע חוזר מתגלגל) → m2 ⏳
 - Loops using Turtle → m3 ⏳
 
-## Meeting 1 — Knowledge + Lab
+## Unit 5.1 — Knowledge + Lab
 - why repetition is needed.
 - bounded repetition.
 - `for` and `range`.
 - loop variable.
 - number of iterations.
 
-## Meeting 2 — Knowledge + Lab
+## Unit 5.2 — Knowledge + Lab
 - conditional repetition.
 - `while`.
 - stop condition.
@@ -37,12 +37,12 @@ Also listed for this chapter in the program overview (p.3–5):
 - preserve the official term "rolling repeated execution" for detailed
   treatment according to official examples.
 
-## Meeting 3 — Lab + Lab
+## Unit 5.3 — Lab + Lab
 - loops with Turtle.
 - patterns and repeated geometry.
 - nested/integrated repetition only where consistent with the official examples.
 
-## Meeting 4 — Lab + Lab
+## Unit 5.4 — Lab + Lab
 - tracing.
 - identify appropriate loop type.
 - determine iteration count.

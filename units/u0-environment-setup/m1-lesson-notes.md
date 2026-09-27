@@ -1,8 +1,7 @@
-# G7 Unit 0 Meeting 1 Lesson Strategy v1
+# Unit 0.1 — Environment Setup
 
-## Grade 7 / Python A
-### Unit 0 — Environment Setup
-### Meeting 1 — Install, Check, Save
+## Grade 7 / Python A · Lesson Strategy v1
+### Topic: Install, Check, Save
 
 **Status:** Draft for review  
 **Duration:** 90 minutes  

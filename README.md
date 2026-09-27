@@ -41,6 +41,14 @@ units/
 
 ## Repository conventions
 
+- **Naming rule:** a meeting is named by its curriculum unit, as
+  **Unit {U}.{M} — {unit name}** (e.g. *Unit 4.1 — Conditional Execution*);
+  in Hebrew, **יחידה {U}.{M} – {שם היחידה}** (e.g. *יחידה 4.1 – ביצוע מותנה*).
+  Unit names follow the Ministry program (`python-a.pdf`); Unit 0 is the
+  school-added Environment Setup (סביבת עבודה). A lesson's theme or topic
+  (e.g. "The Rover's Sensors") appears only as a subtitle, never as its name.
+  This applies to headings, the course map, lab briefs, slide titles and
+  footers, and NotebookLM notebook names.
 - Every `.py` example must compile cleanly before it's committed.
 - Code files use `_Starter` / `_Reference` — `_Starter` is the student's
   starting point (may contain an intentional bug, documented in that

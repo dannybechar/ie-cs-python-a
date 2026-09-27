@@ -154,7 +154,7 @@ Function `grade_check()`: reads a score and prints `Passed` (60 and up) or `Try 
 Open `ScoreBug_Starter.py`:
 
 ```python
-# This program has bugs. Run it, read the error, fix ONE bug, run again.
+# Fix ONE bug per run, then run again.
 score = int(input("Score: "))
 if score = 100
 print("Perfect")

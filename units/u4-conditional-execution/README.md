@@ -31,7 +31,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`Decisions_Starter.py`](Decisions_Starter.py) | Delivery trace warm-up |
 | Student | [`ScoreBug_Starter.py`](ScoreBug_Starter.py) | Program with three kinds of bugs to fix one at a time |
 | Teacher | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (25 slides, NotebookLM, patched) |
 
 ## Unit 4.3 — Conditional Execution
 

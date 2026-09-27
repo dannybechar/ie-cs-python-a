@@ -44,7 +44,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`While_Starter.py`](While_Starter.py) | Warm-up: a loop with no update |
 | Teacher | [`While_Reference.py`](While_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (20 slides, NotebookLM, patched) |
 
 ## Unit 5.4 — Repetition and Loops
 

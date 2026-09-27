@@ -116,7 +116,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 4 | 4.3 Conditional Execution | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u4-conditional-execution/m3-lesson-notes.md) | Unit checkpoint (practical + tracing); slides: `m3-slides-he.pdf` (16 slides, 90 min; NotebookLM, patched) |
 | 5 | 5.1 Repetition and Loops | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m1-lesson-notes.md`](units/u5-loops/m1-lesson-notes.md) | From the teacher's raw deck; slides: `m1-slides-he.pdf` (20 slides, 90 min; NotebookLM, patched) |
 | 5 | 5.2 Repetition and Loops | 90 | 0 / 90 | Lab + Lab | [`m2-lesson-notes.md`](units/u5-loops/m2-lesson-notes.md) | From the teacher's raw deck; slides: `m2-slides-he.pdf` (17 slides, 90 min; NotebookLM, patched) |
-| 5 | 5.3 Repetition and Loops | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u5-loops/m3-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 20 slides) |
+| 5 | 5.3 Repetition and Loops | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m3-lesson-notes.md`](units/u5-loops/m3-lesson-notes.md) | From the teacher's raw deck; slides: `m3-slides-he.pdf` (20 slides, 90 min; NotebookLM, patched) |
 | 5 | 5.4 Repetition and Loops | 90 | 0 / 90 | Lab + Lab | [`m4-lesson-notes.md`](units/u5-loops/m4-lesson-notes.md) | Unit checkpoint (practical + theory); slides pending (NotebookLM folder ready, 18 slides) |
 
 ## Keeping this up to date

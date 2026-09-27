@@ -58,4 +58,4 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m4-lab-brief-he.md`](m4-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Nested_Starter.py`](Nested_Starter.py) | Task 1: `print()` in the wrong loop |
 | Teacher | [`Nested_Reference.py`](Nested_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m4-slides-he.pdf`](m4-slides-he.pdf) | Hebrew slide deck (18 slides, NotebookLM, patched) |

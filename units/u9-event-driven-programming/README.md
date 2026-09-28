@@ -44,7 +44,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`ScreenClick_Starter.py`](ScreenClick_Starter.py) | Warm-up: `goto` draws a line |
 | Teacher | [`ScreenClick_Reference.py`](ScreenClick_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
 
 ## Unit 9.4 — Event-Driven Programming
 

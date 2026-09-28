@@ -58,7 +58,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m4-lab-brief-he.md`](m4-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Keys_Starter.py`](Keys_Starter.py) | Warm-up: `turtle.listen()` missing |
 | Teacher | [`Keys_Reference.py`](Keys_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m4-slides-he.pdf`](m4-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
 
 ## Unit 9.5 — Event-Driven Programming
 

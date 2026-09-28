@@ -44,7 +44,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Parameters_Starter.py`](Parameters_Starter.py) | Warm-up: a call with no argument |
 | Teacher | [`Parameters_Reference.py`](Parameters_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
 
 ## Unit 8.4 — Functions with Parameters
 

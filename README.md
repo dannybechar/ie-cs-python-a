@@ -19,7 +19,7 @@ what's built vs. still missing within that unit.
 - [Unit 5 — Repetition and Loops](units/u5-loops) — complete (4/4 meetings)
 - [Unit 6 — Strings](units/u6-strings) — complete (4/4 meetings)
 - [Unit 7 — Algorithmic Problems](units/u7-algorithmic-problems) — complete (3/3 meetings)
-- [Unit 8 — Functions with Parameters](units/u8-functions-parameters) — complete (4/4 meetings), awaiting approval
+- [Unit 8 — Functions with Parameters](units/u8-functions-parameters) — complete (4/4 meetings)
 - [Unit 9 — Event-Driven Programming](units/u9-event-driven-programming) — complete (6/6 meetings), awaiting approval
 
 ## Repository layout

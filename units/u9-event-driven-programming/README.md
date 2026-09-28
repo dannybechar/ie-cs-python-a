@@ -86,4 +86,4 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m6-lab-brief-he.md`](m6-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Game_Starter.py`](Game_Starter.py) | The game skeleton (Left and Right work) |
 | Teacher | [`Game_Reference.py`](Game_Reference.py) | The full game |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m6-slides-he.pdf`](m6-slides-he.pdf) | Hebrew slide deck (15 slides, NotebookLM, patched) |

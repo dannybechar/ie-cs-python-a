@@ -30,7 +30,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Modules_Starter.py`](Modules_Starter.py) | Warm-up: the call indented inside the function |
 | Teacher | [`Modules_Reference.py`](Modules_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
 
 ## Unit 8.3 — Functions with Parameters
 

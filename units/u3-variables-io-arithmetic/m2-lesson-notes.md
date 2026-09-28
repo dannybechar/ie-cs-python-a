@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v2
 ### Topic: From Input to Result
 
-**Status:** Approved strategy after critical review; ready for asset creation  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab  
 **Current tool assumption:** Thonny  

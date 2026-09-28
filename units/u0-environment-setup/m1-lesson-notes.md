@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Install, Check, Save
 
-**Status:** Draft for review  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (one short explanation at the start)  
 **Current tool:** Thonny 5.0.0, which includes Python 3.14 (versions current in September 2026)  

@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v2
 ### Topic: Pen, Appearance and Stamps
 
-**Status:** Revised after external review (v2)  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab: three short demos (4–5 min each), each followed immediately by a task  
 **Minutes (theory / practice):** 0 / 90  

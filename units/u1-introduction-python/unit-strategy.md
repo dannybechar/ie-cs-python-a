@@ -18,7 +18,7 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 Also listed for this chapter in the program overview (p.3–5):
 
 - Simple output (`print`) → m1 ✅
-- ⚠️ **Compound output** (הוראות פלט מורכבות — several values in one `print`) → not in any lesson yet; add to m1 or Unit 3 m1
+- Compound output (הוראות פלט מורכבות — several values in one `print`) → [Unit 3.1](../u3-variables-io-arithmetic/m1-lesson-notes.md) ✅
 - Conventions: documentation, indentation → m1 ✅; file names → Unit 0 ✅
 - Function structure and call; function with no parameters and no return value → m1 ✅
 

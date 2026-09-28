@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v2
 ### Topic: First Moves
 
-**Status:** Revised after external review (v2)  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45 — this meeting carries all of Unit 2's official theory time  

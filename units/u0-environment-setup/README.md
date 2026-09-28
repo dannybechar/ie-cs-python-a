@@ -17,8 +17,3 @@ Unit scope and Ministry source: [`unit-strategy.md`](unit-strategy.md)
 | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew setup slides (12 slides, space-mission theme) — **the deck taught in class** |
 | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief, 7 steps |
 | Student | [`EnvironmentCheck.py`](EnvironmentCheck.py) | Checks Python 3, `math`, `random` and `turtle`, then draws a square |
-
-## About the slides
-
-The deck was made in NotebookLM from this unit's lesson notes and lab brief, so it is kept as a PDF
-rather than a Marp Markdown file. To change it, regenerate or edit it outside the repo and replace the PDF.

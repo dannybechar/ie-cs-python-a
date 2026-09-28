@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v5
 ### Topic: My First Program (Missions 1+2)
 
-**Status:** Rewritten to match the class slide deck [`m1-slides-he.pdf`](m1-slides-he.pdf) (20 slides)  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** 45 min Knowledge + Guided Practice (slides 1–13), then 45 min Lab (slides 14–20)  
 **Minutes (theory / practice):** 45 / 45  

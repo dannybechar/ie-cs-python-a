@@ -130,7 +130,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 9 | 9.2 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m2-lesson-notes.md`](units/u9-event-driven-programming/m2-lesson-notes.md) | From the teacher's raw deck; slides: `m2-slides-he.pdf` (18 slides, 90 min; NotebookLM, patched) |
 | 9 | 9.3 Event-Driven Programming | 90 | 0 / 90 | Lab + Lab | [`m3-lesson-notes.md`](units/u9-event-driven-programming/m3-lesson-notes.md) | From the teacher's raw deck; slides: `m3-slides-he.pdf` (17 slides, 90 min; NotebookLM, patched) |
 | 9 | 9.4 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m4-lesson-notes.md`](units/u9-event-driven-programming/m4-lesson-notes.md) | From the teacher's raw deck; slides: `m4-slides-he.pdf` (19 slides, 90 min; NotebookLM, patched) |
-| 9 | 9.5 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m5-lesson-notes.md`](units/u9-event-driven-programming/m5-lesson-notes.md) | From the teacher's raw deck; slides pending (NotebookLM folder ready, 18 slides) |
+| 9 | 9.5 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m5-lesson-notes.md`](units/u9-event-driven-programming/m5-lesson-notes.md) | From the teacher's raw deck; slides: `m5-slides-he.pdf` (18 slides, 90 min; NotebookLM, patched) |
 | 9 | 9.6 Event-Driven Programming | 90 | 0 / 90 | Lab + Lab | [`m6-lesson-notes.md`](units/u9-event-driven-programming/m6-lesson-notes.md) | Final checkpoint (the game); slides pending (NotebookLM folder ready, 15 slides) |
 
 ## Keeping this up to date

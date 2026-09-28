@@ -72,7 +72,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m5-lab-brief-he.md`](m5-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`Timer_Starter.py`](Timer_Starter.py) | Warm-up: `ontimer(animate(), 50)` |
 | Teacher | [`Timer_Reference.py`](Timer_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m5-slides-he.pdf`](m5-slides-he.pdf) | Hebrew slide deck (18 slides, NotebookLM, patched) |
 
 ## Unit 9.6 — Event-Driven Programming
 

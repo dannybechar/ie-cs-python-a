@@ -30,7 +30,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 | Student | [`TurtleClick_Starter.py`](TurtleClick_Starter.py) | Warm-up: a click response without `(x, y)` |
 | Teacher | [`TurtleClick_Reference.py`](TurtleClick_Reference.py) | Solutions, one function per task |
-| Teacher | slides | Pending (NotebookLM) |
+| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (18 slides, NotebookLM, patched) |
 
 ## Unit 9.3 — Event-Driven Programming
 

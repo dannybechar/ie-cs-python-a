@@ -3,7 +3,7 @@
 ## Grade 7 / Python A · Lesson Strategy v1
 ### Topic: Mission Game — Keys, a Click and a Timer, and the Final Checkpoint (Mission 31)
 
-**Status:** Draft, awaiting teacher approval  
+**Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (20 min guided practice, then 70 min project lab with the unit checkpoint)  
 **Minutes (theory / practice):** 0 / 90  

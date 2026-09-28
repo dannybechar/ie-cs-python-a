@@ -3,7 +3,7 @@
 **12h = 4 Theory + 8 Labs = 6 double meetings**
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 9. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
-**Build status:** 🔶 complete — all 6 meetings built, awaiting approval. Inspired by the teacher's raw decks (`unit9_meeting1–6`).
+**Build status:** ✅ complete — all 6 meetings built and approved by the teacher. Inspired by the teacher's raw decks (`unit9_meeting1–6`).
 
 ## Official topics and hours
 
@@ -12,10 +12,10 @@ Status: ✅ approved · 🔶 built, awaiting approval · ⏳ planned, not built 
 
 | Topic (Ministry) | Theory h | Practice h | Minutes | Planned in | Status |
 |---|---:|---:|---:|---|---|
-| תכנות מונחה אירועים — לשם מה? — why event-driven | 1 | 0 | 45 | 9.1 (45 T) | 🔶 |
-| אירוע לחיצת עכבר: הגדרת אירוע ורישום דמות ומסך — mouse click events | 1 | 4 | 225 | 9.1 (45 P), 9.2 (45 T + 45 P), 9.3 (90 P) | 🔶 |
-| אירוע לחיצת מקש מקלדת: הגדרת אירוע ורישום — keyboard events | 1 | 2 | 135 | 9.4 (45 T + 45 P), 9.6 (45 P) | 🔶 |
-| מימוש אנימציה (בשילוב טיימר) — animation with a timer | 1 | 2 | 135 | 9.5 (45 T + 45 P), 9.6 (45 P) | 🔶 |
+| תכנות מונחה אירועים — לשם מה? — why event-driven | 1 | 0 | 45 | 9.1 (45 T) | ✅ |
+| אירוע לחיצת עכבר: הגדרת אירוע ורישום דמות ומסך — mouse click events | 1 | 4 | 225 | 9.1 (45 P), 9.2 (45 T + 45 P), 9.3 (90 P) | ✅ |
+| אירוע לחיצת מקש מקלדת: הגדרת אירוע ורישום — keyboard events | 1 | 2 | 135 | 9.4 (45 T + 45 P), 9.6 (45 P) | ✅ |
+| מימוש אנימציה (בשילוב טיימר) — animation with a timer | 1 | 2 | 135 | 9.5 (45 T + 45 P), 9.6 (45 P) | ✅ |
 | **Total** | **4** | **8** | **540** | | |
 
 ## Unit 9.1 — Knowledge + Lab: why event-driven

@@ -133,6 +133,14 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 9 | 9.5 Event-Driven Programming | 90 | 45 / 45 | 45 knowledge + 45 lab | [`m5-lesson-notes.md`](units/u9-event-driven-programming/m5-lesson-notes.md) | From the teacher's raw deck; slides: `m5-slides-he.pdf` (18 slides, 90 min; NotebookLM, patched) |
 | 9 | 9.6 Event-Driven Programming | 90 | 0 / 90 | Lab + Lab | [`m6-lesson-notes.md`](units/u9-event-driven-programming/m6-lesson-notes.md) | Final checkpoint (the game); slides: `m6-slides-he.pdf` (15 slides, 90 min; NotebookLM, patched) |
 
+## Unit tests
+
+Unit tests are assessment time on top of the lesson minutes and are not counted in the time budget above. Each takes one 45-minute lesson slot, so schedule it deliberately (see **Deadline and pace**).
+
+| Unit | Test | Forms | Files |
+|---|---|---|---|
+| 2 | Turtle & Graphics, 45 min, 25 multiple-choice questions | A and B | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-test) |
+
 ## Keeping this up to date
 
 When a meeting is added or its timing changes:

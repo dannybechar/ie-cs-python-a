@@ -46,3 +46,16 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
 | Student | [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py) | Starter file |
 | Teacher | [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py) | Assessment solution |
+
+## Unit 2 test
+
+A 45-minute multiple-choice test for grades 7 and 8 covering all three meetings (25 questions, 4 points each). It checks that students listened in class and did the lab work: honest questions only, no tricks. Two parallel forms with different questions, each with a teacher key. The key lists difficulty (7 easy / 12 medium / 6 hard), topic and a short explanation per question. Expected class average is about 70, with very few students above 90; these are estimates, so adjust after the first class (see the key).
+
+| For | File | What it is |
+|---|---|---|
+| Student | [`u2-test-a-students-he.pdf`](u2-test-a-students-he.pdf) | Form A test sheet (Word source: [`.docx`](u2-test-a-students-he.docx)) |
+| Teacher | [`u2-test-a-key-he.pdf`](u2-test-a-key-he.pdf) | Form A answer key and blueprint ([`.docx`](u2-test-a-key-he.docx)) |
+| Student | [`u2-test-b-students-he.pdf`](u2-test-b-students-he.pdf) | Form B test sheet ([`.docx`](u2-test-b-students-he.docx)) |
+| Teacher | [`u2-test-b-key-he.pdf`](u2-test-b-key-he.pdf) | Form B answer key and blueprint ([`.docx`](u2-test-b-key-he.docx)) |
+
+Built from the question data in [`tools/unit-test-builder/`](../../tools/unit-test-builder/README.md); reviewed by ChatGPT, see [`docs/reviews/unit2-test/`](../../docs/reviews/unit2-test/REVIEW-FOLLOWUP.md).

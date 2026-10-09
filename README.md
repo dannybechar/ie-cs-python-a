@@ -32,6 +32,7 @@ docs/
   reviews/                  — external lesson reviews, one folder per review
 tools/
   deck-patch-kit/           — scripts for reviewing and patching the NotebookLM slide decks
+  unit-test-builder/        — question data and builder for the Hebrew unit tests (Unit 2 so far)
 units/
   u{N}-{official-unit-slug}/
     README.md               — index of the unit's meetings and their files
@@ -40,6 +41,7 @@ units/
     m{K}-slides-he.pdf      — teacher: Hebrew slide deck (NotebookLM, patched)
     m{K}-lab-brief-he.md    — student: Hebrew lab brief
     m{K}-exit-check-he.*    — exit check, where one exists
+    u{N}-test-{a|b}-*-he.*  — unit test forms and keys, where one exists (Unit 2 so far)
     *_Starter.py / *_Reference.py — lab code for the unit's meetings
 ```
 

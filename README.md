@@ -43,6 +43,7 @@ units/
     m{K}-exit-check-he.*    — exit check, where one exists
     u{N}-test-{a|b}-*-he.*  — unit test forms and keys, where one exists (Unit 2 so far)
     *_Starter.py / *_Reference.py — lab code for the unit's meetings
+    exercises/              — extra practice exercises, where they exist (Unit 2 so far)
 ```
 
 ## Repository conventions

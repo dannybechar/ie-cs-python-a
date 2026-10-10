@@ -47,6 +47,14 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Student | [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py) | Starter file |
 | Teacher | [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py) | Assessment solution |
 
+## Unit 2 extra practice — 10 turtle exercises
+
+Ten short exercises (17–20 lines of code each, no functions, loops or variables) for after the three meetings or as homework. Each file starts with a comment block that says what the exercise draws and what it practices. Difficulty is about "a rectangle in different colors and pen thicknesses", widened step by step: filled shapes, `dot`, `bgcolor`, `circle`, `write`.
+
+| For | File | What it draws |
+|---|---|---|
+| Student | [`exercises/`](exercises) | 01 ThickRedRectangle · 02 FourColorFrame · 03 FilledBlueRectangle · 04 TrafficLight · 05 HouseWithRedRoof · 06 ThreeColorRibbons · 07 GoldenStarInNightSky · 08 ConcentricColorRings · 09 SnowmanFromDots · 10 WelcomeSign |
+
 ## Unit 2 test
 
 A 45-minute multiple-choice test for grades 7 and 8 covering all three meetings (25 questions, 4 points each). It checks that students listened in class and did the lab work: honest questions only, no tricks. Two parallel forms with different questions, each with a teacher key. The key lists difficulty (7 easy / 12 medium / 6 hard), topic and a short explanation per question. Expected class average is about 70, with very few students above 90; these are estimates, so adjust after the first class (see the key).

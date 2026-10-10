@@ -72,7 +72,7 @@ Official topic and minutes: "mouse click events" — 90 practice. With 9.1 and 9
 
 # 6. Lab — 60 Minutes
 
-Starter: [`ScreenClick_Starter.py`](ScreenClick_Starter.py). Reference: [`ScreenClick_Reference.py`](ScreenClick_Reference.py).
+Starter: [`ScreenClick_Starter.py`](exercises/ScreenClick_Starter.py). Reference: [`ScreenClick_Reference.py`](solutions/ScreenClick_Reference.py).
 
 ## 30–38 — Warm-up: a line instead of a jump
 

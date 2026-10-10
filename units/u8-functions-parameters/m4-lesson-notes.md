@@ -83,7 +83,7 @@ No `return`, no `nonlocal`. `global` is used only for shared state such as a cou
 
 # 6. Lab — 60 Minutes
 
-Starter: [`Scope_Starter.py`](Scope_Starter.py). Reference: [`Scope_Reference.py`](Scope_Reference.py).
+Starter: [`Scope_Starter.py`](exercises/Scope_Starter.py). Reference: [`Scope_Reference.py`](solutions/Scope_Reference.py).
 
 ## 30–35 — Warm-up: why does it crash?
 

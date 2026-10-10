@@ -78,7 +78,7 @@ No `random.random()`, `choice` or `seed`; no `goto` (the random walk turns and m
 
 # 6. Second 45 Minutes — Lab with the Checkpoint
 
-Starter: [`Random_Starter.py`](Random_Starter.py). Reference: [`Random_Reference.py`](Random_Reference.py).
+Starter: [`Random_Starter.py`](exercises/Random_Starter.py). Reference: [`Random_Reference.py`](solutions/Random_Reference.py).
 
 The starter's warm-up (it draws twice, so `Roll: 6` can appear without `You win`) is for students who finish early or for homework; the lab time goes to the random walk and the checkpoint.
 

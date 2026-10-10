@@ -166,7 +166,7 @@ with a 90° turn after each side if the Turtle should finish facing the original
 
 Students open:
 
-[`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py)
+[`GeometryChallenge_Starter.py`](exercises/GeometryChallenge_Starter.py)
 
 Starter body:
 
@@ -552,9 +552,9 @@ Do not introduce loops as enrichment.
 # 11. Lesson Assets
 
 1. [`m3-slides-he.pdf`](m3-slides-he.pdf) — Hebrew slides (NotebookLM, 18 slides)
-2. [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py)
+2. [`GeometryChallenge_Starter.py`](exercises/GeometryChallenge_Starter.py)
 3. [`m3-lab-brief-he.md`](m3-lab-brief-he.md) — Hebrew lab brief
-4. [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py)
+4. [`GeometryAssessment_Reference.py`](solutions/GeometryAssessment_Reference.py)
 5. [`m3-exit-check-he.png`](m3-exit-check-he.png)
 
 ---

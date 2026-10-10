@@ -72,7 +72,7 @@ No parameters yet: every size is fixed inside the function — that limit is the
 
 # 6. Lab — 60 Minutes
 
-Starter: [`Modules_Starter.py`](Modules_Starter.py). Reference: [`Modules_Reference.py`](Modules_Reference.py).
+Starter: [`Modules_Starter.py`](exercises/Modules_Starter.py). Reference: [`Modules_Reference.py`](solutions/Modules_Reference.py).
 
 ## 30–37 — Warm-up: nothing is drawn
 

@@ -81,7 +81,7 @@ No `break`, no `+=`, no nesting deeper than two loops, no `backward` / `goto`.
 
 # 6. Lab — 63 Minutes
 
-Starter: [`Nested_Starter.py`](Nested_Starter.py). Reference: [`Nested_Reference.py`](Nested_Reference.py).
+Starter: [`Nested_Starter.py`](exercises/Nested_Starter.py). Reference: [`Nested_Reference.py`](solutions/Nested_Reference.py).
 
 ## 27–37 — Task 1: star patterns
 

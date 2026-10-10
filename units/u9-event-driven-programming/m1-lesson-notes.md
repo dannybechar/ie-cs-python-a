@@ -92,7 +92,7 @@ turtle.done()                # the event loop: keep the window open and listenin
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`Events_Starter.py`](Events_Starter.py). Reference: [`Events_Reference.py`](Events_Reference.py).
+Starter: [`Events_Starter.py`](exercises/Events_Starter.py). Reference: [`Events_Reference.py`](solutions/Events_Reference.py).
 
 ## 45–51 — Warm-up: it crashes before anyone clicks
 

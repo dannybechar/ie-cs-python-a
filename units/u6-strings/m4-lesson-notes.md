@@ -79,7 +79,7 @@ No negative indexes, no `split`, `strip` or f-strings. `str(...)` is not needed:
 
 # 6. Lab — 60 Minutes
 
-Starter: [`Methods_Starter.py`](Methods_Starter.py). Reference: [`Methods_Reference.py`](Methods_Reference.py).
+Starter: [`Methods_Starter.py`](exercises/Methods_Starter.py). Reference: [`Methods_Reference.py`](solutions/Methods_Reference.py).
 
 ## 30–34 — Warm-up: why Rejected?
 

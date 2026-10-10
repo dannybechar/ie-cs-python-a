@@ -260,7 +260,7 @@ Explain the lab: one file, one function per task (like Unit 2 Meeting 2), predic
 
 # 7. Second 45 Minutes — Lab
 
-Starter file: [`Variables_Starter.py`](Variables_Starter.py). Reference: [`Variables_Reference.py`](Variables_Reference.py).
+Starter file: [`Variables_Starter.py`](exercises/Variables_Starter.py). Reference: [`Variables_Reference.py`](solutions/Variables_Reference.py).
 
 ## 45–52 min — Warm-up: the rover log (trace table)
 

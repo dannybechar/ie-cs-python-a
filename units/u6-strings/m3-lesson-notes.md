@@ -78,7 +78,7 @@ No negative start/end indexes (`word[-3:]`); the last three letters are `word[le
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`Slicing_Starter.py`](Slicing_Starter.py). Reference: [`Slicing_Reference.py`](Slicing_Reference.py).
+Starter: [`Slicing_Starter.py`](exercises/Slicing_Starter.py). Reference: [`Slicing_Reference.py`](solutions/Slicing_Reference.py).
 
 ## 45–52 — Task 1: fix the slice
 

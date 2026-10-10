@@ -42,8 +42,8 @@ units/
     m{K}-lab-brief-he.md    — student: Hebrew lab brief
     m{K}-exit-check-he.*    — exit check, where one exists
     u{N}-test-{a|b}-*-he.*  — unit test forms and keys, where one exists (Unit 2 so far)
-    *_Starter.py / *_Reference.py — lab code for the unit's meetings
-    exercises/              — extra practice exercises, where they exist (Unit 2 so far)
+    exercises/              — student code: *_Starter.py files for the lab tasks (Unit 2 also has 10 extra exercises)
+    solutions/              — teacher code: *_Reference.py solutions (Unit 2 also has the 10 extra solutions)
 ```
 
 ## Repository conventions

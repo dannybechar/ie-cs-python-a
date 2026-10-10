@@ -119,7 +119,7 @@ After `if ...:` and Enter, Thonny indents the next line automatically (4 spaces)
 
 # 7. Second 45 Minutes — Lab
 
-Starters: [`Decisions_Starter.py`](Decisions_Starter.py), [`ScoreBug_Starter.py`](ScoreBug_Starter.py). Reference: [`Decisions_Reference.py`](Decisions_Reference.py).
+Starters: [`Decisions_Starter.py`](exercises/Decisions_Starter.py), [`ScoreBug_Starter.py`](exercises/ScoreBug_Starter.py). Reference: [`Decisions_Reference.py`](solutions/Decisions_Reference.py).
 
 ## 45–52 — Warm-up: delivery trace (question only, then run)
 

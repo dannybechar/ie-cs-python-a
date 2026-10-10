@@ -73,7 +73,7 @@ Official topic and minutes: "keyboard events" — 45 theory + 45 of its 90 pract
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`Keys_Starter.py`](Keys_Starter.py). Reference: [`Keys_Reference.py`](Keys_Reference.py).
+Starter: [`Keys_Starter.py`](exercises/Keys_Starter.py). Reference: [`Keys_Reference.py`](solutions/Keys_Reference.py).
 
 ## 45–50 — Warm-up: nothing happens
 

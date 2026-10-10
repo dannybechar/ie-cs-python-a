@@ -76,7 +76,7 @@ With this meeting Unit 9 uses exactly its 540 official minutes (180 theory / 360
 
 # 6. Project Lab — 70 Minutes
 
-Starter: [`Game_Starter.py`](Game_Starter.py) (Left and Right already work). Reference: [`Game_Reference.py`](Game_Reference.py).
+Starter: [`Game_Starter.py`](exercises/Game_Starter.py) (Left and Right already work). Reference: [`Game_Reference.py`](solutions/Game_Reference.py).
 
 ## 20–58 — Checkpoint A (practical, in pairs, each student saves a copy)
 

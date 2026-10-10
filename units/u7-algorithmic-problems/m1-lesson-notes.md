@@ -80,7 +80,7 @@ print("Count:", count)        # 4. print after the loop
 
 # 6. Lab — 60 Minutes
 
-Starter: [`Counters_Starter.py`](Counters_Starter.py). Reference: [`Counters_Reference.py`](Counters_Reference.py).
+Starter: [`Counters_Starter.py`](exercises/Counters_Starter.py). Reference: [`Counters_Reference.py`](solutions/Counters_Reference.py).
 
 ## 30–39 — Warm-up: two bugs
 

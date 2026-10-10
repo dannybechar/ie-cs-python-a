@@ -85,7 +85,7 @@ turtle.done()
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`Timer_Starter.py`](Timer_Starter.py). Reference: [`Timer_Reference.py`](Timer_Reference.py).
+Starter: [`Timer_Starter.py`](exercises/Timer_Starter.py). Reference: [`Timer_Reference.py`](solutions/Timer_Reference.py).
 
 ## 45–52 — Warm-up: RecursionError
 

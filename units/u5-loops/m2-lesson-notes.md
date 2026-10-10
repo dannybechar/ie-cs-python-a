@@ -79,7 +79,7 @@
 
 # 6. Lab — 64 Minutes
 
-Starter: [`Ranges_Starter.py`](Ranges_Starter.py). Reference: [`Ranges_Reference.py`](Ranges_Reference.py).
+Starter: [`Ranges_Starter.py`](exercises/Ranges_Starter.py). Reference: [`Ranges_Reference.py`](solutions/Ranges_Reference.py).
 
 ## 26–36 — Task 1: `sequences()`
 

@@ -91,7 +91,7 @@ Official topics and minutes used: "why repetition" (45 theory) + 45 practice of 
 
 # 7. Second 45 Minutes — Lab
 
-Starter: [`Loops_Starter.py`](Loops_Starter.py). Reference: [`Loops_Reference.py`](Loops_Reference.py).
+Starter: [`Loops_Starter.py`](exercises/Loops_Starter.py). Reference: [`Loops_Reference.py`](solutions/Loops_Reference.py).
 
 ## 45–52 — Warm-up: why only one number?
 

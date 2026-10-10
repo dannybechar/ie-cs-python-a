@@ -118,7 +118,7 @@ All results checked in Python 3.14.
 
 # 7. Second 45 Minutes — Lab
 
-Starter: [`Booleans_Starter.py`](Booleans_Starter.py). Reference: [`Booleans_Reference.py`](Booleans_Reference.py).
+Starter: [`Booleans_Starter.py`](exercises/Booleans_Starter.py). Reference: [`Booleans_Reference.py`](solutions/Booleans_Reference.py).
 
 ## 45–52 — Warm-up: trace (question only, then run)
 

@@ -80,7 +80,7 @@ No lists, no `+=`, no `min()` / `max()` (the pattern is written by hand).
 
 # 6. Lab — 55 Minutes
 
-Starter: [`Accumulators_Starter.py`](Accumulators_Starter.py). Reference: [`Accumulators_Reference.py`](Accumulators_Reference.py).
+Starter: [`Accumulators_Starter.py`](exercises/Accumulators_Starter.py). Reference: [`Accumulators_Reference.py`](solutions/Accumulators_Reference.py).
 
 ## 35–42 — Warm-up: why 5?
 

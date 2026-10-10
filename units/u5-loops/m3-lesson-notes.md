@@ -92,7 +92,7 @@ An endless loop keeps printing. Press the red **Stop** button (or Ctrl+F2) to st
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`While_Starter.py`](While_Starter.py). Reference: [`While_Reference.py`](While_Reference.py).
+Starter: [`While_Starter.py`](exercises/While_Starter.py). Reference: [`While_Reference.py`](solutions/While_Reference.py).
 
 ## 45–52 — Warm-up: the loop that never stops
 

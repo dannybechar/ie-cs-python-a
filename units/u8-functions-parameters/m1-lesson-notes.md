@@ -84,7 +84,7 @@ No `return` (Python A functions do not return values), no parameters yet (8.3).
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`Functions_Starter.py`](Functions_Starter.py). Reference: [`Functions_Reference.py`](Functions_Reference.py).
+Starter: [`Functions_Starter.py`](exercises/Functions_Starter.py). Reference: [`Functions_Reference.py`](solutions/Functions_Reference.py).
 
 ## 45–50 — Warm-up: why does it crash?
 

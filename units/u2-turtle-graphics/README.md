@@ -11,20 +11,20 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | **Unit** | Strategy | [`unit-strategy.md`](unit-strategy.md) | Official scope, topics, hours and the meeting breakdown |
 | **2.1** First Moves | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan: human-turtle hook, turning, square, lab (staircase, triangle, letter if time) |
 |  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
-|  | Exercise | [`TurtleFirstMoves_Starter.py`](TurtleFirstMoves_Starter.py) | Starter file |
-|  | Exercise | [`TurtleFirstMoves_Reference.py`](TurtleFirstMoves_Reference.py) | Solutions, one function per task |
+|  | Exercise | [`TurtleFirstMoves_Starter.py`](exercises/TurtleFirstMoves_Starter.py) | Starter file |
+|  | Exercise | [`TurtleFirstMoves_Reference.py`](solutions/TurtleFirstMoves_Reference.py) | Solutions, one function per task |
 |  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (23 slides, rover theme, made in NotebookLM; slides 8, 12, 14, 17, 19 corrected and exit check 22–23 added) |
 | **2.2** Pen, Appearance and Stamps | Lesson | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan: three short demos, each followed by a task; one function per task |
 |  | Exercise | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
-|  | Exercise | [`TurtlePenStamp_Starter.py`](TurtlePenStamp_Starter.py) | Starter file (warm-up as a function) |
-|  | Exercise | [`TurtlePenStamp_Reference.py`](TurtlePenStamp_Reference.py) | Solutions, one function per task |
+|  | Exercise | [`TurtlePenStamp_Starter.py`](exercises/TurtlePenStamp_Starter.py) | Starter file (warm-up as a function) |
+|  | Exercise | [`TurtlePenStamp_Reference.py`](solutions/TurtlePenStamp_Reference.py) | Solutions, one function per task |
 |  | Lesson | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slides (15 slides, made in NotebookLM; slides 2, 6, 10, 15 corrected) |
 | **2.3** Geometry Challenge | Lesson | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
 |  | Lesson | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slides (18 slides, rover theme, made in NotebookLM; slides 8, 9, 17 corrected) |
 |  | Exercise | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 |  | Exercise | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
-|  | Exercise | [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py) | Starter file |
-|  | Exercise | [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py) | Assessment solution |
+|  | Exercise | [`GeometryChallenge_Starter.py`](exercises/GeometryChallenge_Starter.py) | Starter file |
+|  | Exercise | [`GeometryAssessment_Reference.py`](solutions/GeometryAssessment_Reference.py) | Assessment solution |
 | **Extra** 10 turtle exercises | Exercise | [`exercises/`](exercises) | Ten starter files (01 ThickRedRectangle … 10 WelcomeSign): a comment header with the task, and an empty body to fill; see [below](#unit-2-extra-practice--10-turtle-exercises) |
 |  | Exercise | [`solutions/`](solutions) | The ten complete solutions, same file names; the header explains what each one practices |
 | **Test** Forms A and B | Test | [`u2-test-a-students-he.pdf`](u2-test-a-students-he.pdf), [`u2-test-b-students-he.pdf`](u2-test-b-students-he.pdf) | 45-minute multiple-choice test sheets (Word sources: [A](u2-test-a-students-he.docx), [B](u2-test-b-students-he.docx)) |

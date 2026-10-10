@@ -73,7 +73,7 @@ Official topic and minutes: "mouse click events" — 45 theory + 45 practice.
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`TurtleClick_Starter.py`](TurtleClick_Starter.py). Reference: [`TurtleClick_Reference.py`](TurtleClick_Reference.py).
+Starter: [`TurtleClick_Starter.py`](exercises/TurtleClick_Starter.py). Reference: [`TurtleClick_Reference.py`](solutions/TurtleClick_Reference.py).
 
 ## 45–51 — Warm-up: an error at the click
 

@@ -89,7 +89,7 @@ Negative indexes (`word[-1]`) are not taught; the last character is `word[len(wo
 
 # 7. Second 45 Minutes — Lab
 
-Starter: [`Strings_Starter.py`](Strings_Starter.py). Reference: [`Strings_Reference.py`](Strings_Reference.py).
+Starter: [`Strings_Starter.py`](exercises/Strings_Starter.py). Reference: [`Strings_Reference.py`](solutions/Strings_Reference.py).
 
 ## 45–50 — Warm-up: why does it crash?
 

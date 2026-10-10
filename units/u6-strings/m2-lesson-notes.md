@@ -75,7 +75,7 @@ No `+=`. `count()` is not used yet (6.4) — the counter loop comes first, so st
 
 # 6. Lab — 59 Minutes
 
-Starter: [`Operators_Starter.py`](Operators_Starter.py). Reference: [`Operators_Reference.py`](Operators_Reference.py).
+Starter: [`Operators_Starter.py`](exercises/Operators_Starter.py). Reference: [`Operators_Reference.py`](solutions/Operators_Reference.py).
 
 ## 31–37 — Warm-up: why 23?
 

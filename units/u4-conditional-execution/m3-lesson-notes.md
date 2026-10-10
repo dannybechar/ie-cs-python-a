@@ -104,7 +104,7 @@ The two give the same result here. Nesting is needed when each failure gets its 
 
 # 7. Lab — 63 Minutes
 
-Starter: [`Shapes_Starter.py`](Shapes_Starter.py). Reference: [`Conditions_Reference.py`](Conditions_Reference.py).
+Starter: [`Shapes_Starter.py`](exercises/Shapes_Starter.py). Reference: [`Conditions_Reference.py`](solutions/Conditions_Reference.py).
 
 ## 27–37 — Task 1: may the rover move?
 

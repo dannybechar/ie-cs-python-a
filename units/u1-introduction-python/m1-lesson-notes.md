@@ -174,14 +174,14 @@ The end
 ### Slide 18: launch challenge — 6 steps
 
 1. Open `rocket.py` from the start of the lesson (`File › Open`) and Save As `G7_U1_Rocket_<Name>.py`.
-   If a student's `rocket.py` is missing, they open [`Rocket_Starter.py`](Rocket_Starter.py) instead.
+   If a student's `rocket.py` is missing, they open [`Rocket_Starter.py`](exercises/Rocket_Starter.py) instead.
 2. Add `def launch():` above the countdown and indent all the countdown lines, including Liftoff. Run: **nothing is printed** — we only defined it.
 3. Add the call `launch()` at the end, with no indentation. Run.
 4. Add a second `launch()`. Predict how many times the countdown prints; run and check.
 5. Add `print("Ignition!")` inside the function, before the first number. Run.
 6. Un-indent the Liftoff line and predict when it appears now; run. (It prints **first, once** — before both countdowns, because it is no longer part of the function.) Restore the indentation, turn off one call with `#`, add a comment at the top that explains the program, and save.
 
-Finished program: [`Rocket_Reference.py`](Rocket_Reference.py).
+Finished program: [`Rocket_Reference.py`](solutions/Rocket_Reference.py).
 
 Bonus: define `draw_rocket()` with drawing lines inside (ASCII art with `print`), and call it after `launch()`.
 
@@ -190,7 +190,7 @@ Bonus: define `draw_rocket()` with drawing lines inside (ASCII art with `print`)
 A new file with a function `introduce_me()` that prints the student's name and something they like, with a `print` before the call and after it. Predict the output order, then run.
 Save As `G7_U1_FirstProgram_<Name>.py`.
 
-Model (on the slide) and reference: [`FirstProgram_Reference.py`](FirstProgram_Reference.py):
+Model (on the slide) and reference: [`FirstProgram_Reference.py`](solutions/FirstProgram_Reference.py):
 
 ```text
 Start

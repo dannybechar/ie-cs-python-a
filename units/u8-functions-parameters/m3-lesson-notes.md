@@ -84,7 +84,7 @@ greet("Noam")
 
 # 6. Second 45 Minutes — Lab
 
-Starter: [`Parameters_Starter.py`](Parameters_Starter.py). Reference: [`Parameters_Reference.py`](Parameters_Reference.py).
+Starter: [`Parameters_Starter.py`](exercises/Parameters_Starter.py). Reference: [`Parameters_Reference.py`](solutions/Parameters_Reference.py).
 
 ## 45–50 — Warm-up: why does it crash?
 

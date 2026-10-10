@@ -6,20 +6,21 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 ## Meetings and materials
 
-| Meeting | For | File | What it is |
+| Meeting | Type | File | What it is |
 |---|---|---|---|
-| **7.1** How Many Times? | Teacher | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
-|  | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
-|  | Student | [`Counters_Starter.py`](Counters_Starter.py) | Warm-up: a counter with two bugs |
-|  | Teacher | [`Counters_Reference.py`](Counters_Reference.py) | Solutions, one function per task |
-|  | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
-| **7.2** Sum, Average and Extremes | Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
-|  | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
-|  | Student | [`Accumulators_Starter.py`](Accumulators_Starter.py) | Warm-up: `total = 0` inside the loop |
-|  | Teacher | [`Accumulators_Reference.py`](Accumulators_Reference.py) | Solutions, one function per task |
-|  | Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
-| **7.3** Roll the Dice | Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
-|  | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
-|  | Student | [`Random_Starter.py`](Random_Starter.py) | Bonus: `randint` called twice |
-|  | Teacher | [`Random_Reference.py`](Random_Reference.py) | Solutions and checkpoint A, one function per task |
-|  | Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
+| **Unit** | Strategy | [`unit-strategy.md`](unit-strategy.md) | Official scope, topics, hours and the meeting breakdown |
+| **7.1** How Many Times? | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
+|  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`Counters_Starter.py`](Counters_Starter.py) | Warm-up: a counter with two bugs |
+|  | Exercise | [`Counters_Reference.py`](Counters_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
+| **7.2** Sum, Average and Extremes | Lesson | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
+|  | Exercise | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`Accumulators_Starter.py`](Accumulators_Starter.py) | Warm-up: `total = 0` inside the loop |
+|  | Exercise | [`Accumulators_Reference.py`](Accumulators_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
+| **7.3** Roll the Dice | Lesson | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
+|  | Exercise | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`Random_Starter.py`](Random_Starter.py) | Bonus: `randint` called twice |
+|  | Exercise | [`Random_Reference.py`](Random_Reference.py) | Solutions and checkpoint A, one function per task |
+|  | Lesson | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |

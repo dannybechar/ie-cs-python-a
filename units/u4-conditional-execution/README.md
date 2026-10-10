@@ -6,21 +6,22 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 ## Meetings and materials
 
-| Meeting | For | File | What it is |
+| Meeting | Type | File | What it is |
 |---|---|---|---|
-| **4.1** The Rover's Sensors (boolean expressions) | Teacher | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
-|  | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
-|  | Student | [`Booleans_Starter.py`](Booleans_Starter.py) | Trace warm-up |
-|  | Teacher | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
-|  | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (23 slides, NotebookLM, patched) |
-| **4.2** The Rover Decides (if and if/else) | Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
-|  | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
-|  | Student | [`Decisions_Starter.py`](Decisions_Starter.py) | Delivery trace warm-up |
-|  | Student | [`ScoreBug_Starter.py`](ScoreBug_Starter.py) | Program with three kinds of bugs to fix one at a time |
-|  | Teacher | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
-|  | Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (25 slides, NotebookLM, patched) |
-| **4.3** The Rover at the Junction | Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan, including the checkpoint |
-|  | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
-|  | Student | [`Shapes_Starter.py`](Shapes_Starter.py) | Draws both shapes; students add the conditions |
-|  | Teacher | [`Conditions_Reference.py`](Conditions_Reference.py) | Solutions, one function per task |
-|  | Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (16 slides, NotebookLM, patched) |
+| **Unit** | Strategy | [`unit-strategy.md`](unit-strategy.md) | Official scope, topics, hours and the meeting breakdown |
+| **4.1** The Rover's Sensors (boolean expressions) | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
+|  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`Booleans_Starter.py`](Booleans_Starter.py) | Trace warm-up |
+|  | Exercise | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (23 slides, NotebookLM, patched) |
+| **4.2** The Rover Decides (if and if/else) | Lesson | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
+|  | Exercise | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`Decisions_Starter.py`](Decisions_Starter.py) | Delivery trace warm-up |
+|  | Exercise | [`ScoreBug_Starter.py`](ScoreBug_Starter.py) | Program with three kinds of bugs to fix one at a time |
+|  | Exercise | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (25 slides, NotebookLM, patched) |
+| **4.3** The Rover at the Junction | Lesson | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan, including the checkpoint |
+|  | Exercise | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`Shapes_Starter.py`](Shapes_Starter.py) | Draws both shapes; students add the conditions |
+|  | Exercise | [`Conditions_Reference.py`](Conditions_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (16 slides, NotebookLM, patched) |

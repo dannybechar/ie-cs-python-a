@@ -1,28 +1,16 @@
-# Exercise 08 - Concentric Color Rings
+# Exercise 08 - Concentric Color Rings (starter)
 # Goal: draw three circles with the same center - a big thin one, a medium one, a small thick one.
 # What we practice:
 #   - circle(radius) draws a circle that starts at the turtle and curves to the left
 #   - the center of a circle is "radius" above the start point, so to share a center
 #     the start y must be -radius: goto(0, -150), goto(0, -100), goto(0, -50)
 #   - each ring has its own color and thickness: the smaller the ring, the thicker the pen
+# Your task:
+#   Three circles with the same center, each from its own start point:
+#   (0, -150) radius 150 purple size 2 / (0, -100) radius 100 orange size 6 / (0, -50) radius 50 red size 12.
+# Hint: the solution is in the solutions folder - try first!
 import turtle
 
-turtle.penup()
-turtle.goto(0, -150)
-turtle.pendown()
-turtle.pencolor("purple")
-turtle.pensize(2)
-turtle.circle(150)
-turtle.penup()
-turtle.goto(0, -100)
-turtle.pendown()
-turtle.pencolor("orange")
-turtle.pensize(6)
-turtle.circle(100)
-turtle.penup()
-turtle.goto(0, -50)
-turtle.pendown()
-turtle.pencolor("red")
-turtle.pensize(12)
-turtle.circle(50)
+# write your code here
+
 turtle.done()

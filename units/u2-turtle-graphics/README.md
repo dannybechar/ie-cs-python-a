@@ -25,13 +25,14 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |  | Exercise | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
 |  | Exercise | [`GeometryChallenge_Starter.py`](GeometryChallenge_Starter.py) | Starter file |
 |  | Exercise | [`GeometryAssessment_Reference.py`](GeometryAssessment_Reference.py) | Assessment solution |
-| **Extra** 10 turtle exercises | Exercise | [`exercises/`](exercises) | Ten short practice files (01 ThickRedRectangle … 10 WelcomeSign), each with a comment header; see [below](#unit-2-extra-practice--10-turtle-exercises) |
+| **Extra** 10 turtle exercises | Exercise | [`exercises/`](exercises) | Ten starter files (01 ThickRedRectangle … 10 WelcomeSign): a comment header with the task, and an empty body to fill; see [below](#unit-2-extra-practice--10-turtle-exercises) |
+|  | Exercise | [`solutions/`](solutions) | The ten complete solutions, same file names; the header explains what each one practices |
 | **Test** Forms A and B | Test | [`u2-test-a-students-he.pdf`](u2-test-a-students-he.pdf), [`u2-test-b-students-he.pdf`](u2-test-b-students-he.pdf) | 45-minute multiple-choice test sheets (Word sources: [A](u2-test-a-students-he.docx), [B](u2-test-b-students-he.docx)) |
 |  | Test | [`u2-test-a-key-he.pdf`](u2-test-a-key-he.pdf), [`u2-test-b-key-he.pdf`](u2-test-b-key-he.pdf) | Answer keys and blueprints ([A](u2-test-a-key-he.docx), [B](u2-test-b-key-he.docx)); details [below](#unit-2-test) |
 
 ## Unit 2 extra practice — 10 turtle exercises
 
-Ten short exercises (17–20 lines of code each, no functions, loops or variables) for after the three meetings or as homework. Each file starts with a comment block that says what the exercise draws and what it practices. Difficulty is about "a rectangle in different colors and pen thicknesses", widened step by step: filled shapes, `dot`, `bgcolor`, `circle`, `write`.
+Ten short exercises (the solutions are 17–20 lines of code each, no functions, loops or variables) for after the three meetings or as homework. Each file starts with a comment block that says what the exercise draws and what it practices. Difficulty is about "a rectangle in different colors and pen thicknesses", widened step by step: filled shapes, `dot`, `bgcolor`, `circle`, `write`.
 
 The files: 01 ThickRedRectangle · 02 FourColorFrame · 03 FilledBlueRectangle · 04 TrafficLight · 05 HouseWithRedRoof · 06 ThreeColorRibbons · 07 GoldenStarInNightSky · 08 ConcentricColorRings · 09 SnowmanFromDots · 10 WelcomeSign.
 

@@ -4,45 +4,23 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 6 academic hours = 3 meetings = 270 minutes (90 theory / 180 practice).
 
-## Unit 4.1 — Conditional Execution
+## Meetings and materials
 
-**Topic:** The Rover's Sensors (boolean expressions)
-
-90 minutes: 45 knowledge + 45 lab · **comparisons → True/False → and/or → truth tables → order**
-
-| For | File | What it is |
-|---|---|---|
-| Teacher | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
-| Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
-| Student | [`Booleans_Starter.py`](Booleans_Starter.py) | Trace warm-up |
-| Teacher | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
-| Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (23 slides, NotebookLM, patched) |
-
-## Unit 4.2 — Conditional Execution
-
-**Topic:** The Rover Decides (if and if/else)
-
-90 minutes: 45 knowledge + 45 lab · **if → false skips → indentation → if/else → input filter → errors**
-
-| For | File | What it is |
-|---|---|---|
-| Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
-| Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
-| Student | [`Decisions_Starter.py`](Decisions_Starter.py) | Delivery trace warm-up |
-| Student | [`ScoreBug_Starter.py`](ScoreBug_Starter.py) | Program with three kinds of bugs to fix one at a time |
-| Teacher | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
-| Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (25 slides, NotebookLM, patched) |
-
-## Unit 4.3 — Conditional Execution
-
-**Topic:** The Rover at the Junction — compound conditions, nesting and Turtle (Mission 10)
-
-90 minutes: Lab + Lab · **and/or in if → one-level nesting → Turtle by choice → unit checkpoint**
-
-| For | File | What it is |
-|---|---|---|
-| Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan, including the checkpoint |
-| Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
-| Student | [`Shapes_Starter.py`](Shapes_Starter.py) | Draws both shapes; students add the conditions |
-| Teacher | [`Conditions_Reference.py`](Conditions_Reference.py) | Solutions, one function per task |
-| Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (16 slides, NotebookLM, patched) |
+| Meeting | For | File | What it is |
+|---|---|---|---|
+| **4.1** The Rover's Sensors (boolean expressions) | Teacher | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
+|  | Student | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
+|  | Student | [`Booleans_Starter.py`](Booleans_Starter.py) | Trace warm-up |
+|  | Teacher | [`Booleans_Reference.py`](Booleans_Reference.py) | Solutions, one function per task |
+|  | Teacher | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (23 slides, NotebookLM, patched) |
+| **4.2** The Rover Decides (if and if/else) | Teacher | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
+|  | Student | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
+|  | Student | [`Decisions_Starter.py`](Decisions_Starter.py) | Delivery trace warm-up |
+|  | Student | [`ScoreBug_Starter.py`](ScoreBug_Starter.py) | Program with three kinds of bugs to fix one at a time |
+|  | Teacher | [`Decisions_Reference.py`](Decisions_Reference.py) | Solutions, one function per task |
+|  | Teacher | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (25 slides, NotebookLM, patched) |
+| **4.3** The Rover at the Junction | Teacher | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan, including the checkpoint |
+|  | Student | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
+|  | Student | [`Shapes_Starter.py`](Shapes_Starter.py) | Draws both shapes; students add the conditions |
+|  | Teacher | [`Conditions_Reference.py`](Conditions_Reference.py) | Solutions, one function per task |
+|  | Teacher | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (16 slides, NotebookLM, patched) |

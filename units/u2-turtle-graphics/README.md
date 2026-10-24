@@ -29,6 +29,8 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |  | Exercise | [`solutions/`](solutions) | The ten complete solutions, same file names; the header explains what each one practices |
 | **Test** Forms A and B | Test | [`u2-test-a-students-he.pdf`](u2-test-a-students-he.pdf), [`u2-test-b-students-he.pdf`](u2-test-b-students-he.pdf) | 45-minute multiple-choice test sheets (Word sources: [A](u2-test-a-students-he.docx), [B](u2-test-b-students-he.docx)) |
 |  | Test | [`u2-test-a-key-he.pdf`](u2-test-a-key-he.pdf), [`u2-test-b-key-he.pdf`](u2-test-b-key-he.pdf) | Answer keys and blueprints ([A](u2-test-a-key-he.docx), [B](u2-test-b-key-he.docx)); details [below](#unit-2-test) |
+| **Test** written, basics | Test | [`u2-turtle-test-a-students-he.pdf`](u2-turtle-test-a-students-he.pdf) | 60-minute written test on forward/left/right/penup/pendown only (Word source: [docx](u2-turtle-test-a-students-he.docx)) |
+|  | Test | [`u2-turtle-test-a-key-he.pdf`](u2-turtle-test-a-key-he.pdf) | Key with rubric and sample solutions ([docx](u2-turtle-test-a-key-he.docx)); details [below](#unit-2-written-test) |
 
 ## Unit 2 extra practice — 10 turtle exercises
 
@@ -41,3 +43,9 @@ The files: 01 ThickRedRectangle · 02 FourColorFrame · 03 FilledBlueRectangle �
 A 45-minute multiple-choice test for grades 7 and 8 covering all three meetings (25 questions, 4 points each). It checks that students listened in class and did the lab work: honest questions only, no tricks. Two parallel forms with different questions, each with a teacher key. The key lists difficulty (7 easy / 12 medium / 6 hard), topic and a short explanation per question. Expected class average is about 70, with very few students above 90; these are estimates, so adjust after the first class (see the key).
 
 Built from the question data in [`tools/unit-test-builder/`](../../tools/unit-test-builder/README.md); reviewed by ChatGPT, see [`docs/reviews/unit2-test/`](../../docs/reviews/unit2-test/REVIEW-FOLLOWUP.md).
+
+## Unit 2 written test
+
+A 60-minute paper test (Form A only) on the five basic commands: `forward`, `left`, `right`, `penup`, `pendown`. Six questions worth 17/17/17/17/16/16 = 100 points, about 10 minutes each: two multiple choice, two code analysis, two write-the-code. Every lettered sub-question brings its own code or start state, so a mistake in one does not cost the next. The instructions page includes hints. Writing and analysis items have a partial-credit rubric in the key. Time per question is an estimate for an average student, not measured.
+
+Built from [`tools/unit-test-builder/`](../../tools/unit-test-builder/README.md) (`questions-turtle-a.js`, `build-written.js`); answers checked with `verify_turtle_test.py`.

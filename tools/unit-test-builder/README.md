@@ -25,3 +25,12 @@ Convert to PDF with LibreOffice (`soffice --headless --convert-to pdf out/*.docx
 - Keep the answer letters balanced and avoid runs of the same letter; the build prints nothing about it, so check with `node -e "console.log(require('./questions-a.js').q.map(x=>'אבגד'[x.answer]).join(' '))"`.
 - Tracing questions: verify the answer with `turtle_sim.py` before changing code in a question.
 - The committed PDFs and `.docx` files in `units/u2-turtle-graphics/` are the current output; rebuild and replace them after any edit.
+
+## Written turtle-basics test
+
+| File | What it is |
+|---|---|
+| `questions-turtle-a.js` | 6 questions with items: MC, open answer, grid drawing, code writing; marks, model answers, rubric |
+| `build-written.js` | `node build-written.js out` writes `u2-turtle-test-a-students-he.docx` and `-key-he.docx` |
+| `verify_turtle_test.py` | `python verify_turtle_test.py` checks every snippet answer with `turtle_sim.py` and the mark totals |
+

@@ -140,6 +140,7 @@ Unit tests are assessment time on top of the lesson minutes and are not counted 
 | Unit | Test | Forms | Files |
 |---|---|---|---|
 | 2 | Turtle & Graphics, 45 min, 25 multiple-choice questions | A and B | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-test) |
+| 2 | Turtle basics (5 commands), 60 min, written: 2 MC + 2 analysis + 2 code | A | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-written-test) |
 
 ## Keeping this up to date
 

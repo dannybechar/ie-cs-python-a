@@ -30,7 +30,7 @@ Convert to PDF with LibreOffice (`soffice --headless --convert-to pdf out/*.docx
 
 | File | What it is |
 |---|---|
-| `questions-turtle-a.js` | 6 questions with items: MC, open answer, grid drawing, code writing; marks, model answers, rubric |
+| `questions-turtle-a.js` | 6 questions with items: MC, open answer, grid drawing, code writing; marks, model answers, rubric. An item with `draw: {cols, rows, start, cell}` gets a code box (right) and an empty grid (left) with a start arrow; the key shows the solved grid |
 | `build-written.js` | `node build-written.js out` writes `u2-turtle-test-a-students-he.docx` and `-key-he.docx` |
 | `verify_turtle_test.py` | `python verify_turtle_test.py` checks every snippet answer with `turtle_sim.py` and the mark totals |
 

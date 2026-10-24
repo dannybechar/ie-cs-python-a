@@ -6,7 +6,7 @@ const { qs, MIN } = require("./questions-turtle-a.js");
 const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle, AlignmentType, Footer, PageNumber } = D;
 
 const OUT = process.argv[2];
-const FONT = "Arial", CODE = "Consolas", BLUE = "1F4E79";
+const FONT = "Arial", CODE = "Consolas", BLUE = "000000";
 const HL = ["א", "ב", "ג", "ד", "ה"];
 
 // same text helpers as build.js: «code» markers split into RTL Hebrew runs and LTR code runs
@@ -18,14 +18,13 @@ function runs(text, o = {}) {
 const rtl = (children, o = {}) => new Paragraph({ bidirectional: true, alignment: o.align || AlignmentType.START, spacing: { before: o.before ?? 0, after: o.after ?? 60 }, keepNext: o.keepNext, keepLines: true, indent: o.indent, border: o.border, children });
 const bold = (t, o = {}) => new TextRun({ text: t, font: FONT, size: o.size || 22, bold: true, rightToLeft: true, color: o.color });
 
-function codeBlock(code) {
+function codeBlock(code, inCell = false) {
   const lines = code.split("\n");
   return lines.map((ln, i) => new Paragraph({
-    bidirectional: false, alignment: AlignmentType.LEFT, keepNext: true, keepLines: true, spacing: { before: 0, after: 0 }, indent: { left: 300, right: 2400 },
-    shading: { type: ShadingType.CLEAR, fill: "F2F2F2", color: "auto" },
-    border: { left: { style: BorderStyle.SINGLE, size: 6, color: "999999", space: 4 },
-      top: i === 0 ? { style: BorderStyle.SINGLE, size: 4, color: "CCCCCC", space: 2 } : undefined,
-      bottom: i === lines.length - 1 ? { style: BorderStyle.SINGLE, size: 4, color: "CCCCCC", space: 2 } : undefined },
+    bidirectional: false, alignment: AlignmentType.LEFT, keepNext: true, keepLines: true, spacing: { before: 0, after: 0 }, indent: inCell ? { left: 100, right: 100 } : { left: 300, right: 2400 },
+    border: { left: { style: BorderStyle.SINGLE, size: 12, color: "000000", space: 4 },
+      top: i === 0 ? { style: BorderStyle.SINGLE, size: 6, color: "000000", space: 2 } : undefined,
+      bottom: i === lines.length - 1 ? { style: BorderStyle.SINGLE, size: 6, color: "000000", space: 2 } : undefined },
     children: [new TextRun({ text: ln || " ", font: CODE, size: 20 })],
   }));
 }
@@ -39,8 +38,8 @@ function optionPara(n, text, isCode, last) {
 
 // answer area: ruled lines (text answers) or an empty box (code), as one-column tables so borders do not merge
 const none = { style: BorderStyle.NONE, size: 0, color: "FFFFFF" };
-const lineB = { style: BorderStyle.DOTTED, size: 6, color: "888888" };
-const boxB = { style: BorderStyle.SINGLE, size: 6, color: "999999" };
+const lineB = { style: BorderStyle.DOTTED, size: 6, color: "000000" };
+const boxB = { style: BorderStyle.SINGLE, size: 8, color: "000000" };
 function answerArea(it) {
   const W = 8800, code = it.kind === "code";
   const rows = code ? 1 : it.lines;
@@ -51,43 +50,118 @@ function answerArea(it) {
       children: [new Paragraph({ spacing: { after: 0 }, keepNext: ri < rows - 1, children: [] })] })] })) });
 }
 
-// drawing grid: 8 columns x 5 rows, start dot at column 2, row 2
-const gb = { style: BorderStyle.SINGLE, size: 4, color: "AAAAAA" };
-function grid() {
-  const W = 560, cols = 8, rows = 5;
-  return new Table({ width: { size: W * cols, type: WidthType.DXA }, columnWidths: Array(cols).fill(W), alignment: AlignmentType.LEFT, indent: { size: 300, type: WidthType.DXA },
-    rows: Array.from({ length: rows }, (_, r) => new TableRow({ cantSplit: true, height: { value: W, rule: "exact" }, children: Array.from({ length: cols }, (_, c) => new TableCell({
-      width: { size: W, type: WidthType.DXA }, borders: { top: gb, bottom: gb, left: gb, right: gb }, verticalAlign: "center",
-      children: [new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 0 }, keepNext: r < rows - 1, children: [new TextRun({ text: r === 1 && c === 1 ? "●" : "", font: FONT, size: 28 })] })] })) })) });
+// drawing grid: d = { cols, rows, start: [col, row], cell } (cell = turtle steps per square). The start square holds an arrow
+// showing where the turtle stands and which way it faces (the turtle always starts facing right).
+const gb = { style: BorderStyle.SINGLE, size: 6, color: "000000" };
+const ARROW = { right: "→", up: "↑", left: "←", down: "↓" };
+const VEC = { right: [1, 0], up: [0, -1], left: [-1, 0], down: [0, 1] };
+const LEFT_OF = { right: "up", up: "left", left: "down", down: "right" };
+const RIGHT_OF = { right: "down", down: "left", left: "up", up: "right" };
+
+// walks the code on the grid; returns the squares drawn through and where the turtle ends (throws if it leaves the grid or a step is not a whole number of squares)
+function walk(code, d) {
+  let [c, r] = d.start, head = "right", pen = true;
+  const drawn = new Set(), inside = () => c >= 0 && c < d.cols && r >= 0 && r < d.rows;
+  for (const ln of code.split("\n")) {
+    const [, cmd, n] = ln.match(/^turtle\.(\w+)\((\d*)\)$/);
+    if (cmd === "left") head = LEFT_OF[head];
+    else if (cmd === "right") head = RIGHT_OF[head];
+    else if (cmd === "penup") pen = false;
+    else if (cmd === "pendown") pen = true;
+    else {
+      if (n % d.cell) throw new Error("step not a whole number of squares: " + ln);
+      for (let i = 0; i < n / d.cell; i++) {
+        if (pen) drawn.add(c + "," + r);
+        c += VEC[head][0]; r += VEC[head][1];
+        if (!inside()) throw new Error("leaves the grid: " + code);
+        if (pen) drawn.add(c + "," + r);
+      }
+    }
+  }
+  return { drawn, end: [c, r], head };
 }
+
+// key = a walk() result: shades the drawn squares, marks the start with a dot and the end with a red arrow
+function grid(d, o = {}) {
+  const W = o.W || 560, key = o.key, [sc, sr] = d.start;
+  return new Table({ width: { size: W * d.cols, type: WidthType.DXA }, columnWidths: Array(d.cols).fill(W), alignment: AlignmentType.LEFT, indent: { size: o.indent ?? 0, type: WidthType.DXA }, visuallyRightToLeft: true,
+    rows: Array.from({ length: d.rows }, (_, r) => new TableRow({ cantSplit: true, height: { value: W, rule: "exact" }, children: Array.from({ length: d.cols }, (_, i) => {
+      const c = d.cols - 1 - i; // the table is forced right-to-left (so Word and LibreOffice agree): the first cell is the rightmost column
+      let text = "", color = "000000", fill;
+      if (!key && c === sc && r === sr) text = ARROW.right;
+      if (key) {
+        if (key.drawn.has(c + "," + r)) fill = "BFBFBF";
+        if (c === sc && r === sr) text = "●";
+        if (c === key.end[0] && r === key.end[1]) { text = ARROW[key.head]; color = "000000"; }
+      }
+      return new TableCell({ width: { size: W, type: WidthType.DXA }, borders: { top: gb, bottom: gb, left: gb, right: gb }, verticalAlign: "center",
+        shading: fill ? { type: ShadingType.CLEAR, fill, color: "auto" } : undefined,
+        children: [new Paragraph({ bidirectional: false, alignment: AlignmentType.CENTER, spacing: { after: 0 }, keepNext: r < d.rows - 1, children: [new TextRun({ text, font: FONT, size: 32, bold: true, color })] })] });
+    }) })) });
+}
+
+// code on the right, empty grid on the left (the table is visually right-to-left, so the first cell sits on the right)
+const noB = { top: none, bottom: none, left: none, right: none };
+function splitBox(it) {
+  const d = it.draw, CW = 2900, GW = 6500;
+  return new Table({ width: { size: CW + GW, type: WidthType.DXA }, columnWidths: [CW, GW], alignment: AlignmentType.LEFT, indent: { size: 300, type: WidthType.DXA }, visuallyRightToLeft: true,
+    rows: [new TableRow({ cantSplit: true, children: [
+      new TableCell({ width: { size: CW, type: WidthType.DXA }, borders: noB, verticalAlign: "center", margins: { right: 100 }, children: codeBlock(it.code, true) }),
+      new TableCell({ width: { size: GW, type: WidthType.DXA }, borders: noB, margins: { left: 200 }, children: [grid(d, { W: 500 }),
+        new Paragraph({ bidirectional: true, spacing: { before: 40, after: 0 }, children: runs(`כל משבצת = ${d.cell} צעדים של הצב`, { size: 19 }) })] }),
+    ] })] });
+}
+const DRAW_NOTE = "ציירו ברשת את מה שהקוד מצייר, וסיימו בחץ שמראה היכן הצב עומד ולאן הוא פונה.";
 
 const qpts = (q) => q.items.reduce((a, i) => a + i.pts, 0);
 const total = qs.reduce((s, q) => s + qpts(q), 0);
 
+// worked example for the instructions page: the code, the empty grid with its start arrow, and the same grid solved (line shaded, big arrow = where the turtle ends)
+function workedExample() {
+  const d = { cols: 6, rows: 3, start: [1, 0], cell: 50 }, code = ["turtle.forward(100)", "turtle.right(90)", "turtle.forward(50)"].join("\n");
+  const cellOf = (w, kids) => new TableCell({ width: { size: w, type: WidthType.DXA }, borders: noB, verticalAlign: "center", margins: { left: 100, right: 100 }, children: kids });
+  const cap = (t) => new Paragraph({ bidirectional: true, spacing: { before: 40, after: 0 }, children: runs(t, { size: 19 }) });
+  return new Table({ width: { size: 8400, type: WidthType.DXA }, columnWidths: [3000, 2700, 2700], alignment: AlignmentType.LEFT, indent: { size: 300, type: WidthType.DXA }, visuallyRightToLeft: true,
+    rows: [new TableRow({ cantSplit: true, children: [
+      cellOf(3000, codeBlock(code, true)),
+      cellOf(2700, [grid(d, { W: 400 }), cap("לפני: הרשת שמקבלים")]),
+      cellOf(2700, [grid(d, { W: 400, key: walk(code, d) }), cap("אחרי: הציור (הקו באפור)")]),
+    ] })] });
+}
+
 function buildTest() {
   const kids = [];
   kids.push(rtl([bold("מבחן – פקודות Turtle בסיסיות", { size: 36 })], { align: AlignmentType.CENTER, after: 60 }));
-  kids.push(rtl([new TextRun({ text: "פייתון א׳ · כיתות ז׳–ח׳", font: FONT, size: 24, rightToLeft: true, color: "555555" })], { align: AlignmentType.CENTER, after: 200 }));
+  kids.push(rtl([new TextRun({ text: "פייתון א׳ · כיתות ז׳–ח׳", font: FONT, size: 24, rightToLeft: true, color: "000000" })], { align: AlignmentType.CENTER, after: 200 }));
   kids.push(rtl(runs("שם: ______________________     כיתה: ________     תאריך: ____________"), { after: 160 }));
   kids.push(rtl([bold("הוראות – קראו לפני שמתחילים")], { after: 60, border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: "999999", space: 2 } } }));
   const ins = [
     "משך המבחן: 60 דקות. יש 6 שאלות, ובכל שאלה כמה סעיפים. סך הכול 100 נקודות. מספר הנקודות כתוב ליד כל סעיף.",
-    "כל סעיף עומד בפני עצמו: הוא מביא איתו את הקוד ואת נקודת ההתחלה שלו. אם לא הצלחתם סעיף, עברו לבא אחריו. אפשר לקבל נקודות בכל סעיף גם אם טעיתם בקודם.",
+    "כל סעיף עומד בפני עצמו: הוא מביא איתו את הקוד ואת נקודת ההתחלה שלו. אם לא הצלחתם סעיף, עברו לבא אחריו.",
     "אלא אם כתוב אחרת, בכל הקודים הצב מתחיל באמצע החלון, פונה ימינה, והעט למטה (הוא מצייר).",
-    "הפקודות במבחן: «turtle.forward(100)», «turtle.left(90)», «turtle.right(90)», «turtle.penup()», «turtle.pendown()». המספר בסוגריים הוא מרחק (ב-forward) או זווית (ב-left וב-right). כותבים כל פקודה בשורה נפרדת, ומספרים בלי מרכאות. אין צורך לכתוב «import turtle» ולא «turtle.done()».",
-    "רמזים שיעזרו לכם: ימין ושמאל הם של הצב, לא של המסך (כשהצב פונה למטה, «left(90)» מפנה אותו ימינה על המסך). פנייה מסובבת את הצב במקום, בלי לזוז ובלי לצייר. ריבוע הוא 4 צלעות שוות ו-4 פניות של 90 מעלות. «penup()» מרימה את העט, כך שהצב זז בלי לצייר, ו-«pendown()» מורידה אותו שוב.",
-    "מותר ומומלץ לשרבט על הדף: למשל, לצייר חץ שמראה לאן הצב פונה אחרי כל פקודה.",
+    "הפקודות במבחן: «turtle.forward(100)», «turtle.left(90)», «turtle.right(90)», «turtle.penup()», «turtle.pendown()». כותבים כל פקודה בשורה נפרדת, ומספרים בלי מרכאות. אין צורך לכתוב «import turtle» ולא «turtle.done()».",
+    "רמזים: ימין ושמאל הם של הצב, לא של המסך (כשהצב פונה למטה, «left(90)» מפנה אותו ימינה על המסך). פנייה מסובבת את הצב במקום, בלי לזוז ובלי לצייר. «penup()» מרימה את העט, כך שהצב זז בלי לצייר, ו-«pendown()» מורידה אותו שוב. מותר לשרבט על הדף.",
+    "ציור ברשת: החץ שבתוך הרשת הוא הצב בתחילת הסעיף, והוא פונה לכיוון שהחץ מראה. ליד כל רשת כתוב כמה צעדים שווה משבצת אחת. מציירים קווים ממרכז משבצת למרכז משבצת, ובסוף מציירים חץ במקום שבו הצב עומד, בכיוון שאליו הוא פונה. דוגמה בהמשך.",
     "בשאלות בחירה מרובה: סמנו בעיגול מספר אחד. בשאלות כתיבה: אפשר לקבל נקודות גם על קוד חלקי, ולכן כתבו מה שהצלחתם. כל קוד שונה מהמצופה שפותר את המשימה מתקבל.",
   ];
   ins.forEach((t, i) => kids.push(rtl([new TextRun({ text: (i + 1) + ".  ", font: FONT, size: 21, rightToLeft: true }), ...runs(t, { size: 21 })], { indent: { start: 360, hanging: 360 }, after: 50 })));
+  kids.push(rtl([bold("דוגמה לציור ברשת (משבצת = 50 צעדים)")], { before: 120, after: 60, keepNext: true }));
+  kids.push(workedExample());
+  kids.push(rtl(runs("«forward(100)» הוא קו של 2 משבצות ימינה. «right(90)» מפנה את הצב למטה. «forward(50)» הוא קו של משבצת אחת למטה. הצב מסיים בחץ שפונה למטה."), { before: 60, indent: { start: 360 } }));
 
   qs.forEach((q, qi) => {
-    kids.push(rtl([bold(`שאלה ${qi + 1}  ·  ${q.title}  (${qpts(q)} נקודות)`, { size: 24, color: BLUE })], { before: 280, after: 120, keepNext: true, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: BLUE, space: 2 } } }));
+    kids.push(rtl([bold(`שאלה ${qi + 1}  ·  ${q.title}  (${qpts(q)} נקודות)`, { size: 26, color: BLUE })], { before: 280, after: 120, keepNext: true, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: BLUE, space: 2 } } }));
     q.items.forEach((it, k) => {
-      kids.push(rtl([bold(HL[k] + ".  "), ...runs(it.t), bold(`   (${it.pts} נק׳)`, { size: 20, color: "555555" })], { keepNext: true, before: 100, after: 80, indent: { start: 360, hanging: 360 } }));
-      if (it.code) kids.push(...codeBlock(it.code));
+      kids.push(rtl([bold(HL[k] + ".  "), ...runs(it.t), bold(`   (${it.pts} נק׳)`, { size: 20, color: "000000" })], { keepNext: true, before: 100, after: 80, indent: { start: 360, hanging: 360 } }));
+      if (it.draw && it.kind !== "grid") {
+        kids.push(rtl([new TextRun({ text: it.drawNote || DRAW_NOTE, font: FONT, size: 20, rightToLeft: true, bold: true })], { keepNext: true, indent: { start: 360 }, after: 60 }));
+        kids.push(splitBox(it)); kids.push(gap(100, true));
+      } else if (it.code) kids.push(...codeBlock(it.code));
       if (it.kind === "mc") it.options.forEach((t, j) => kids.push(optionPara(j + 1, t, !!it.codeOpts, j === 3)));
-      else if (it.kind === "grid") { kids.push(gap(100, true)); kids.push(grid()); kids.push(gap(100)); }
+      else if (it.kind === "grid") {
+        kids.push(gap(100, true)); kids.push(grid(it.draw, { indent: 300 }));
+        kids.push(rtl(runs(`כל משבצת = ${it.draw.cell} צעדים של הצב`, { size: 19 }), { before: 40, indent: { start: 300 } })); kids.push(gap(100));
+      }
       else { kids.push(gap(40, true)); kids.push(answerArea(it)); kids.push(gap(120)); }
     });
   });
@@ -106,7 +180,7 @@ function cell(text, w, o = {}) {
 }
 function table(widths, header, rows, o = {}) {
   return new Table({ width: { size: widths.reduce((a, b) => a + b, 0), type: WidthType.DXA }, columnWidths: widths, visuallyRightToLeft: true,
-    rows: [new TableRow({ tableHeader: true, children: header.map((hd, i) => cell(hd, widths[i], { bold: true, fill: "DCE6F1", center: true })) }),
+    rows: [new TableRow({ tableHeader: true, children: header.map((hd, i) => cell(hd, widths[i], { bold: true, fill: "D9D9D9", center: true })) }),
       ...rows.map((r) => new TableRow({ cantSplit: true, children: r.map((c, i) => cell(c, widths[i], { center: o.centerCols?.includes(i), bold: o.boldCols?.includes(i), code: o.codeCols?.includes(i) })) }))] });
 }
 const h = (t, s = 28) => rtl([bold(t, { size: s, color: BLUE })], { before: 200, after: 100, keepNext: true });
@@ -114,7 +188,7 @@ const h = (t, s = 28) => rtl([bold(t, { size: s, color: BLUE })], { before: 200,
 function buildKey() {
   const kids = [];
   kids.push(rtl([bold("מפתח תשובות ומפרט – מבחן Turtle בסיסי", { size: 34 })], { align: AlignmentType.CENTER, after: 40 }));
-  kids.push(rtl([new TextRun({ text: "לשימוש המורה בלבד", font: FONT, size: 22, rightToLeft: true, color: "C00000" })], { align: AlignmentType.CENTER, after: 160 }));
+  kids.push(rtl([new TextRun({ text: "לשימוש המורה בלבד", font: FONT, size: 22, rightToLeft: true, color: "000000" })], { align: AlignmentType.CENTER, after: 160 }));
 
   kids.push(h("מפרט המבחן"));
   const types = ["בחירה מרובה", "בחירה מרובה", "ניתוח קוד", "ניתוח קוד", "כתיבת קוד", "כתיבת קוד"];
@@ -127,11 +201,23 @@ function buildKey() {
 
   qs.forEach((q, qi) => {
     kids.push(h(`שאלה ${qi + 1} · ${q.title} (${qpts(q)} נק׳)`, 26));
+    const bullets = (r) => r.map(([t, p]) => `• ${t} (${p})`).join("\n");
     const rows = q.items.map((it, k) => it.kind === "mc"
-      ? [HL[k], it.pts, "תשובה " + (it.ans + 1) + "\n" + it.options[it.ans], it.why]
-      : [HL[k], it.pts, it.model, it.rubric.map(([t, p]) => `• ${t} (${p})`).join("\n") + "\n" + it.why]);
+      ? [HL[k], it.pts, "תשובה " + (it.ans + 1) + "\n" + it.options[it.ans] + (it.draw ? "\nציור: " + it.draw.model : ""),
+        (it.draw ? `בחירה: ${it.pts - it.draw.pts} נק׳, ציור: ${it.draw.pts} נק׳\n${bullets(it.draw.rubric)}\n` : "") + it.why]
+      : [HL[k], it.pts, it.model + (it.draw ? "\nציור: " + it.draw.model : ""), bullets(it.rubric) + "\n" + it.why]);
     kids.push(table([600, 800, 3900, 3700], ["סעיף", "נק׳", "תשובה / פתרון לדוגמה", q.items[0].kind === "mc" ? "הסבר" : "חלוקת ניקוד והסבר"], rows, { centerCols: [0, 1], codeCols: [2] }));
   });
+  kids.push(h("ציורים לדוגמה: סעיפים עם רשת"));
+  kids.push(rtl(runs("משבצות אפורות = מה שמצויר. ● = נקודת ההתחלה. החץ הגדול = היכן הצב עומד ולאן הוא פונה בסוף."), { after: 80 }));
+  const drawn = [];
+  qs.forEach((q, qi) => q.items.forEach((it, k) => { if (it.draw) drawn.push([`שאלה ${qi + 1}${HL[k]}  ·  משבצת = ${it.draw.cell} צעדים`, it.draw, walk(it.draw.code || it.code, it.draw)]); }));
+  const half = (e) => new TableCell({ width: { size: 4700, type: WidthType.DXA }, borders: noB, margins: { bottom: 160 }, children: e
+    ? [rtl(runs(e[0], { bold: true, size: 20 }), { after: 40, keepNext: true }), grid(e[1], { W: 380, key: e[2] }), new Paragraph({ children: [] })]
+    : [new Paragraph({ children: [] })] });
+  const drows = [];
+  for (let i = 0; i < drawn.length; i += 2) drows.push(new TableRow({ cantSplit: true, children: [half(drawn[i]), half(drawn[i + 1])] }));
+  kids.push(new Table({ width: { size: 9400, type: WidthType.DXA }, columnWidths: [4700, 4700], visuallyRightToLeft: true, rows: drows }));
   kids.push(h("פתרונות לדוגמה: סעיפי כתיבת קוד"));
   qs.forEach((q, qi) => q.items.forEach((it, k) => {
     if (it.kind === "code") {

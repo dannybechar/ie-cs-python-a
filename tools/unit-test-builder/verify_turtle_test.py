@@ -27,6 +27,18 @@ for q in qs:
             assert sum(p for _, p in i["rubric"]) == i["pts"], i["t"]
 
 I = lambda q, k: qs[q]["items"][k]
+# Q1a: the line is drawn before the turn
+pos, head, segs = info(I(0, 0)["code"]); assert pos == (100, 0) and head == "up" and len(segs) == 1 and I(0, 0)["ans"] == 2
+# drawing grids: marks split, and every grid step is a whole number of squares (the builder also walks every drawing and throws if it leaves the grid)
+for q in qs:
+    for i in q["items"]:
+        d = i.get("draw")
+        if d and i["kind"] == "mc":
+            assert sum(p for _, p in d["rubric"]) == d["pts"], i["t"]
+        if d:
+            for ln in (d.get("code") or i["code"]).splitlines():
+                m = re.fullmatch(r"turtle\.forward\((\d+)\)", ln)
+                assert not m or int(m[1]) % d["cell"] == 0, ln
 # Q2a, Q2c, Q2d
 assert info(I(1, 0)["code"])[1] == "left"
 assert info(I(1, 2)["code"]) [0] == (100, 0) and info(I(1, 2)["code"])[2] == []

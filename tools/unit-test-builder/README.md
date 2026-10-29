@@ -34,3 +34,13 @@ Convert to PDF with LibreOffice (`soffice --headless --convert-to pdf out/*.docx
 | `build-written.js` | `node build-written.js out` writes `u2-turtle-test-a-students-he.docx` and `-key-he.docx` |
 | `verify_turtle_test.py` | `python verify_turtle_test.py` checks every snippet answer with `turtle_sim.py` and the mark totals |
 
+
+### First sitting (Grade 8, 29 Oct 2026, 36 students)
+
+Aggregates only; individual grades and feedback papers are kept outside the repository (student data). Graded from the handwritten scans with the rubric in `questions-turtle-a.js` (a model read the handwriting; unclear items were re-examined and decided best-effort).
+Mean 94.6 · median 95.5 · range 74–100 · 11 students scored 100. The hardest item was 1א (22% scored zero).
+
+**Two rubric lines to fix before the test is used again**
+
+- **4ב, "explains what happens: two sides drawn as one straight line"** earned 0 for all 36 students, and **4ג, "the first line does not change"** earned full marks for only 8 of 36. The question text asks for neither, so students had no reason to write them. For this sitting both lines were credited to everyone. Fix: either ask for the explanation in the question ("ומה קורה בציור?") or drop the two lines and move their points to the lines the question does ask for.
+- The test was easy for this class (mean 94.6), so it separates weak students but not strong ones.

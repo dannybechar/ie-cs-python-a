@@ -40,7 +40,7 @@ Convert to PDF with LibreOffice (`soffice --headless --convert-to pdf out/*.docx
 Aggregates only; individual grades and feedback papers are kept outside the repository (student data). Graded from the handwritten scans with the rubric in `questions-turtle-a.js` (a model read the handwriting; unclear items were re-examined and decided best-effort).
 Mean 94.6 · median 95.5 · range 74–100 · 11 students scored 100. The hardest item was 1א (22% scored zero).
 
-**Two rubric lines to fix before the test is used again**
+**Two rubric lines were fixed after the sitting (29 Oct 2026)**
 
-- **4ב, "explains what happens: two sides drawn as one straight line"** earned 0 for all 36 students, and **4ג, "the first line does not change"** earned full marks for only 8 of 36. The question text asks for neither, so students had no reason to write them. For this sitting both lines were credited to everyone. Fix: either ask for the explanation in the question ("ומה קורה בציור?") or drop the two lines and move their points to the lines the question does ask for.
+- 4ב "explains what happens" earned 0 for all 36 students and 4ג "the first line does not change" earned full marks for only 8 of 36, because the question text asked for neither. For the first sitting both lines were credited to everyone. The questions now ask for them: 4ב adds "ומה קורה בציור בגלל החסר?" and 4ג adds "ציינו גם מה נשאר זהה". Rubric lines and points are unchanged, the test is still 7 pages, and the estimate is still about 62 minutes.
 - The test was easy for this class (mean 94.6), so it separates weak students but not strong ones.

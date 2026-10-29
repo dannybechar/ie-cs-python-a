@@ -31,8 +31,10 @@ Convert to PDF with LibreOffice (`soffice --headless --convert-to pdf out/*.docx
 | File | What it is |
 |---|---|
 | `questions-turtle-a.js` | 6 questions with items: MC, open answer, grid drawing, code writing; marks, model answers, rubric. An item with `draw: {cols, rows, start, cell}` gets a code box (right) and an empty grid (left) with a start arrow; the key shows the solved grid |
-| `build-written.js` | `node build-written.js out` writes `u2-turtle-test-a-students-he.docx` and `-key-he.docx` |
-| `verify_turtle_test.py` | `python verify_turtle_test.py` checks every snippet answer with `turtle_sim.py` and the mark totals |
+| `questions-turtle-b.js` | Form B (Grade 7): same structure, marks and timing, new items. Its `META` sets the Form B rules: every grid is 10 x 7 squares of 50 steps, no start arrow (the student marks a start square), its own instruction texts and worked example, and every rubric line is asked for in the question |
+| `build-written.js` | `node build-written.js out a` (default) or `node build-written.js out b` writes `u2-turtle-test-<form>-students-he.docx` and `-key-he.docx`; for Form B it also checks that every grid has the same size and every drawing fits it |
+| `verify_turtle_test.py` | `python verify_turtle_test.py` checks every Form A snippet answer with `turtle_sim.py` and the mark totals |
+| `verify_turtle_test_b.py` | the same checks for Form B, plus the uniform grid and the rubric sums |
 
 
 ### First sitting (Grade 8, 29 Oct 2026, 36 students)

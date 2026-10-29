@@ -1,8 +1,11 @@
-// Builds the written turtle-basics test (student sheet + teacher key) from questions-turtle-a.js
+// Builds the written turtle-basics test (student sheet + teacher key): node build-written.js <outDir> [a|b]
+// Form A reads questions-turtle-a.js, Form B questions-turtle-b.js (its META switches off the grid start arrows, sets the uniform grid and the instruction texts).
 const fs = require("fs");
 const path = require("path");
 const D = require("docx");
-const { qs, MIN } = require("./questions-turtle-a.js");
+const FORM = process.argv[3] || "a";
+const mod = require(`./questions-turtle-${FORM}.js`);
+const { qs, MIN } = mod, META = mod.META || {};
 const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle, AlignmentType, Footer, PageNumber } = D;
 
 const OUT = process.argv[2];
@@ -88,7 +91,7 @@ function grid(d, o = {}) {
     rows: Array.from({ length: d.rows }, (_, r) => new TableRow({ cantSplit: true, height: { value: W, rule: "exact" }, children: Array.from({ length: d.cols }, (_, i) => {
       const c = d.cols - 1 - i; // the table is forced right-to-left (so Word and LibreOffice agree): the first cell is the rightmost column
       let text = "", color = "000000", fill;
-      if (!key && c === sc && r === sr) text = ARROW.right;
+      if (!key && !META.noStartArrow && c === sc && r === sr) text = ARROW.right;
       if (key) {
         if (key.drawn.has(c + "," + r)) fill = "BFBFBF";
         if (c === sc && r === sr) text = "●";
@@ -96,7 +99,7 @@ function grid(d, o = {}) {
       }
       return new TableCell({ width: { size: W, type: WidthType.DXA }, borders: { top: gb, bottom: gb, left: gb, right: gb }, verticalAlign: "center",
         shading: fill ? { type: ShadingType.CLEAR, fill, color: "auto" } : undefined,
-        children: [new Paragraph({ bidirectional: false, alignment: AlignmentType.CENTER, spacing: { after: 0 }, keepNext: r < d.rows - 1, children: [new TextRun({ text, font: FONT, size: 32, bold: true, color })] })] });
+        children: [new Paragraph({ bidirectional: false, alignment: AlignmentType.CENTER, spacing: { after: 0 }, keepNext: r < d.rows - 1, children: [new TextRun({ text, font: FONT, size: o.fs || 32, bold: true, color })] })] });
     }) })) });
 }
 
@@ -111,31 +114,43 @@ function splitBox(it) {
         new Paragraph({ bidirectional: true, spacing: { before: 40, after: 0 }, children: runs(`כל משבצת = ${d.cell} צעדים של הצב`, { size: 19 }) })] }),
     ] })] });
 }
-const DRAW_NOTE = "ציירו ברשת את מה שהקוד מצייר, וסיימו בחץ שמראה היכן הצב עומד ולאן הוא פונה.";
+const DRAW_NOTE = META.drawNote || "ציירו ברשת את מה שהקוד מצייר, וסיימו בחץ שמראה היכן הצב עומד ולאן הוא פונה.";
+
+// Form B rule: every grid has the same size, and every drawing fits it with room to choose a start (checked on the model walk)
+if (META.grid) qs.forEach((q) => q.items.forEach((it) => {
+  const d = it.draw; if (!d) return;
+  for (const k of ["cols", "rows", "cell"]) if (d[k] !== META.grid[k]) throw new Error(`grid ${k} differs: ${it.t.slice(0, 30)}`);
+  const w = walk(it.code, d), cs = [], rs = [];
+  w.drawn.forEach((x) => { const [c, r] = x.split(",").map(Number); cs.push(c); rs.push(r); });
+  const ww = Math.max(...cs) - Math.min(...cs), hh = Math.max(...rs) - Math.min(...rs);
+  if (ww > META.maxMoves.w || hh > META.maxMoves.h) throw new Error(`drawing too big (${ww}x${hh}): ${it.t.slice(0, 30)}`);
+}));
 
 const qpts = (q) => q.items.reduce((a, i) => a + i.pts, 0);
 const total = qs.reduce((s, q) => s + qpts(q), 0);
 
 // worked example for the instructions page: the code, the empty grid with its start arrow, and the same grid solved (line shaded, big arrow = where the turtle ends)
 function workedExample() {
-  const d = { cols: 6, rows: 3, start: [1, 0], cell: 50 }, code = ["turtle.forward(100)", "turtle.right(90)", "turtle.forward(50)"].join("\n");
+  const ex = META.example, d = ex ? { ...META.grid, start: ex.start } : { cols: 6, rows: 3, start: [1, 0], cell: 50 };
+  const code = (ex ? ex.code : ["turtle.forward(100)", "turtle.right(90)", "turtle.forward(50)"]).join("\n"), gw = ex ? 300 : 400, cw = d.cols * gw + 200;
   const cellOf = (w, kids) => new TableCell({ width: { size: w, type: WidthType.DXA }, borders: noB, verticalAlign: "center", margins: { left: 100, right: 100 }, children: kids });
   const cap = (t) => new Paragraph({ bidirectional: true, spacing: { before: 40, after: 0 }, children: runs(t, { size: 19 }) });
-  return new Table({ width: { size: 8400, type: WidthType.DXA }, columnWidths: [3000, 2700, 2700], alignment: AlignmentType.LEFT, indent: { size: 300, type: WidthType.DXA }, visuallyRightToLeft: true,
+  const left = 9300 - 2 * cw;
+  return new Table({ width: { size: left + 2 * cw, type: WidthType.DXA }, columnWidths: [left, cw, cw], alignment: AlignmentType.LEFT, indent: { size: 300, type: WidthType.DXA }, visuallyRightToLeft: true,
     rows: [new TableRow({ cantSplit: true, children: [
-      cellOf(3000, codeBlock(code, true)),
-      cellOf(2700, [grid(d, { W: 400 }), cap("לפני: הרשת שמקבלים")]),
-      cellOf(2700, [grid(d, { W: 400, key: walk(code, d) }), cap("אחרי: הציור (הקו באפור)")]),
+      cellOf(left, codeBlock(code, true)),
+      cellOf(cw, [grid(d, { W: gw, fs: ex ? 20 : 32 }), cap(ex ? "לפני: הרשת שמקבלים (בלי חץ)" : "לפני: הרשת שמקבלים")]),
+      cellOf(cw, [grid(d, { W: gw, fs: ex ? 20 : 32, key: walk(code, d) }), cap("אחרי: הציור (הקו באפור)")]),
     ] })] });
 }
 
 function buildTest() {
   const kids = [];
   kids.push(rtl([bold("מבחן – פקודות Turtle בסיסיות", { size: 36 })], { align: AlignmentType.CENTER, after: 60 }));
-  kids.push(rtl([new TextRun({ text: "פייתון א׳ · כיתות ז׳–ח׳", font: FONT, size: 24, rightToLeft: true, color: "000000" })], { align: AlignmentType.CENTER, after: 200 }));
+  kids.push(rtl([new TextRun({ text: META.subtitle || "פייתון א׳ · כיתות ז׳–ח׳", font: FONT, size: 24, rightToLeft: true, color: "000000" })], { align: AlignmentType.CENTER, after: 200 }));
   kids.push(rtl(runs("שם: ______________________     כיתה: ________     תאריך: ____________"), { after: 160 }));
   kids.push(rtl([bold("הוראות – קראו לפני שמתחילים")], { after: 60, border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: "999999", space: 2 } } }));
-  const ins = [
+  const ins = META.ins || [
     "משך המבחן: 60 דקות. יש 6 שאלות, ובכל שאלה כמה סעיפים. סך הכול 100 נקודות. מספר הנקודות כתוב ליד כל סעיף.",
     "כל סעיף עומד בפני עצמו: הוא מביא איתו את הקוד ואת נקודת ההתחלה שלו. אם לא הצלחתם סעיף, עברו לבא אחריו.",
     "אלא אם כתוב אחרת, בכל הקודים הצב מתחיל באמצע החלון, פונה ימינה, והעט למטה (הוא מצייר).",
@@ -147,7 +162,7 @@ function buildTest() {
   ins.forEach((t, i) => kids.push(rtl([new TextRun({ text: (i + 1) + ".  ", font: FONT, size: 21, rightToLeft: true }), ...runs(t, { size: 21 })], { indent: { start: 360, hanging: 360 }, after: 50 })));
   kids.push(rtl([bold("דוגמה לציור ברשת (משבצת = 50 צעדים)")], { before: 120, after: 60, keepNext: true }));
   kids.push(workedExample());
-  kids.push(rtl(runs("«forward(100)» הוא קו של 2 משבצות ימינה. «right(90)» מפנה את הצב למטה. «forward(50)» הוא קו של משבצת אחת למטה. הצב מסיים בחץ שפונה למטה."), { before: 60, indent: { start: 360 } }));
+  kids.push(rtl(runs(META.exampleText || "«forward(100)» הוא קו של 2 משבצות ימינה. «right(90)» מפנה את הצב למטה. «forward(50)» הוא קו של משבצת אחת למטה. הצב מסיים בחץ שפונה למטה."), { before: 60, indent: { start: 360 } }));
 
   qs.forEach((q, qi) => {
     kids.push(rtl([bold(`שאלה ${qi + 1}  ·  ${q.title}  (${qpts(q)} נקודות)`, { size: 26, color: BLUE })], { before: 280, after: 120, keepNext: true, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: BLUE, space: 2 } } }));
@@ -187,7 +202,7 @@ const h = (t, s = 28) => rtl([bold(t, { size: s, color: BLUE })], { before: 200,
 
 function buildKey() {
   const kids = [];
-  kids.push(rtl([bold("מפתח תשובות ומפרט – מבחן Turtle בסיסי", { size: 34 })], { align: AlignmentType.CENTER, after: 40 }));
+  kids.push(rtl([bold(META.keyTitle || "מפתח תשובות ומפרט – מבחן Turtle בסיסי", { size: 34 })], { align: AlignmentType.CENTER, after: 40 }));
   kids.push(rtl([new TextRun({ text: "לשימוש המורה בלבד", font: FONT, size: 22, rightToLeft: true, color: "000000" })], { align: AlignmentType.CENTER, after: 160 }));
 
   kids.push(h("מפרט המבחן"));
@@ -197,6 +212,7 @@ function buildKey() {
     { centerCols: [0, 3, 4, 5] }));
   kids.push(rtl(runs("כל סעיף עומד בפני עצמו (מקבל קוד ונקודת התחלה משלו), כדי שתלמיד שטעה בסעיף אחד עדיין יוכל לצבור נקודות בשאר השאלה. בסעיפי הכתיבה והניתוח הפתוחים מחלקים ניקוד חלקי לפי הטבלאות."), { before: 100, after: 60 }));
   kids.push(rtl(runs("הזמן המוערך הוא לתלמיד ממוצע. ההערכה מבוססת על מבנה המבחן ולא על נתונים, ולכן כדאי לבדוק אותה אחרי המבחן הראשון."), { after: 60 }));
+  (META.keyNotes || []).forEach((t) => kids.push(rtl(runs(t), { after: 60 })));
   kids.push(rtl(runs("בדיקה: קוד שונה מהמפתח שפותר את המשימה מקבל ניקוד מלא. טעות קטנה (למשל, פנייה לכיוון הלא נכון) פוגעת רק בשורת הניקוד שלה. חוסר ב-«turtle.» לפני הפקודה אינו מוריד נקודות."), { after: 60 }));
 
   qs.forEach((q, qi) => {
@@ -209,7 +225,7 @@ function buildKey() {
     kids.push(table([600, 800, 3900, 3700], ["סעיף", "נק׳", "תשובה / פתרון לדוגמה", q.items[0].kind === "mc" ? "הסבר" : "חלוקת ניקוד והסבר"], rows, { centerCols: [0, 1], codeCols: [2] }));
   });
   kids.push(h("ציורים לדוגמה: סעיפים עם רשת"));
-  kids.push(rtl(runs("משבצות אפורות = מה שמצויר. ● = נקודת ההתחלה. החץ הגדול = היכן הצב עומד ולאן הוא פונה בסוף."), { after: 80 }));
+  kids.push(rtl(runs("משבצות אפורות = מה שמצויר. ● = נקודת ההתחלה" + (META.noStartArrow ? " (מיקום לדוגמה)" : "") + ". החץ הגדול = היכן הצב עומד ולאן הוא פונה בסוף."), { after: 80 }));
   const drawn = [];
   qs.forEach((q, qi) => q.items.forEach((it, k) => { if (it.draw) drawn.push([`שאלה ${qi + 1}${HL[k]}  ·  משבצת = ${it.draw.cell} צעדים`, it.draw, walk(it.draw.code || it.code, it.draw)]); }));
   const half = (e) => new TableCell({ width: { size: 4700, type: WidthType.DXA }, borders: noB, margins: { bottom: 160 }, children: e
@@ -233,9 +249,9 @@ const page = { size: { width: 11906, height: 16838 }, margin: { top: 1000, botto
 const footer = (label) => new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: label + "  ·  עמוד ", font: FONT, size: 18, color: "777777", rightToLeft: true }), new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: 18, color: "777777" })] })] });
 
 (async () => {
-  const test = new Document({ ...common, sections: [{ properties: { page, bidi: true }, footers: { default: footer("מבחן Turtle בסיסי") }, children: buildTest() }] });
+  const test = new Document({ ...common, sections: [{ properties: { page, bidi: true }, footers: { default: footer(META.footer || "מבחן Turtle בסיסי") }, children: buildTest() }] });
   const key = new Document({ ...common, sections: [{ properties: { page, bidi: true }, footers: { default: footer("מפתח תשובות – למורה") }, children: buildKey() }] });
-  fs.writeFileSync(path.join(OUT, "u2-turtle-test-a-students-he.docx"), await Packer.toBuffer(test));
-  fs.writeFileSync(path.join(OUT, "u2-turtle-test-a-key-he.docx"), await Packer.toBuffer(key));
+  fs.writeFileSync(path.join(OUT, `u2-turtle-test-${FORM}-students-he.docx`), await Packer.toBuffer(test));
+  fs.writeFileSync(path.join(OUT, `u2-turtle-test-${FORM}-key-he.docx`), await Packer.toBuffer(key));
   console.log("ok");
 })();

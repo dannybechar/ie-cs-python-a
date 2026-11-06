@@ -46,3 +46,17 @@ Mean 94.6 · median 95.5 · range 74–100 · 11 students scored 100. The hardes
 
 - 4ב "explains what happens" earned 0 for all 36 students and 4ג "the first line does not change" earned full marks for only 8 of 36, because the question text asked for neither. For the first sitting both lines were credited to everyone. The questions now ask for them: 4ב adds "ומה קורה בציור בגלל החסר?" and 4ג adds "ציינו גם מה נשאר זהה". Rubric lines and points are unchanged, the test is still 7 pages, and the estimate is still about 62 minutes.
 - The test was easy for this class (mean 94.6), so it separates weak students but not strong ones.
+
+### First sitting of Form B (Grade 7, 6 Nov 2026, 38 students)
+
+Aggregates only; individual grades and feedback papers are kept outside the repository (student data). Graded from the handwritten scans with the rubric in `questions-turtle-b.js`; unclear items were decided best-effort and listed for the teacher.
+Mean 90 · median 92 · range 65–100 · 5 students scored 100 · 4 students below 75. Hardest items: 2ד (68% average, 12 of 38 scored zero), 1א (79%), 2ג (82%).
+
+Grading rulings the teacher made (apply them if the form is graded again):
+
+- 3א: if the final direction is not written but the arrow in the drawing points up, the direction line is credited.
+- 4ב: "the fourth turn" (counting code lines, where line 4 is the wrong `right(90)`) is credited as the correct place.
+- A turn written without an angle (`right` instead of `right(90)`) is a small slip and is credited, like a missing `turtle.` prefix.
+- A lost page is credited in full for its question.
+
+Findings: the no-start-arrow design worked (shapes were graded without position problems). The main grading friction is hand-drawn line lengths of about 1.5 squares, which the key does not say how to treat; and 4ב's "which turn" invites counting code lines, so the question could say "הפנייה הראשונה, השנייה או השלישית" more prominently.

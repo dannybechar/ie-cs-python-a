@@ -10,6 +10,7 @@ Israeli Ministry of Education's official Python A program
 **All 30 official double meetings are built and approved by the teacher** (Units 1–9), plus the school-added Unit 0,
 and every meeting has its Hebrew slide deck. See [`course-map.md`](course-map.md) for the unit-by-unit
 breakdown, the schedule and the pace check, and each unit's `unit-strategy.md` for its official scope.
+Where the two classes (Grade 7 and Grade 8) actually are in the course: [`class-progress.md`](class-progress.md).
 
 - [Unit 0 — Environment Setup](units/u0-environment-setup) — school addition, outside the official 30 meetings; complete (1/1 meeting)
 - [Unit 1 — Introduction to Python](units/u1-introduction-python) — complete (1/1 meeting)

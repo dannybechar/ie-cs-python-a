@@ -59,7 +59,7 @@ Official topics that no planned meeting fully covers yet. Details are in each un
 
 ## Schedule
 
-All 31 meetings in teaching order. Fill in **Target week** once the school calendar is known, and **Taught on** after each lesson.
+All 31 meetings in teaching order. Fill in **Target week** once the school calendar is known, and **Taught on** after each lesson. What each class has actually completed is tracked in [`class-progress.md`](class-progress.md).
 
 | # | Meeting | Content | Built | Target week (starts Sunday) | Taught on |
 |---:|---|---|---|---|---|

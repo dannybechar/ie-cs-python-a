@@ -6,7 +6,7 @@
 **Status:** Approved by the teacher  
 **Duration:** 90 minutes  
 **Structure:** Lab + Lab (one short explanation at the start)  
-**Current tool:** Thonny 5.0.0, which includes Python 3.14 (versions current in September 2026)  
+**Current tool:** Thonny 5.0.0, which includes Python 3.14 (versions current in September 2026; not re-verified on a lab PC, see section 3)  
 **Tool-dependence rule:** This is the one lesson that is about the tool itself. Keep the concepts (Python vs. tool, course folder, file naming, save/reopen) in separate sections from the Thonny steps, so that if the IDE changes, only the **Tool Note – Thonny** sections need replacing.
 
 ---
@@ -46,10 +46,13 @@ Do this on one lab PC, **logged in as a student account**, at least a few days b
 | Windows SmartScreen or school security software doesn't block the installer | This is the most common failure on school PCs | Ask IT to allow it, or pre-install |
 | Files saved in the planned course folder **are still there after a restart** | Many labs reset PCs on reboot (e.g. "Deep Freeze") | Choose a different location: network drive, USB stick or cloud drive |
 | The lab PCs are Intel/AMD, not Arm | There are separate installers | Use the Arm installer on Arm (e.g. Snapdragon) machines |
+| The Thonny and Python versions named in these notes match what the PC installs | The notes say Thonny 5.0.0 / Python 3.14; this was not verified on a lab PC | Run `EnvironmentCheck.py` once on a lab PC. The expected line is only `Python version: 3.x.y`, so a different 3.x is fine |
 
 **Decide before the lesson:** where the course folder lives (see section 7). The lab brief says `Documents\G7-Python`. If you choose somewhere else, change that line in the brief.
 
 **Prepare:** copy `EnvironmentCheck.py` to where students can get it (shared drive, class site or USB stick).
+
+**Decide and record (ministry meeting 0 is a Google Classroom orientation, finding U0-01):** does the school use Classroom or another LMS for this course? If yes, replace the teacher walk-around in the exit check with a submission (see 82–87 min). If no, record "no Classroom" as an approved deviation in `docs/ministry-program/traceability.md`.
 
 ---
 
@@ -83,6 +86,8 @@ A program is a file with a `.py` ending, saved in a folder. Thonny only opens it
 Run `EnvironmentCheck.py` on the projector: the `OK` lines appear and the Turtle window draws a square with "Ready!".
 
 Say: **By the end of today, your computer will do exactly this.**
+
+Then one sentence (inside the same 5 minutes): **In May there is a national exam on a computer; this year trains you for it.**
 
 ---
 
@@ -149,7 +154,7 @@ Students open `EnvironmentCheck.py` in Thonny and run it.
 Expected result in the Shell:
 
 ```text
-Python version: 3.14.x
+Python version: 3.x.y
 OK   Python 3
 OK   math
 OK   random
@@ -160,7 +165,9 @@ All done. Close the drawing window to finish.
 
 A drawing window opens with a blue square and "Ready!". Students close the drawing window when done.
 
-Say: **You don't need to understand this code yet. By the end of the year you will be able to write all of it.**
+Say: **You don't need to understand this code yet. By the end of the year you will understand most of it.**
+
+Teacher note: the file marks with comments the few lines that are not taught in the course (`import sys`, `write`). The drawing part uses the same template as the national exam (`wn = turtle.Screen()`, `pen = turtle.Turtle()`, `wn.mainloop()`), and the later units reuse it.
 
 ---
 
@@ -185,6 +192,7 @@ Homework: install Thonny at home in the same way, then run `EnvironmentCheck.py`
 
 - Mac and Linux installers are also on thonny.org.
 - A student with no computer at home tells the teacher privately. Don't ask about this in front of the class.
+- A student who cannot install at home (blocked, shared or school-managed computer): ask the teacher about the **web environment**. The ministry program accepts a web environment for classes working from home (`materials-m01-1-b6cfe9.md` slide 14). Which environment the exam uses is not stated in the material read; see the question list in section 10.
 
 ---
 
@@ -197,6 +205,10 @@ The teacher walks around with the class list. Each student shows:
 3. The check output with every line `OK`.
 
 Then asks one student out of every few: **What is the difference between Python and Thonny?**
+
+If the school uses Classroom or another LMS (see section 3): instead of the walk-around, each student takes a screenshot of Thonny with the check output and submits it. This is the ministry's task 0.4 and costs the same 5 minutes.
+
+Optional one-line written answer, if time: **What do you expect from this course?** (ministry meeting 0, question 2).
 
 ---
 
@@ -212,7 +224,8 @@ Troubleshooting for students who are still installing.
 |---|---|---|
 | "Windows protected your PC" | SmartScreen doesn't know the installer | "More info" → "Run anyway", only if school policy allows it. Otherwise use the portable version or IT |
 | Installer blocked completely | School security policy | Portable version from a shared drive, or IT pre-install |
-| `PROBLEM   turtle is missing` | Python installed without Tk (usually a separate Python, not Thonny's) | Make sure Thonny uses its own built-in Python: Tools → Options → Interpreter |
+| A red error such as `ModuleNotFoundError: No module named 'turtle'` (or `_tkinter`) | Python installed without Tk (usually a separate Python, not Thonny's) | Make sure Thonny uses its own built-in Python: Tools → Options → Interpreter |
+| No install possible at home | Blocked or shared computer | Ask the teacher about the web option (see 75–82 min) |
 | `AttributeError` or strange errors when using turtle | A student file is named `turtle.py` | Rename that file |
 | The drawing window doesn't appear | It opened behind Thonny | Look at the taskbar and bring it forward |
 | Can't find the saved file | Saved somewhere else | View → Files, or File → Save As again into the course folder |
@@ -252,3 +265,13 @@ Correction: only from the official site. Check the address bar.
 - An oral one-sentence answer: Python vs. Thonny
 
 No grade. This is a readiness check for Unit 1.
+
+---
+
+## 10. Open questions for the teacher / ministry
+
+- Does the school use Google Classroom (or another LMS) for the course? Decides the exit check (U0-01).
+- Which environment does the national exam use, and is a web environment allowed at home? Not stated in the material read (U0-03).
+- Re-check the Thonny/Python version on one lab PC before the next cohort (U0-06).
+
+Taught classes: the missed items are in [`m1-addendum-he.md`](m1-addendum-he.md).

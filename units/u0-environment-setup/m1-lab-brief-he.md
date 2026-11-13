@@ -73,7 +73,7 @@
 אם הכול תקין, יופיע הפלט הזה, ובחלון נוסף ריבוע כחול עם המילה Ready:
 
 ```text
-Python version: 3.14.x
+Python version: 3.x.y
 OK   Python 3
 OK   math
 OK   random
@@ -84,7 +84,7 @@ All done. Close the drawing window to finish.
 
 בסוף, סגרו את חלון הציור.
 
-עוד לא צריך להבין את הקוד. עד סוף השנה תדעו לכתוב את כולו בעצמכם.
+עוד לא צריך להבין את הקוד. עד סוף השנה תבינו את רובו.
 
 ## 6. שומרים, סוגרים ופותחים שוב
 
@@ -104,7 +104,7 @@ All done. Close the drawing window to finish.
 
 התקינו את Thonny במחשב בבית באותה דרך, והריצו שם את `EnvironmentCheck.py`.
 
-יש גם גרסאות ל-Mac ול-Linux באתר thonny.org. אין מחשב בבית? ספרו למורה.
+יש גם גרסאות ל-Mac ול-Linux באתר thonny.org. אין מחשב בבית, או שאי אפשר להתקין? ספרו למורה: אפשר גם לעבוד בסביבה באינטרנט.
 
 ---
 

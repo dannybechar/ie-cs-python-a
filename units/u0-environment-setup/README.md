@@ -13,4 +13,5 @@ One 90-minute lab meeting (Lab + Lab). **Goal:** Install → Open → Check → 
 | **0.1** Install, Check, Save | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Pre-lesson checklist for the lab PCs, minute-by-minute plan, troubleshooting |
 |  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew setup slides (12 slides, space-mission theme) — **the deck taught in class** |
 |  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief, 7 steps |
-|  | Exercise | [`EnvironmentCheck.py`](exercises/EnvironmentCheck.py) | Checks Python 3, `math`, `random` and `turtle`, then draws a square |
+|  | Exercise | [`EnvironmentCheck.py`](exercises/EnvironmentCheck.py) | Checks Python 3, `math`, `random` and `turtle`, then draws a square (exam turtle template; untaught lines are commented) |
+|  | Addendum | [`m1-addendum-he.md`](m1-addendum-he.md) | One page for taught classes: national exam, web environment, Classroom |

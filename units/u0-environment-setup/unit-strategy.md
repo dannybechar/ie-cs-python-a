@@ -7,6 +7,8 @@ Chapter 1 also says the environment is taught "in the lab, with an explanation o
 and that the environment itself should not get special importance. Unit 1 then takes over with
 open → run → save and first code.
 
+**Ministry source:** the ministry's own Classroom program has a meeting 0 (orientation, Classroom workflow, mention of the national exam). It does not teach installation, so it overlaps little with this unit. See [`traceability.md`](../../docs/ministry-program/traceability.md) and [`audit-u0-u1.md`](../../docs/ministry-program/audit-u0-u1.md).
+
 **Build status:** ✅ complete — [Unit 0.1 — Environment Setup](README.md)
 
 ## Why a separate meeting
@@ -22,9 +24,12 @@ first lab meeting.
 - The course folder: where files are saved, and file-naming rules.
 - Running a provided check file (`EnvironmentCheck.py`) to prove Python, `math`, `random` and `turtle` work.
 - Save As, close, reopen: proving the file really is saved.
-- Installing again at home.
+- Installing again at home (and, if that is not possible, the web environment option).
+- One sentence that the year ends with a national exam on a computer (May).
 
-Out of scope: writing code. `print()`, comments and functions start in Unit 1.
+Out of scope: writing code. `print()`, comments and functions start in Unit 1. `EnvironmentCheck.py` is a provided file: its drawing part uses the exam turtle template, and the few lines not taught in the course are marked with comments.
+
+Open decisions: whether the school uses Classroom (exit check becomes a screenshot submission), and which environment the exam uses.
 
 ## Meeting breakdown
 | Meeting | Format | Content |

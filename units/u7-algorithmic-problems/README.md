@@ -12,15 +12,18 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | **7.1** How Many Times? | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan |
 |  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
 |  | Exercise | [`Counters_Starter.py`](exercises/Counters_Starter.py) | Warm-up: a counter with two bugs |
-|  | Exercise | [`Counters_Reference.py`](solutions/Counters_Reference.py) | Solutions, one function per task |
+|  | Exercise | [`Counters_Reference.py`](solutions/Counters_Reference.py) | Solutions, one function per task: warm-up, coin counter with `elif`, `+=` shorthand, `passed_count` (55), three-counter `survey`, `count_digits` |
 |  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slide deck (17 slides, NotebookLM, patched) |
 | **7.2** Sum, Average and Extremes | Lesson | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
 |  | Exercise | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 |  | Exercise | [`Accumulators_Starter.py`](exercises/Accumulators_Starter.py) | Warm-up: `total = 0` inside the loop |
-|  | Exercise | [`Accumulators_Reference.py`](solutions/Accumulators_Reference.py) | Solutions, one function per task |
+|  | Exercise | [`Accumulators_Reference.py`](solutions/Accumulators_Reference.py) | Solutions, one function per task: warm-up, guided `expenses`, `donations` (`while`), `+=` shorthand, `min_max`, `temperatures` |
 |  | Lesson | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
 | **7.3** Roll the Dice | Lesson | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
 |  | Exercise | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
 |  | Exercise | [`Random_Starter.py`](exercises/Random_Starter.py) | Bonus: `randint` called twice |
-|  | Exercise | [`Random_Reference.py`](solutions/Random_Reference.py) | Solutions and checkpoint A, one function per task |
+|  | Exercise | [`Random_Reference.py`](solutions/Random_Reference.py) | Solutions and checkpoint A, one function per task: warm-up, double dice, `randint` / `randrange` / `random.random()`, `random_walk`, `dice_stats`, `guess_game` |
 |  | Lesson | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slide deck (19 slides, NotebookLM, patched) |
+| **All** | Extra | [`Extra_Practice_he.md`](exercises/Extra_Practice_he.md) | Take-home pack (18 exercises from the ministry material, no class minutes) |
+
+Phase 5 (ministry alignment): the decks predate some changes. The lesson notes are the current plan; items without a slide are shown live (see the "Deck" paragraph in each note).

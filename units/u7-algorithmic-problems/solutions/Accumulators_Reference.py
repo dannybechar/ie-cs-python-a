@@ -11,7 +11,7 @@ def fixed_warmup():
     print("Total:", total)
 
 
-# Task 1: total and average of 5 expenses
+# Guided example: total and average of 5 expenses (fixed number of rounds)
 def expenses():
     total = 0
     count = 0
@@ -21,6 +21,29 @@ def expenses():
         count = count + 1
     print("Total:", total)
     print("Average:", total / count)
+
+
+# Task 1: donations - a while loop that stops on 0 or a negative value
+def donations():
+    donors = 0
+    total = 0
+    donation = int(input("Donation: "))
+    while donation > 0:
+        donors = donors + 1
+        total = total + donation
+        donation = int(input("Donation: "))
+    print("Donors:", donors)
+    print("Total:", total)
+
+
+# Shorthand: += is the same as total = total + value (recognition only)
+def shorthand():
+    total = 0
+    count = 0
+    for value in range(1, 6):
+        total += value
+        count += 1
+    print("Total:", total, "Count:", count)
 
 
 # Task 2: the lowest and the highest of 6 grades
@@ -64,5 +87,7 @@ def temperatures():
 
 # fixed_warmup()
 # expenses()
+# donations()
+# shorthand()
 # min_max()
 temperatures()

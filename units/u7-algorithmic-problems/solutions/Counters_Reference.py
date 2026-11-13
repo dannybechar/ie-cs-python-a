@@ -13,28 +13,61 @@ def fixed_warmup():
     print("Negative:", negative_count)
 
 
-# Task 1: how many of 6 grades passed (60 and up)?
+# Task 1: how many of 6 grades passed (55 and up)?
 def passed_count():
     passed = 0
     for i in range(6):
         grade = int(input("Grade: "))
-        if grade >= 60:
+        if grade >= 55:
             passed = passed + 1
     print("Passed:", passed)
 
 
-# Task 2: a survey of 8 answers - two counters
+# Task 2: a survey of 8 answers - three counters (yes, no, not valid)
 def survey():
     yes_count = 0
     no_count = 0
+    invalid_count = 0
     for i in range(8):
         answer = input("y/n: ")
         if answer == "y":
             yes_count = yes_count + 1
-        else:
+        elif answer == "n":
             no_count = no_count + 1
+        else:
+            print("not valid")
+            invalid_count = invalid_count + 1
     print("Yes:", yes_count)
     print("No:", no_count)
+    print("Not valid:", invalid_count)
+    print("Check, should be 8:", yes_count + no_count + invalid_count)
+
+
+# Guided demo: three-way counter with elif (coins 1, 5, 10)
+def coins():
+    ones = 0
+    fives = 0
+    tens = 0
+    for i in range(6):
+        coin = int(input("Coin: "))
+        if coin == 1:
+            ones = ones + 1
+        elif coin == 5:
+            fives = fives + 1
+        elif coin == 10:
+            tens = tens + 1
+        else:
+            print("value not accepted")
+    print(ones, fives, tens)
+
+
+# Shorthand: += is the same as x = x + 1 (recognition only)
+def shorthand():
+    count = 0
+    for number in range(1, 21):
+        if number % 3 == 0:
+            count += 1
+    print("Count:", count)
 
 
 # Task 3 (challenge): count the digits in a text (Unit 6 + a counter)
@@ -48,6 +81,8 @@ def count_digits():
 
 
 # fixed_warmup()
+# coins()
+# shorthand()
 # passed_count()
 # survey()
 count_digits()

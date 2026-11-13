@@ -14,6 +14,8 @@
 | `random.randint(1, 6)` | 1 עד 6 — קובייה |
 | `random.randint(0, 1)` | 0 או 1 — מטבע |
 | `random.randint(10, 20)` | 10 עד 20 |
+| `random.randrange(1, 7)` | 1 עד 6 — הגבול העליון **לא** נכלל, כמו ב-`range` |
+| `random.random()` | מספר עשרוני מ-0 ועד קטן מ-1 |
 
 ```python
 import random
@@ -26,7 +28,7 @@ if roll == 6:
 
 <div dir="rtl">
 
-- בניגוד ל-`range`, הגבול העליון נכלל.
+- ב-`randint`, בניגוד ל-`range`, הגבול העליון נכלל. ב-`randrange` הוא לא נכלל.
 - כל קריאה ל-`randint` מגרילה מספר חדש.
 
 </div>
@@ -61,11 +63,32 @@ print(count, total)
 <div dir="rtl">
 
 1. מה יודפס?
-2. אילו ערכים יכולה להחזיר `random.randint(3, 7)`?
-3. מונה, צובר או מינימום: כמה תלמידים עברו · סכום ההוצאות · היום הקר ביותר.
+2. אילו ערכים יכולה להחזיר `random.randint(3, 7)`? ומה לגבי `random.randrange(3, 7)`?
+3. שאלה ממבחן מפמ"ר: המטרה של כל קטע קוד היא לקלוט 10 ציונים ולמנות כמה מהם גבוהים מ-55 וקטנים מ-80. עבור 76 84 80 57 77 90 68 74 100 55 צריך להדפיס 5. האם כל קטע מבצע את הנדרש? אם לא, איך מתקנים?
 4. למה מקסימום מתחיל בערך הראשון ולא ב-0?
 
 </div>
+
+```python
+# קטע א
+count = 0
+for item in range(10):
+    grade = int(input("Grade: "))
+    if grade > 55 and grade < 80:
+        count = count + 1
+print(count)
+```
+
+```python
+# קטע ג
+count = 0
+index = 0
+while index < 10:
+    grade = int(input("Grade: "))
+    if grade > 55 and grade < 80:
+        count = count + 1
+print(count)
+```
 
 ## 4. מתעדים ושומרים
 

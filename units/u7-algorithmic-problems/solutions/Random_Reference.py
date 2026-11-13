@@ -13,6 +13,26 @@ def fixed_warmup():
         print("You win")
 
 
+# Guided example: two dice, a double when they are equal; 10 rolls
+def double_dice():
+    doubles = 0
+    for i in range(10):
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
+        print(dice1, dice2)
+        if dice1 == dice2:
+            print("double")
+            doubles = doubles + 1
+    print("Doubles:", doubles)
+
+
+# Guided example: which values can each call return?
+def random_calls():
+    print(random.randint(3, 7))      # 3, 4, 5, 6 or 7 (7 included)
+    print(random.randrange(3, 7))    # 3, 4, 5 or 6 (7 excluded, like range)
+    print(random.random())           # a decimal: 0 <= x < 1
+
+
 # Task 1: a random walk with Turtle - a counter and an accumulator
 def random_walk():
     long_steps = 0
@@ -59,6 +79,8 @@ def guess_game():
 
 
 # fixed_warmup()
+# double_dice()
+# random_calls()
 # random_walk()
 # dice_stats()
 guess_game()

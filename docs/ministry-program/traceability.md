@@ -71,7 +71,7 @@ Phase 4 rulings, 2026-11-13 (teacher), see `audit-summary.md` for evidence:
 | 0-1 | Notes and code aligned; addenda for the taught classes | algorithm concept, `
 ` `	`, business-card task | deck sidecar text (U1-09); rewrite of EnvironmentCheck in ministry template where noted |
 | 2 | Addendum (45 min, outside official minutes) | coordinates, `goto`, exam-dialect drill | tests untouched; D3 module-level style recorded as approved deviation |
-| 3 | Done (commit 426f25d) | `**`, swap, self-update, multiple assignment, conversion | digit split moved to Unit 4; formula-sheet tour and take-home pack deferred |
+| 3 | Done (commit 426f25d); 3.2 prepared for 15 Nov (a5dfa91 to 361e438) | `**`, swap, self-update, multiple assignment, conversion; 3.1 recap (5 min), 8 add-on slides, run of show, 3-task large-print lab sheet | digit split moved to Unit 4; formula-sheet tour and take-home pack deferred; 3.1 taught before the alignment (gaps covered by the 3.2 recap) |
 | 4 | Done | `elif`, `not`, max of two, digit extraction, meeting-17 items | max of three (take-home E14); 7.6 flow charts (not in import) |
 | 5 | Done | `+=`, `end=`, for+if `%`, digit_sum, finite/endless loops, Super Python with `elif`, meeting 18 conversion | `for...else` not taught; H5P/Master Python not reviewable offline |
 | 6 | Done | negative indexes, string-building loop, exam dialect in checkpoint, meeting 19 homework | turtle half of meeting 19 |

@@ -102,4 +102,5 @@ NEEDS DECK OR LAB-SHEET CHANGE (decks and sheets untouched)
 
 ## Unit 3
 
-3.1 deck: no slides for the two extra names, 5-card sort (deck shows 7 cards), multiple assignment, stored-variable conversion, 'purpose' prompt. 3.2 deck: `**` row, formal names for `//` and `%`, remove the Turtle bridge slide, add swap / self-update / `**` slides. Lab sheets: 3.1 Task 2 is now three questions; 3.2 sheet and key lack `**`, swap, `def packing():`. See `audit-u3.md` and the Unit 3 notes.
+- **3.1 (already taught 8 Nov, pre-alignment):** deck still lacks multiple assignment, stored-variable conversion, `str()`, the two extra names; its card-sort slides show 7 cards. The missing items were covered by the 3.2 recap instead, so no 3.1 deck change is needed unless the lesson is repeated. 3.1 lab sheet unchanged.
+- **3.2 (15 Nov): handled without NotebookLM.** `m2-addon-slides-he.pdf` (8 slides: recap, `**`, swap, self-update) is used with the main deck, skipping main slides 2-3 and 12-13; the lab sheet `m2-lab-sheet-he.pdf` was rebuilt (3 tasks, about 20 minutes, large print) and the key updated. Still open if you want one consistent NotebookLM deck: formal names for `//` and `%` on the `//`/`%` slides, and regenerating the deck from the notes. Run of show: `units/u3-variables-io-arithmetic/m2-run-of-show-he.md`.

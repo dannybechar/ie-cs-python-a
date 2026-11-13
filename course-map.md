@@ -71,7 +71,7 @@ All 31 meetings in teaching order. Fill in **Target week** once the school calen
 | 3 | 2.1 Turtle & Graphics | Turtle library, work surface, movement | ✅ | Oct 18, 2026 | |
 | 4 | 2.2 Turtle & Graphics | Pen and shape attributes | ✅ | Oct 25, 2026 | |
 | 5 | 2.3 Turtle & Graphics | Geometry challenge | ✅ | Nov 1, 2026 | |
-| 6 | 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | |
+| 6 | 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | Nov 8, 2026 |
 | 7 | 3.2 Variables, Input/Output & Arithmetic | Input → calculation → output | ✅ | Nov 15, 2026 | |
 | 8 | 4.1 Conditional Execution | Boolean expressions, truth tables, and/or | ✅ | Nov 22, 2026 | |
 | 9 | 4.2 Conditional Execution | if and if/else, input filter | ✅ | Nov 29, 2026 | |

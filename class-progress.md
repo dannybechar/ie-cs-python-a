@@ -4,10 +4,10 @@ Where each class is in the course. Updated by the teacher's say-so after each le
 
 Status: ✅ taught · ▶ next · ⏳ planned. The two classes are at the same point.
 
-## Where we are (6 Nov 2026)
+## Where we are (13 Nov 2026)
 
-- **Done:** Unit 0 (environment), Unit 1 (introduction), and **Unit 2 — Turtle & Graphics, including its written test** (Unit 2 meetings 2.1–2.3, then the test).
-- **Next two lessons:** **Unit 3 — Variables, Input/Output & Arithmetic**: lesson **3.1** (variables, types, input), then lesson **3.2** (input → calculation → output). Target weeks in the course map: Sundays Nov 8 and Nov 15, 2026.
+- **Done:** Unit 0 (environment), Unit 1 (introduction), **Unit 2 — Turtle & Graphics, including its written test**, and **lesson 3.1** (Variables, Input/Output; taught Sunday 8 Nov to both grades, before the ministry-alignment changes to the 3.1 notes).
+- **Next:** lesson **3.2** (input → calculation → output), target Sunday 15 Nov 2026. The 3.1 additions that the taught lesson did not have (multiple assignment, conversion of a stored variable and `str()`, the names `my-fuel` and `for`) can be covered in a short recap at the start of 3.2.
 - **Ready for those lessons:** slides (`m1-slides-he.pdf`, `m2-slides-he.pdf`), lesson notes, and the printable lab sheets with a teacher key in [`units/u3-variables-io-arithmetic/`](units/u3-variables-io-arithmetic).
 - **After that:** Unit 4 — Conditional Execution (4.1 on Nov 22 in the course map).
 
@@ -21,8 +21,8 @@ Status: ✅ taught · ▶ next · ⏳ planned. The two classes are at the same p
 | 4 | 2.2 Turtle & Graphics | ✅ | ✅ | |
 | 5 | 2.3 Turtle & Graphics | ✅ | ✅ | |
 | — | **Unit 2 written test** | ✅ Form B | ✅ Form A | Grade 8 sat it on 29 Oct (mean 94.6). Grade 7 sat Form B and it was graded on 6 Nov (mean 90, range 65–100). Feedback papers were given per student; details are in [`tools/unit-test-builder/README.md`](tools/unit-test-builder/README.md). |
-| 6 | 3.1 Variables, Input/Output & Arithmetic | ▶ | ▶ | Next lesson. Lab sheet: [`m1-lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/m1-lab-sheet-he.pdf) |
-| 7 | 3.2 Variables, Input/Output & Arithmetic | ⏳ | ⏳ | Lesson after next. Lab sheet: [`m2-lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/m2-lab-sheet-he.pdf) |
+| 6 | 3.1 Variables, Input/Output & Arithmetic | ✅ | ✅ | Taught Sun 8 Nov (pre-alignment version). Lab sheet: [`m1-lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/m1-lab-sheet-he.pdf) |
+| 7 | 3.2 Variables, Input/Output & Arithmetic | ▶ | ▶ | Next lesson (15 Nov). Lab sheet: [`m2-lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/m2-lab-sheet-he.pdf) |
 | 8 | 4.1 Conditional Execution | ⏳ | ⏳ | |
 | 9 | 4.2 Conditional Execution | ⏳ | ⏳ | |
 | 10 | 4.3 Conditional Execution | ⏳ | ⏳ | |

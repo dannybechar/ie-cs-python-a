@@ -33,11 +33,13 @@
 | Teaching: `for item in range(start, stop, step)` | ✅ |
 | Teaching: draw basic geometric shapes with loops (Turtle) | ✅ polygon, spiral, star |
 | Assessment: count how many times a loop runs | ✅ range-value predictions |
+| Exam notation: `print(..., end=" ")` / `end=","` — one line of output (ministry deck 12.1, every exam item) | ✅ guided block A |
+| A bounded loop with a condition inside: `for` + `if` with `%`, compared with a `range` step (ministry deck 12.1, exam items) | ✅ guided block B |
 
 90 practice minutes of "bounded and conditional repetition".
 
 ### Deliberate exclusions
-`while` (5.3), nested loops (5.4). Turtle stays in the Unit 2 style: `turtle.forward`, `turtle.right` — no `t = turtle.Turtle()`, no `goto`, no `setheading`.
+`while` (5.3), nested loops (5.4), `elif` inside loops (5.4, Super Python). Turtle stays in the Unit 2 style: `turtle.forward`, `turtle.right` — no `t = turtle.Turtle()`, no `goto`, no `setheading`.
 
 ---
 
@@ -57,6 +59,8 @@
 | `range(5, 0, -1)` | 5, 4, 3, 2, 1 |
 
 - **stop is never included.** To count down, the step is negative.
+- **One line of output:** `print(number, end=" ")` keeps the next print on the same line; `end=","` puts a comma after each value. The ministry calls `end` an **attribute (תכונה)** of `print`, not a command; the 5.4 brief also calls it a parameter. A plain `print()` after the loop ends the line.
+- **`for` + `if` or a step?** `for number in range(17): if number % 3 == 0: print(number)` and `for number in range(0, 17, 3): print(number)` print the same numbers — two ways to get the multiples.
 - **Regular polygon:** n sides, turn `360 / n` each time — the turns add up to one full circle.
 
 ---
@@ -81,38 +85,47 @@
 
 Starter: [`Ranges_Starter.py`](exercises/Ranges_Starter.py). Reference: [`Ranges_Reference.py`](solutions/Ranges_Reference.py).
 
-## 26–36 — Task 1: `sequences()`
+## 26–31 — Guided block A: one line of output (`end`)
 
-The starter prints 2, 4, 6, 8 — 10 is missing (`range(2, 10, 2)`). Fix: `range(2, 12, 2)`. Then add a second loop that prints 20, 15, 10, 5 (`range(20, 0, -5)`).
+Teacher-led, students type along (`numbers_in_a_line()` in the reference). `for number in range(1, 8): print(number, end=" ")` → `1 2 3 4 5 6 7` on one line; then `range(2, 11, 2)` with `end=","`. Ask: what does `print()` do after the loop? (ends the line). Say "תכונה" (attribute) next to "פרמטר". Source: ministry deck 12.1, slides 15–20.
 
-## 36–52 — Task 2: `polygon()` (Turtle)
+## 31–39 — Guided block B: `for` + `if` with `%`, or a step?
+
+Students predict, then run: "print the multiples of 3 up to 16" two ways — `for number in range(17): if number % 3 == 0: print(number, end=" ")` and `for number in range(0, 17, 3): print(number, end=" ")`. Same output? (yes: `0 3 6 9 12 15`). Then a one-line **7-boom** from 1 to 50: print `Boom` when the number is a multiple of 7, ends with 7, or has 7 as its tens digit — `number % 7 == 0 or number % 10 == 7 or number // 10 == 7` (`seven_boom()`). Warn: `number / 10 == 7` is only true for 70 — use `//`. `%` and `//` come from Unit 3–4. Source: ministry deck 12.1, slides 38–42.
+
+## 39–49 — Task 1: `sequences()`
+
+The starter prints 2, 4, 6, 8 — 10 is missing (`range(2, 10, 2)`). Fix: `range(2, 12, 2)`. Then add a second loop that prints 20, 15, 10, 5 (`range(20, 0, -5)`). Fast finishers: print both lines on one line with `end=" "`.
+
+## 49–61 — Task 2: `polygon()` (Turtle)
 
 Read `sides`; draw a regular polygon with side 80 and turn `360 / sides`. Tests: 3 (triangle), 4 (square), 6 (hexagon). In every test the turtle ends back at the start, facing right.
 
-## 52–65 — Task 3: `spiral()` (Turtle)
+## 61–73 — Task 3: `spiral()` (Turtle)
 
 `for distance in range(20, 200, 20): turtle.forward(distance); turtle.right(90)` — nine lines, each 20 longer than the one before: a square spiral. The loop variable is the distance. The turtle ends at (100, 80) — outside the spiral, facing down.
 
-## 65–73 — Task 4: `countdown()`
+## 73–79 — Task 4: `countdown()`
 
-Read a start number, count down to 1, then `Launch!`. Test 7 → 7 … 1, `Launch!`.
+Read a start number, count down to 1, then `Launch!`. Test 7 → 7 … 1, `Launch!`. Then the one-line version with `end=","` → `7,6,5,4,3,2,1,Launch!` (`countdown_line()`).
 
-## 73–81 — Challenge: `star()` (Turtle)
+## 79–83 — Challenge: `star()` (Turtle)
 
 Five lines of 150 with `right(144)` → a five-pointed star, back at the start. Ask: why 144 and not 72? (The turtle turns twice around: 5 × 144 = 720.)
 
 ### Tool Note – Thonny
 Close the Turtle window before the next run. Answer the `input` question in the Shell before the Turtle window opens.
 
-## 81–84 — Document and save
+## 83–85 — Document and save
 
 Save As `G7_U5_M2_Ranges_<Name>.py`.
 
-## 84–90 — Exit check
+## 85–90 — Exit check
 
 1. What is the stop in `range(2, 9, 2)`, and is it printed? (9, never)
 2. Which step counts down? (a negative one, e.g. `-1`)
 3. How much does the turtle turn in a regular hexagon? (60)
+4. What does `print(i, end=",")` do differently from `print(i)`? (no new line; a comma after each value)
 
 ---
 
@@ -124,6 +137,8 @@ Save As `G7_U5_M2_Ranges_<Name>.py`.
 | `range(5, 0)` counts down | without a negative step it gives nothing |
 | The polygon angle is the inside angle | the turtle turns the outside angle, `360 / n` |
 | `range(20, 200, 20)` includes 200 | stops at 180 |
+| `end=" "` is a separate command | It belongs inside `print(...)`; `print()` alone ends the line |
+| `number / 10 == 7` finds the 70s | Only 70 — use `number // 10 == 7` |
 
 ---
 
@@ -132,4 +147,5 @@ Save As `G7_U5_M2_Ranges_<Name>.py`.
 - Range predictions (official: count how many times a loop runs)
 - `polygon()` tested with 3, 4 and 6
 - Spiral explained: the loop variable is the distance
+- Guided blocks: `for`+`if %` and a `range` step give the same output (official: bounded loop, count rounds)
 - Exit check

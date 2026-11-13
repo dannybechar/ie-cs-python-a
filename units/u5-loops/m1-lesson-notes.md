@@ -8,7 +8,7 @@
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45  
 **Current tool:** Thonny  
-**Source of inspiration:** the teacher's draft `unit5_meeting1_for_basics.pptx` (Hello ×5 warm-up, `range` boundary task, loop-variable trace, counter and running total, indentation bug kept; `+=` replaced by `x = x + 1`)  
+**Source of inspiration:** the teacher's draft `unit5_meeting1_for_basics.pptx` (Hello ×5 warm-up, `range` boundary task, loop-variable trace, counter and running total, indentation bug kept; `+=` taught as recognition of `x = x + 1`, see section 5)  
 **Tool-dependence rule:** Keep lesson content IDE-neutral. Any tool-specific instruction must be isolated and labeled **Tool Note – Thonny**.
 
 ---
@@ -36,11 +36,12 @@ From the Ministry program, Chapter 5 (python-a.pdf p.11–12):
 | Teaching: neutral pseudo-code "repeat n times" | ✅ slide 3 |
 | Teaching: emphasize the loop variable, `for item in range(n)` | ✅ |
 | Assessment: trace; count how many times a loop runs | ✅ predictions, trace tables |
+| Exam notation: `+=` read as shorthand (ministry decks 12.1, 13.1, exam items) | ✅ recognition, 3 min theory + 2 min lab |
 
 Official topics and minutes used: "why repetition" (45 theory) + 45 practice of "bounded and conditional repetition".
 
 ### Deliberate exclusions
-`range` with a step (5.2), `while` (5.3), nested loops (5.4). No `+=` — the course keeps `total = total + number`.
+`range` with a step (5.2), `while` (5.3), nested loops (5.4). `+=` is **recognition only**: students read `total += number` as "the same as `total = total + number`"; the long form stays the main form and the one students write first (approved deviation, teacher ruling 2026-11-13; the ministry decks and exam items use `+=`). From 5.1 on, `+=` may appear in Units 5–9.
 
 ---
 
@@ -58,6 +59,7 @@ Official topics and minutes used: "why repetition" (45 theory) + 45 practice of 
 4. Use the loop variable inside the body.
 5. Trace a loop in a table, one row per round.
 6. Keep a running total: start before the loop, update inside it.
+7. Read `total += number` as `total = total + number` (recognition only).
 
 ---
 
@@ -67,6 +69,9 @@ Official topics and minutes used: "why repetition" (45 theory) + 45 practice of 
 - **`range(5)` = 0, 1, 2, 3, 4** — five values, starting at 0, stopping before 5.
 - **`range(1, 6)` = 1 … 5** — to include 5, stop at 6.
 - **Running total:** `total = 0` before the loop; `total = total + number` inside it; print the final total after it.
+- **`+=` is a shorthand:** `total += number` means exactly `total = total + number`. Same for `-=`. Long form first; the short form is for reading code you meet in exam items.
+- **Terminology bridge:** the ministry says **פעולה** for what we call a function (`def`); say both words when giving the tasks ("כתבו פונקציה — בשפת משרד החינוך: פעולה"). The loop variable also appears as "משתנה הלולאה".
+- **Loop variable name:** any name — `i`, `number`, `item` (exam items write `for item in range(...)`).
 
 ---
 
@@ -77,14 +82,15 @@ Official topics and minutes used: "why repetition" (45 theory) + 45 practice of 
 | 0–1 | Title: Mission 11 |
 | 1–6 | **Warm-up:** print `Hello` five times — two ways. Which is easier to change to 100? |
 | 6–10 | Answer: five `print` lines vs `for i in range(5): print("Hello")`. Pseudo-code: "חזור 5 פעמים: הדפס Hello" |
-| 10–16 | Structure: `for i in range(4): print("Round", i)` then `print("Finished")` → `Round 0` … `Round 3`, `Finished` |
-| 16–19 | **Predict:** `for i in range(3): print(i)` then `print("Go")` |
-| 19–22 | Answer: `0 1 2 Go`; `range(5)` stops before 5 |
-| 22–26 | **Students:** change `range(5)` so it prints 1 to 5 |
-| 26–28 | Answer: `range(1, 6)` |
-| 28–35 | Loop variable: `square = number * number` for `range(4)` → 0 0 · 1 1 · 2 4 · 3 9, with a trace table |
-| 35–40 | **Students trace** a running total: `total = 0`, `for number in range(1, 5): total = total + number` |
-| 40–43 | Answer: total 1, 3, 6, 10; `Final total: 10` |
+| 10–15 | Structure: `for i in range(4): print("Round", i)` then `print("Finished")` → `Round 0` … `Round 3`, `Finished` |
+| 15–18 | **Predict:** `for i in range(3): print(i)` then `print("Go")` |
+| 18–21 | Answer: `0 1 2 Go`; `range(5)` stops before 5 |
+| 21–25 | **Students:** change `range(5)` so it prints 1 to 5 |
+| 25–27 | Answer: `range(1, 6)` |
+| 27–33 | Loop variable: `square = number * number` for `range(4)` → 0 0 · 1 1 · 2 4 · 3 9, with a trace table. Say once: the name is free — `for item in range(4)` works the same |
+| 33–38 | **Students trace** a running total: `total = 0`, `for number in range(1, 5): total = total + number`. Trace table with a variable column and a cumulative output column (ministry deck 12.1 layout) |
+| 38–40 | Answer: total 1, 3, 6, 10; `Final total: 10` |
+| 40–43 | **`+=` as recognition:** put `total = total + number` next to `total += number`; trace both on the board — same result. `-=` works the same way. "The long form is still how we write it; you will see the short form in exam items" |
 | 43–45 | Lab missions |
 
 ---
@@ -108,13 +114,13 @@ Predict, then run → `6`. The `print` is outside the loop, so it runs once, aft
 
 Print `Python is fun` six times with the round number from 1: `1 Python is fun` … `6 Python is fun` (`print(i + 1, "Python is fun")`).
 
-## 60–72 — Task 2: `sum_to_n()`
+## 60–74 — Task 2: `sum_to_n()`
 
-Read `n`; add 1 + 2 + … + n, printing `number = … total = …` each round and `Final total: …` at the end. Tests: 5 → 15, 10 → 55.
+Read `n`; add 1 + 2 + … + n, printing `number = … total = …` each round and `Final total: …` at the end. Tests: 5 → 15, 10 → 55. Last 2 minutes: rewrite the total line as `total += number` and check that the output does not change (`sum_to_n_short()` in the reference).
 
-## 72–82 — Task 3 (challenge): `times_table()`
+## 74–82 — Task 3 (challenge): `times_table()`
 
-Read a number and print its table from 1 to 10: `7 x 1 = 7` … `7 x 10 = 70`.
+Read a number and print its table from 1 to 10: `7 x 1 = 7` … `7 x 10 = 70`. (Optional; reduced from 10 to 8 minutes. Whoever does not finish continues at home.)
 
 ## 82–85 — Document and save
 
@@ -125,6 +131,7 @@ Save As `G7_U5_M1_Loops_<Name>.py`.
 1. Which values does `range(3)` give? (0, 1, 2)
 2. What does the indentation mark? (the lines that repeat — the loop body)
 3. Where do we set `total = 0`? (before the loop)
+4. What does `total += 5` mean? (`total = total + 5`)
 
 ---
 
@@ -144,5 +151,5 @@ Save As `G7_U5_M1_Loops_<Name>.py`.
 
 - Predictions (warm-up, `range` values, running-total trace)
 - Warm-up bug explained and fixed
-- `sum_to_n()` tested with 5 and 10
+- `sum_to_n()` tested with 5 and 10; the `+=` form gives the same output
 - Exit check

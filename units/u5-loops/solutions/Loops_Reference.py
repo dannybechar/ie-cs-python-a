@@ -26,6 +26,15 @@ def sum_to_n():
     print("Final total:", total)
 
 
+# Task 2, shorter form: += means "x = x + something" (recognition only)
+def sum_to_n_short():
+    n = int(input("n: "))
+    total = 0
+    for item in range(1, n + 1):
+        total += item
+    print("Final total:", total)
+
+
 # Task 3 (challenge): the multiplication table of one number
 def times_table():
     number = int(input("Number: "))
@@ -36,4 +45,5 @@ def times_table():
 # fixed_warmup()
 # fun_lines()
 # sum_to_n()
+# sum_to_n_short()
 times_table()

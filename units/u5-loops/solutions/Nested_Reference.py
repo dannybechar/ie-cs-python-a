@@ -24,7 +24,7 @@ def patterns():
         print()
 
 
-# Task 2: a flower of 8 squares - inner loop = square, outer loop = turn
+# Optional (take-home): a flower of 8 squares - inner loop = square, outer loop = turn
 def flower():
     turtle.shape("turtle")
     for square in range(8):
@@ -33,6 +33,31 @@ def flower():
             turtle.right(90)
         turtle.right(45)
     turtle.done()
+
+
+# Task 2: Super Python - ten scores, an elif chain inside a for loop
+# 90 and up Super, 78-89 Good, 55-77 Pass, below 55 Fail
+def super_python():
+    super_count = 0
+    super_total = 0
+    fail_count = 0
+    for student in range(10):
+        score = int(input("Score: "))
+        if score >= 90:
+            print("Super")
+            super_count = super_count + 1
+            super_total = super_total + score
+        elif score >= 78:
+            print("Good")
+        elif score >= 55:
+            print("Pass")
+        else:
+            print("Fail")
+            fail_count = fail_count + 1
+    print("Super:", super_count)
+    print("Fail:", fail_count)
+    if super_count > 0:
+        print("Average of the Super scores:", super_total / super_count)
 
 
 # Checkpoint A1 (bounded loop): multiplication table 1 to 5
@@ -59,6 +84,7 @@ def count_scores():
 
 # stars_fixed()
 # patterns()
+# super_python()
 # flower()
 # times_grid()
 count_scores()

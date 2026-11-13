@@ -8,7 +8,7 @@
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45  
 **Current tool:** Thonny  
-**Source of inspiration:** the teacher's draft `unit5_meeting3_while.pptx` (while structure and trace, prediction, missing update, input until valid, sentinel, password, sum until 0, for vs while table, correctness kept; `+=` replaced by `x = x + 1`)  
+**Source of inspiration:** the teacher's draft `unit5_meeting3_while.pptx` (while structure and trace, prediction, missing update, input until valid, sentinel, password, sum until 0, for vs while table, correctness kept; `+=` read as shorthand of `x = x + 1`; finite/endless drill and digit sum added from the ministry program)  
 **Tool-dependence rule:** Keep lesson content IDE-neutral. Any tool-specific instruction must be isolated and labeled **Tool Note – Thonny**.
 
 ---
@@ -35,11 +35,13 @@
 | 7. Explain the differences between bounded and conditional loops | ✅ |
 | 8. A conditional loop whose stop depends on a variable | ✅ Task 3 (`battery`) |
 | Teaching: a loop may never end; correctness = the goal holds at the end, and the loop ends | ✅ |
+| Assessment: is this loop finite or endless, and what does it print? (ministry 13.3, 13.4) | ✅ classification block |
+| Digit loop: `while number > 0` with `% 10` and `// 10` (ministry 13.5, exam items) | ✅ Task 4 challenge `digit_sum()` |
 
 45 theory minutes of "bounded and conditional repetition" + 45 practice minutes.
 
 ### Deliberate exclusions
-`break`, `while True`, `+=`, nested loops (5.4).
+`break`, `while True`, nested loops (5.4). `+=` is used only as already-recognised shorthand (taught in 5.1; the long form stays the main form). The ministry task for the digit sum says "return" — here the result is printed (return comes in Unit 8). Equivalent for/while loops are practised in the 5.4 checkpoint.
 
 ---
 
@@ -65,6 +67,9 @@ print("Finished")
 - No update → the condition stays `True` → the program never stops.
 - **Input until valid / sentinel:** read once before the loop, and again at the end of the body.
 - **Choosing:** the number of rounds is known before starting → `for`; the end depends on a condition → `while`.
+- **Finite or endless?** Ask three questions: what is the start value, what does the update do, can the condition ever become `False`? An update in the wrong direction (`i = i + 1` for `i > 0`) or a jump over the stop value (`i != 5` with step 2) gives an endless loop.
+- **Digit loop:** `number % 10` is the last digit; `number // 10` throws it away; `while number > 0` stops when no digits are left (Unit 4: digit extraction).
+- **Terminology bridge:** the ministry says **פעולה** for a function; the condition is "תנאי עצירה" (stop condition).
 
 ---
 
@@ -73,15 +78,16 @@ print("Finished")
 | Clock | Activity |
 |---|---|
 | 0–1 | Title: Mission 13 |
-| 1–5 | **Warm-up:** write a `for` that prints 3, 6, 9, 12 |
-| 5–7 | Answer: `range(3, 15, 3)` |
-| 7–13 | Pseudo-code "כל עוד … בצע" and the `while` structure (above) |
-| 13–18 | Trace table for `count <= 3`: checks 1–3 `True`, check 4 `False` — no round |
-| 18–22 | **Predict:** `x = 2`, `while x < 10: print(x); x = x + 3` → output and final `x` |
-| 22–24 | Answer: 2, 5, 8; `x` is 11 |
-| 24–29 | Endless loop: the update is missing → `1 1 1 …`. How to stop it (Tool Note) |
-| 29–34 | Input until valid: age 0–120, asks again (Unit 4.2 only classified) |
-| 34–40 | Sentinel: numbers until 0, sum; 0 is not added |
+| 1–4 | **Warm-up:** write a `for` that prints 3, 6, 9, 12 |
+| 4–6 | Answer: `range(3, 15, 3)` |
+| 6–12 | Pseudo-code "כל עוד … בצע" and the `while` structure (above) |
+| 12–16 | Trace table for `count <= 3`: checks 1–3 `True`, check 4 `False` — no round |
+| 16–20 | **Predict:** `x = 2`, `while x < 10: print(x); x += 3` → output and final `x`. The update is written with `+=`: say "same as `x = x + 3`" |
+| 20–22 | Answer: 2, 5, 8; `x` is 11 |
+| 22–26 | Endless loop: the update is missing → `1 1 1 …`. How to stop it (Tool Note) |
+| 26–31 | **Finite or endless?** Three snippets on the board, students decide on paper, then say the output or the fix: `i = 10; while i > 0: i = i + 1` (endless, wrong direction) · `i = 0; while i != 5: i += 2` (endless, jumps over 5) · `i = 0; while i < 5: i += 2` (finite: 0, 2, 4, three rounds). Ministry deck 13.1 slides 27–34, worksheet 13.4 |
+| 31–35 | Input until valid: age 0–120, asks again (Unit 4.2 only classified) |
+| 35–40 | Sentinel: numbers until 0, sum; 0 is not added |
 | 40–44 | for or while? four situations; correctness: the condition, the update, the goal at the end |
 | 44–45 | Lab missions |
 
@@ -94,7 +100,7 @@ An endless loop keeps printing. Press the red **Stop** button (or Ctrl+F2) to st
 
 Starter: [`While_Starter.py`](exercises/While_Starter.py). Reference: [`While_Reference.py`](solutions/While_Reference.py).
 
-## 45–52 — Warm-up: the loop that never stops
+## 45–51 — Warm-up: the loop that never stops
 
 ```python
 # Warm-up: this loop never stops. Do not run it yet!
@@ -106,15 +112,15 @@ print("Finished")
 
 Predict, run, stop it with Stop, then add `number = number + 1` inside the body → 1 … 5, `Finished`.
 
-## 52–62 — Task 1: `password()`
+## 51–59 — Task 1: `password()`
 
 Ask `Password: ` again and again until the user types `python`; wrong tries print `Try again`; then `Access granted`. Test: `hello`, `Python`, `python` → two `Try again`, then `Access granted` (capitals matter — from 4.1).
 
-## 62–72 — Task 2: `sum_until_zero()`
+## 59–69 — Task 2: `sum_until_zero()`
 
 Read numbers until 0 and print `Total: …`. Test 5, 8, −3, 0 → `Total: 10`. Test 0 alone → `Total: 0` (the loop never runs — a valid case to test).
 
-## 72–80 — Task 3: `rover_trips()`
+## 69–75 — Task 3: `rover_trips()`
 
 The battery starts at 100; every trip uses 15; the rover travels while the battery is at least 20. Print each trip and the total:
 
@@ -129,15 +135,20 @@ The battery starts at 100; every trip uses 15; the rover travels while the batte
 
 `Trips: 6` — the stop depends on the variable `battery` (official goal 8). Ask: why can't a `for` easily do this?
 
-## 80–83 — Document and save
+## 75–83 — Task 4 (challenge): `digit_sum()`
+
+Read a positive whole number and print the sum of its digits: 4096 → `Digit sum: 19`; 7 → 7. Hint: `% 10` gives the last digit, `// 10` removes it, the loop runs while `number > 0`. Trace 4096 on the board first (the number shrinks: 4096, 409, 40, 4, 0). The result is printed, not returned. Needs the digit extraction from Unit 4 (`% 10`, `// 10`); if the class skipped it, take 3 minutes to show it on one number before starting. This is the exam staple behind reverse-the-number and digit-position items.
+
+## 83–85 — Document and save
 
 Save As `G7_U5_M3_While_<Name>.py`.
 
-## 83–90 — Exit check
+## 85–90 — Exit check
 
 1. When does a `while` loop run a round? (when its condition is `True`)
 2. Why must the body change something? (otherwise the condition never becomes `False` — the loop never ends)
 3. For each: print 10 times · read numbers until 0 → `for` · `while`
+4. `i = 0`, `while i != 5: i += 2` — finite or endless, and why? (endless: 0, 2, 4, 6 … jumps over 5)
 
 ---
 
@@ -156,7 +167,8 @@ Save As `G7_U5_M3_While_<Name>.py`.
 # 8. Assessment Evidence (formative)
 
 - Trace tables including the final `False` check (official: trace)
-- Endless loop explained and fixed (official goal 3)
+- Endless loop explained and fixed (official goal 3); finite/endless classification of three snippets
+- `digit_sum()` traced and tested (a digit loop)
 - `sum_until_zero()` tested with an empty input (correctness)
 - for / while choices with reasons (official goals 2, 7)
 - Exit check

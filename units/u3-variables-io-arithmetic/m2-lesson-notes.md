@@ -209,22 +209,23 @@ Read as: take the **old** `score`, add 1, then store the answer back in `score`.
 
 # 7. First 45 Minutes - Lab + Guided Micro-Practice
 
-## 0-7 min - Recap of 3.1 (three items the first lesson did not cover)
+## 0-5 min - Recap of 3.1 (two items the first lesson did not cover)
 
-The 3.1 lesson was taught on 8 Nov before the ministry alignment, so this recap closes three gaps (full Hebrew script: [`m2-recap-he.md`](m2-recap-he.md); demo code: `solutions/Recap_Demo.py`). Live in Thonny, predict before every Run; the questions and answers are on add-on slides 1-11 (`m2-addon-slides-he.pdf`), and the whole 15 Nov run of show with slide numbers is in [`m2-run-of-show-he.md`](m2-run-of-show-he.md).
+The 3.1 lesson was taught on 8 Nov before the ministry alignment, so this recap closes three gaps (full Hebrew script: [`m2-recap-he.md`](m2-recap-he.md); demo code: `solutions/Recap_Demo.py`). Live in Thonny, predict before every Run; the questions and answers are on add-on slides 1-2 (`m2-addon-slides-he.pdf`, 8 slides in total), and the whole 15 Nov run of show with slide numbers is in [`m2-run-of-show-he.md`](m2-run-of-show-he.md).
 
 | Min | Item | Show | Result |
 |---|---|---|---|
-| 0-1 | One value at a time | `score = 7`, `score = 9`, `print("Score:", score)` | `Score: 9` |
-| 1-3 | Multiple assignment | `a, b = 12, 5`, `print(a, b)` | `12 5` (one line, two assignments, in order) |
-| 3-5 | Convert a stored variable; `str()`; "what is the purpose?" | `y = float(x)` (7 gives `7.0 <class 'float'>`), `str(5)` (`5 <class 'str'>`), `number_float = float(number_int)` with input 34 | `34.0`: reads a whole number and prints it as a decimal number |
-| 5-7 | Names: law vs convention | `my-fuel = 5`, `for = 5`, `Fuel = 5` | two `SyntaxError`s (special character; reserved word), and one that runs (convention only) |
+| 0-1 | Predict | add-on slide 1: three snippets, students predict | |
+| 1-2 | Multiple assignment | `a, b = 12, 5`, `print(a, b)` | `12 5` (one line, two assignments, in order) |
+| 2-3 | Convert a stored variable; `str()` | `y = float(x)` (7 gives `7.0 <class 'float'>`), `str(5)` (`5 <class 'str'>`) | the original `x` does not change |
+| 3-4 | "What is the purpose of the code?" | `number_float = float(number_int)` with input 34 | `34.0`: reads a whole number and prints it as a decimal number |
+| 4-5 | Answers slide + one spoken aside | add-on slide 2; say aloud: `my-fuel` and `for` are not legal names (special character, reserved word), `Fuel` runs (convention) | |
 
-Purpose: reactivate the variable model without reteaching Meeting 1, and give the students the three tools used in this lesson (`a, b = ...`, `float(...)`, `str(...)`).
+Purpose: reactivate the variable model without reteaching Meeting 1, and give the students the tools used in this lesson (`a, b = ...`, `float(...)`, `str(...)`). Naming rules are a 30-second spoken aside, not a slide (they are in `m2-recap-he.md` if you want the full table).
 
 ---
 
-## 7-14 min - Four Basic Arithmetic Operators
+## 5-13 min - Four Basic Arithmetic Operators
 
 Show:
 
@@ -251,11 +252,9 @@ Exponentiation (`**`) comes later in this half (41-44 min).
 
 Explicitly notice that `12 / 5` produces `2.4`.
 
-Time is 7 minutes (was 8, the recap took 2 from here and from the input block): predict `+`, `-` and `*` together as one class answer, and keep the individual prediction for `/`.
-
 ---
 
-## 14-21 min - Store the Result
+## 13-20 min - Store the Result
 
 Move from calculation inside `print()` to a named result:
 
@@ -281,7 +280,7 @@ Target insight:
 
 ---
 
-## 21-30 min - Complete Groups with `//`
+## 20-29 min - Complete Groups with `//`
 
 Physical/visual prompt:
 
@@ -304,7 +303,7 @@ Do not describe `//` as ordinary division with the decimal "cut off" in all case
 
 ---
 
-## 30-37 min - What Is Left? `%`
+## 29-36 min - What Is Left? `%`
 
 Continue the same context:
 
@@ -328,7 +327,7 @@ Connect:
 
 ---
 
-## 37-41 min - Input -> Calculate -> Output
+## 36-41 min - Input -> Calculate -> Output
 
 Turn fixed values into input:
 
@@ -347,7 +346,7 @@ Before Run, students identify the five stages:
 4. calculation
 5. output
 
-Run with two different pairs of values, quickly. This block is 4 minutes (was 5): the conversion idea was just revisited in the recap, so name the five stages briskly.
+Run with two different pairs of values.
 
 ---
 
@@ -657,12 +656,12 @@ Correct answer: **A**.
 
 | Block | Minutes | Running total |
 |---|---:|---:|
-| Recap of 3.1 (multiple assignment, conversion, names) | 7 | 7 |
-| Four basic operators | 7 | 14 |
-| Store the result | 7 | 21 |
-| Complete groups with `//` | 9 | 30 |
-| What is left? `%` | 7 | 37 |
-| Input -> calculate -> output | 4 | 41 |
+| Recap of 3.1 (multiple assignment, conversion, purpose) | 5 | 5 |
+| Four basic operators | 8 | 13 |
+| Store the result | 7 | 20 |
+| Complete groups with `//` | 9 | 29 |
+| What is left? `%` | 7 | 36 |
+| Input -> calculate -> output | 5 | 41 |
 | `**` and order of operations | 3 | 44 |
 | Workflow + transition | 1 | 45 |
 | Open, read, predict | 3 | 48 |
@@ -797,7 +796,7 @@ Do not introduce conditions, loops, collections, error handling, or advanced mat
 # 13. Lesson Assets
 
 - [`m2-slides-he.pdf`](m2-slides-he.pdf) — Hebrew slides (NotebookLM, 22 slides; skip slides 2-3 and 12-13, replaced by the recap and the `**` slides)
-- [`m2-addon-slides-he.pdf`](m2-addon-slides-he.pdf) — 18 add-on slides (recap of 3.1, `**`, swap, self-update); built by `tools/lab-sheet-builder/build_u3_m2_addon.py`
+- [`m2-addon-slides-he.pdf`](m2-addon-slides-he.pdf) — 8 add-on slides (recap of 3.1, `**`, swap, self-update); built by `tools/lab-sheet-builder/build_u3_m2_addon.py`
 - [`m2-recap-he.md`](m2-recap-he.md), [`m2-run-of-show-he.md`](m2-run-of-show-he.md) — recap script and minute-by-minute run of show
 - [`Arithmetic_Starter.py`](exercises/Arithmetic_Starter.py) and [`Arithmetic_Reference.py`](solutions/Arithmetic_Reference.py)
 - [`m2-lab-brief-he.md`](m2-lab-brief-he.md) — Hebrew lab brief

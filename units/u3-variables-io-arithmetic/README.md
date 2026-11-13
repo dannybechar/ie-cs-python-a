@@ -17,8 +17,8 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (22 slides, made in NotebookLM from 15; 7 question/answer slides added, footers added) |
 | **3.2** From Input to Result | Lesson | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan |
 |  | Lesson | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slides (22 slides, made in NotebookLM; slides 5, 10, 13, 15, 16 corrected, exit answer 22 added). Since the ministry alignment: skip slides 2-3 and 12-13, use the add-on deck |
-|  | Lesson | [`m2-addon-slides-he.pdf`](m2-addon-slides-he.pdf) | 18 add-on slides for 15 Nov: 3.1 recap, `**`, swap, self-update (white background, question slide then answer slide) |
-|  | Lesson | [`m2-recap-he.md`](m2-recap-he.md), [`m2-run-of-show-he.md`](m2-run-of-show-he.md) | Hebrew recap script (7 min) and the minute-by-minute run of show with slide numbers |
+|  | Lesson | [`m2-addon-slides-he.pdf`](m2-addon-slides-he.pdf) | 8 add-on slides for 15 Nov (the most that fit): 3.1 recap, `**`, swap, self-update (white background, question slide then answer slide) |
+|  | Lesson | [`m2-recap-he.md`](m2-recap-he.md), [`m2-run-of-show-he.md`](m2-run-of-show-he.md) | Hebrew recap script (5 min) and the minute-by-minute run of show with slide numbers |
 |  | Exercise | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
 |  | Exercise | [`m2-lab-sheet-he.pdf`](m2-lab-sheet-he.pdf) | Printable student lab sheet, one sheet both sides, 45 minutes (about 35 minutes of tasks plus buffer). Two question types only: run the code, write the output and explain why; write code that does X, plus fast-finisher challenges |
 |  | Exercise | [`u3-lab-sheets-key-he.pdf`](u3-lab-sheets-key-he.pdf) | One-page teacher key for both lab sheets: answers, timing, common mistakes. Built by [`tools/lab-sheet-builder/`](../../tools/lab-sheet-builder/README.md) |

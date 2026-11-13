@@ -56,7 +56,9 @@ Official topics that no planned meeting fully covers yet. Details are in each un
 
 | Unit | Gap | Fix to plan |
 |---|---|---|
-| — | None: every official topic is covered by a built meeting | — |
+| — | None: every official topic is covered by a built meeting (rolling condition `elif` was added to 4.3 on 2026-11-13; the earlier claim that it was not official was wrong, see python-a.pdf p.4) | — |
+
+Ministry alignment (2026-11-13): the ministry Classroom program is the content authority, see [`docs/ministry-program/`](docs/ministry-program/README.md). All units' notes, briefs and code were aligned (`audit-summary.md`, `traceability.md` section 4); official minutes per unit and 90 minutes per meeting are unchanged. **Debt:** the slide decks and printed lab sheets still show the pre-alignment content: [`deck-sheet-backlog.md`](docs/ministry-program/deck-sheet-backlog.md). Units 0-2 changes live in addendum files because those classes are already taught (Unit 2 addendum = 45 min outside the official minutes).
 
 ## Schedule
 

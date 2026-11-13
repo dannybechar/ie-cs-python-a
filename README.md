@@ -5,6 +5,8 @@ resources for the Grade 7 Python A course, built directly against the
 Israeli Ministry of Education's official Python A program.
 
 **Source-of-truth precedence** (see [`docs/ministry-program/README.md`](docs/ministry-program/README.md)):
+Status 2026-11-13: all units' notes, briefs and code are aligned with it (see [`docs/ministry-program/audit-summary.md`](docs/ministry-program/audit-summary.md)); the slide decks and printed lab sheets are not yet, see [`deck-sheet-backlog.md`](docs/ministry-program/deck-sheet-backlog.md).
+
 1. the ministry Classroom program (21 meetings, 84 files; indexed and extracted in [`docs/ministry-program/`](docs/ministry-program)) decides **content**: topics, order of constructs, terminology, exercises;
 2. [`docs/ministry-source/python-a.pdf`](docs/ministry-source/python-a.pdf) decides official **hours**;
 3. everything in `units/` follows 1 and 2; a deliberate school deviation is recorded as an approved deviation in `docs/ministry-program/traceability.md`.
@@ -39,6 +41,7 @@ docs/
 tools/
   deck-patch-kit/           — scripts for reviewing and patching the NotebookLM slide decks
   ministry-import/          — extract.py: rebuilds docs/ministry-program/ from the ministry download folder
+  check-repo.py             — consistency check (Python compiles, every meeting has notes/brief/deck, course-map rows, manifest); run `python -I tools/check-repo.py`
   unit-test-builder/        — question data and builder for the Hebrew unit tests (Unit 2 so far)
 units/
   u{N}-{official-unit-slug}/

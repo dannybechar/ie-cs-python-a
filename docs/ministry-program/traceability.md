@@ -14,11 +14,11 @@ Status key: ✅ covered · 🔶 partial · ❌ missing in repo · ➕ extra in r
 | 3 | `input`, `int(input())`, conversion | 3.1, 3.2 | ✅ | |
 | 4 | Functions A: `def`, call | 1.1, 8.1, 8.2 | ⚖️ | Order: folder teaches functions at meeting 4, repo at Unit 8 |
 | 5 | Arithmetic operators, tracing table (טבלת מעקב) | 3.2 | 🔶 | Check tracing table format |
-| 6 | `/`, `//`, `%` (modulo as remainder/clock) | 3.x only (one file) | ❌ | `//` and `%` appear in a single Unit 3 file; folder gives modulo a whole meeting plus a test |
+| 6 | `/`, `//`, `%` (modulo as remainder/clock) | 3.2, 4.2 (digits) | ✅ (Phase 5) | `//` and `%` appear in a single Unit 3 file; folder gives modulo a whole meeting plus a test |
 | 7 | Simple `if`, boolean expressions | 4.1, 4.2 | ✅ | Folder 7.3 is "alternative assessment" |
-| 8 | Compound condition `and`, `or`, `not` | 4.1, 4.3 | ⚖️ | Repo unit-strategy: `not` not taught (not in PDF list); folder teaches it |
-| 9 | Nested `if` and `elif` chains | 4.3 | ⚖️ | Repo: one-level nesting, `elif` optional; no `elif` in any repo code |
-| 10 | Functions B: parameters, `return` | 8.1–8.4 | ❌/⚖️ | No `return` in any repo `.py`; folder teaches functions returning values |
+| 8 | Compound condition `and`, `or`, `not` | 4.1, 4.3 | ✅ (`not` adopted, Phase 5) | Repo unit-strategy: `not` not taught (not in PDF list); folder teaches it |
+| 9 | Nested `if` and `elif` chains | 4.3 | ✅ (`elif` adopted, Phase 5) | Repo: one-level nesting, `elif` optional; no `elif` in any repo code |
+| 10 | Functions B: parameters, `return` | 8.1–8.4 | ✅ parameters; `return` as return-lite in 8.3 (approved deviation) | No `return` in any repo `.py`; folder teaches functions returning values |
 | 11 | Turtle A: `import turtle`, `forward`, `left`, shape/color | 2.1–2.3 | ⚖️ | Repo teaches turtle first (Unit 2); folder at meeting 11 after conditions |
 | 12 | `for … in range`, `print(..., end="")`, max-search pattern | 5.1, 5.2, 5.4 | ✅ | `end=` appears in only 2 repo files |
 | 13 | `while`, infinite loops, equivalent loops, digit sum | 5.3, 5.4 | 🔶 | Check digit-sum and equivalent-loop tasks |
@@ -63,3 +63,20 @@ Phase 4 rulings, 2026-11-13 (teacher), see `audit-summary.md` for evidence:
 | Phase 5 scope | All blocking + should findings, Units 3-9 first, then Units 0-2 as addenda; one commit per unit; teacher approves each unit before the next. 'Nice' findings only when free. |
 | Open | D6-D9, D11 follow the audit recommendations unless the teacher says otherwise while reviewing each unit. |
 
+
+## 5. Phase 5 status (2026-11-13)
+
+| Unit | Status | Hosted here | Deferred / open |
+|---|---|---|---|
+| 0-1 | Notes and code aligned; addenda for the taught classes | algorithm concept, `
+` `	`, business-card task | deck sidecar text (U1-09); rewrite of EnvironmentCheck in ministry template where noted |
+| 2 | Addendum (45 min, outside official minutes) | coordinates, `goto`, exam-dialect drill | tests untouched; D3 module-level style recorded as approved deviation |
+| 3 | Done (commit 426f25d) | `**`, swap, self-update, multiple assignment, conversion | digit split moved to Unit 4; formula-sheet tour and take-home pack deferred |
+| 4 | Done | `elif`, `not`, max of two, digit extraction, meeting-17 items | max of three (take-home E14); 7.6 flow charts (not in import) |
+| 5 | Done | `+=`, `end=`, for+if `%`, digit_sum, finite/endless loops, Super Python with `elif`, meeting 18 conversion | `for...else` not taught; H5P/Master Python not reviewable offline |
+| 6 | Done | negative indexes, string-building loop, exam dialect in checkpoint, meeting 19 homework | turtle half of meeting 19 |
+| 7 | Done | `+=` / `elif` allowed, sentinel/validation, `survey()` fix, 16.3 Q3 as checkpoint | pattern-ID checkpoint item dropped |
+| 8 | Done | return-lite (approved deviation), bridges פעולה/פרמטר, `+=` line | optional OCR of the decks (U8-15) |
+| 9 | Done | object-style turtle bridge (approved deviation), meeting-19 exam question as 9.6 checkpoint B | key-name test, 20.2 digit circles, 9.5 timer exam question |
+
+Decks and printed sheets: see `deck-sheet-backlog.md`. Meeting 17-19 exam prep: no meeting added; converted into checkpoints and homework.

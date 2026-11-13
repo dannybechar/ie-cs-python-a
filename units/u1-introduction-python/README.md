@@ -12,4 +12,6 @@ Unit scope and meeting breakdown: [`unit-strategy.md`](unit-strategy.md)
 |  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief: countdown, errors, `cheer()`, inside/outside, launch challenge, exit mission |
 |  | Exercise | [`Rocket_Starter.py`](exercises/Rocket_Starter.py) | Backup countdown for the launch challenge, if a student's `rocket.py` is missing |
 |  | Exercise | [`Rocket_Reference.py`](solutions/Rocket_Reference.py) | Launch challenge solution (`launch()`) |
-|  | Exercise | [`FirstProgram_Reference.py`](solutions/FirstProgram_Reference.py) | Exit mission model (`introduce_me()`) |
+|  | Exercise | [`FirstProgram_Reference.py`](solutions/FirstProgram_Reference.py) | Exit mission model (`introduce_me()`); it has no starter file, by design |
+|  | Exercise | [`BusinessCard_Reference.py`](solutions/BusinessCard_Reference.py) | Mandatory business card in a star frame (ministry task 4), take-home |
+|  | Addendum | [`m1-addendum-he.md`](m1-addendum-he.md) | One page for taught classes: algorithm, `\n`/`\t`, business card, פעולה, call before `def` |

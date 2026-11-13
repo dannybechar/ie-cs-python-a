@@ -1,6 +1,8 @@
 # Grade 7 / Python A — Annual Strategy
 
-Source of truth: [`ministry-source/python-a.pdf`](ministry-source/python-a.pdf).
+Source of truth: the ministry Classroom program for **content**
+([`ministry-program/`](ministry-program/README.md)) and
+[`ministry-source/python-a.pdf`](ministry-source/python-a.pdf) for **hours**.
 Per-unit detail (official scope, meeting breakdown, exit criteria, depth
 boundary, enrichment) lives in each unit's own `unit-strategy.md` —
 see [`../course-map.md`](../course-map.md) for the full list.

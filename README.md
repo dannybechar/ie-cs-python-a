@@ -2,8 +2,12 @@
 
 This repository is the source of truth for working examples and teaching
 resources for the Grade 7 Python A course, built directly against the
-Israeli Ministry of Education's official Python A program
-([`docs/ministry-source/python-a.pdf`](docs/ministry-source/python-a.pdf)).
+Israeli Ministry of Education's official Python A program.
+
+**Source-of-truth precedence** (see [`docs/ministry-program/README.md`](docs/ministry-program/README.md)):
+1. the ministry Classroom program (21 meetings, 84 files; indexed and extracted in [`docs/ministry-program/`](docs/ministry-program)) decides **content**: topics, order of constructs, terminology, exercises;
+2. [`docs/ministry-source/python-a.pdf`](docs/ministry-source/python-a.pdf) decides official **hours**;
+3. everything in `units/` follows 1 and 2; a deliberate school deviation is recorded as an approved deviation in `docs/ministry-program/traceability.md`.
 
 ## Current build status
 
@@ -29,10 +33,12 @@ Where the two classes (Grade 7 and Grade 8) actually are in the course: [`class-
 docs/
   annual-strategy.md        — year-wide pedagogical strategy (phases, assessment, enrichment, exit profile)
   annual-work-plan-he.docx  — official annual work plan (Hebrew)
-  ministry-source/          — the official ministry PDFs this course answers to
+  ministry-source/          — the official ministry PDFs this course answers to (hours, circulars)
+  ministry-program/         — the ministry Classroom program: manifest, text extracts, traceability and per-unit audits (content authority)
   reviews/                  — external lesson reviews, one folder per review
 tools/
   deck-patch-kit/           — scripts for reviewing and patching the NotebookLM slide decks
+  ministry-import/          — extract.py: rebuilds docs/ministry-program/ from the ministry download folder
   unit-test-builder/        — question data and builder for the Hebrew unit tests (Unit 2 so far)
 units/
   u{N}-{official-unit-slug}/

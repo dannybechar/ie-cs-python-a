@@ -2,6 +2,7 @@
 
 Official numbering and hours from [`docs/ministry-source/python-a.pdf`](docs/ministry-source/python-a.pdf) (hours table, pp. 3–5).
 Full framing strategy: [`docs/annual-strategy.md`](docs/annual-strategy.md).
+Content authority: the ministry Classroom program, indexed in [`docs/ministry-program/`](docs/ministry-program/README.md); this file's hours still come from the PDF above.
 
 ## Time budget
 

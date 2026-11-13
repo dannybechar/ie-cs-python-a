@@ -47,6 +47,21 @@ table { border-collapse: collapse; width: 100%; margin: 3pt 0; }
 th, td { border: 1pt solid #000; padding: 2pt 5pt; text-align: center; }
 th { background: #e6e6e6; }
 td.t { text-align: right; }
+.big { font-size: 15pt; line-height: 1.4; }
+.big h1 { font-size: 27pt; }
+.big .sub { font-size: 14pt; }
+.big .who { font-size: 13pt; }
+.big .box { font-size: 14.5pt; padding: 4pt 10pt; }
+.big .part { font-size: 17pt; padding: 1pt 10pt; }
+.big .sec { margin: 9pt 0 0; }
+.big .sh { font-size: 18pt; }
+.big .sh span { font-size: 13pt; }
+.big code, .big pre, .big .cbox, .big .abox pre { font-size: 15pt; line-height: 1.32; }
+.big .cbox .lab { font-size: 11.5pt; }
+.big .qrow > div { padding: 5pt 10pt; }
+.big .hint { font-size: 12.5pt; }
+.big .ch { font-size: 14.5pt; padding: 4pt 10pt; }
+
 .bl { display: inline-block; border-bottom: 1pt solid #000; min-width: 38pt; height: 11pt; vertical-align: bottom; }
 .bl.w { min-width: 90pt; }
 .hint { font-size: 9.5pt; }
@@ -164,76 +179,37 @@ M1 += sec(6, "בלש הטיפוסים", 8, """
     + '<div class="hint">מעל כל פונקציה כתבו הערה (<code>#</code>) שמסבירה מה היא עושה. שמרו: <code>File &gt; Save As</code> ← <code>U3_M1_Variables_&lt;Name&gt;.py</code></div>')
 
 # ---------------------------------------------------------------- Lab 3.2
-M2 = head("מעבדה 3.2 · מחשבון הרובר", "מהקלט לתוצאה: חישובים עם משתנים · פייתון א׳ · זמן: 45 דקות")
+M2 = '<div class="big">' + head("מעבדה 3.2 · מחשבון הרובר", "מהקלט לתוצאה · פייתון א׳ · זמן: 45 דקות")
 M2 += """
-<table style="margin-top:2pt"><tr><th>פעולה</th><th><code>+</code> חיבור</th><th><code>-</code> חיסור</th><th><code>*</code> כפל</th><th><code>/</code> חילוק</th><th><code>//</code> קבוצות שלמות</th><th><code>%</code> שארית</th></tr>
-<tr><td class="t">דוגמה</td><td><code>12 + 5</code> ← 17</td><td><code>12 - 5</code> ← 7</td><td><code>12 * 5</code> ← 60</td><td><code>12 / 5</code> ← 2.4</td><td><code>17 // 5</code> ← 3</td><td><code>17 % 5</code> ← 2</td></tr></table>
-<div class="box"><b>שני סוגי משימות:</b> <b>הרצה והסבר</b> (מריצים, כותבים מה הודפס ומסבירים למה) ו<b>כתיבת קוד</b> (כותבים קוד שעושה את מה שמבקשים). בכל משימה: משמאל הקוד, ומימין התיבה לתשובות. היום ב-<code>//</code> וב-<code>%</code> משתמשים רק במספרים שלמים חיוביים, ומחלקים במספר גדול מ-0.</div>
+<div class="box"><b>שני סוגי משימות:</b> <b>הרצה והסבר</b> (מריצים, כותבים מה הודפס ולמה) ו<b>כתיבת קוד</b> (כותבים קוד שעושה מה שמבקשים). משמאל הקוד, ומימין התשובות.<br>
+<code>//</code> = כמה קבוצות שלמות · <code>%</code> = כמה נשאר</div>
 """
-M2 += part("חלק א׳ · הרצה והסבר")
-M2 += sec(1, "ארבע פעולות", 4, "פתחו את <code>Arithmetic_Starter.py</code> והריצו." + qrow(
-    code('''a = 12
+M2 += sec(1, "קבוצות שלמות ושארית", 4, "<code>a = 17</code> ו-<code>b = 5</code>. הקלידו והריצו." + qrow(
+    code('''a = 17
 b = 5
-
-total = a + b
-difference = a - b
-product = a * b
-quotient = a / b
-
-print("Add:", total)
-print("Subtract:", difference)
-print("Multiply:", product)
-print("Divide:", quotient)'''),
-    ans("מה הודפס?", 44) + ans("הסבירו: איזו פעולה נתנה מספר עשרוני, ולמה, אף ש-<code>a</code> ו-<code>b</code> שלמים?", 34)))
-M2 += sec(2, "החלפה ועדכון", 7, "הקלידו והריצו." + qrow(
+print("Full groups:", a // b)
+print("Left over:", a % b)'''),
+    ans("מה הודפס?", 34) + ans("הסבירו: איך שתי התוצאות ביחד מרכיבות את 17?", 40)))
+M2 += sec(2, "החלפה", 7, "הקלידו והריצו." + qrow(
     code('''a = 4
 b = 9
 a = b
 b = a
 print(a, b)'''),
-    ans("מה הודפס?", 20) + ans("הסבירו: רצינו להחליף בין <code>a</code> ל-<code>b</code>. למה שניהם 9?", 28))
+    ans("מה הודפס?", 20) + ans("הסבירו: רצינו להחליף בין <code>a</code> ל-<code>b</code>. למה שניהם 9?", 40))
     + "כתבו מחדש כך ש-<code>a</code> ו-<code>b</code> באמת יוחלפו (יודפס <code>9 4</code>). השתמשו במשתנה שלישי בשם <code>temp</code>." + qrow(
-    empty(44, "כתבו כאן את הקוד"),
-    ans("מה הודפס עכשיו?", 20))
-    + "הקלידו והריצו." + qrow(
-    code('''score = 10
-score = score + 1
-print(score)'''),
-    ans("מה הודפס?", 20) + ans("הסבירו: איזה צד של סימן ה-<code>=</code> מחושב קודם?", 30)))
-M2 += sec(3, "קבוצות שלמות ושארית", 4, "החזירו <code>a = 17</code> ו-<code>b = 5</code>. הוסיפו לתוכנית והריצו." + qrow(
-    code('''full_groups = a // b
-left_over = a % b
-print("Full groups:", full_groups)
-print("Left over:", left_over)'''),
-    ans("מה הודפס בשתי השורות?", 24) + ans("הסבירו: איך שתי התוצאות ביחד מרכיבות את המספר 17?", 26)))
-M2 += sec(4, "משתנה לא מתעדכן לבד", 4, "הקלידו והריצו." + qrow(
-    code('''price = 8
-quantity = 3
-total = price * quantity
-quantity = 5
-print("Total:", total)'''),
-    ans("מה הודפס?", 18) + ans("הסבירו: שינינו את <code>quantity</code> ל-5. למה <code>total</code> לא השתנה?", 28)))
-M2 += sec(5, "קלט בלי המרה", 5, "הקלידו והריצו עם הקלט <code>12</code> ואחר כך <code>5</code>." + qrow(
-    code('''a = input("First number: ")
-b = input("Second number: ")
-print(a + b)'''),
-    ans("מה הודפס?", 18) + ans("הסבירו: למה זה לא 17?", 26))
-    + "כתבו את שתי השורות הראשונות מתוקנות, כך שיודפס 17, והריצו שוב." + qrow(
-    empty(46, "כתבו כאן את השורות המתוקנות"),
-    ans("מה הודפס עכשיו?", 24)))
-M2 += part("חלק ב׳ · כתיבת קוד")
-M2 += sec(6, "מחשבון אריזות (עובדים לבד)", 14, """
-כתבו תוכנית חדשה שקולטת כמה פריטים יש (<code>items</code>) וכמה פריטים נכנסים בכל חבילה (<code>per_pack</code>), מחשבת כמה חבילות מלאות יש ומה נשאר, ומדפיסה שתי שורות ברורות. דוגמה לפלט מופיעה בתיבה שמימין.""" + qrow(
-    empty(128),
-    '<div class="al">דוגמה לפלט (הצורה, לא התוצאה שלכם):</div><pre>Full packs: 3\nLeft over: 2</pre>'
-    + ans("הרצה עם <code>items = 17</code> ו-<code>per_pack = 5</code>: מה הודפס?", 24)
-    + ans("הרצה עם <code>items = 3</code> ו-<code>per_pack = 5</code>: מה הודפס?", 24)
-    + ans("הסבירו: בהרצה השנייה יש פחות פריטים מאשר בחבילה אחת. למה הודפסו המספרים האלה?", 34))
+    empty(86, "כתבו כאן את הקוד"),
+    ans("מה הודפס עכשיו?", 40)))
+M2 += sec(3, "מחשבון אריזות", 10, """
+כתבו תוכנית שקולטת כמה פריטים יש (<code>items</code>) וכמה נכנסים בחבילה (<code>per_pack</code>), ומדפיסה כמה חבילות מלאות יש וכמה פריטים נשארו. <b>רמז:</b> <code>input</code> נותנת טקסט, אז צריך <code>int(...)</code>.""" + qrow(
+    empty(300),
+    '<div class="al">דוגמה לצורת הפלט:</div><pre>Full packs: 3\nLeft over: 2</pre>'
+    + ans("הרצה עם 17 ו-5: מה הודפס?", 60)
+    + ans("הרצה עם 3 ו-5: מה הודפס, ולמה?", 90))
     + '<div class="hint">שמרו: <code>File &gt; Save As</code> ← <code>U3_M2_Packing_&lt;Name&gt;.py</code></div>')
 M2 += """
-<div class="ch"><b>★ למי שסיים (כתיבת קוד):</b> 1. חבילה עולה 12 ש״ח. הוסיפו לתוכנית שורה שמדפיסה כמה עולות החבילות המלאות בלבד.
-2. כתבו תוכנית חדשה שקולטת מחיר של פריט וכמה פריטים קנו, ומדפיסה את הסכום הכולל.
-3. כתבו שורת קוד אחת שמדפיסה את 2 בחזקת 10 (בעזרת <code>**</code>), ושורה שמדפיסה את <code dir="ltr" style="unicode-bidi:isolate">2 + 3 * 4</code>. מה הודפס בכל שורה, ואיזו פעולה חושבה קודם בשורה השנייה?</div>
+<div class="ch"><b>★ למי שסיים:</b> חבילה עולה 12 ש״ח. הוסיפו שורה שמדפיסה כמה עולות החבילות המלאות בלבד.</div>
+</div>
 """
 
 # ---------------------------------------------------------------- Key
@@ -252,14 +228,11 @@ KEY = """
 
 <h2>מעבדה 3.2 · מחשבון הרובר</h2>
 <table><tr><th>משימה</th><th>דקות</th><th>מה אמור להיות מודפס · ההסבר המצופה</th></tr>
-<tr><td>1. ארבע פעולות<br>(הרצה)</td><td>4</td><td class="t"><code>Add: 17</code>, <code>Subtract: 7</code>, <code>Multiply: 60</code>, <code>Divide: 2.4</code>. הסבר: החילוק <code>/</code> נותן מספר עשרוני כי 12 לא מתחלק ב-5 בשלמות (2.4); שאר הפעולות על שלמים נותנות שלמים.</td></tr>
-<tr><td>2. החלפה ועדכון<br>(הרצה + קוד)</td><td>7</td><td class="t">הרצה ראשונה: <code>9 9</code>. הסבר: אחרי <code>a = b</code> שני המשתנים שווים 9, והערך הישן של <code>a</code> (4) כבר נמחק, ולכן <code>b = a</code> מעתיקה 9. תיקון: <code>temp = a</code>, <code>a = b</code>, <code>b = temp</code>; יודפס <code>9 4</code>. הרצה שנייה: <code>11</code>. הסבר: מחשבים קודם את צד ימין (10 + 1 = 11) ורק אז שומרים ב-<code>score</code>, והערך הישן נעלם. ★ 3: <code>print(2 ** 10)</code> ← 1024, <code>print(2 + 3 * 4)</code> ← 14, כי הכפל מחושב לפני החיבור.</td></tr>
-<tr><td>3. // ו-%<br>(הרצה)</td><td>4</td><td class="t"><code>Full groups: 3</code>, <code>Left over: 2</code>. הסבר: 17 = 3 קבוצות של 5 (15) ועוד 2 שנשארו; <code>//</code> נותן את מספר הקבוצות השלמות ו-<code>%</code> את מה שנשאר. ב-Python <code>%</code> הוא שארית, לא אחוזים.</td></tr>
-<tr><td>4. לא מתעדכן<br>(הרצה)</td><td>4</td><td class="t"><code>Total: 24</code>. הסבר: <code>total</code> חושב בשורה 3 מהערכים שהיו אז (8 · 3). שינוי <code>quantity</code> אחר כך לא מחשב מחדש; צריך לכתוב שוב את שורת החישוב.</td></tr>
-<tr><td>5. קלט בלי המרה<br>(הרצה)</td><td>5</td><td class="t"><code>125</code>. הסבר: <code>input</code> מחזירה טקסט, ו-<code>+</code> על שני טקסטים מחבר אותם זה לזה ולא מחשב. תיקון: <code>a = int(input("First number: "))</code> ו-<code>b = int(input("Second number: "))</code>; אז יודפס 17.</td></tr>
-<tr><td>6. מחשבון אריזות<br>(קוד)</td><td>14</td><td class="t"><code>items = int(input(...))</code>, <code>per_pack = int(input(...))</code>, <code>full_packs = items // per_pack</code>, <code>left_over = items % per_pack</code>, ושתי הדפסות. הרצה 17 ו-5: <code>3, 2</code>. הרצה 3 ו-5: <code>0, 3</code>. הסבר: אין אפילו חבילה מלאה אחת, ולכן 0 חבילות מלאות וכל 3 הפריטים נשארו. טעות נפוצה: <code>/</code> במקום <code>//</code>.</td></tr>
-<tr><td>★ 1, 2</td><td></td><td class="t">1: <code>print("Cost:", full_packs * 12)</code> (ל-17 ו-5: 36). 2: <code>price = int(input(...))</code>, <code>quantity = int(input(...))</code>, <code>print("Total:", price * quantity)</code>.</td></tr></table>
-<div>סה״כ בערך 38 דקות של משימות ומרווח של כ-7 דקות. אם הכיתה מתעכבת: לדלג על משימה 4 ולהסביר אותה בכיתה, ולשמור על משימת הליבה. קבצי ההתחלה <code>Variables_Starter.py</code> ו-<code>Arithmetic_Starter.py</code> נמצאים ב-<code>exercises/</code>, ופתרונות מלאים ב-<code>solutions/</code>. בשמות הקבצים הוחלף <code>G7</code> ב-<code>U3</code> כי המעבדה לכיתות ז׳ וח׳.</div>
+<tr><td>1. קבוצות שלמות ושארית<br>(הרצה)</td><td>4</td><td class="t"><code>Full groups: 3</code>, <code>Left over: 2</code>. הסבר: 17 = 3 קבוצות של 5 (15) ועוד 2 שנשארו; <code>//</code> נותן את מספר הקבוצות השלמות ו-<code>%</code> את מה שנשאר. ב-Python <code>%</code> הוא שארית, לא אחוזים.</td></tr>
+<tr><td>2. החלפה<br>(הרצה + קוד)</td><td>7</td><td class="t">הרצה ראשונה: <code>9 9</code>. הסבר: אחרי <code>a = b</code> שני המשתנים שווים 9, והערך הישן של <code>a</code> (4) כבר נמחק, ולכן <code>b = a</code> מעתיקה 9. תיקון: <code>temp = a</code>, <code>a = b</code>, <code>b = temp</code>; יודפס <code>9 4</code>. (עדכון עצמי <code>score = score + 1</code> ← 11 לא בדף: מוצג בשקופית 7 של התוספת.)</td></tr>
+<tr><td>3. מחשבון אריזות<br>(קוד)</td><td>10</td><td class="t"><code>items = int(input(...))</code>, <code>per_pack = int(input(...))</code>, ושתי הדפסות: <code>items // per_pack</code> ו-<code>items % per_pack</code>. הרצה 17 ו-5: <code>3, 2</code>. הרצה 3 ו-5: <code>0, 3</code>. הסבר: אין אפילו חבילה מלאה אחת, ולכן 0 חבילות מלאות וכל 3 הפריטים נשארו. טעויות נפוצות: <code>/</code> במקום <code>//</code>; <code>input</code> בלי <code>int</code> (<code>TypeError</code> בחילוק).</td></tr>
+<tr><td>★</td><td></td><td class="t"><code>print("Cost:", full_packs * 12)</code> (ל-17 ו-5: 36).</td></tr></table>
+<div>סה״כ בערך 21 דקות של משימות: התלמידים לא מספיקים יותר, והשאר זמן הדרכה, ניחושים ותרגול בשקופיות. אם הכיתה מתעכבת: מדלגים על משימה 1 (מראים אותה בכיתה), ושומרים על משימת הליבה (3). קבצי ההתחלה <code>Variables_Starter.py</code> ו-<code>Arithmetic_Starter.py</code> נמצאים ב-<code>exercises/</code>, ופתרונות מלאים ב-<code>solutions/</code>. בשמות הקבצים הוחלף <code>G7</code> ב-<code>U3</code> כי המעבדה לכיתות ז׳ וח׳.</div>
 </div>
 """
 

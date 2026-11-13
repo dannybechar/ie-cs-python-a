@@ -11,7 +11,7 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | **Unit** | Strategy | [`unit-strategy.md`](unit-strategy.md) | Official scope, topics, hours and the meeting breakdown |
 | **3.1** The Rover's Memory | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan: variables as boxes, reassignment and trace tables, four types, friendly output, input and conversion |
 |  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief: rover log, mission card, types detective, turtle square |
-|  | Exercise | [`m1-lab-sheet-he.pdf`](m1-lab-sheet-he.pdf) | Printable student lab sheet, one sheet both sides, 45 minutes (about 38 minutes of tasks plus buffer; task 2 is now swap and self-update). Two question types only: run the code, write the output and explain why; write code that does X |
+|  | Exercise | [`m1-lab-sheet-he.pdf`](m1-lab-sheet-he.pdf) | Printable student lab sheet, one sheet both sides, large print, 3 tasks (about 20 minutes: what students can finish): `//` and `%`, swap, packing calculator, plus a star task. Two question types only: run the code, write the output and explain why; write code that does X |
 |  | Exercise | [`Variables_Starter.py`](exercises/Variables_Starter.py) | Rover log for the trace-table warm-up. This is the only starter of 3.1: tasks 1-3 are written from scratch |
 |  | Exercise | [`Variables_Reference.py`](solutions/Variables_Reference.py) | Solutions, one function per item: the rover log, the warm-up extras (multiple assignment, conversion) and tasks 1-3 |
 |  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (22 slides, made in NotebookLM from 15; 7 question/answer slides added, footers added) |

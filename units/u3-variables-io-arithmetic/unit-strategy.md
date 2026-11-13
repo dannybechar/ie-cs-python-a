@@ -20,21 +20,26 @@ Status: ✅ built · ⏳ planned, not built · ⚠️ gap to resolve.
 Also listed for this chapter in the program overview (p.3–5):
 
 - `//` and `%` → m2 ✅
-- Teaching variables using Turtle → m1 Task 3 (`side` drives the square) ✅, and m2's bridge back to Turtle
+- `**` and basic precedence → m2 ✅ (Phase 5; the ministry formula sheet lists `**`)
+- Teaching variables using Turtle → m1 Task 3 (`side` drives the square) ✅ (the m2 Turtle bridge was a duplicate and was removed in Phase 5)
+- `math` library functions (`math.sqrt`, `abs`, `max`, `min`) → not taught here; the formula-sheet tour is deferred to exam preparation
 
 ## Unit 3.1 — Knowledge + Lab
 - data vs variable.
 - assignment.
 - basic types: integer, decimal, string, boolean.
-- `input`, and converting it with `int` / `float`.
+- `input`, and converting it with `int` / `float`; converting a stored variable, `str()`.
+- naming rules: law (חוק) against convention (מוסכמה), reserved words.
+- multiple assignment (`a, b = 1, 2`).
 - trace tables.
 - a variable drives the turtle.
 - friendly output.
 - first variable-based program.
 
 ## Unit 3.2 — Lab + Lab
-- arithmetic operations.
-- `//` and `%`.
+- arithmetic operations, including `**` and the order of operations.
+- `//` (מנה שלמה) and `%` (שארית חלוקה, מודולו).
+- swapping two values with `temp`; updating a variable from itself (`score = score + 1`).
 - input → calculation → output.
 - trace simple programs.
 - integrated mini-problem using several variables.

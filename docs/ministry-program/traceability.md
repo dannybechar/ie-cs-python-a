@@ -25,7 +25,7 @@ Status key: ✅ covered · 🔶 partial · ❌ missing in repo · ➕ extra in r
 | 14 | Turtle B: axes, `goto`, `setx`, `sety` | 2.x, 9.3 | 🔶 | Check coordinate system treatment in Unit 2 |
 | 15 | Strings: indexing, slicing (incl. jump), `+`, `*` | 6.1–6.3 | ✅ | |
 | 16 | `random`, counter, accumulator, global variable, time loops | 7.1–7.3, 8.4 | ✅ | Folder also asks for peer review, edge cases, input validation |
-| 17 | Exam prep: variables and operators | none | ❌ | No dedicated exam-prep meeting; time budget is 60 h, see Phase 4 |
+| 17 | Exam prep: variables, operators and conditions (deck "משתנים ותנאים"; next lesson is conditions and loops) | none | ❌ | No dedicated exam-prep meeting; time budget is 60 h, see Phase 4 |
 | 18 | Exam prep: conditions and loops | 4.3, 5.4 checkpoints | 🔶 | |
 | 19 | Exam prep: strings and turtle; formula sheet (19.2/20.5) | 6.4 checkpoint | ❌ | Formula sheet (דף עזר לתלמיד, Python 3) not used anywhere in the repo |
 | 20 | Mouse and keyboard events, three game worksheets | 9.1–9.6 | ✅ | |

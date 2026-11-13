@@ -4,6 +4,34 @@
 import turtle
 
 
+# Warm-up: the rover log (same code as Variables_Starter.py)
+def rover_log():
+    planet = "Mars"
+    distance = 225
+    speed = 3.5
+    landed = False
+    print("Planet:", planet)
+    print("Distance:", distance)
+    print("Speed:", speed)
+    print("Landed:", landed)
+    landed = True
+    print("Landed:", landed)
+
+
+# Warm-up extras: multiple assignment, converting a stored variable
+def warmup_extras():
+    fuel, speed = 80, 3.5
+    print(fuel, speed)
+    x = 7
+    y = float(x)
+    print(y, type(y))
+    text = str(5)
+    print(text, type(text))
+    number_int = int(input("Number: "))
+    number_float = float(number_int)
+    print(number_float)
+
+
 # Task 1: mission card - text input, friendly output, several values in one print
 def mission_card():
     name = input("What is your name? ")
@@ -14,6 +42,7 @@ def mission_card():
 
 
 # Task 2: types detective - choose the right type for each input
+# (the siblings question is the extra for fast finishers / the lab sheet)
 def types_detective():
     age = int(input("Age: "))
     height = float(input("Height in meters: "))
@@ -40,6 +69,8 @@ def turtle_square():
     turtle.done()
 
 
+# rover_log()
+# warmup_extras()
 # mission_card()
 # types_detective()
 turtle_square()

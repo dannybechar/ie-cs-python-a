@@ -38,7 +38,7 @@ From the Ministry program, Chapter 3 (python-a.pdf p.8):
 | Concepts: input from the keyboard, a sequence of inputs, correctness of input | ✅ several inputs in a row; `ValueError` when the input doesn't fit the type |
 | Concepts: output, friendly output, intermediate output | ✅ `print("Label:", value)`; printing a value midway to check it |
 | Concepts: simple types — integer, decimal, string, boolean | ✅ |
-| Teaching method: tracing with trace tables | ✅ slide warm-up, lab warm-up, exit check |
+| Teaching method: tracing with trace tables (טבלאות מעקב) | ✅ slide warm-up, lab warm-up, exit check |
 | Program overview: variables using Turtle | ✅ Task 3 (closes a course-map gap) |
 
 Official topics and minutes used: "variables and data types" (45 theory + 45 practice); input/output is practiced here and again in M2.
@@ -47,7 +47,7 @@ Also closes the Unit 1 gap **compound output** (several values in one `print`): 
 
 ### Deliberate exclusions
 
-No arithmetic (M2), no conditions, no loops, no string operations (Unit 6), no f-strings or `+` joining of text and numbers, no input validation beyond *seeing* a `ValueError`.
+No arithmetic (M2), no conditions, no loops, no string operations (Unit 6), no f-strings or `+` joining of text and numbers (`str(...)` is shown only as a conversion, never joined with `+`), no input validation beyond *seeing* a `ValueError`.
 
 ---
 
@@ -65,12 +65,14 @@ Students should be able to:
 
 1. Explain the difference between a value (data) and a variable.
 2. Assign a value with `=`, and predict the result of reassignment.
-3. Name variables by the rules (English letters, digits, `_`; not starting with a digit; no spaces; case matters).
+3. Name variables by the rules (English letters, digits, `_`; not starting with a digit; no spaces or special characters such as `-`; not a reserved word such as `for`; case matters) and tell a rule (חוק) from a convention (מוסכמה).
 4. Recognize the four types: `int`, `float`, `str`, `bool`, and check a type with `type(...)`.
 5. Write friendly output with several values in one `print`.
 6. Receive input into a variable, and explain that `input()` always gives text.
 7. Convert input with `int(input(...))` or `float(input(...))`, choosing the type that fits.
-8. Fill in a trace table before running.
+8. Fill in a trace table (טבלת מעקב) before running.
+9. Assign several variables in one line (`a, b = 1, 2`).
+10. Convert a stored variable (`float(x)`, `int(x)`, `str(x)`) and say what a short conversion program is for.
 
 ---
 
@@ -90,7 +92,7 @@ The box has a name (`fuel`) and holds one value (`80`). Putting in a new value r
 | Type | Example | In words |
 |---|---|---|
 | `int` | `12`, `-3` | whole number (שלם) |
-| `float` | `3.5`, `7.0` | decimal number (עשרוני) |
+| `float` | `3.5`, `7.0` | decimal number (עשרוני, ממשי) |
 | `str` | `"Dana"`, `"7"` | text (מחרוזת) — anything in quotes |
 | `bool` | `True`, `False` | true / false (בוליאני) |
 
@@ -108,16 +110,41 @@ Even when the user types `12`, `input()` gives the text `"12"`. To get a number:
 | Slides | Section | Timing below |
 |---|---|---|
 | 1–3 | Title · predict `fuel` / `"fuel"` · answer | 0–5 |
-| 4–6 | Data and variables · legal names? · naming rules | 5–12 |
-| 7–8 | Trace table (empty) · answer 80 → 50 | 12–17 |
-| 9–11 | Four types · card sort · answer | 17–25 |
+| 4–6 | Data and variables · legal names? · naming rules | 5–14 |
+| 7–8 | Trace table (empty) · answer 80 → 50 | 14–19 |
+| 9–11 | Four types · card sort · answer | 19–25 |
 | 12 | Friendly output | 25–32 |
 | 13–15 | Input · "type 12 — what prints?" · answer + `int` / `float` | 32–40 |
 | 16 | `ValueError` | 40–45 |
 | 17–18 | Rover log (empty table) · answer with types | 45–52 |
-| 19 | Tasks 1 and 2 (mission card, types detective) | 52–72 |
-| 20 | Task 3 + document and save | 72–86 |
-| 21–22 | Exit check · answer | 86–90 |
+| — | Multiple assignment, conversion of a stored variable, "purpose" prompt (no slides: board / live in the editor) | 52–57 |
+| 19 | Tasks 1 and 2 (mission card, types detective) | 57–75 |
+| 20 | Task 3 + document and save | 75–87 |
+| 21–22 | Exit check · answer | 87–90 |
+
+The deck predates the Phase 5 changes: the names round (two extra names), the card sort (five cards) and the three extra blocks at 52–57 have no slides of their own. Show them live; they can be patched into the deck at the next rebuild.
+
+### Minute plan (sums to 90)
+
+| Block | Minutes | Running total |
+|---|---:|---:|
+| Hook: predict | 5 | 5 |
+| Data, variables, naming round (7 names) | 9 | 14 |
+| Reassignment + trace table | 5 | 19 |
+| Four types, card sort (5 cards) | 6 | 25 |
+| Friendly output | 7 | 32 |
+| Input and conversion | 8 | 40 |
+| `ValueError` + transition | 5 | 45 |
+| Warm-up: rover log (trace) | 7 | 52 |
+| Multiple assignment | 2 | 54 |
+| Converting a stored variable + "purpose" | 3 | 57 |
+| Task 1: mission card | 10 | 67 |
+| Task 2: types detective (3 questions) | 8 | 75 |
+| Task 3: turtle square | 10 | 85 |
+| Document and save | 2 | 87 |
+| Exit check | 3 | 90 |
+
+Knowledge + guided practice 0–45 (45), lab 45–90 (45).
 
 The deck has no separate "lab missions" overview slide: explain the lab from slide 17 (one function per task, one active call).
 
@@ -144,7 +171,7 @@ Key message: **`fuel` without quotes is a box; `"fuel"` with quotes is text.**
 
 ---
 
-## 5–12 min — Data and Variables
+## 5–14 min — Data and Variables
 
 - **Data (נתון):** a value — `80`, `"Mars"`.
 - **Variable (משתנה):** a named box that holds a value.
@@ -158,11 +185,16 @@ Naming rules, with a quick "legal or not?" round (students answer, then run):
 | `rover_name` | ✅ | `_` instead of a space |
 | `2fuel` | ❌ | `SyntaxError: invalid decimal literal` — can't start with a digit |
 | `my fuel` | ❌ | `SyntaxError: invalid syntax` — no spaces |
+| `my-fuel` | ❌ | `SyntaxError: cannot assign to expression here...` — Python reads `-` as minus; no special characters (`-`, `!`, `#`, `?`) |
+| `for` | ❌ | `SyntaxError: invalid syntax` — a reserved word: Python already uses it |
 | `Fuel` vs `fuel` | two different names | case matters |
 
----
+Two labels to teach with the round:
 
-## 12–17 min — Reassignment + the Trace Table (student action)
+- **חוק (law):** break it and the program does not run (every ❌ above).
+- **מוסכמה (convention):** the program runs, but people expect it: English letters, a meaningful name (`fuel`, not `x`), lowercase with `_`.
+
+## 14–19 min — Reassignment + the Trace Table (student action)
 
 ```python
 fuel = 80
@@ -182,11 +214,11 @@ Key message: **a box holds one value; the new value replaces the old one.**
 
 ---
 
-## 17–25 min — Four Types (student action: card sort)
+## 19–25 min — Four Types (student action: card sort)
 
-Show the four types table. Then pairs sort seven cards into int / float / str / bool:
+Show the four types table. Then pairs sort five cards into int / float / str / bool:
 
-`7` · `7.0` · `"7"` · `True` · `"True"` · `-3` · `0.5`
+`7` · `7.0` · `"7"` · `True` · `"True"`
 
 Check with `type(...)`:
 
@@ -195,7 +227,7 @@ print(type(7))
 print(type("7"))
 ```
 
-Verified answers: `7` int · `7.0` float · `"7"` str · `True` bool · `"True"` str · `-3` int · `0.5` float.
+Verified answers: `7` int · `7.0` float · `"7"` str · `True` bool · `"True"` str.
 
 ---
 
@@ -210,8 +242,8 @@ print("Name:", name, "Age:", age)
 Output: `Name: Dana Age: 12`
 
 - A comma in `print` separates values and adds a space between them.
-- **Friendly output:** a label tells the reader what the value is.
-- **Intermediate output:** printing a value in the middle of a program to check it is right.
+- **Friendly output (פלט ידידותי):** a label tells the reader what the value is.
+- **Intermediate output (פלט ביניים):** printing a value in the middle of a program to check it is right.
 
 ---
 
@@ -260,7 +292,7 @@ Explain the lab: one file, one function per task (like Unit 2 Meeting 2), predic
 
 # 7. Second 45 Minutes — Lab
 
-Starter file: [`Variables_Starter.py`](exercises/Variables_Starter.py). Reference: [`Variables_Reference.py`](solutions/Variables_Reference.py).
+Starter file: [`Variables_Starter.py`](exercises/Variables_Starter.py) (the rover-log warm-up only). Reference: [`Variables_Reference.py`](solutions/Variables_Reference.py) (the rover-log warm-up, the extras and the three function tasks).
 
 ## 45–52 min — Warm-up: the rover log (trace table)
 
@@ -293,7 +325,49 @@ Landed: True
 
 Types: `planet` str · `distance` int · `speed` float · `landed` bool.
 
-## 52–62 min — Task 1: Mission card
+## 52–54 min — Multiple assignment
+
+Continue the rover log. Several variables can be assigned in one line; the values go to the names in order:
+
+```python
+fuel, speed = 80, 3.5
+print(fuel, speed)
+```
+
+Output: `80 3.5`. Students add one trace-table row where **two** columns change at once:
+
+| Line | `fuel` | `speed` | Output |
+|---|---|---|---|
+| `fuel, speed = 80, 3.5` | 80 | 3.5 | |
+| `print(fuel, speed)` | 80 | 3.5 | `80 3.5` |
+
+Key message: **same as two assignment lines; the first value goes to the first name.**
+
+## 54–57 min — Converting a stored variable + "what is the purpose?"
+
+Conversion is not only for `input`. A variable that already exists can be converted:
+
+```python
+x = 7
+y = float(x)
+print(y, type(y))
+text = str(5)
+print(text, type(text))
+```
+
+Output: `7.0 <class 'float'>` and `5 <class 'str'>`. (`str(...)` turns a value into text; do not join it with `+` yet, that is Unit 6.)
+
+One exam-style prompt, on the board, no running first: **"What is the purpose of this code?"**
+
+```python
+number_int = int(input("Number: "))
+number_float = float(number_int)
+print(number_float)
+```
+
+Type `34` → `34.0`. Answer: it reads a whole number and shows it as a decimal number.
+
+## 57–67 min — Task 1: Mission card
 
 A function `mission_card()` that asks for the student's name and their rover's name, and prints:
 
@@ -305,20 +379,20 @@ Mission card: Dana and Curiosity
 
 The last line uses several values in one `print`.
 
-## 62–72 min — Task 2: Types detective
+## 67–75 min — Task 2: Types detective
 
-A function `types_detective()` that asks four questions and stores each in the right type, then prints each value and its type:
+A function `types_detective()` that asks **three** questions and stores each in the right type, then prints each value and its type:
 
 | Question | Type | Code |
 |---|---|---|
 | Age | `int` | `int(input(...))` |
 | Height in meters | `float` | `float(input(...))` |
 | City | `str` | `input(...)` |
-| Number of siblings | `int` | `int(input(...))` |
+| *Extra (lab sheet / fast finishers):* number of siblings | `int` | `int(input(...))` |
 
 Ask: **Why is height a `float` and age an `int`?**
 
-## 72–82 min — Task 3: A variable drives the turtle
+## 75–85 min — Task 3: A variable drives the turtle
 
 A function `turtle_square()`: `side = int(input("Side length: "))`, then the Unit 2 square with `turtle.forward(side)` four times.
 
@@ -326,11 +400,11 @@ Predict: **To make the square bigger, how many lines do you change?** (None — 
 
 **If time is short, this is the task to shorten** — show it as a demo instead.
 
-## 82–86 min — Document and save
+## 85–87 min — Document and save
 
 One comment above each function; only one call active. Save As `G7_U3_M1_Variables_<Name>.py`.
 
-## 86–90 min — Exit check (trace)
+## 87–90 min — Exit check (trace)
 
 ```python
 x = 5
@@ -355,15 +429,19 @@ print("y:", y)
 | `"7"` is a number | Anything in quotes is a `str` |
 | `input()` gives a number when you type a number | `input()` always gives text; convert with `int`/`float` |
 | `int` works for 12.5 | `int` is for whole numbers; use `float` |
+| `a, b = 1, 2` is a tuple or a list | In Unit 3 it is just two assignments in one line; no collections |
+| Any word can be a name | Reserved words (`for`, `if`) and names with `-` or spaces are errors |
 
 ---
 
 # 9. Assessment Evidence (formative)
 
-- Trace tables filled **before** running (12–17, 45–52, exit check)
+- Trace tables filled **before** running (14–19, 45–52, exit check)
+- Naming round: rule (חוק) against convention (מוסכמה)
 - Card sort into the four types
+- Multiple assignment and conversion of a stored variable, with the "purpose of the code" answer
 - `mission_card()` with friendly output and several values in one `print`
-- `types_detective()` with the right conversion for each input
+- `types_detective()` with the right conversion for each input (three questions; the fourth is an extra)
 - `turtle_square()` driven by one variable (or its prediction, if shown as a demo)
 - Exit check: output and types
 

@@ -31,6 +31,15 @@ def truth_table():
     print(has_fuel, battery_ok, has_fuel and battery_ok)
 
 
+# Guided demo: not flips True and False (printed, no if yet)
+def not_demo():
+    number = int(input("Number: "))
+    print(number % 2 == 0)
+    print(not (number % 2 == 0))
+    print(not (number > 10))
+
+
 # sensor_check()
 # fixed_score()
+# not_demo()
 truth_table()

@@ -25,6 +25,24 @@ if age >= 12 and has_ticket == "yes":
 - ה-`if` הפנימי נבדק רק כשהתנאי החיצוני `True`.
 - כל רמת קינון מוסיפה 4 רווחים.
 - כל צד של `or` צריך השוואה משלו.
+- `else` שייך ל-`if` הקרוב ביותר באותה הזחה.
+
+</div>
+
+```python
+if battery >= 70:
+    print("Green")
+elif battery >= 30:
+    print("Yellow")
+else:
+    print("Red")
+```
+
+<div dir="rtl">
+
+- **תנאי מתגלגל** (`if` / `elif` / `else`): התנאי הראשון שמתקיים מנצח, והשאר מדולגים. הסדר חשוב.
+- ארבעה סוגי תנאים: **פשוט**, **מורכב**, **מקונן**, **מתגלגל**.
+- בבחינה קוראים לפונקציה **פעולה**.
 
 </div>
 
@@ -32,8 +50,9 @@ if age >= 12 and has_ticket == "yes":
 
 <div dir="rtl">
 
-1. כתבו פונקציה בשם `rover_move()` שקולטת `battery` (מספר) ו-`obstacle` (`yes` או `no`). היא מדפיסה `Move forward` רק אם הסוללה לפחות 20 **וגם** אין מכשול. אחרת היא מדפיסה `Stop`.
-2. כתבו פונקציה בשם `rover_move_nested()` שמחליטה אותו דבר עם `if` מקונן.
+כתבו פונקציה (בבחינה: פעולה) בשם `rover_move()` שקולטת `battery` (מספר) ו-`obstacle` (`yes` או `no`). היא מדפיסה `Move forward` רק אם הסוללה לפחות 20 **וגם** אין מכשול. אחרת היא מדפיסה `Stop`.
+
+סיימתם מוקדם? כתבו גם `rover_move_nested()` שמחליטה אותו דבר עם `if` מקונן.
 
 </div>
 
@@ -48,8 +67,6 @@ if age >= 12 and has_ticket == "yes":
 
 </div>
 
-איזו גרסה קצרה יותר? למה שתיהן מדפיסות אותו דבר?
-
 ## 2. משימה 2: הרובר מצייר לפי בחירה
 
 פתחו את `Shapes_Starter.py`. התוכנית מציירת גם ריבוע וגם משולש. הוסיפו תנאים והזחה:
@@ -57,11 +74,11 @@ if age >= 12 and has_ticket == "yes":
 <div dir="rtl">
 
 1. מציירים רק אם `size` בין 20 ל-200, כולל. אחרת מדפיסים `Invalid size`.
-2. בפנים: `square` ← ריבוע כחול. כל תשובה אחרת ← משולש ירוק.
+2. בפנים תנאי מתגלגל: `square` ← ריבוע כחול. `triangle` ← משולש ירוק. כל תשובה אחרת ← מדפיסים `Unknown shape`.
 
 </div>
 
-בדקו עם `square` ו-100, עם `triangle` ו-100, ועם `square` ו-10.
+בדקו עם `square` ו-100, עם `triangle` ו-100, עם `circle` ו-100, ועם `square` ו-10.
 
 ## 3. נקודת ביקורת א׳ (לבד)
 
@@ -71,6 +88,7 @@ if age >= 12 and has_ticket == "yes":
 
 - גיל קטן מ-0 או גדול מ-120 ← `Invalid age`
 - אחרת: מתחת ל-12 **או** 65 ומעלה ← `Price: 20`, ואחרת ← `Price: 40`
+- אפשר עם `if` מקונן או עם תנאי מתגלגל (`elif`).
 
 </div>
 
@@ -78,28 +96,41 @@ if age >= 12 and has_ticket == "yes":
 
 ## 4. נקודת ביקורת ב׳: טבלת מעקב (בלי להריץ)
 
-```python
-fuel = 80
-weather = "clear"
+**חלק א.** חנות נותנת מתנה לפי סכום הקנייה:
 
-if fuel >= 50:
-    if weather == "clear" or weather == "cloudy":
-        print("Launch")
+```python
+if amount < 80:
+    print("No gift")
+elif amount < 800:
+    if amount <= 500:
+        print("Yoga ball")
+    elif amount < 650:
+        print("Tennis balls")
     else:
-        print("Wait for weather")
+        print("Football")
 else:
-    print("Refuel")
-print("Check done")
+    print("Running shoes")
 ```
 
 <div dir="rtl">
 
-| `fuel` | `weather` | `fuel >= 50` | הפלט |
-|---|---|---|---|
-| 80 | clear | &nbsp; | &nbsp; |
-| 80 | storm | &nbsp; | &nbsp; |
-| 30 | clear | &nbsp; | &nbsp; |
-| 50 | cloudy | &nbsp; | &nbsp; |
+| `amount` | הפלט |
+|---|---|
+| 25 | &nbsp; |
+| 200 | &nbsp; |
+| 550 | &nbsp; |
+| 750 | &nbsp; |
+
+</div>
+
+**חלק ב.** נתון `a = 10`, `b = 15`, `c = 0`. כתבו `True` או `False` לכל ביטוי:
+
+<div dir="rtl">
+
+| הביטוי | הערך |
+|---|---|
+| `a % 5 == 0 and b // 5 > c` | &nbsp; |
+| `a % 2 == c % 2 and b % 3 > a % 3` | &nbsp; |
 
 </div>
 
@@ -118,5 +149,6 @@ print("Check done")
 1. מתי משתמשים ב-`and`, ומתי ב-`or`?
 2. ב-`if` מקונן, איזה תנאי נבדק קודם?
 3. כתבו תנאי מורכב אחד לבדיקת הכרטיס המקוננת.
+4. מתי `elif` רץ?
 
 </div>

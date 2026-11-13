@@ -6,7 +6,8 @@ def draw_shape():
     shape = input("square or triangle: ")
     size = int(input("Size: "))
     # TODO 1: only draw if size is from 20 to 200, otherwise print "Invalid size"
-    # TODO 2: "square" -> the blue square, anything else -> the green triangle
+    # TODO 2: "square" -> the blue square, "triangle" -> the green triangle
+    #         (if / elif / else), anything else -> print "Unknown shape"
     turtle.shape("turtle")
 
     turtle.pencolor("blue")

@@ -50,4 +50,16 @@ Status key: ✅ covered · 🔶 partial · ❌ missing in repo · ➕ extra in r
 
 ## 4. Approved deviations
 
-_None recorded yet. Entries are added only after the Phase 4 review._
+Phase 4 rulings, 2026-11-13 (teacher), see `audit-summary.md` for evidence:
+
+| Id | Ruling |
+|---|---|
+| D1 | Adopt `elif` (rolling condition is in python-a.pdf p.4): ~10 min in 4.3; remove the "not official" statements. |
+| D4 | Adopt `not` (~5 min) and `+=` as shorthand (~5 min); remove the bans in Units 5 and 7. |
+| D2 | **Return-lite** in 8.3 (~20 min, zero net time); checkpoint A stays return-free. Approved deviation from python-a.pdf p.17 (functions that do not return a value remain the assessed form). |
+| D3 | Add a ~10 min translation drill to the exam turtle dialect (`wn = turtle.Screen()`, `pen = turtle.Turtle()`, `mainloop`); module-level turtle stays the teaching style in Units 2-9 (**approved deviation**). |
+| D5 | Add the coordinates / `goto` / `setx` / `sety` block (~8-10 min) to Unit 2 (addendum for taught classes). |
+| D10 | Keep the repo unit order (PDF order; Units 0-2 taught) (**approved deviation** from the folder order). |
+| Phase 5 scope | All blocking + should findings, Units 3-9 first, then Units 0-2 as addenda; one commit per unit; teacher approves each unit before the next. 'Nice' findings only when free. |
+| Open | D6-D9, D11 follow the audit recommendations unless the teacher says otherwise while reviewing each unit. |
+

@@ -560,8 +560,8 @@
   "slides": 5,
   "media": 5,
   "chars": 128,
-  "status": "image-only",
-  "extract": "extracts/materials-m12-3-55b81b.md"
+  "status": "ocr",
+  "extract": "extracts/ocr-m12-3.md"
  },
  {
   "source": "Materials/12.5 סרטון תרגול מודרך _ לולאת for ומקסימום ___/12.5 תרגול מודרך _ לולאת for ומקסימום.pptx",
@@ -573,8 +573,8 @@
   "slides": 3,
   "media": 3,
   "chars": 76,
-  "status": "image-only",
-  "extract": "extracts/materials-m12-5-155bfc.md"
+  "status": "ocr",
+  "extract": "extracts/ocr-m12-5.md"
  },
  {
   "source": "Materials/13.0 מצגת למורה _ לולאת while (להשאיר כטיוטה)/13.0 _ לולאת while - עותק למורה.pptx",
@@ -612,8 +612,8 @@
   "slides": 4,
   "media": 4,
   "chars": 102,
-  "status": "image-only",
-  "extract": "extracts/materials-m13-3-017c11.md"
+  "status": "ocr",
+  "extract": "extracts/ocr-m13-3.md"
  },
  {
   "source": "Materials/13.5 סרטון תרגול מודרך _ לולאת while סכום ספרות גדול מ 10 ___/13.5 תרגול מודרך _ לולאת while - סכום ספרות, חלק א.pptx",
@@ -625,8 +625,8 @@
   "slides": 3,
   "media": 3,
   "chars": 76,
-  "status": "image-only",
-  "extract": "extracts/materials-m13-5-ea49d0.md"
+  "status": "ocr",
+  "extract": "extracts/ocr-m13-5.md"
  },
  {
   "source": "Materials/13.8 _ סיכום בקטנה/13.6 _ פייתון א _ סיכום בקטנה _ לולאת while.docx",
@@ -949,8 +949,8 @@
   "slides": 17,
   "media": 17,
   "chars": 448,
-  "status": "image-only",
-  "extract": "extracts/materials-m09-4-2f783f.md"
+  "status": "ocr",
+  "extract": "extracts/ocr-m09-4.md"
  },
  {
   "source": "Materials/9.7 _ סיכום בקטנה/9.7 _ פייתון א _ סיכום בקטנה.docx",

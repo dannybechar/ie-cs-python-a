@@ -100,6 +100,11 @@ def main(src, dst):
             (dst / "extracts" / out_name).write_text(
                 "# %s\n\nSource: `%s`\n\n%s\n" % (row["name"], row["source"], text), encoding="utf-8")
             row["extract"] = "extracts/" + out_name
+        m2 = re.match(r"\s*(\d+)\.(\d+)", row["folder"] or "")
+        if row["status"] == "image-only" and m2:
+            ocr = dst / "extracts" / ("ocr-m%02d-%s.md" % (int(m2.group(1)), m2.group(2)))
+            if ocr.exists():  # vision transcription added by hand/agent
+                row["status"], row["extract"] = "ocr", "extracts/" + ocr.name
         manifest.append(row)
     (dst / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
     lines = ["# Manifest of the ministry Python-A program", "",

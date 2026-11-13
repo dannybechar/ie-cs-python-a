@@ -1,6 +1,7 @@
 # Unit 8.1 - reference solutions for the teacher.
 # One function per task (define -> call, from Unit 1).
 # Run ONE task at a time: remove the # from one call at the bottom.
+# turtle.done() (the exam word: mainloop) is the last line of a Turtle program.
 import turtle
 
 
@@ -38,7 +39,6 @@ def windmill():
     for i in range(4):
         draw_square()
         turtle.right(90)
-    turtle.done()
 
 
 # show_title()
@@ -47,3 +47,4 @@ def windmill():
 # welcome()
 # main()
 windmill()
+turtle.done()

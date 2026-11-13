@@ -17,9 +17,9 @@
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| **8.1 (this)** | **why functions → define vs call → order of execution → no return value** | 45 / 45 |
+| **8.1 (this)** | **why functions → define vs call → order of execution → functions that act (return: 8.3)** | 45 / 45 |
 | 8.2 | functions without parameters: split a program, `main()`, input inside a function, Turtle | 0 / 90 |
-| 8.3 | parameters and arguments, several parameters, parameter vs input, Turtle sizes | 45 / 45 |
+| 8.3 | parameters and arguments, several parameters, parameter vs input, return-lite (a function hands back one value) | 45 / 45 |
 | 8.4 | scope: local variables, `global`, Turtle with shared state, unit checkpoint | 0 / 90 |
 
 Students have written one function per task since Unit 1. This unit names **why** and adds parameters and scope.
@@ -39,7 +39,9 @@ From the Ministry program, Chapter 8 (python-a.pdf p.17):
 Official topics and minutes: "why functions?" — 45 theory; "function without parameters" — 45 of its 135 practice minutes.
 
 ### Deliberate exclusions
-No `return` (Python A functions do not return values), no parameters yet (8.3).
+No parameters yet (8.3) and no `return` yet: in this meeting every function acts (prints or draws). `return` arrives in 8.3 as a deliberate, teacher-approved deviation (return-lite, 20 min, ruling D2) from python-a.pdf p.17; the assessed practical form (checkpoint A in 8.4) stays a function that returns no value.
+
+**Terminology bridge (U8-06):** the course says "פונקציה" (as python-a.pdf and the exam do); Ministry of Education materials say **"פעולה"** (also "מתודה"). Say once: "פונקציה = פעולה". The same applies in 9.1 to "פעולת מאזין" (listener function).
 
 ---
 
@@ -70,12 +72,12 @@ No `return` (Python A functions do not return values), no parameters yet (8.3).
 | 0–1 | Title: Mission 22 |
 | 1–5 | **Warm-up:** six `print` lines with a repeated frame — what repeats? Give the action a name |
 | 5–7 | Answer: the star line repeats → one function `show_line()` |
-| 7–14 | Why functions: reuse, one place to fix, test parts alone; `show_line()` called twice |
+| 7–14 | Why functions: reuse, one place to fix, test parts alone; `show_line()` called twice. **Bridge (1–2 min, inside the 7 min):** "פונקציה = פעולה בחומרי משרד החינוך" |
 | 14–19 | Definition, body, call (table) |
 | 19–23 | **Predict:** `def hello(): print("B")`, then `print("A")`, `hello()`, `print("C")` |
 | 23–25 | Answer: A, B, C — the definition does not run by itself |
 | 25–32 | A function that calls functions: `show_header()`, `show_menu()`, `main()` |
-| 32–36 | No return value: our functions act — print or draw |
+| 32–36 | Our functions so far **act** — print or draw; they do not hand a value back. Preview only: `input()` and `int()` already hand values back; our own functions will do it in 8.3 |
 | 36–41 | **Students:** find three bugs (missing colon, body not indented, call without parentheses) |
 | 41–44 | Answer |
 | 44–45 | Lab missions |
@@ -123,6 +125,8 @@ Save As `G7_U8_M1_Functions_<Name>.py`.
 
 ### Tool Note – Thonny
 Close the Turtle window before the next run.
+
+**Turtle note (U8-12):** `turtle.done()` is the end-of-program line; the exam material writes `mainloop()` for the same job ("`done()` = `mainloop()`"). In the reference file it now sits once at the end of the program, not inside a function.
 
 ---
 

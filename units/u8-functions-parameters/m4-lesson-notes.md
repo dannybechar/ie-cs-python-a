@@ -8,7 +8,7 @@
 **Structure:** Lab + Lab (30 min guided practice, then 60 min lab with the unit checkpoint)  
 **Minutes (theory / practice):** 0 / 90  
 **Current tool:** Thonny  
-**Source of inspiration:** the teacher's draft `unit8_meeting4_scope_and_global_final.pptx` (the `make_number()` NameError warm-up, same name inside and outside, reading an outside variable, `global score`, the local vs global table, the `demo()` prediction, the growing Turtle spiral, `draw_square(size)` with a global counter kept; `+=` replaced; the missing-`global` bug and a paper checkpoint added)  
+**Source of inspiration:** the teacher's draft `unit8_meeting4_scope_and_global_final.pptx` (the `make_number()` NameError warm-up, same name inside and outside, reading an outside variable, `global score`, the local vs global table, the `demo()` prediction, the growing Turtle spiral, `draw_square(size)` with a global counter kept; `+=` shown as a shorthand line; the missing-`global` bug and a paper checkpoint added; Phase 5 adds the ministry 16.1 `score` riddle, a `sum_numbers` bridge from Unit 5 and a return trace in checkpoint B)  
 **Tool-dependence rule:** Keep lesson content IDE-neutral. Any tool-specific instruction must be isolated and labeled **Tool Note – Thonny**.
 
 ---
@@ -17,9 +17,9 @@
 
 | Meeting | Focus | Theory / practice minutes |
 |---|---|---|
-| 8.1 | why functions → define vs call → order of execution → no return value | 45 / 45 |
+| 8.1 | why functions → define vs call → order of execution → functions that act (return: 8.3) | 45 / 45 |
 | 8.2 | functions without parameters: split a program, `main()`, input inside a function, Turtle | 0 / 90 |
-| 8.3 | parameters and arguments, several parameters, parameter vs input, Turtle sizes | 45 / 45 |
+| 8.3 | parameters and arguments, several parameters, parameter vs input, return-lite (a function hands back one value) | 45 / 45 |
 | **8.4 (this)** | **scope: local variables, `global`, Turtle with shared state, unit checkpoint** | 0 / 90 |
 
 This meeting closes Unit 8 and holds its **checkpoint** (practical + theoretical), as the official assessment asks.
@@ -35,12 +35,15 @@ This meeting closes Unit 8 and holds its **checkpoint** (practical + theoretical
 | Teaching: examples of local and `global` variables | ✅ |
 | Teaching: functions with/without parameters with Turtle, using a `global` variable | ✅ Task 1, checkpoint A |
 | Assessment (theory): a problem solved by calling/writing functions | ✅ checkpoint B |
-| Assessment (practical): a function with parameter(s) that returns no value | ✅ checkpoint A |
+| Assessment (practical): a function with parameter(s) that returns no value | ✅ checkpoint A (stays return-free, as python-a.pdf p.17 says) |
+| Return-lite from 8.3 (approved deviation D2) | ✅ checkpoint B Q4 and the `sum_numbers` bridge (paper/light only, never in the practical) |
 
 Official topic and minutes: "function with parameters" — the last 90 of its 135 practice minutes. With this meeting Unit 8 uses exactly its 360 official minutes (90 theory / 270 practice).
 
 ### Deliberate exclusions
-No `return`, no `nonlocal`. `global` is used only for shared state such as a counter or a growing step.
+No `nonlocal`. `global` is used only for shared state such as a counter or a growing step. Checkpoint A (practical) stays **return-free** on purpose; return (taught in 8.3) is assessed only on paper in checkpoint B (question 4).
+
+**`+=` (ruling D4, recognition only):** `score += 1` is short for `score = score + 1`; both appear in ministry material and the exam aid. Show it once at 15–21; do not require it.
 
 ---
 
@@ -73,10 +76,10 @@ No `return`, no `nonlocal`. `global` is used only for shared state such as a cou
 | 4–6 | Answer: 10, then `NameError` — `x` is local |
 | 6–11 | Same name: `value = 100` outside, `value = 20` inside → `Inside: 20`, `Outside: 100` |
 | 11–15 | Reading an outside variable: `school = "Galil"` |
-| 15–21 | `global score`: `add_point()` twice → 2 |
+| 15–21 | `global score`: `add_point()` twice → 2. One line: "`score += 1` is short for `score = score + 1`; both appear in exam material" (recognition, not required) |
 | 21–24 | Local vs `global` (table) |
-| 24–27 | **Predict:** `value = 7`; `demo()` sets `value = 3` and prints it; then `print(value)` |
-| 27–29 | Answer: 3, then 7 |
+| 24–27 | **Predict (ministry 16.1 riddle):** `score = 10`; `points()` declares `global score`, adds 1 and prints `"#1#", score`; then `print("#2#", score)` before the call to `points()`. Which output: `#2# 10` then `#1# 11`, or `#2# 11` then `#1# 10`, or an error? And what if the `global` line is deleted? |
+| 27–29 | Answer: `#2# 10`, `#1# 11`; without `global` an error (`UnboundLocalError`: the function does not know `score` as an outside variable it may change) |
 | 29–30 | Lab missions |
 
 ---
@@ -85,7 +88,7 @@ No `return`, no `nonlocal`. `global` is used only for shared state such as a cou
 
 Starter: [`Scope_Starter.py`](exercises/Scope_Starter.py). Reference: [`Scope_Reference.py`](solutions/Scope_Reference.py).
 
-## 30–35 — Warm-up: why does it crash?
+## 30–35 — Warm-up: why does it crash? (5 min)
 
 ```python
 # Warm-up: add_point() should add 1 to score. Why does it crash?
@@ -102,7 +105,11 @@ print(score)
 
 `UnboundLocalError`: the assignment makes `score` local, and the local one has no value yet. Fix: `global score` as the first line of the body.
 
-## 37–49 — Task 1: a growing spiral (Turtle)
+## 35–41 — Bridge: `sum_numbers(num1, num2)` (6 min, spiral back to Unit 5, ministry 12.1 slide 25)
+
+Unit 5's accumulator, now a function with two parameters. First the print version: `total = 0`, loop `for i in range(num1, num2 + 1)`, `total = total + i`, then `print(total)` inside the function; call `sum_numbers(1, 5)` → 15. Then the same function with `return total` and the call `print(sum_numbers(1, 5))`. Say: `total += i` means the same line; both are fine. Print-version first, return-version second; students only read the second.
+
+## 41–49 — Task 1: a growing spiral (Turtle, 8 min)
 
 `steps = 40` outside; `grow_step()` declares `global steps`, moves `steps`, turns 90 and adds 15. Call it 6 times in a loop: each side is 15 longer.
 
@@ -128,11 +135,11 @@ tick(5)
 print(count)
 ```
 
-1. What is printed? 2. Which is the parameter, and which are the arguments? 3. What happens if the line `global count` is removed? 4. `def show(a, b): print(a - b)` — what do `show(10, 4)` and `show(4, 10)` print?
+1. What is printed? 2. Which is the parameter, and which are the arguments? 3. What happens if the line `global count` is removed? 4. `def sub(a, b): return a - b` — what do `print(sub(10, 4))` and `print(sub(4, 10))` print? Why does the order matter?
 
 ## 79–82 — Checkpoint B answers
 
-1. `7`. 2. Parameter `step`; arguments 2 and 5. 3. `UnboundLocalError` — `count` becomes local. 4. `6` and `-6`.
+1. `7`. 2. Parameter `step`; arguments 2 and 5. 3. `UnboundLocalError` — `count` becomes local. 4. `6` and `-6`; the first argument goes to `a`, the second to `b`, and `return` hands the result to the `print` in the call.
 
 ## 82–85 — Document and save
 
@@ -164,5 +171,6 @@ The Variables view (View › Variables) shows the global variables after each ru
 
 - Scope predictions (formative)
 - **Checkpoint A** (practical): `draw_square(size)` with a global counter, `show_line(symbol, amount)`
-- **Checkpoint B** (theoretical): trace with `global`, parameter vs argument, argument order
+- **Checkpoint B** (theoretical): trace with `global`, parameter vs argument, a `return` trace with argument order (Q4)
+- `sum_numbers` print version and return version read correctly
 - Exit check

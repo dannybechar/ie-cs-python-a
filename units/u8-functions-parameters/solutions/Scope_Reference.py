@@ -1,6 +1,7 @@
 # Unit 8.4 - reference solutions for the teacher.
 # One function per task (define -> call, from Unit 1).
 # Run ONE task at a time: remove the # from one call at the bottom.
+# turtle.done() (the exam word: mainloop) is the last line of a Turtle program.
 import turtle
 
 score = 0
@@ -20,6 +21,26 @@ def two_points():
     print(score)
 
 
+# Bridge from Unit 5 (ministry 12.1 sum_numbers): print version, then return version
+def sum_numbers(num1, num2):
+    total = 0
+    for i in range(num1, num2 + 1):
+        total = total + i   # also written: total += i
+    print(total)
+
+
+def sum_numbers_return(num1, num2):
+    total = 0
+    for i in range(num1, num2 + 1):
+        total = total + i
+    return total
+
+
+def sums():
+    sum_numbers(1, 5)
+    print(sum_numbers_return(1, 5))
+
+
 # Task 1: a growing spiral - steps is kept between calls
 def grow_step():
     global steps
@@ -31,7 +52,6 @@ def grow_step():
 def spiral():
     for i in range(6):
         grow_step()
-    turtle.done()
 
 
 # Checkpoint A1: a parameter for the size, a global counter for the drawings
@@ -55,9 +75,10 @@ def checkpoint():
     draw_square(100)
     print("Squares:", squares_drawn)
     show_line("=", 20)
-    turtle.done()
 
 
 # two_points()
+# sums()
 # spiral()
 checkpoint()
+turtle.done()

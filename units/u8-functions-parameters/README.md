@@ -4,6 +4,8 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 8 academic hours = 4 meetings = 360 minutes (90 theory / 270 practice).
 
+Phase 5 alignment with the ministry program (see [`audit-u8.md`](../../docs/ministry-program/audit-u8.md)): 8.3 now teaches return-lite (20 min, approved deviation from python-a.pdf p.17, checkpoint A stays return-free); 8.2 uses the ministry 4.3 arithmetic-in-a-function tasks; 8.4 uses the 16.1 `score` riddle and a return trace in checkpoint B. The decks and printed sheets still show the pre-Phase-5 content (see the coordinator's deck list); the lab briefs and lesson notes are current.
+
 ## Meetings and materials
 
 | Meeting | Type | File | What it is |
@@ -29,3 +31,4 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |  | Exercise | [`Scope_Starter.py`](exercises/Scope_Starter.py) | Warm-up: changing an outside variable without `global` |
 |  | Exercise | [`Scope_Reference.py`](solutions/Scope_Reference.py) | Solutions and checkpoint A, one function per task |
 |  | Lesson | [`m4-slides-he.pdf`](m4-slides-he.pdf) | Hebrew slide deck (18 slides, NotebookLM, patched) |
+|  | Exercise | [`Extra_Practice_U8.md`](exercises/Extra_Practice_U8.md) | Take-home extra practice pack for the whole unit (0 class minutes) |

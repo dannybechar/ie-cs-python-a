@@ -41,9 +41,9 @@ Official topics and minutes used: "work surface and pen" (45 practice) and "chan
 
 ### Deliberate exclusions
 
-Same as M1: no `backward()`, `goto()`, coordinates, `heading()`/`position()`, `circle()`, `fillcolor`/`begin_fill`, `speed()`, variables, `input()`, loops, conditions, our own function parameters, return values, events, classes.
+Same as M1 (these items live in the [addendum session](addendum-lesson-notes.md), not in this plan): no `backward()`, `goto()`, coordinates, `heading()`/`position()`, `circle()`, `fillcolor`/`begin_fill`, `speed()`, variables, `input()`, loops, conditions, our own function parameters, return values, events, classes.
 
-> Stamps are drawn with the turtle's **fill** color, which stays black. Colored stamps need `fillcolor`/`color`, which we keep out of Unit 2.
+> Stamps are drawn with the turtle's **fill** color, which stays black. Colored stamps need `fillcolor`/`color`, which we keep out of this meeting; `color()` is taught in the addendum session (the ministry's everyday command, also used in Unit 9).
 
 ---
 

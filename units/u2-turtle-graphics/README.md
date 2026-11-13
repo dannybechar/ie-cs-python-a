@@ -25,6 +25,10 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 |  | Exercise | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
 |  | Exercise | [`GeometryChallenge_Starter.py`](exercises/GeometryChallenge_Starter.py) | Starter file |
 |  | Exercise | [`GeometryAssessment_Reference.py`](solutions/GeometryAssessment_Reference.py) | Assessment solution |
+| **Addendum** coordinates and exam notation | Lesson | [`addendum-lesson-notes.md`](addendum-lesson-notes.md) | 45-minute session for taught classes, outside the three meetings and the official 270 minutes: coordinates, `goto`, `setx`/`sety`, short names, `backward`, `color`, fill, 10-minute exam-notation translation drill |
+|  | Exercise | [`addendum-handout-he.md`](addendum-handout-he.md) | Hebrew student handout |
+|  | Exercise | [`Coordinates_Starter.py`](exercises/Coordinates_Starter.py), [`ExamDialect_Starter.py`](exercises/ExamDialect_Starter.py) | Starter files (new) |
+|  | Exercise | [`Coordinates_Reference.py`](solutions/Coordinates_Reference.py), [`ExamDialect_Reference.py`](solutions/ExamDialect_Reference.py) | Reference solutions (new) |
 | **Extra** 10 turtle exercises | Exercise | [`exercises/`](exercises) | Ten starter files (01 ThickRedRectangle … 10 WelcomeSign): a comment header with the task, and an empty body to fill; see [below](#unit-2-extra-practice--10-turtle-exercises) |
 |  | Exercise | [`solutions/`](solutions) | The ten complete solutions, same file names; the header explains what each one practices |
 | **Test** Forms A and B | Test | [`u2-test-a-students-he.pdf`](u2-test-a-students-he.pdf), [`u2-test-b-students-he.pdf`](u2-test-b-students-he.pdf) | 45-minute multiple-choice test sheets (Word sources: [A](u2-test-a-students-he.docx), [B](u2-test-b-students-he.docx)) |
@@ -36,7 +40,20 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 
 Ten short exercises (the solutions are 17–20 lines of code each, no functions, loops or variables) for after the three meetings or as homework. Each file starts with a comment block that says what the exercise draws and what it practices. Difficulty is about "a rectangle in different colors and pen thicknesses", widened step by step: filled shapes, `dot`, `bgcolor`, `circle`, `write`.
 
-The files: 01 ThickRedRectangle · 02 FourColorFrame · 03 FilledBlueRectangle · 04 TrafficLight · 05 HouseWithRedRoof · 06 ThreeColorRibbons · 07 GoldenStarInNightSky · 08 ConcentricColorRings · 09 SnowmanFromDots · 10 WelcomeSign.
+**Dependency:** nine of the ten (all except 02) use `goto`, which the three taught meetings do not teach. Assign the extras only **after the addendum session** (coordinates block). An eleventh exercise, `11_QuadrantSquares.py` (four squares in the four quadrants, with solution), was added from the ministry's meeting 14 tasks 4-6.
+
+New commands in the extras (not taught in 2.1-2.3) and where the ministry teaches them:
+
+| Command | Meaning | Used in | Taught in |
+|---|---|---|---|
+| `goto(x, y)` | move to a point | 01, 03-10, 11 | addendum (ministry meeting 14) |
+| `fillcolor`, `begin_fill`, `end_fill` | fill a closed shape | 03, 07 | addendum (meeting 14) |
+| `bgcolor("...")` | window background | 07, 09, 10 | by the extra's header (meeting 14) |
+| `dot(size, color)` | filled circle at the turtle | 04, 09 | by the extra's header (meeting 20) |
+| `circle(radius)` | circle | 08 | by the extra's header (meeting 19) |
+| `write(text, ...)` | text in the window | 10 | by the extra's header (meeting 20); Unit 6.4 uses it again |
+
+The files: 01 ThickRedRectangle · 02 FourColorFrame · 03 FilledBlueRectangle · 04 TrafficLight · 05 HouseWithRedRoof · 06 ThreeColorRibbons · 07 GoldenStarInNightSky · 08 ConcentricColorRings · 09 SnowmanFromDots · 10 WelcomeSign · 11 QuadrantSquares.
 
 ## Unit 2 test
 

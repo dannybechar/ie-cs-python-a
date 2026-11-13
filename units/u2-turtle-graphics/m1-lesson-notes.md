@@ -45,7 +45,7 @@ Prior knowledge from Units 0–1: Thonny, open/run/save, `print("...")`, comment
 
 ### Deliberate exclusions
 
-Do not introduce: `backward()`, `goto()`, coordinates, `heading()`/`position()`, `circle()`, fill, `speed()`, variables, `input()`, loops, conditions, parameters of our own functions, return values, events, classes.
+Do not introduce in this meeting (the taught 90-minute plan is unchanged; coordinates, `goto`, `backward`, short names, `color` and the exam notation are covered in the separate [addendum session](addendum-lesson-notes.md), 45 minutes outside the official 270): `backward()`, `goto()`, coordinates, `heading()`/`position()`, `circle()`, fill, `speed()`, variables, `input()`, loops, conditions, parameters of our own functions, return values, events, classes.
 
 > Loops are the obvious temptation here ("the square repeats 4 times!"). Say: **"You spotted a pattern. In Unit 5 we'll teach Python to repeat. Today we write every step."**
 

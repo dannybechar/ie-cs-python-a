@@ -20,6 +20,8 @@
 
 ## הפקודות החדשות
 
+במבחן מחלקים אותן לקבוצות: **פעולות עט** (`penup`, `pendown`, `pensize`, `pencolor`) ו**פעולות עיצוב** (`shape`, `stamp`, `hideturtle`, `showturtle`).
+
 <div dir="rtl">
 
 | פקודה | מה היא עושה |

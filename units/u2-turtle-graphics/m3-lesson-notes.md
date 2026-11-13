@@ -85,7 +85,7 @@ By the end of the lesson, students should be able to:
 
 ## 5. Technical Baseline
 
-Continue using module-level Turtle calls only.
+Continue using module-level Turtle calls only (approved deviation, see `unit-strategy.md`; the exam notation `wn = turtle.Screen()`, `pen = turtle.Turtle()`, `wn.mainloop()` is taught by the translation drill in the [addendum session](addendum-lesson-notes.md)).
 
 Already-known calls available in this meeting:
 
@@ -111,7 +111,7 @@ turtle.done()
 
 ### Deliberate exclusions
 
-Do not introduce:
+Do not introduce in this meeting (coordinates and `goto` are covered in the addendum session, not here):
 
 - `backward()`
 - `goto()`

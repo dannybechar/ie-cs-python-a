@@ -13,7 +13,7 @@ def fixed_slice():
 def ends():
     word = input("Word: ")
     print(word[:3])
-    print(word[len(word) - 3:])
+    print(word[-3:])  # same as word[len(word) - 3:]
 
 
 # Task 3: the secret message hides in every second letter
@@ -22,7 +22,13 @@ def decode():
     print(secret[1::2])
 
 
-# Task 4: a palindrome reads the same in both directions
+# Task 4: without the first and the last character
+def trim():
+    word = input("Word: ")
+    print(word[1:-1])
+
+
+# Task 5 (optional): a palindrome reads the same in both directions
 def palindrome():
     word = input("Word: ")
     if word == word[::-1]:
@@ -34,4 +40,5 @@ def palindrome():
 # fixed_slice()
 # ends()
 # decode()
+# trim()
 palindrome()

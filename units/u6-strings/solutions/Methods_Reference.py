@@ -28,13 +28,34 @@ def hide_phone():
     print(phone.replace("-", "*"))
 
 
-# Task 2: write a greeting on the Turtle screen
+# Task 1c: find vs index, and the optional parameters
+def index_and_options():
+    text = "banana"
+    print(text.find("z"))  # -1
+    # print(text.index("z"))  # ValueError: substring not found (on purpose)
+    print(text.find("a", 2))  # 3: start looking at index 2
+    print("playlist".startswith("list", 4))  # True
+    print("a-b-c".replace("-", "*", 1))  # a*b-c
+
+
+# Task 2: write a greeting on the Turtle screen (course style, GUI)
 def name_card():
     name = input("Name: ")
     turtle.hideturtle()
     turtle.pencolor("blue")
     turtle.write("Hello " + name.upper(), align="center", font=("Arial", 24, "normal"))
     turtle.done()
+
+
+# Task 3: the same card in the exam dialect (GUI)
+def name_card_exam():
+    name = input("Name: ")
+    wn = turtle.Screen()
+    pen = turtle.Turtle()
+    pen.hideturtle()
+    pen.pencolor("blue")
+    pen.write("Hello " + name.upper(), align="center", font=("Arial", 24, "normal"))
+    wn.mainloop()
 
 
 # Checkpoint A1: a short report on a sentence
@@ -44,13 +65,14 @@ def text_report():
     print("a count:", text.lower().count("a"))
     print("First space:", text.find(" "))
     print("Starts with H:", text.startswith("H"))
+    print("Last:", text[-1])
     print("Upper:", text.upper())
 
 
 # Checkpoint A2: a student code is 6 digits
 def code_check():
     code = input("Code: ")
-    if code.isnumeric() and len(code) == 6:
+    if code.isdigit() and len(code) == 6:  # isnumeric works the same on digits
         print("Valid")
     else:
         print("Invalid")
@@ -59,6 +81,8 @@ def code_check():
 # fixed_warmup()
 # file_check()
 # hide_phone()
+# index_and_options()
 # name_card()
+# name_card_exam()
 # text_report()
 code_check()

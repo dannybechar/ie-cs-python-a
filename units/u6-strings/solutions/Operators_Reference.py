@@ -18,13 +18,15 @@ def greeting():
     print(message)
 
 
-# Task 1b: a word inside a frame of stars
-def banner():
-    word = input("Word: ")
-    line = "*" * (len(word) + 4)
-    print(line)
-    print("* " + word + " *")
-    print(line)
+# Task 1b: build a new string without the spaces
+# result starts as "" like a counter starts at 0
+def remove_spaces():
+    text = input("Sentence: ")
+    result = ""
+    for char in text:
+        if char != " ":
+            result = result + char  # the short form: result += char
+    print(result)
 
 
 # Task 2: count one letter with a loop and a counter
@@ -38,7 +40,28 @@ def count_letter():
     print(letter, "appears", count, "times")
 
 
-# Task 3: check a password with in
+# Task 3: build a string, even indexes become stars
+def stars():
+    text = input("Word: ")
+    result = ""
+    for i in range(len(text)):
+        if i % 2 == 0:
+            result = result + "*"
+        else:
+            result = result + text[i]
+    print(result)
+
+
+# Task 4: a valid mail has no space and has an @
+def check_mail():
+    mail = input("Mail: ")
+    if " " not in mail and "@" in mail:
+        print("Valid")
+    else:
+        print("Invalid")
+
+
+# Task 5: check a password with in
 def password_check():
     password = input("Password: ")
     if "!" in password:
@@ -49,8 +72,30 @@ def password_check():
         print("Strong password")
 
 
+# Optional: a word inside a frame of stars
+def banner():
+    word = input("Word: ")
+    line = "*" * (len(word) + 4)
+    print(line)
+    print("* " + word + " *")
+    print(line)
+
+
+# Optional: every third letter (range with a step)
+def every_third():
+    text = input("Text: ")
+    result = ""
+    for i in range(0, len(text), 3):
+        result = result + text[i]
+    print(result)
+
+
 # fixed_warmup()
 # greeting()
-# banner()
+# remove_spaces()
 # count_letter()
+# stars()
+# check_mail()
+# banner()
+# every_third()
 password_check()

@@ -1,4 +1,5 @@
 # Unit 9.6 - reference solution for the teacher: the full game.
+# Checkpoint B question 3 (the exam-style squares program) is in Checkpoint_B_Reference.py.
 import turtle
 import random
 

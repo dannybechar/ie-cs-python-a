@@ -26,6 +26,8 @@ def toggle_color(x, y):
 
 - לפונקציית תגובה ללחיצה יש תמיד `(x, y)`, גם אם היא לא משתמשת בהם.
 - הפקודה `big = not big` הופכת את הערך הבוליאני.
+- `count % 2 == 0` בודקת אם המספר זוגי. `size += 2` פירושה `size = size + 2`.
+- בבחינה כותבים עם עצמים: `wn = turtle.Screen()`, `player = turtle.Turtle()`, `player.onclick(...)`, `wn.mainloop()`.
 - בדיקה: שני פרמטרים · שם הפונקציה בלי סוגריים · `turtle.done()` בסוף.
 
 </div>
@@ -56,9 +58,20 @@ turtle.done()
 
 כתבו פונקציה בשם `toggle_size(x, y)` עם המשתנה `big`: גודל 3 או גודל 1 (`turtle.shapesize`).
 
-## 4. משימה 3 (אתגר): חמישה צעדים
+## 4. משימה 3 (אתגר): מתרגמים לסגנון הבחינה
 
-כתבו פונקציה בשם `step_forward(x, y)`: כל לחיצה מקדמת את הצב 40. אחרי 5 לחיצות הוא מדפיס `Arrived` ולא זז יותר.
+בבחינה כותבים את אותה תוכנית עם עצמים. כתבו מחדש את `toggle_color`:
+
+<div dir="rtl">
+
+1. פתחו את התוכנית בשורות `wn = turtle.Screen()` ו-`player = turtle.Turtle()`.
+2. כל `turtle.color(...)` הופך ל-`player.color(...)`.
+3. `turtle.onclick(...)` הופך ל-`player.onclick(...)` — הדמות היא המאזין.
+4. `turtle.done()` הופך ל-`wn.mainloop()`.
+
+</div>
+
+בית: `step_forward(x, y)` — כל לחיצה מקדמת את הצב 40, ואחרי 5 לחיצות הוא מדפיס `Arrived` ולא זז יותר.
 
 ## 5. מתעדים ושומרים
 

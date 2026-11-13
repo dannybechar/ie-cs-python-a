@@ -35,6 +35,9 @@
 
 Official topic and minutes: "animation with a timer" — 45 theory + 45 of its 90 practice minutes (the rest in 9.6).
 
+### Scope status
+Core: python-a.pdf p.18–19 requires an animation with a wait/timer (3 h). The ministry folder (meeting 20) has no timer: its pong animates with a `while True` loop and `screen.update()`, which this unit does not teach. If the schedule is cut, 9.5 is the first meeting to compress (see `unit-strategy.md`). Open question for the teacher or the ministry: does the exam test timers?
+
 ### Source interpretation
 The Ministry text names the waiting action `wait`. Python's turtle has no `wait`; the timer event `turtle.ontimer` schedules the next step without freezing the window, so key and click events keep working during the animation.
 
@@ -114,6 +117,8 @@ Move with `dx`; flip at −200 and 200.
 ## 66–80 — Task 2: stop and start
 
 Space → `stop()`; `s` → `start()`, which starts a new chain only if the animation is stopped (otherwise two chains would run and the rover would move twice as fast).
+
+Take-home: the ministry's four true/false items about the pong code (20.4 task 2 part B, e.g. what `ball.dx *= -1` does — `*=` is read as `ball.dx = ball.dx * -1`); see `exercises/ExtraPractice_Unit9.md`.
 
 ## 80–83 — Document and save
 

@@ -6,6 +6,9 @@ import turtle
 current = "blue"
 big = False
 moves = 0
+click_count = 0
+size = 1
+player = None
 
 
 # Warm-up: a click handler receives x and y, even if it does not use them
@@ -52,7 +55,47 @@ def task_2():
     turtle.done()
 
 
-# Task 3 (challenge): move 40 per click; after 5 clicks print Arrived
+# Worked lines for 9.2 (38-44): % for even/odd clicks, and += as recognition
+def even_odd(x, y):
+    global click_count, size
+    if click_count % 2 == 0:
+        print("Even click")
+    else:
+        print("Odd click")
+    click_count = click_count + 1
+    size += 2                      # recognition only: the same as size = size + 2
+    print("size is", size)
+
+
+def demo_parity():
+    turtle.shape("turtle")
+    turtle.onclick(even_odd)
+    turtle.done()
+
+
+# Task 3 (challenge, 8 min): the toggle_color program in the exam (object) style.
+# Module style -> object style: turtle.onclick -> player.onclick,
+# turtle.color -> player.color, turtle.done() -> wn.mainloop()
+def toggle_color_obj(x, y):
+    global current
+    if current == "blue":
+        current = "orange"
+    else:
+        current = "blue"
+    player.color(current)
+
+
+def task_3():
+    global player
+    wn = turtle.Screen()
+    player = turtle.Turtle()
+    player.shape("turtle")
+    player.color(current)
+    player.onclick(toggle_color_obj)
+    wn.mainloop()
+
+
+# Take-home: move 40 per click; after 5 clicks print Arrived
 def step_forward(x, y):
     global moves
     if moves < 5:
@@ -62,7 +105,7 @@ def step_forward(x, y):
             print("Arrived")
 
 
-def task_3():
+def task_3_home():
     turtle.shape("turtle")
     turtle.onclick(step_forward)
     turtle.done()
@@ -71,4 +114,6 @@ def task_3():
 # warmup()
 # task_1()
 # task_2()
+# demo_parity()
+# task_3_home()
 task_3()

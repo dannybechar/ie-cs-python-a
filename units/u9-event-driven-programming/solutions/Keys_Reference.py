@@ -77,5 +77,25 @@ def task_3():
     turtle.done()
 
 
+# onkeypress works like onkey (the ministry's name is screen.onkeypress / wn.onkeypress);
+# onkeyrelease runs when the key is let go
+def task_keypress_release():
+    turtle.shape("turtle")
+    turtle.listen()
+    turtle.onkeypress(up, "Up")
+    turtle.onkeypress(down, "Down")
+    turtle.onkeyrelease(toggle_pen, "space")
+    turtle.done()
+
+
+# Exit check (85-90), in the exam style: the four blanks from the word bank
+# screen.onkeypress(paddle_a_up, "w")
+# screen.onkeypress(paddle_a_down, "s")
+# screen.onkeypress(paddle_b_up, "Up")
+# screen.onkeypress(paddle_b_down, "Down")
+# screen.listen()
+
+
 # task_1_2()
+# task_keypress_release()
 task_3()

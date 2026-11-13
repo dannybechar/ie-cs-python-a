@@ -21,6 +21,7 @@ turtle.onkey(up, "Up")
 <div dir="rtl">
 
 - מקש לא שולח `x` ו-`y`, ולכן לפונקציית התגובה אין פרמטרים.
+- בבחינה כותבים `onkeypress` (או `onkeyrelease` — כשמרפים מהמקש) במקום `onkey`, על אובייקט המסך: `screen.onkeypress(...)`.
 - מקש לא מגיב? בודקים: יש `turtle.listen()` · שם המקש מדויק (`"Up"`, `"space"`) · שם הפונקציה בלי סוגריים.
 - גבול: מחשבים קודם את המקום החדש, וזזים רק אם הוא בתוך הגבול.
 
@@ -68,8 +69,20 @@ turtle.done()
 
 <div dir="rtl">
 
-1. מה עושה `turtle.listen()`?
-2. איך מחברים מקש לפונקציה?
-3. למה לפונקציה של מקש אין `x` ו-`y`?
+השלימו את ארבע החסרות מתוך המילים: `paddle_a_down` · `"Down"` · `onkeypress` · `screen`
+
+</div>
+
+```python
+screen.________________(paddle_a_up, "w")
+screen.onkeypress(________________, "s")
+screen.onkeypress(paddle_b_up, "Up")
+____________.onkeypress(paddle_b_down, ______________)
+screen.listen()
+```
+
+<div dir="rtl">
+
+ושאלה אחת: למה לפונקציה של מקש אין `x` ו-`y`?
 
 </div>

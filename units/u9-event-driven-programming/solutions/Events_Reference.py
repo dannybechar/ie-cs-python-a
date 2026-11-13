@@ -1,6 +1,7 @@
 # Unit 9.1 - reference solutions for the teacher.
 # One function per task (define -> call, from Unit 1).
 # Run ONE task at a time: remove the # from one call at the bottom.
+# turtle.done() is the same as turtle.mainloop() (the ministry's name): both keep the window open and listening.
 import turtle
 
 clicks = 0

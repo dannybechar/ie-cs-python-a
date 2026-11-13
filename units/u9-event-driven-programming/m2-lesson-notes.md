@@ -8,7 +8,7 @@
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45  
 **Current tool:** Thonny  
-**Source of inspiration:** the teacher's draft `unit9_meeting2_turtle_click_final.pptx` (the listener warm-up, a click changes the color, clicking outside the rover, `stamp` on a click, the blue/orange toggle and its trace, the size toggle with `big = not big`, the code checklist kept; the two-turtle slide dropped, because the course uses one turtle; `+=` replaced)  
+**Source of inspiration:** the teacher's draft `unit9_meeting2_turtle_click_final.pptx` (the listener warm-up, a click changes the color, clicking outside the rover, `stamp` on a click, the blue/orange toggle and its trace, the size toggle with `big = not big`, the code checklist kept; the two-turtle slide dropped, because the course uses one turtle in the main flow; `+=` shown only as recognition; the lab challenge is a module-to-object-style translation)  
 **Tool-dependence rule:** Keep lesson content IDE-neutral. Any tool-specific instruction must be isolated and labeled **Tool Note – Thonny**.
 
 ---
@@ -32,6 +32,7 @@
 |---|---|
 | 1. Know and implement a mouse click on a character | ✅ all tasks |
 | Teaching: register a character with a listener for a mouse click | ✅ |
+| 2 (first look). Registering the character vs registering the screen, in the exam's object style (`player.onclick`, `wn.mainloop`) | ✅ Task 3, the translation task |
 
 Official topic and minutes: "mouse click events" — 45 theory + 45 practice.
 
@@ -48,7 +49,10 @@ Official topic and minutes: "mouse click events" — 45 theory + 45 practice.
 - **The signature:** a click response always has `(x, y)`, even if it does not use them.
 - **Only the rover:** a click on an empty part of the window does nothing (that is 9.3).
 - **State:** `current`, `big` or a counter is kept outside the function; the response reads and changes it with `global` (Unit 8.4).
-- **`big = not big`** flips a Boolean (Unit 4).
+- **`big = not big`** flips a Boolean (`not` is taught in Unit 4).
+- **Even or odd click:** `count % 2 == 0` (the `%` of Unit 3).
+- **`size += 2`** means `size = size + 2`: recognition only (introduced in 5.1); the long form stays the main form.
+- **Exam (object) style:** `wn = turtle.Screen()`, `player = turtle.Turtle()`, `player.onclick(f)`, `wn.mainloop()` — the same program as the module style, so reading it is a translation, not new material.
 
 ---
 
@@ -66,7 +70,7 @@ Official topic and minutes: "mouse click events" — 45 theory + 45 practice.
 | 25–32 | State between clicks: `current = "blue"`, `global current`, toggle |
 | 32–36 | **Trace:** three clicks from `blue` |
 | 36–38 | Answer: orange, blue, orange |
-| 38–44 | `big = not big` and `shapesize`; code checklist: `(x, y)`, the name without `()`, `turtle.done()` at the end |
+| 38–44 | `big = not big` (the Unit 4 `not`, a one-minute reminder) and `shapesize`; two worked lines (2 min): `if count % 2 == 0:` for an even or odd click, and `size += 2` means `size = size + 2`; code checklist: `(x, y)`, the name without `()`, `turtle.done()` at the end |
 | 44–45 | Lab missions |
 
 ---
@@ -101,9 +105,38 @@ Blue ↔ orange on every click, with `global current`.
 
 `big = not big`; `shapesize(3)` or `shapesize(1)`.
 
-## 71–82 — Task 3 (challenge): `step_forward(x, y)`
+## 71–79 — Task 3 (challenge): translate to the exam style (8 min)
 
-Every click moves the rover 40; after 5 clicks it prints `Arrived` and stops moving (a counter and a condition).
+The exam aid writes the same click program with objects. Rewrite `toggle_color` so that the character and the window are objects:
+
+```python
+import turtle
+
+wn = turtle.Screen()
+player = turtle.Turtle()
+current = "blue"
+
+
+def toggle_color(x, y):
+    global current
+    if current == "blue":
+        current = "orange"
+    else:
+        current = "blue"
+    player.color(current)
+
+
+player.shape("turtle")
+player.color(current)
+player.onclick(toggle_color)
+wn.mainloop()
+```
+
+Rules of the translation: `turtle.color(...)` becomes `player.color(...)`; `turtle.onclick(f)` becomes `player.onclick(f)` (the character is the listener); `turtle.done()` becomes `wn.mainloop()`. Reference: `task_3()` in `TurtleClick_Reference.py`.
+
+## 79–82 — Compare and share (3 min)
+
+Which line registers the **character** (`player.onclick`) and which would register the **screen** (`wn.onclick`, 9.3)? Which style is easier to read in the exam? `step_forward(x, y)` (move 40 per click, `Arrived` after 5 clicks) is take-home; reference `task_3_home()`.
 
 ## 82–85 — Document and save
 
@@ -124,6 +157,7 @@ Save As `G7_U9_M2_TurtleClick_<Name>.py`.
 | A click anywhere triggers `turtle.onclick` | Only a click on the rover |
 | The toggle variable can live inside the function | It would start again at every click |
 | Without `(x, y)` the function still works | Python sends two values: `TypeError` |
+| `player.onclick(f)` and `wn.onclick(f)` do the same | The character catches only a click on it; the screen (`wn`) catches a click anywhere (9.3) |
 
 ---
 

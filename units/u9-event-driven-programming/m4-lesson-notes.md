@@ -8,7 +8,7 @@
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45  
 **Current tool:** Thonny  
-**Source of inspiration:** the teacher's draft `unit9_meeting4_keyboard_events_final.pptx` (which signature fits a key, `listen` and `onkey`, three checks when a key does not respond, four directions, borders, the pen toggle on space, reaching a target kept; `screen.` replaced by the module functions; the target drawn as a dot instead of a second turtle)  
+**Source of inspiration:** the teacher's draft `unit9_meeting4_keyboard_events_final.pptx` (which signature fits a key, `listen` and `onkey`, three checks when a key does not respond, four directions, borders, the pen toggle on space, reaching a target kept; `screen.` replaced by the module functions; the target drawn as a dot instead of a second turtle; the exam's `onkeypress` / `onkeyrelease` added; the ministry's four-blank `onkeypress` task used as the exit check)  
 **Tool-dependence rule:** Keep lesson content IDE-neutral. Any tool-specific instruction must be isolated and labeled **Tool Note – Thonny**.
 
 ---
@@ -32,6 +32,7 @@
 |---|---|
 | 3. Know and implement key presses | ✅ all tasks |
 | Concepts: keyboard event `onkey`, registering a listener `listen` | ✅ |
+| The exam aid's keyboard names `onkeypress` and `onkeyrelease` | ✅ 30–32 and the exit check |
 
 Official topic and minutes: "keyboard events" — 45 theory + 45 of its 90 practice minutes (the rest in 9.6).
 
@@ -49,6 +50,7 @@ Official topic and minutes: "keyboard events" — 45 theory + 45 of its 90 pract
 - **Three checks when a key does nothing:** `turtle.listen()` is there · the key name is exact (`"Up"`, `"space"`) · the function name has no `()`.
 - **Move on one axis:** `sety(ycor() + 20)` or `setx(xcor() - 20)`.
 - **Check before moving:** compute the new x, move only if it is inside the border.
+- **Exam names:** `onkeypress(function, key)` works like `onkey` (the exam writes `wn.onkeypress`); `onkeyrelease(function, key)` runs when the key is let go. Key names stay exact: `"Up"`, `"Left"`, `"space"`, lower-case letters such as `"w"`.
 
 ---
 
@@ -63,7 +65,7 @@ Official topic and minutes: "keyboard events" — 45 theory + 45 of its 90 pract
 | 15–19 | Three checks when a key does not respond |
 | 19–26 | Four directions: `up`, `down`, `left`, `right` with `sety` / `setx` |
 | 26–30 | **Students:** write the four `onkey` lines |
-| 30–32 | Answer |
+| 30–32 | Answer; one more line: `turtle.onkeypress(up, "Up")` works like `onkey` (the exam's name, written `wn.onkeypress`), and `onkeyrelease` runs when the key is let go |
 | 32–37 | Borders: `new_x = turtle.xcor() + 20`, move only if `new_x <= 200` |
 | 37–41 | **Students:** the condition for the left side (−200) |
 | 41–43 | Answer: `if new_x >= -200:` |
@@ -111,9 +113,19 @@ Save As `G7_U9_M4_Keys_<Name>.py`.
 
 ## 85–90 — Exit check
 
-1. What does `turtle.listen()` do? (turns on listening to the keyboard)
-2. How do we connect a key to a function? (`turtle.onkey(function, "key")`)
-3. Why does a key response not need x and y? (a key event sends no coordinates)
+Ministry 20.4 task 2, part A, in the exam's object style (`screen` is the window object, like `wn`). Fill the four blanks from the word bank `paddle_a_down` · `"Down"` · `onkeypress` · `screen` (4 min):
+
+```python
+screen.________________(paddle_a_up, "w")
+screen.onkeypress(________________, "s")
+screen.onkeypress(paddle_b_up, "Up")
+____________.onkeypress(paddle_b_down, ______________)
+screen.listen()
+```
+
+Answers: `onkeypress` · `paddle_a_down` · `screen` · `"Down"`. Then one oral question (1 min): why does a key response not need x and y? (a key event sends no coordinates)
+
+The ministry's four true/false items (part B) are take-home, after 9.5 (see `exercises/ExtraPractice_Unit9.md`).
 
 ### Tool Note – Thonny
 Click the Turtle window once so the keys reach it, not the editor.

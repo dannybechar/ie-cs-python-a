@@ -8,7 +8,7 @@
 **Structure:** 45 min Knowledge + Guided Practice, then 45 min Lab  
 **Minutes (theory / practice):** 45 / 45  
 **Current tool:** Thonny  
-**Source of inspiration:** the teacher's draft `unit9_meeting1_event_driven_intro_final.pptx` (events in a game, sequential vs event program, event → listener → response, the event loop, the first click, the `onclick(say_hello())` bug, the x and y parameters kept; `screen = turtle.Screen()` / `player = turtle.Turtle()` replaced by the course style `turtle.onclick(...)`, `turtle.done()`)  
+**Source of inspiration:** the teacher's draft `unit9_meeting1_event_driven_intro_final.pptx` (events in a game, sequential vs event program, event → listener → response, the event loop, the first click, the `onclick(say_hello())` bug, the x and y parameters kept; `screen = turtle.Screen()` / `player = turtle.Turtle()` replaced by the course style `turtle.onclick(...)`, `turtle.done()`; the object style is bridged from 9.2)  
 **Tool-dependence rule:** Keep lesson content IDE-neutral. Any tool-specific instruction must be isolated and labeled **Tool Note – Thonny**.
 
 ---
@@ -38,8 +38,8 @@ From the Ministry program, Chapter 9 (python-a.pdf p.18–19):
 
 Official topics and minutes: "why event-driven" — 45 theory; "mouse click events" — 45 practice.
 
-### Deliberate exclusions
-No `turtle.Screen()` / `turtle.Turtle()` objects: the whole unit uses the module functions students know from Unit 2 (`turtle.onclick`, `turtle.onscreenclick`, `turtle.onkey`, `turtle.listen`, `turtle.ontimer`, `turtle.done`).
+### Style note (approved deviation, traceability section 4)
+The unit teaches module functions (`turtle.onclick`, `turtle.onscreenclick`, `turtle.onkey`, `turtle.listen`, `turtle.ontimer`, `turtle.done`). The ministry exam aid writes the same calls on objects: `wn = turtle.Screen()`, `player = turtle.Turtle()`, `wn.onclick(f)`, `player.onclick(f)`, `wn.onkeypress(f, key)`, `wn.mainloop()`. The bridge: 9.1 names `mainloop`, 9.2 has an 8-minute translation task (module style to object style), 9.3 and 9.4 add one line each (`wn.onclick`, `onkeypress`), and Checkpoint B in 9.6 is an exam-style question in object style.
 
 ---
 
@@ -61,13 +61,14 @@ def say_hello(x, y):         # the response function
 
 turtle.shape("turtle")
 turtle.onclick(say_hello)    # the listener: "when the rover is clicked, run say_hello"
-turtle.done()                # the event loop: keep the window open and listening
+turtle.done()                # the event loop: keep the window open and listening (same as turtle.mainloop())
 ```
 
 - **Sequential program:** lines run in a fixed order, top to bottom.
 - **Event-driven program:** the order depends on what the user does.
 - **Give the name, not a call:** `turtle.onclick(say_hello)` — with `()` the function runs now, not at the click.
 - **A click sends x and y**, so a click response has two parameters (Unit 8).
+- **Ministry words:** the turtle is "the character" (הדמות); a function is a **פעולה** and its `x`, `y` are **פרמטרים**; the exam writes `mainloop()` where we write `done()`.
 
 ---
 
@@ -79,10 +80,10 @@ turtle.done()                # the event loop: keep the window open and listenin
 | 1–5 | **Warm-up:** list events in a game you know: a click, a key, time passing, a touch |
 | 5–7 | Answer: an event happens while the program runs; the program waits for it and responds |
 | 7–13 | Sequential program (`print`, `input`, `print`) vs a game — who decides the order? |
-| 13–19 | Event → listener → response |
+| 13–19 | Event → listener → response; wording bridge: the turtle is "the character" (הדמות), the response function is a "פעולה" (the ministry's word for function), `x` and `y` are its "פרמטרים" |
 | 19–23 | **Students sort:** a click · `turtle.onclick` · `change_color` |
 | 23–25 | Answer: the event · the listener · the response |
-| 25–31 | The event loop: `turtle.done()` keeps the window open and listening |
+| 25–31 | The event loop: `turtle.done()` keeps the window open and listening; one sentence: `done()` is the same as `turtle.mainloop()` (the exam's name), and `turtle.exitonclick()` also closes the window on a click |
 | 31–37 | The first click: `turtle.onclick(say_hello)`; `say_hello(x, y)` |
 | 37–41 | **Predict:** `turtle.onclick(say_hello)` or `turtle.onclick(say_hello())`? |
 | 41–44 | Answer: the name, no parentheses — `()` runs it immediately |

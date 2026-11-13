@@ -19,6 +19,7 @@
 
 - סדר התוכנית: משתנים ← פונקציות ← רישום כל המאזינים ← הפעלת הטיימר ← `turtle.done()`.
 - אחרי סוף המשחק: כל תזוזה בודקת את `running`.
+- דף העזר של הבחינה כולל `dot(size)`, `xcor()`, `ycor()`, `goto`, `onclick`, `onkeypress`, `mainloop`. הפקודות `distance` ו-`clear` במשחק שלנו אינן בדף העזר.
 
 </div>
 
@@ -56,10 +57,38 @@ def tick():
 
 1. איזה אירוע ואיזה מאזין: לחיצה על חץ · לחיצה על נקודה · כל שנייה?
 2. `time_left = 3`, ואז `tick()`. מה יודפס?
-3. מה לא בסדר ב-`turtle.onkey(move_up(), "Up")`?
+3. התוכנית של עדי (בסגנון הבחינה), בהמשך: כל לחיצה מציירת ריבוע במקום הלחיצה, באדום ובכחול לסירוגין (הלחיצה הראשונה אדומה), וצלע כל ריבוע גדולה ב-2 מהקודם. השלימו את החסר.
 4. למה ל-`place_target(x, y)` יש פרמטרים, ול-`move_up()` אין?
 
 </div>
+
+```python
+import turtle
+
+
+def do_it(x, y):
+    global click_num
+    global size
+    player.penup()
+    player.goto(x, y)
+    player.shapesize(size)
+    if ______ % 2 == 0:
+        player.color("____")
+    else:
+        player.color("____")
+    player.stamp()
+    click_num = ______ + ____
+    size = ______ + ____
+
+
+tw = turtle.Screen()
+click_num = 0
+size = 2
+player = turtle.Turtle()
+player.shape("square")
+tw.onclick(do_it)
+turtle.mainloop()
+```
 
 ## 4. מתעדים ושומרים
 

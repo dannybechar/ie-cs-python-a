@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 7.2 – בעיות אלגוריתמיות</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 7.2 – בעיות אלגוריתמיות</h1>
+<p>כיתה ז׳ · Python A · <strong>סכום, ממוצע וערכי קצה: צובר, מינימום ומקסימום</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← מתקנים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>צובר מוסיף את הערך עצמו, ומונה מוסיף 1. מינימום ומקסימום מתחילים מהערך הראשון, ומשתנים רק כשמגיע ערך קטן או גדול יותר.</p>
+</div>
+</section>
+<section class="slide">
+<h2>דף עזר</h2>
+<table>
+<thead>
+<tr>
+<th>משתנה</th>
+<th>תפקיד</th>
+<th>אתחול</th>
+<th>עדכון</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>count</code></td>
+<td>מונה</td>
+<td>0</td>
+<td><code>count = count + 1</code></td>
+</tr>
+<tr>
+<td><code>total</code></td>
+<td>צובר</td>
+<td>0</td>
+<td><code>total = total + value</code> (מקוצר: <code>total += value</code>)</td>
+</tr>
+<tr>
+<td><code>minimum</code></td>
+<td>מינימום</td>
+<td>הערך הראשון</td>
+<td>אם <code>value &lt; minimum</code></td>
+</tr>
+<tr>
+<td><code>maximum</code></td>
+<td>מקסימום</td>
+<td>הערך הראשון</td>
+<td>אם <code>value &gt; maximum</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">number = int(input(&quot;Number: &quot;))
+maximum = number
+for i in range(4):
+    number = int(input(&quot;Number: &quot;))
+    if number &gt; maximum:
+        maximum = number
+print(&quot;Max:&quot;, maximum)
+</code></pre>
+<div dir="rtl">
+<ul>
+<li>ממוצע = <code>total / count</code>.</li>
+<li>לולאת <code>while</code> עם ערך עצירה: קולטים ערך לפני הלולאה, ובסוף כל סבב קולטים את הבא.</li>
+<li>את הערך הראשון קולטים לפני הלולאה, ולכן הלולאה חוזרת פעם אחת פחות.</li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>1. חימום: למה 5?</h2>
+<p>פתחו את <code>Accumulators_Starter.py</code>:</p>
+<pre><code class="language-python"># Warm-up: the total should be 15. Why is it 5?
+for value in range(1, 6):
+    total = 0
+    total = total + value
+print(&quot;Total:&quot;, total)
+</code></pre>
+</section>
+<section class="slide">
+<h2>2. משימה 1: תרומות</h2>
+<p>כתבו פונקציה (בבחינה: פעולה) בשם <code>donations()</code> שקולטת תרומות עד שהתרומה היא 0 או שלילית (זה סימן העצירה, לא תרומה). הדפיסו כמה תורמים היו ומה סכום התרומות.</p>
+<p>בדקו עם 50, 20, 100, 0. התשובה: 3 תורמים, סכום 170. בדקו גם כשהערך הראשון הוא 0.</p>
+</section>
+<section class="slide">
+<h2>3. משימה 2: הנמוך והגבוה</h2>
+<p>כתבו פונקציה בשם <code>min_max()</code> שקולטת 6 ציונים ומדפיסה את הציון הנמוך ואת הגבוה.</p>
+<p>בדקו עם 70, 45, 90, 60, 30, 85.</p>
+</section>
+<section class="slide">
+<h2>4. משימה 3: טמפרטורות</h2>
+<p>כתבו פונקציה בשם <code>temperatures()</code> שקולטת 5 טמפרטורות ומדפיסה: ממוצע, הקרה ביותר, החמה ביותר, וכמה מהן מעל 25.</p>
+<p>בדקו עם 22, 28, 31, 19, 25.</p>
+</section>
+<section class="slide">
+<h2>5. מתעדים ושומרים</h2>
+<p>מעל כל פונקציה — הערה. רק זימון אחד פעיל.</p>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U7_M2_Accumulators_&lt;Name&gt;.py</code></p>
+<div class="alert note">
+<p><span class="t">NOTE</span></p>
+<p>קיצורים: <code>max(a, b, c)</code> ו-<code>min(a, b, c)</code> קיימים ומשווים ערכים שכבר יש לנו, אבל לרצף קלטים צריך את תבנית הלולאה. ו-<code>text.count(ch)</code> עושה בדיוק מה שהלולאה הידנית שלנו עושה.</p>
+</div>
+<hr />
+<p><strong>בדיקת יציאה:</strong></p>
+<div dir="rtl">
+<ol>
+<li>איזה משתנה עונה על השאלה "כמה?"</li>
+<li>איך מאתחלים מקסימום?</li>
+<li>אילו שני משתנים צריך בשביל ממוצע?</li>
+</ol>
+</div>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

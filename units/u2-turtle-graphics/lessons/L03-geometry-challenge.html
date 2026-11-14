@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 2.3 – תנועה ומבוא לגרפיקה</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 2.3 – תנועה ומבוא לגרפיקה</h1>
+<p>כיתה ז׳ · Python A · <strong>אתגר גאומטריה</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← מתקנים ← בונים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>היום לא לומדים פקודות חדשות. היום גורמים למה שכבר למדנו לעבוד יחד.
+לפני כל הרצה: משרטטים את המסלול, ומסמנים חץ לכיוון הצב בסוף.</p>
+</div>
+</section>
+<section class="slide">
+<h2>1. פותחים וקוראים לפני שמריצים</h2>
+<p>פתחו את <code>GeometryChallenge_Starter.py</code>. אל תריצו עדיין! ציירו את המסלול וסמנו את כיוון הצב בסוף.</p>
+<pre><code class="language-python">turtle.forward(80)
+turtle.right(90)
+turtle.forward(40)
+turtle.left(90)
+turtle.forward(60)
+</code></pre>
+</section>
+<section class="slide">
+<h2>2. אתגר תיקון: ריבוע שבור</h2>
+<p>השאירו את שורות ההכנה ואת <code>turtle.done()</code>. החליפו את הוראות התנועה בקוד הבא. הקוד אמור לצייר ריבוע, אבל הוראה אחת שגויה.</p>
+<pre><code class="language-python">turtle.forward(80)
+turtle.right(90)
+turtle.forward(80)
+turtle.right(90)
+turtle.forward(80)
+turtle.left(90)
+turtle.forward(80)
+turtle.right(90)
+</code></pre>
+<div dir="rtl">
+<ol>
+<li>ציירו מה הקוד באמת יעשה.</li>
+<li>סמנו את ההוראה הראשונה שבה המסלול מפסיק להתאים לריבוע.</li>
+<li>כתבו תיקון של שורה אחת. רק אז הריצו.</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>3. משנים ריבוע למלבן</h2>
+<p>אחרי שתיקנתם את הריבוע, הפכו אותו למלבן ברוחב 120 ובגובה 60. שנו רק את המספרים בתוך <code>forward(...)</code>. אל תשנו את הפניות.</p>
+<p>כתבו את ארבעת המרחקים לפי הסדר: ___ ← ___ ← ___ ← ___</p>
+<p>חזו לפני שמריצים: מה ישתנה, ומה יישאר אותו דבר?</p>
+</section>
+<section class="slide">
+<h2>4. אתגר משולב: מסלול עם רווח וחותמת</h2>
+<p>מחקו את הוראות התנועה הקודמות, ובנו לפי המפרט:</p>
+<div dir="rtl">
+<ol>
+<li>משאירים חותמת בנקודת ההתחלה.</li>
+<li>מציירים קדימה 70.</li>
+<li>פונים ימינה 90°.</li>
+<li>מרימים את העט.</li>
+<li>מתקדמים 40 בלי לצייר.</li>
+<li>מורידים את העט.</li>
+<li>פונים שמאלה 90°.</li>
+<li>מציירים קדימה 70.</li>
+</ol>
+</div>
+<p>לפני שמריצים: ציירו רק את מה שיישאר נראה על המסך.</p>
+</section>
+<section class="slide">
+<h2>5. מיקרו-הערכה: מלבן 120 × 70</h2>
+<div class="alert warning">
+<p><span class="t">WARNING</span></p>
+<p>זמן מוגן. עובדים לבד.</p>
+</div>
+<p>שמרו בשם <code>G7_U2_M3_GeometryAssessment_&lt;Name&gt;.py</code>, והשאירו רק את שורות ההכנה, את <code>turtle.done()</code>, ואת הקוד שלכם.</p>
+<p>בנו מלבן סגור: רוחב 120, גובה 70. הצב מתחיל כשהוא פונה ימינה, ובסוף הוא חוזר לנקודת ההתחלה וגם פונה שוב ימינה.</p>
+<div dir="rtl">
+<ul>
+<li>בדיוק 8 הוראות תנועה ופנייה.</li>
+<li>רק <code>forward()</code>, <code>left()</code> ו-<code>right()</code>.</li>
+<li>בלי לולאות, בלי משתנים, בלי קואורדינטות ובלי <code>goto()</code>.</li>
+<li>הערה אחת קצרה שמסבירה מה התוכנית מציירת.</li>
+</ul>
+</div>
+<p>לפני ההרצה הראשונה: ציירו את המלבן, כתבו את ארבעת המרחקים לפי הסדר, בחרו אם כל הפניות ימינה או שמאלה, וחזו לאן הצב יפנה בסוף.</p>
+</section>
+<section class="slide">
+<h2>6. בדיקה עצמית</h2>
+<div dir="rtl">
+<ul>
+<li>4 צלעות</li>
+<li>צלעות נגדיות שוות</li>
+<li>4 פניות של 90°</li>
+<li>המלבן נסגר</li>
+<li>בסוף הצב פונה לכיוון ההתחלה</li>
+<li>בדיוק 8 הוראות תנועה ופנייה</li>
+<li>הערה אחת שימושית</li>
+</ul>
+</div>
+<p>יש אי-התאמה? מצאו את ההוראה הראשונה שלא עושה את מה שהתכוונתם, תקנו ובדקו שוב.</p>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 3.2 – משתנים, קלט/פלט וחישובים</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 3.2 – משתנים, קלט/פלט וחישובים</h1>
+<p>כיתה ז׳ · Python A · <strong>מהקלט לתוצאה: חישובים עם משתנים</strong></p>
+<p><strong>קוראים ← חוזים ← עוקבים ← מריצים ← בודקים ← משנים ← בונים</strong></p>
+</section>
+<section class="slide">
+<h2>דף עזר</h2>
+<div dir="rtl">
+<table>
+<thead>
+<tr>
+<th>פעולה</th>
+<th>משמעות</th>
+<th>דוגמה</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>חיבור</td>
+<td><code>12 + 5</code> ← <code>17</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>חיסור</td>
+<td><code>12 - 5</code> ← <code>7</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>כפל</td>
+<td><code>12 * 5</code> ← <code>60</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>חילוק</td>
+<td><code>12 / 5</code> ← <code>2.4</code></td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>חזקה</td>
+<td><code>5 ** 2</code> ← <code>25</code></td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>מנה שלמה / חלוקת שלמים (כמה קבוצות שלמות)</td>
+<td><code>17 // 5</code> ← <code>3</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>שארית חלוקה / מודולו</td>
+<td><code>17 % 5</code> ← <code>2</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="alert tip">
+<p><span class="t">TIP</span></p>
+<p>סדר הפעולות: סוגריים, אחר כך <code>**</code>, אחר כך <code>*  /  //  %</code>, ובסוף <code>+  -</code>.</p>
+</div>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>היום, בכל הדוגמאות של <code>//</code> ו-<code>%</code>, משתמשים במספרים שלמים חיוביים, ומחלקים במספר גדול מ-0.</p>
+</div>
+</section>
+<section class="slide">
+<h2>1. פותחים וקוראים</h2>
+<p>פתחו את <code>Arithmetic_Starter.py</code>. אל תריצו עדיין!</p>
+<pre><code class="language-python">a = 12
+b = 5
+
+total = a + b
+difference = a - b
+product = a * b
+quotient = a / b
+
+print(&quot;Add:&quot;, total)
+print(&quot;Subtract:&quot;, difference)
+print(&quot;Multiply:&quot;, product)
+print(&quot;Divide:&quot;, quotient)
+</code></pre>
+<p>התחזית שלי: <code>Add:</code> ___ · <code>Subtract:</code> ___ · <code>Multiply:</code> ___ · <code>Divide:</code> ___</p>
+</section>
+<section class="slide">
+<h2>2. מריצים ובודקים</h2>
+<p>הריצו והשוו לתחזית. איזו פעולה נתנה מספר עשרוני (ממשי)?</p>
+</section>
+<section class="slide">
+<h2>3. משנים רק את הקלטים</h2>
+<p>שנו רק את <code>a</code> ואת <code>b</code>, ל-20 ול-4. אל תשנו את החישובים. חזו את ארבע התוצאות, ורק אז הריצו.</p>
+<p><code>Add:</code> ___ · <code>Subtract:</code> ___ · <code>Multiply:</code> ___ · <code>Divide:</code> ___</p>
+</section>
+<section class="slide">
+<h2>4. תוכנית שמקבלת קלט</h2>
+<p>החליפו את שתי ההשמות הקבועות בקלט של מספרים:</p>
+<pre><code class="language-python">a = int(input(&quot;First number: &quot;))
+b = int(input(&quot;Second number: &quot;))
+</code></pre>
+<p>השאירו את כל השאר בלי שינוי. הריצו פעם עם 12 ו-5, ופעם עם זוג מספרים אחר.</p>
+</section>
+<section class="slide">
+<h2>5. קבוצות שלמות ושארית</h2>
+<p>הוסיפו לתוכנית:</p>
+<pre><code class="language-python">full_groups = a // b
+left_over = a % b
+
+print(&quot;Full groups:&quot;, full_groups)
+print(&quot;Left over:&quot;, left_over)
+</code></pre>
+<p>עבור <code>a = 17</code> ו-<code>b = 5</code>, חזו לפני ההרצה: <code>a // b</code> = ___ · <code>a % b</code> = ___</p>
+</section>
+<section class="slide">
+<h2>6. אתגר מעקב</h2>
+<p>עקבו אחרי התוכנית בלי להריץ, ומלאו את הטבלה:</p>
+<pre><code class="language-python">items = 23
+per_pack = 6
+full_packs = items // per_pack
+left_over = items % per_pack
+</code></pre>
+<div dir="rtl">
+<table>
+<thead>
+<tr>
+<th>אחרי השורה</th>
+<th><code>items</code></th>
+<th><code>per_pack</code></th>
+<th><code>full_packs</code></th>
+<th><code>left_over</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>items = 23</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><code>per_pack = 6</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><code>full_packs = ...</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><code>left_over = ...</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="slide">
+<h2>6א. חזקה וסדר פעולות</h2>
+<p>חזו מה יודפס, ואז הריצו:</p>
+<pre><code class="language-python">print(2 ** 8)
+print(5 ** 2)
+print(2 + 3 * 4)
+print((2 + 3) * 4)
+print(2 * 3 ** 2)
+</code></pre>
+<p>מה עושים הסוגריים?</p>
+</section>
+<section class="slide">
+<h2>6ב. החלפה בעזרת <code>temp</code> ועדכון עצמי</h2>
+<p>חזו מה יודפס, ומלאו טבלת מעקב (טבלת המעקב כוללת עמודה לכל משתנה):</p>
+<pre><code class="language-python">num1 = 4
+num2 = 9
+num1 = num2
+num2 = num1
+print(num1, num2)
+</code></pre>
+<p>מה קרה לערך הראשון? תקנו את התוכנית בעזרת משתנה שלישי בשם <code>temp</code>, כך שיודפס <code>9 4</code>.</p>
+<p>עכשיו עקבו אחרי השורה הזאת: קודם מחשבים את הצד הימני, ורק אז שומרים.</p>
+<pre><code class="language-python">score = 7
+score = score + 1
+print(&quot;Score:&quot;, score)
+</code></pre>
+</section>
+<section class="slide">
+<h2>7. משימת ליבה: מחשבון אריזות</h2>
+<div class="alert warning">
+<p><span class="t">WARNING</span></p>
+<p>זמן מוגן. עובדים לבד.</p>
+</div>
+<p>בנו תוכנית חדשה שקולטת כמה פריטים יש (<code>items</code>) וכמה פריטים נכנסים לכל חבילה (<code>per_pack</code>), מחשבת כמה חבילות מלאות יש ומה נשאר, ומדפיסה שתי שורות של פלט ידידותי. הקוד נכתב בתוך פונקציה אחת, <code>packing()</code>, ויש זימון אחד.</p>
+<pre><code class="language-python">def packing():
+    items = int(input(&quot;How many items? &quot;))
+    per_pack = int(input(&quot;How many items per pack? &quot;))
+
+    full_packs = ____________________
+    left_over = ____________________
+
+    print(&quot;Full packs:&quot;, full_packs)
+    print(&quot;Left over:&quot;, left_over)
+
+
+packing()
+</code></pre>
+<p>לפני ההרצה הראשונה, חזו: 17 פריטים, 5 בכל חבילה ← ___ חבילות מלאות, ___ פריטים נשארו.</p>
+</section>
+<section class="slide">
+<h2>8. שומרים</h2>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U3_M2_Packing_&lt;Name&gt;.py</code></p>
+<hr />
+<p><strong>בדיקת יציאה:</strong> בלי להריץ — מה יודפס?</p>
+<pre><code class="language-python">items = 17
+per_pack = 5
+print(items // per_pack)
+print(items % per_pack)
+</code></pre>
+<div dir="rtl">
+<ul>
+<li><strong>A:</strong> <code>3</code> ואז <code>2</code></li>
+<li><strong>B:</strong> <code>3.4</code> ואז <code>0</code></li>
+<li><strong>C:</strong> <code>2</code> ואז <code>3</code></li>
+</ul>
+</div>
+<p><strong>אני יכול/ה:</strong> לקלוט מספרים ← לחשב ← לעקוב אחרי משתנים (טבלת מעקב) ← להציג פלט ידידותי.</p>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

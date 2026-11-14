@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 6.3 – מחרוזות</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 6.3 – מחרוזות</h1>
+<p>כיתה ז׳ · Python A · <strong>חותכים את ההודעה: חיתוך מחרוזות</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← מתקנים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>חיתוך לוקח את התווים מ-start ועד end — בלי end — בקפיצות של step.</p>
+</div>
+</section>
+<section class="slide">
+<h2>דף עזר</h2>
+<pre><code class="language-python">word = &quot;computer&quot;
+print(word[0:3])
+print(word[:3])
+print(word[3:])
+print(word[::-1])
+print(word[-3:])
+</code></pre>
+<pre><code class="language-text">com
+com
+puter
+retupmoc
+ter
+</code></pre>
+<div dir="rtl">
+<ul>
+<li>המבנה: <code>text[start:end:step]</code>, בדיוק כמו <code>range(start, stop, step)</code>.</li>
+<li>בלי start מתחילים מההתחלה. בלי end ממשיכים עד הסוף.</li>
+<li>הצעד 2 לוקח כל תו שני. הצעד <code>-1</code> קורא מהסוף להתחלה.</li>
+<li>חיתוך יוצר מחרוזת חדשה, והמקור לא משתנה.</li>
+<li>אינדקס שלילי סופר מהסוף: <code>word[-3:]</code> הם שלושת התווים האחרונים, <code>word[:-1]</code> הוא הכול חוץ מהאחרון, <code>word[2:-2]</code> חותך שניים מכל צד.</li>
+<li>מילון: <code>step</code> הוא <strong>קפיצה</strong>, וה-<code>end</code> הוא "עד איפה, לא כולל". פונקציה שכתבתם נקראת בבחינה <strong>פעולה</strong>.</li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>1. משימה 1: מתקנים את החיתוך</h2>
+<p>פתחו את <code>Slicing_Starter.py</code>:</p>
+<pre><code class="language-python"># Task 1: this should print the letters
+# at indexes 1 to 4 (bcde).
+# Fix the slice.
+word = &quot;abcdefgh&quot;
+print(word[1:4])
+</code></pre>
+</section>
+<section class="slide">
+<h2>2. משימה 2: קצוות המילה</h2>
+<p>כתבו פונקציה בשם <code>ends()</code> שקולטת מילה ומדפיסה את שלושת התווים הראשונים ואת שלושת האחרונים (את האחרונים כתבו עם <code>word[-3:]</code>).</p>
+<p>בדקו עם <code>planet</code>: <code>pla</code> ואחר כך <code>net</code>.</p>
+</section>
+<section class="slide">
+<h2>3. משימה 3: ההודעה הסודית</h2>
+<p>כתבו פונקציה בשם <code>decode()</code>. ההודעה מסתתרת בכל תו שני, החל מאינדקס 1:</p>
+<pre><code class="language-python">secret = &quot;xPxyxtxhxoxn&quot;
+</code></pre>
+</section>
+<section class="slide">
+<h2>4. משימה 4: חותכים את הקצוות</h2>
+<p>כתבו פונקציה בשם <code>trim()</code> שקולטת מילה ומדפיסה אותה בלי התו הראשון ובלי התו האחרון (<code>word[1:-1]</code>).</p>
+<p>בדקו עם <code>planet</code>: <code>lane</code>.</p>
+</section>
+<section class="slide">
+<h2>5. משימה 5 (לא חובה): פלינדרום</h2>
+<p>כתבו פונקציה בשם <code>palindrome()</code> שקולטת מילה ובודקת אם היא נקראת אותו דבר משני הכיוונים. היא מדפיסה <code>Palindrome</code> או <code>Not palindrome</code>.</p>
+<p>בדקו עם <code>level</code> ועם <code>rover</code>.</p>
+</section>
+<section class="slide">
+<h2>6. מתעדים ושומרים</h2>
+<p>מעל כל פונקציה — הערה. רק זימון אחד פעיל.</p>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U6_M3_Slicing_&lt;Name&gt;.py</code></p>
+<hr />
+<p><strong>בדיקת יציאה:</strong></p>
+<div dir="rtl">
+<ol>
+<li>האם end נכלל בחיתוך?</li>
+<li>מה לוקח <code>word[:3]</code>?</li>
+<li>איך הופכים מחרוזת?</li>
+<li>מה לוקח <code>word[-3:]</code>?</li>
+</ol>
+</div>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

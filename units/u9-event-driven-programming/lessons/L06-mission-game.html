@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 9.6 – תכנות מונחה אירועים</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 9.6 – תכנות מונחה אירועים</h1>
+<p>כיתה ז׳ · Python A · <strong>משחק המשימה: מקשים, לחיצה וטיימר — נקודת ביקורת מסכמת</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← מתקנים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>משחק הוא אוסף של אירועים, לכל אחד תגובה, והם חולקים כמה משתנים: הניקוד, הזמן, והאם המשחק פעיל.</p>
+</div>
+</section>
+<section class="slide">
+<h2>דף עזר</h2>
+<table>
+<thead>
+<tr>
+<th>אירוע</th>
+<th>מאזין</th>
+<th>תגובה</th>
+<th>מה משתנה</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>חץ במקלדת</td>
+<td><code>turtle.onkey</code></td>
+<td><code>move_up()</code> …</td>
+<td>מקום הצב, <code>score</code></td>
+</tr>
+<tr>
+<td>לחיצה על המסך</td>
+<td><code>turtle.onscreenclick</code></td>
+<td><code>place_target(x, y)</code></td>
+<td><code>target_x</code>, <code>target_y</code></td>
+</tr>
+<tr>
+<td>עברה שנייה</td>
+<td><code>turtle.ontimer</code></td>
+<td><code>tick()</code></td>
+<td><code>time_left</code>, <code>running</code></td>
+</tr>
+</tbody>
+</table>
+<div dir="rtl">
+<ul>
+<li>סדר התוכנית: משתנים ← פונקציות ← רישום כל המאזינים ← הפעלת הטיימר ← <code>turtle.done()</code>.</li>
+<li>אחרי סוף המשחק: כל תזוזה בודקת את <code>running</code>.</li>
+<li>דף העזר של הבחינה כולל <code>dot(size)</code>, <code>xcor()</code>, <code>ycor()</code>, <code>goto</code>, <code>onclick</code>, <code>onkeypress</code>, <code>mainloop</code>. הפקודות <code>distance</code> ו-<code>clear</code> במשחק שלנו אינן בדף העזר.</li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>1. נקודת ביקורת א׳: המשחק (בזוגות, כל אחד שומר עותק)</h2>
+<p>פתחו את <code>Game_Starter.py</code>. החצים שמאלה וימינה כבר עובדים.</p>
+<div dir="rtl">
+<ol>
+<li><strong>שלב 1:</strong> כתבו <code>move_up()</code> ו-<code>move_down()</code> וחברו אותן לחצים. כל תזוזה מזמנת את <code>check_hit()</code>.</li>
+<li><strong>שלב 2:</strong> כתבו <code>place_target(x, y)</code> — לחיצה על המסך מעבירה את המטרה.</li>
+<li><strong>שלב 3:</strong> כתבו <code>tick()</code> — ספירה לאחור של 30 שניות, שמסתיימת ב-<code>Game over</code> ובניקוד.</li>
+<li><strong>שלב 4:</strong> אחרי <code>Game over</code> הצב לא זז (<code>if running:</code> בכל תזוזה).</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>2. בדיקת עמיתים</h2>
+<p>בדקו משחק של זוג אחר: כל החצים, לחיצה, פגיעה (הניקוד עולה, המטרה עוברת), סוף הזמן, וניסיון לזוז אחרי הסוף.</p>
+</section>
+<section class="slide">
+<h2>3. נקודת ביקורת ב׳ (על דף, בלי להריץ)</h2>
+<pre><code class="language-python">def tick():
+    global time_left
+    if time_left &gt; 0:
+        time_left = time_left - 1
+        print(&quot;Time:&quot;, time_left)
+        turtle.ontimer(tick, 1000)
+    else:
+        print(&quot;Game over&quot;)
+</code></pre>
+<div dir="rtl">
+<ol>
+<li>איזה אירוע ואיזה מאזין: לחיצה על חץ · לחיצה על נקודה · כל שנייה?</li>
+<li><code>time_left = 3</code>, ואז <code>tick()</code>. מה יודפס?</li>
+<li>התוכנית של עדי (בסגנון הבחינה), בהמשך: כל לחיצה מציירת ריבוע במקום הלחיצה, באדום ובכחול לסירוגין (הלחיצה הראשונה אדומה), וצלע כל ריבוע גדולה ב-2 מהקודם. השלימו את החסר.</li>
+<li>למה ל-<code>place_target(x, y)</code> יש פרמטרים, ול-<code>move_up()</code> אין?</li>
+</ol>
+</div>
+<pre><code class="language-python">import turtle
+
+
+def do_it(x, y):
+    global click_num
+    global size
+    player.penup()
+    player.goto(x, y)
+    player.shapesize(size)
+    if ______ % 2 == 0:
+        player.color(&quot;____&quot;)
+    else:
+        player.color(&quot;____&quot;)
+    player.stamp()
+    click_num = ______ + ____
+    size = ______ + ____
+
+
+tw = turtle.Screen()
+click_num = 0
+size = 2
+player = turtle.Turtle()
+player.shape(&quot;square&quot;)
+tw.onclick(do_it)
+turtle.mainloop()
+</code></pre>
+</section>
+<section class="slide">
+<h2>4. מתעדים ושומרים</h2>
+<p>מעל כל פונקציה — הערה.</p>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U9_M6_Game_&lt;Name&gt;.py</code></p>
+<hr />
+<p><strong>בדיקת יציאה:</strong></p>
+<div dir="rtl">
+<ol>
+<li>איזה אירוע מפעיל כל תגובה במשחק שלכם?</li>
+<li>איזה מידע נשמר בין האירועים?</li>
+<li>מה מתחיל את שרשרת הטיימר?</li>
+</ol>
+</div>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

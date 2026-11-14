@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 1.1 – מבוא לאלגוריתמיקה ולשפת פייתון</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 1.1 – מבוא לאלגוריתמיקה ולשפת פייתון</h1>
+<p>כיתה ז׳ · Python A · <strong>משימות 1+2: אימון בקרת שיגור ובניית פקודות משלנו</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← משנים ← מתעדים ← שומרים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>לפני כל הרצה: כותבים במחברת מה לדעתכם יודפס. רק אחר כך מריצים ובודקים.</p>
+</div>
+<div class="alert note">
+<p><span class="t">NOTE</span></p>
+<p><strong>אלגוריתם</strong> הוא רצף פעולות שמוביל לפתרון של בעיה מסוימת. הספירה לאחור היא אלגוריתם בארבעה צעדים. קודם כותבים את הצעדים במילים, ואחר כך בקוד.</p>
+</div>
+<div class="alert note">
+<p><span class="t">NOTE</span></p>
+<p><strong>Tool Note – Thonny</strong></p>
+<div dir="rtl">
+<ul>
+<li>מריצים עם F5. הפלט מופיע בחלון Shell.</li>
+<li>אחרי <code>def ...:</code> ו-Enter, השורה הבאה מוזחת לבד. לוחצים Backspace כדי לצאת מהפונקציה.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide">
+<h2>1. משנים את השיגור</h2>
+<div dir="rtl">
+<ol>
+<li>קובץ חדש (<code>File › New</code>). מקלידים את הספירה לאחור:</li>
+</ol>
+</div>
+<pre><code class="language-python">print(&quot;3&quot;)
+print(&quot;2&quot;)
+print(&quot;1&quot;)
+print(&quot;Liftoff!&quot;)
+</code></pre>
+<div dir="rtl">
+<ol start="2">
+<li>מריצים עם F5.</li>
+<li>משנים: הספירה מתחילה מ-5.</li>
+<li>מחליפים את <code>Liftoff!</code> בהודעה משלכם, באנגלית.</li>
+<li>חוזים ואז מנסים: מה יקרה אם נעביר את ההודעה לשורה הראשונה?</li>
+<li>שומרים: <code>File › Save As</code> בשם <code>rocket.py</code>.</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>2. ארבע השגיאות שפגשנו</h2>
+<div dir="rtl">
+<table>
+<thead>
+<tr>
+<th>מה כתבנו</th>
+<th>מה Python אומרת</th>
+<th>איך מתקנים</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>print(cat)</code></td>
+<td><code>NameError: name 'cat' is not defined</code></td>
+<td>שמים מרכאות סביב הטקסט</td>
+</tr>
+<tr>
+<td><code>print("Hello)</code></td>
+<td><code>SyntaxError: unterminated string literal</code></td>
+<td>סוגרים את המרכאות</td>
+</tr>
+<tr>
+<td><code>print("Hello"</code></td>
+<td><code>SyntaxError: '(' was never closed</code></td>
+<td>סוגרים את הסוגריים</td>
+</tr>
+<tr>
+<td><code>Print("Hello")</code></td>
+<td><code>NameError: name 'Print' is not defined</code></td>
+<td>כותבים print באותיות קטנות</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="alert tip">
+<p><span class="t">TIP</span></p>
+<p>שורה שמתחילה ב-<code>#</code> היא הערה: הסבר לבני אדם, ו-Python מדלגת עליה. <code>#</code> בתחילת שורה "מכבה" אותה בלי למחוק.</p>
+</div>
+</section>
+<section class="slide">
+<h2>3. מפעילים את הפונקציה (פעולה) בעצמכם</h2>
+<div dir="rtl">
+<ol>
+<li>קובץ חדש. מקלידים רק את ההגדרה של <code>cheer</code>, בלי זימון:</li>
+</ol>
+</div>
+<pre><code class="language-python">def cheer():
+    print(&quot;Go team!&quot;)
+    print(&quot;Go go go!&quot;)
+</code></pre>
+<div dir="rtl">
+<ol start="2">
+<li>מריצים. מה הופיע בחלון Shell?</li>
+<li>לוחצים Backspace כדי לצאת מההזחה, כותבים <code>cheer()</code> ומריצים.</li>
+<li>חוזים: אם נזמן שלוש פעמים, כמה שורות יופיעו? מריצים ובודקים.</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>4. בפנים או בחוץ?</h2>
+<pre><code class="language-python">def hello():
+    print(&quot;Hello!&quot;)
+</code></pre>
+<div dir="rtl">
+<ol>
+<li>מקלידים את הקוד.</li>
+<li>מוסיפים בתוך הפונקציה, מתחת ל-<code>print("Hello!")</code>, את השורה <code>print("Bye!")</code> עם אותה הזחה. מוסיפים בסוף הקובץ, בלי הזחה, את הזימון <code>hello()</code>. מריצים.</li>
+<li>מבטלים את ההזחה של שורת ה-Bye, כך שהיא תהיה מחוץ לפונקציה. חוזים: מה ישתנה בפלט? רק אחרי זה מריצים.</li>
+<li>מעבירים את הזימון <code>hello()</code> לשורה שמעל ההגדרה <code>def</code>. חוזים: מה יקרה? מריצים. (שגיאת <code>NameError</code>: אי אפשר לזמן פעולה לפני שהגדרנו אותה.)</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>5. מורידים שורה ומכניסים טאב</h2>
+<p>בתוך מחרוזת, <code>\n</code> פירושו "רד שורה" ו-<code>\t</code> פירושו "טאב" (קפיצה למרווח הבא):</p>
+<pre><code class="language-python">print(&quot;python\nlanguage&quot;)
+print(&quot;so\tcool&quot;)
+</code></pre>
+<div dir="rtl">
+<ol>
+<li>חוזים מה יודפס, מריצים ובודקים.</li>
+<li>כתבו תוכנית שמדפיסה את השם שלכם בשתי שורות, בעזרת <code>\n</code>.</li>
+<li>כתבו תוכנית שמדפיסה שם פרטי ושם משפחה עם טאב ביניהם, בעזרת <code>\t</code>.</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>6. אתגר השיגור: עולים בשלבים</h2>
+<div dir="rtl">
+<ol>
+<li>פותחים את <code>rocket.py</code> מתחילת השיעור (<code>File › Open</code>), ושומרים בשם חדש: <code>File › Save As</code> ← <code>G7_U1_Rocket_&lt;Name&gt;.py</code></li>
+<li>מוסיפים מעל שורות הספירה את השורה <code>def launch():</code>, ומזיחים פנימה את כל שורות הספירה ואת שורת ה-Liftoff. מריצים. מה הודפס?</li>
+<li>מוסיפים בסוף הקובץ, בלי הזחה, את הזימון <code>launch()</code>. מריצים.</li>
+<li>מוסיפים זימון שני <code>launch()</code>. חוזים: כמה פעמים תודפס הספירה? מריצים ובודקים.</li>
+<li>(שיעורי בית) מוסיפים בתוך הפונקציה, לפני המספר הראשון, את השורה <code>print("Ignition!")</code>. מריצים.</li>
+<li>(שיעורי בית) מבטלים את ההזחה של שורת ה-Liftoff. חוזים: מתי היא תופיע עכשיו? מריצים. מחזירים את ההזחה, "מכבים" זימון אחד עם <code>#</code>, מוסיפים בראש הקובץ הערה שמסבירה מה התוכנית עושה, ושומרים.</li>
+</ol>
+</div>
+<p>אין לכם את <code>rocket.py</code>? בקשו מהמורה את הקובץ <code>Rocket_Starter.py</code>.</p>
+<p>סיימתם מוקדם? עברו לכרטיס הביקור (סעיף 8).</p>
+</section>
+<section class="slide">
+<h2>7. משימת יציאה: תוכנית שמציגה אתכם</h2>
+<p>7 דקות · לבד</p>
+<p><strong>קודם, במחברת:</strong> כתבו במילים את הצעדים של התוכנית (זה האלגוריתם). רק אחר כך בקוד.</p>
+<p>כתבו קובץ חדש עם פונקציה <code>introduce_me()</code> שמדפיסה את השם שלכם ומשהו שאתם אוהבים. הוסיפו <code>print</code> לפני הזימון ואחריו, למשל:</p>
+<pre><code class="language-python">print(&quot;Start&quot;)
+
+def introduce_me():
+    print(&quot;My name is Dana&quot;)
+    print(&quot;I like basketball&quot;)
+
+print(&quot;Ready&quot;)
+introduce_me()
+print(&quot;End&quot;)
+</code></pre>
+<p><strong>לפני ההרצה:</strong> כתבו את הפלט המדויק של התוכנית שלכם, שורה אחר שורה.</p>
+<div dir="rtl">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">שורה</th>
+<th>התחזית שלי</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>אחרי ההרצה:</strong> האם התחזית התאימה? היו מוכנים להסביר בעל פה: למה השורות שבתוך <code>introduce_me()</code> לא רצו כש-Python הגיעה להגדרה?</p>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U1_FirstProgram_&lt;Name&gt;.py</code></p>
+</section>
+<section class="slide">
+<h2>8. כרטיס ביקור (משימת חובה)</h2>
+<p><strong>חובה</strong> · בכיתה למי שסיים, ולכולם בבית</p>
+<p>כתבו תוכנית שמדפיסה כרטיס ביקור: שם מלא, כיתה, בית ספר ותחביב, כל פרט בשורה משלו, בתוך מסגרת של כוכביות, עם רווחים בין המילים:</p>
+<pre><code class="language-text">**********************
+* Dana Levi          *
+* Class: 7 Alef      *
+* School: Herzl      *
+* Hobby: basketball  *
+**********************
+</code></pre>
+<p>שומרים: <code>G7_U1_BusinessCard_&lt;Name&gt;.py</code></p>
+<hr />
+<p><strong>בדיקת סיום — אני יודע/ת:</strong></p>
+<div dir="rtl">
+<ul>
+<li>שהתוכנית מתחילה בשורה הראשונה ורצה לפי הסדר</li>
+<li>להשתמש ב-<code>print</code> כדי להציג פלט</li>
+<li>לכתוב הערה עם <code>#</code>, ו"לכבות" שורה</li>
+<li>לקרוא הודעת שגיאה ולמצוא את השורה</li>
+<li>להגדיר פונקציה עם <code>def</code> והזחה</li>
+<li>לזמן פונקציה ולעקוב אחרי סדר הביצוע</li>
+<li>להסביר מהו אלגוריתם, ולכתוב את הצעדים לפני הקוד</li>
+<li>להשתמש ב-<code>\n</code> וב-<code>\t</code> בתוך מחרוזת</li>
+</ul>
+</div>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 7.3 – בעיות אלגוריתמיות</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 7.3 – בעיות אלגוריתמיות</h1>
+<p>כיתה ז׳ · Python A · <strong>מטילים קובייה: מספרים אקראיים, סימולציה ונקודת ביקורת</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← מתקנים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>הפעולה <code>random.randint(a, b)</code> מחזירה מספר שלם מ-a עד b — כולל שניהם. מגרילים פעם אחת, שומרים במשתנה, ואז משתמשים.</p>
+</div>
+</section>
+<section class="slide">
+<h2>דף עזר</h2>
+<table>
+<thead>
+<tr>
+<th>קריאה</th>
+<th>ערכים אפשריים</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>random.randint(1, 6)</code></td>
+<td>1 עד 6 — קובייה</td>
+</tr>
+<tr>
+<td><code>random.randint(0, 1)</code></td>
+<td>0 או 1 — מטבע</td>
+</tr>
+<tr>
+<td><code>random.randint(10, 20)</code></td>
+<td>10 עד 20</td>
+</tr>
+<tr>
+<td><code>random.randrange(1, 7)</code></td>
+<td>1 עד 6 — הגבול העליון <strong>לא</strong> נכלל, כמו ב-<code>range</code></td>
+</tr>
+<tr>
+<td><code>random.random()</code></td>
+<td>מספר עשרוני מ-0 ועד קטן מ-1</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">import random
+
+roll = random.randint(1, 6)
+print(&quot;Roll:&quot;, roll)
+if roll == 6:
+    print(&quot;You win&quot;)
+</code></pre>
+<div dir="rtl">
+<ul>
+<li>ב-<code>randint</code>, בניגוד ל-<code>range</code>, הגבול העליון נכלל. ב-<code>randrange</code> הוא לא נכלל.</li>
+<li>כל קריאה ל-<code>randint</code> מגרילה מספר חדש.</li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>1. משימה 1: הליכה אקראית ב-Turtle</h2>
+<p>כתבו פונקציה בשם <code>random_walk()</code>: 20 צעדים. בכל צעד הצב פונה <code>random.randint(0, 360)</code> ומתקדם <code>random.randint(10, 40)</code>.</p>
+<p>ספרו כמה צעדים ארוכים מ-30, וצברו את המרחק הכולל. הדפיסו את שניהם.</p>
+</section>
+<section class="slide">
+<h2>2. נקודת ביקורת א׳ (לבד)</h2>
+<div dir="rtl">
+<ol>
+<li>כתבו פונקציה בשם <code>dice_stats()</code> שמטילה קובייה 30 פעמים ומדפיסה: כמה פעמים יצא 6, את הסכום ואת הממוצע.</li>
+<li>כתבו פונקציה בשם <code>guess_game()</code>: מספר סודי בין 1 ל-20. שואלים עד שמנחשים נכון, עם <code>Too low</code> או <code>Too high</code>, ובסוף מדפיסים כמה ניסיונות היו.</li>
+</ol>
+</div>
+</section>
+<section class="slide">
+<h2>3. נקודת ביקורת ב׳ (על דף, בלי להריץ)</h2>
+<pre><code class="language-python">count = 0
+total = 0
+for number in range(1, 6):
+    total = total + number
+    if number % 2 == 1:
+        count = count + 1
+print(count, total)
+</code></pre>
+<div dir="rtl">
+<ol>
+<li>מה יודפס?</li>
+<li>אילו ערכים יכולה להחזיר <code>random.randint(3, 7)</code>? ומה לגבי <code>random.randrange(3, 7)</code>?</li>
+<li>שאלה ממבחן מפמ"ר: המטרה של כל קטע קוד היא לקלוט 10 ציונים ולמנות כמה מהם גבוהים מ-55 וקטנים מ-80. עבור 76 84 80 57 77 90 68 74 100 55 צריך להדפיס 5. האם כל קטע מבצע את הנדרש? אם לא, איך מתקנים?</li>
+<li>למה מקסימום מתחיל בערך הראשון ולא ב-0?</li>
+</ol>
+</div>
+<pre><code class="language-python"># קטע א
+count = 0
+for item in range(10):
+    grade = int(input(&quot;Grade: &quot;))
+    if grade &gt; 55 and grade &lt; 80:
+        count = count + 1
+print(count)
+</code></pre>
+<pre><code class="language-python"># קטע ג
+count = 0
+index = 0
+while index &lt; 10:
+    grade = int(input(&quot;Grade: &quot;))
+    if grade &gt; 55 and grade &lt; 80:
+        count = count + 1
+print(count)
+</code></pre>
+</section>
+<section class="slide">
+<h2>4. מתעדים ושומרים</h2>
+<p>מעל כל פונקציה — הערה. רק זימון אחד פעיל.</p>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U7_M3_Random_&lt;Name&gt;.py</code></p>
+</section>
+<section class="slide">
+<h2>בונוס: למה אין You win?</h2>
+<p>פתחו את <code>Random_Starter.py</code>. לפעמים מודפס <code>Roll: 6</code> ובכל זאת אין <code>You win</code>. למה?</p>
+<hr />
+<p><strong>בדיקת יציאה:</strong></p>
+<div dir="rtl">
+<ol>
+<li>האם הגבול העליון נכלל ב-<code>randint</code>?</li>
+<li>איזו תבנית סופרת כמה פעמים יצא 6?</li>
+<li>למה הפלט של סימולציה משתנה בין הרצות?</li>
+</ol>
+</div>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

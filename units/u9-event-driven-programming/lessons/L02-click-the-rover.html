@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>יחידה 9.2 – תכנות מונחה אירועים</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--note:#e8f0ff;--tip:#e6f6ec;--warn:#fff3d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--note:#16233d;--tip:#12301f;--warn:#3a2f10}}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:18px/1.6 "Segoe UI",Arial,sans-serif}
+.deck{display:flex;flex-direction:column;height:100%}
+main{flex:1;min-height:0;display:flex;justify-content:center;padding:16px}
+.slide{display:none;width:100%;max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;overflow:auto}
+.slide.on{display:block}
+h1{font-size:2em;margin:.2em 0}h2{font-size:1.45em;margin:.1em 0 .6em;color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:.6em 0}th,td{border:1px solid var(--line);padding:6px 10px;text-align:start;unicode-bidi:plaintext}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 14px;overflow:auto;font-size:.92em}
+code{display:inline-block;direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+pre code{background:none;padding:0}
+.alert{border-inline-start:5px solid var(--accent);background:var(--note);border-radius:8px;padding:6px 14px;margin:.8em 0}
+.alert.tip{background:var(--tip)}.alert.warning,.alert.caution{background:var(--warn)}
+.alert .t{font-weight:700;display:block;color:var(--muted);font-size:.8em;letter-spacing:.04em}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;border-top:1px solid var(--line);background:var(--card)}
+button{font:inherit;padding:8px 18px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}#pos{min-width:5em;text-align:center;color:var(--muted);direction:ltr;unicode-bidi:isolate}
+@media (max-width:600px){body{font-size:16px}.slide{padding:14px}main{padding:8px}}
+@media print{html,body{height:auto}body{background:#fff;color:#000;font-size:14pt}nav{display:none}.deck,main{display:block;padding:0}
+.slide{display:block!important;max-width:none;border:0;border-radius:0;padding:0;overflow:visible;page-break-after:always;break-after:page}
+.slide:last-child{page-break-after:auto}.alert,pre,th,code{background:#fff!important;border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="deck">
+<main>
+<section class="slide">
+<h1>יחידה 9.2 – תכנות מונחה אירועים</h1>
+<p>כיתה ז׳ · Python A · <strong>לוחצים על הרובר: onclick, קואורדינטות ומצב</strong></p>
+<p><strong>קוראים ← חוזים ← מריצים ← בודקים ← מתקנים</strong></p>
+<div class="alert important">
+<p><span class="t">IMPORTANT</span></p>
+<p>הפעולה <code>turtle.onclick</code> מגיבה רק ללחיצה על הצב. משתנה שצריך להישמר בין לחיצות נמצא מחוץ לפונקציה, ומשנים אותו עם <code>global</code>.</p>
+</div>
+</section>
+<section class="slide">
+<h2>דף עזר</h2>
+<pre><code class="language-python">current = &quot;blue&quot;
+
+
+def toggle_color(x, y):
+    global current
+    if current == &quot;blue&quot;:
+        current = &quot;orange&quot;
+    else:
+        current = &quot;blue&quot;
+    turtle.color(current)
+</code></pre>
+<div dir="rtl">
+<ul>
+<li>לפונקציית תגובה ללחיצה יש תמיד <code>(x, y)</code>, גם אם היא לא משתמשת בהם.</li>
+<li>הפקודה <code>big = not big</code> הופכת את הערך הבוליאני.</li>
+<li><code>count % 2 == 0</code> בודקת אם המספר זוגי. <code>size += 2</code> פירושה <code>size = size + 2</code>.</li>
+<li>בבחינה כותבים עם עצמים: <code>wn = turtle.Screen()</code>, <code>player = turtle.Turtle()</code>, <code>player.onclick(...)</code>, <code>wn.mainloop()</code>.</li>
+<li>בדיקה: שני פרמטרים · שם הפונקציה בלי סוגריים · <code>turtle.done()</code> בסוף.</li>
+</ul>
+</div>
+</section>
+<section class="slide">
+<h2>1. חימום: שגיאה בלחיצה</h2>
+<p>פתחו את <code>TurtleClick_Starter.py</code>, הריצו ולחצו על הצב:</p>
+<pre><code class="language-python"># Warm-up: click the rover. It should turn red. Why is there an error?
+import turtle
+
+
+def change_color():
+    turtle.color(&quot;red&quot;)
+
+
+turtle.shape(&quot;turtle&quot;)
+turtle.onclick(change_color)
+turtle.done()
+</code></pre>
+</section>
+<section class="slide">
+<h2>2. משימה 1: צבע מתחלף</h2>
+<p>כתבו פונקציה בשם <code>toggle_color(x, y)</code>: כחול ← כתום ← כחול, בכל לחיצה.</p>
+</section>
+<section class="slide">
+<h2>3. משימה 2: גודל מתחלף</h2>
+<p>כתבו פונקציה בשם <code>toggle_size(x, y)</code> עם המשתנה <code>big</code>: גודל 3 או גודל 1 (<code>turtle.shapesize</code>).</p>
+</section>
+<section class="slide">
+<h2>4. משימה 3 (אתגר): מתרגמים לסגנון הבחינה</h2>
+<p>בבחינה כותבים את אותה תוכנית עם עצמים. כתבו מחדש את <code>toggle_color</code>:</p>
+<div dir="rtl">
+<ol>
+<li>פתחו את התוכנית בשורות <code>wn = turtle.Screen()</code> ו-<code>player = turtle.Turtle()</code>.</li>
+<li>כל <code>turtle.color(...)</code> הופך ל-<code>player.color(...)</code>.</li>
+<li><code>turtle.onclick(...)</code> הופך ל-<code>player.onclick(...)</code> — הדמות היא המאזין.</li>
+<li><code>turtle.done()</code> הופך ל-<code>wn.mainloop()</code>.</li>
+</ol>
+</div>
+<p>בית: <code>step_forward(x, y)</code> — כל לחיצה מקדמת את הצב 40, ואחרי 5 לחיצות הוא מדפיס <code>Arrived</code> ולא זז יותר.</p>
+</section>
+<section class="slide">
+<h2>5. מתעדים ושומרים</h2>
+<p>מעל כל פונקציה — הערה. רק זימון אחד פעיל.</p>
+<p>שומרים: <code>File › Save As</code> ← <code>G7_U9_M2_TurtleClick_&lt;Name&gt;.py</code></p>
+<hr />
+<p><strong>בדיקת יציאה:</strong></p>
+<div dir="rtl">
+<ol>
+<li>על מה מגיבה <code>turtle.onclick</code>?</li>
+<li>למה הפונקציה מקבלת <code>x</code> ו-<code>y</code>?</li>
+<li>מתי צריך <code>global</code>?</li>
+</ol>
+</div>
+</section>
+</main>
+<nav><button id="prev" type="button">הקודם</button><span id="pos"></span><button id="next" type="button">הבא</button></nav>
+</div>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('.slide')),i=0,pos=document.getElementById('pos');
+function show(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pos.textContent=(i+1)+' / '+s.length;try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('prev').onclick=function(){show(i-1)};document.getElementById('next').onclick=function(){show(i+1)};
+document.addEventListener('keydown',function(e){var k=e.key;
+if(k==='ArrowLeft'||k===' '||k==='PageDown'){e.preventDefault();show(i+1)}else if(k==='ArrowRight'||k==='PageUp'){e.preventDefault();show(i-1)}});
+var h=parseInt((location.hash||'').slice(1),10);show(h>0?h-1:0)})();
+</script>
+</body>
+</html>

@@ -21,7 +21,7 @@ No Unit 5 lab sheets exist.
 ## Units 0-1
 
 Needs deck or lab-sheet change**
-- Optional: `m1-slides-he.pdf` slide on the first run could add the four defaults (U2-09). `m2-slides-he.pdf` could note that `color` also colours stamps. Neither is required.
+- Optional: The 2.1 deck (`lessons/L01-first-moves/slides-he.pdf`) slide on the first run could add the four defaults (U2-09). The 2.2 deck could note that `color` also colours stamps. Neither is required.
 - No lab-sheet PDF exists for Unit 2. The addendum handout is markdown, and a PDF can be built from it if you want one.
 
 ## Unit 2
@@ -103,4 +103,4 @@ NEEDS DECK OR LAB-SHEET CHANGE (decks and sheets untouched)
 ## Unit 3
 
 - **3.1 (already taught 8 Nov, pre-alignment):** deck still lacks multiple assignment, stored-variable conversion, `str()`, the two extra names; its card-sort slides show 7 cards. The missing items were covered by the 3.2 recap instead, so no 3.1 deck change is needed unless the lesson is repeated. 3.1 lab sheet unchanged.
-- **3.2 (15 Nov): handled without NotebookLM.** `m2-addon-slides-he.pdf` (8 slides: recap, `**`, swap, self-update) is used with the main deck, skipping main slides 2-3 and 12-13; the lab sheet `m2-lab-sheet-he.pdf` was rebuilt (3 tasks, about 20 minutes, large print) and the key updated. Still open if you want one consistent NotebookLM deck: formal names for `//` and `%` on the `//`/`%` slides, and regenerating the deck from the notes. Run of show: `units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-run-of-show-he.md`.
+- **3.2 (15 Nov): handled without NotebookLM.** `lessons/L02-from-input-to-result/addon-slides-he.pdf` (8 slides: recap, `**`, swap, self-update) is used with the main deck, skipping main slides 2-3 and 12-13; the lab sheet `lessons/L02-from-input-to-result/lab-sheet-he.pdf` was rebuilt (3 tasks, about 20 minutes, large print) and the key updated. Still open if you want one consistent NotebookLM deck: formal names for `//` and `%` on the `//`/`%` slides, and regenerating the deck from the notes. Run of show: `units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-run-of-show-he.md`.

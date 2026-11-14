@@ -7,9 +7,9 @@ Status: ✅ taught · ▶ next · ⏳ planned. The two classes are at the same p
 ## Where we are (13 Nov 2026)
 
 - **Done:** Unit 0 (environment), Unit 1 (introduction), **Unit 2 — Turtle & Graphics, including its written test**, and **lesson 3.1** (Variables, Input/Output; taught Sunday 8 Nov to both grades, before the ministry-alignment changes to the 3.1 notes).
-- **Prepared for 15 Nov:** recap, add-on slides, run of show and the updated lab sheet are in [`units/u3-variables-io-arithmetic/`](units/u3-variables-io-arithmetic) (start with `m2-run-of-show-he.md`): 5-minute recap of 3.1, 8 add-on slides, a 3-task large-print lab sheet (about 20 minutes), key on one page.
+- **Prepared for 15 Nov:** recap, add-on slides, run of show and the updated lab sheet are in [`units/u3-variables-io-arithmetic/`](units/u3-variables-io-arithmetic) (start with [`teacher/L02-from-input-to-result-run-of-show-he.md`](units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-run-of-show-he.md)): 5-minute recap of 3.1, 8 add-on slides, a 3-task large-print lab sheet (about 20 minutes), key on one page.
 - **Next:** lesson **3.2** (input → calculation → output), target Sunday 15 Nov 2026. The 3.1 additions that the taught lesson did not have (multiple assignment, conversion of a stored variable and `str()`, the names `my-fuel` and `for`) can be covered in a short recap at the start of 3.2.
-- **Ready for those lessons:** slides (`m1-slides-he.pdf`, `m2-slides-he.pdf`), lesson notes, and the printable lab sheets with a teacher key in [`units/u3-variables-io-arithmetic/`](units/u3-variables-io-arithmetic).
+- **Ready for those lessons:** slides (`lessons/L01-the-rovers-memory/slides-he.pdf`, `lessons/L02-from-input-to-result/slides-he.pdf`), lesson notes (`teacher/`), and the printable lab sheets (`lessons/L0x-.../lab-sheet-he.pdf`) with a teacher key (`teacher/u3-lab-sheets-key-he.pdf`) in [`units/u3-variables-io-arithmetic/`](units/u3-variables-io-arithmetic).
 - **After that:** Unit 4 — Conditional Execution (4.1 on Nov 22 in the course map).
 
 ## Progress table

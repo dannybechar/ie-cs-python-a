@@ -42,7 +42,7 @@ FOR THE COORDINATOR
 - course-map.md: the Unit 1 timeline and homework items, and the new addendum files.
 - traceability.md: record the U0-01 Classroom decision (or "no Classroom" as an approved deviation) and add `\n`/`\t`, the business card and the algorithm as now covered.
 - Teacher to ask the ministry which environment the exam uses.
-- Unit 2: the algorithm label on the square hook in units/u2-turtle-graphics/m1-lesson-notes.md (0-7 min) is not applied, because Unit 2 is outside my scope.
+- Unit 2: the algorithm label on the square hook in units/u2-turtle-graphics/teacher/L01-first-moves-notes.md (0-7 min) is not applied, because Unit 2 is outside my scope.
 
 ## Unit 6
 
@@ -103,4 +103,4 @@ NEEDS DECK OR LAB-SHEET CHANGE (decks and sheets untouched)
 ## Unit 3
 
 - **3.1 (already taught 8 Nov, pre-alignment):** deck still lacks multiple assignment, stored-variable conversion, `str()`, the two extra names; its card-sort slides show 7 cards. The missing items were covered by the 3.2 recap instead, so no 3.1 deck change is needed unless the lesson is repeated. 3.1 lab sheet unchanged.
-- **3.2 (15 Nov): handled without NotebookLM.** `m2-addon-slides-he.pdf` (8 slides: recap, `**`, swap, self-update) is used with the main deck, skipping main slides 2-3 and 12-13; the lab sheet `m2-lab-sheet-he.pdf` was rebuilt (3 tasks, about 20 minutes, large print) and the key updated. Still open if you want one consistent NotebookLM deck: formal names for `//` and `%` on the `//`/`%` slides, and regenerating the deck from the notes. Run of show: `units/u3-variables-io-arithmetic/m2-run-of-show-he.md`.
+- **3.2 (15 Nov): handled without NotebookLM.** `m2-addon-slides-he.pdf` (8 slides: recap, `**`, swap, self-update) is used with the main deck, skipping main slides 2-3 and 12-13; the lab sheet `m2-lab-sheet-he.pdf` was rebuilt (3 tasks, about 20 minutes, large print) and the key updated. Still open if you want one consistent NotebookLM deck: formal names for `//` and `%` on the `//`/`%` slides, and regenerating the deck from the notes. Run of show: `units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-run-of-show-he.md`.

@@ -22,8 +22,8 @@ Status: ✅ taught · ▶ next · ⏳ planned. The two classes are at the same p
 | 4 | 2.2 Turtle & Graphics | ✅ | ✅ | |
 | 5 | 2.3 Turtle & Graphics | ✅ | ✅ | |
 | — | **Unit 2 written test** | ✅ Form B | ✅ Form A | Grade 8 sat it on 29 Oct (mean 94.6). Grade 7 sat Form B and it was graded on 6 Nov (mean 90, range 65–100). Feedback papers were given per student; details are in [`tools/unit-test-builder/README.md`](tools/unit-test-builder/README.md). |
-| 6 | 3.1 Variables, Input/Output & Arithmetic | ✅ | ✅ | Taught Sun 8 Nov (pre-alignment version). Lab sheet: [`m1-lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/m1-lab-sheet-he.pdf) |
-| 7 | 3.2 Variables, Input/Output & Arithmetic | ▶ | ▶ | Next lesson (15 Nov). Lab sheet: [`m2-lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/m2-lab-sheet-he.pdf) |
+| 6 | 3.1 Variables, Input/Output & Arithmetic | ✅ | ✅ | Taught Sun 8 Nov (pre-alignment version). Lab sheet: [`lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/lessons/L01-the-rovers-memory/lab-sheet-he.pdf) |
+| 7 | 3.2 Variables, Input/Output & Arithmetic | ▶ | ▶ | Next lesson (15 Nov). Lab sheet: [`lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/lab-sheet-he.pdf) |
 | 8 | 4.1 Conditional Execution | ⏳ | ⏳ | |
 | 9 | 4.2 Conditional Execution | ⏳ | ⏳ | |
 | 10 | 4.3 Conditional Execution | ⏳ | ⏳ | |

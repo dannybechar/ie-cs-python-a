@@ -38,7 +38,7 @@ Allowed tools: `for`, `range`, `while`, `if` / `elif`, `%`, `//`, `end=`, and `+
 
 | Set | Items | Notes |
 |---|---|---|
-| 18.1 / 18.2 | #4, #5, #6, #7, #8, #9, #10 first; #1-#3 after Unit 4; #11-#12 optional | Item 8(c) must be `range(6, 1, -2)`; item 12 needs `range(1, 10)`. See section 9 of `m4-lesson-notes.md` |
+| 18.1 / 18.2 | #4, #5, #6, #7, #8, #9, #10 first; #1-#3 after Unit 4; #11-#12 optional | Item 8(c) must be `range(6, 1, -2)`; item 12 needs `range(1, 10)`. See section 9 of `../teacher/L04-loops-inside-loops-notes.md` |
 | 18.3 | #1 after `elif`; #2(a) now; #3 optional | Skip #2(b): `for ... else` is not taught |
 
 Source of every row: ministry Python A folder, read-only extracts. Solutions: ask the teacher; items that mirror class tasks have reference code in `solutions/`.

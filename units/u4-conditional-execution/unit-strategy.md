@@ -5,7 +5,7 @@ Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 4. Framin
 
 **Build status:** ✅ complete — all 3 meetings built and approved by the teacher; Phase 5 alignment with the ministry program applied (rolling condition `elif`, `not`, digits, max of two, exam items). Inspired by the teacher's raw decks (`chapter4_session1–3`).
 
-The three meeting decks (`m1–m3-slides-he.pdf`) are from before Phase 5 and are pending a patch (see the README).
+The three meeting decks (`m1–lessons/L03-the-rover-at-the-junction/slides-he.pdf`) are from before Phase 5 and are pending a patch (see the README).
 
 ## Official topics and hours
 

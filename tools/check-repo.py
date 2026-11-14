@@ -1,6 +1,6 @@
 """Repo consistency check. Usage:  python -I tools/check-repo.py   (run from the repo root)
 
-Errors (exit 1):  Reference .py that does not compile; a meeting without notes / lab brief / deck;
+Errors (exit 1):  Reference .py that does not compile; a lesson without teacher notes / lesson page / HTML twin / slide PDF;
                   course-map meeting log not 31 rows of 90 min; manifest rows whose extract is missing.
 Warnings:         Starter .py that does not compile (some are broken on purpose); lesson notes without a
                   recognisable Duration line.
@@ -28,19 +28,28 @@ def check_python():
 
 
 def check_meetings():
+    """Every lesson: teacher notes, student lesson page, its HTML twin and (except an addendum) the slide PDF."""
     n = 0
     for unit in sorted((ROOT / "units").glob("u[0-9]*")):
-        notes = sorted(unit.glob("m*-lesson-notes.md"))
+        notes = sorted((unit / "teacher").glob("L*-notes.md"))
         if not notes:
             errors.append("%s: no lesson notes" % unit.name)
         for note in notes:
-            k = re.match(r"m(\d+)-", note.name).group(1)
-            n += 1
-            for need in ("m%s-lab-brief-he.md" % k, "m%s-slides-he.pdf" % k):
+            stem = note.name[: -len("-notes.md")]
+            text = note.read_text(encoding="utf-8")
+            addendum = "Addendum" in text.splitlines()[0]
+            needs = ["lessons/%s.md" % stem, "lessons/%s.html" % stem]
+            if not addendum:
+                n += 1
+                needs.append("lessons/%s/slides-he.pdf" % stem)
+            for need in needs:
                 if not (unit / need).exists():
                     errors.append("%s: missing %s" % (unit.name, need))
-            if not re.search(r"(?i)duration", note.read_text(encoding="utf-8")):
+            if not re.search(r"(?i)duration", text):
                 warnings.append("%s/%s: no Duration line" % (unit.name, note.name))
+        for page in sorted((unit / "lessons").glob("L*.md")):
+            if not (unit / "teacher" / (page.stem + "-notes.md")).exists():
+                errors.append("%s: lesson page %s has no teacher notes" % (unit.name, page.name))
     return n
 
 

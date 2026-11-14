@@ -1,6 +1,63 @@
 # Unit 2 — Turtle & Graphics
 
-Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
+Python A, Grade 7 · 6 academic hours = 3 meetings = 270 minutes (45 theory / 225 practice). 4 lessons: the Hebrew lab brief is the lesson page, the Hebrew slide deck is a PDF beside it. Official scope: [`unit-strategy.md`](unit-strategy.md).
+
+[Back to the ordered table of contents](../../CONTENTS.md) · [Repository home](../../README.md)
+
+## Start here
+
+| I want to… | Open |
+|---|---|
+| Read the unit's official scope, topics and hours | [`unit-strategy.md`](unit-strategy.md) |
+| Read the background paper | *not yet added* (see below) |
+| See the lesson sequence, minutes and status | [`unit-plan.md`](unit-plan.md) |
+| Open a lesson (Hebrew lab brief + slide deck) | [Lessons in teaching order](#lessons-in-teaching-order) |
+| Get the student starter code | [`exercises/`](exercises) |
+| Print the student test sheets | [`assessment/`](assessment) |
+| Plan a lesson, see solutions, answer keys, run of show (**teacher-only, do not distribute**) | [`teacher/`](teacher) |
+| See external reviews | [`docs/reviews/`](../../docs/reviews/README.md) (no per-unit `feedback/` folder) |
+
+## Background paper: go straight to a statement
+
+The unit's background paper (`background-paper.md`) is **not yet added**; it is to be supplied by the owner and copied in unchanged. Until then the official scope per topic is in [`unit-strategy.md`](unit-strategy.md) and the ministry traceability is in [`docs/ministry-program/`](../../docs/ministry-program/README.md). There are no anchors to link, so the statement table is omitted.
+
+## Lessons in teaching order
+
+| # | Lesson (Hebrew lab brief as `.md`; HTML deck; slide PDF) | Level (theory / practice min) | Review status |
+|---|---|---|---|
+| 1 | **Unit 2.1 — Turtle & Graphics** · First Moves<br>[md](lessons/L01-first-moves.md) · [html](lessons/L01-first-moves.html) · [slides PDF](lessons/L01-first-moves/slides-he.pdf) | 45 / 45 | Approved by the teacher |
+| 2 | **Unit 2.2 — Turtle & Graphics** · Pen, Appearance and Stamps<br>[md](lessons/L02-pen-appearance-and-stamps.md) · [html](lessons/L02-pen-appearance-and-stamps.html) · [slides PDF](lessons/L02-pen-appearance-and-stamps/slides-he.pdf) | 0 / 90 | Approved by the teacher |
+| 3 | **Unit 2.3 — Turtle & Graphics** · Geometry Challenge<br>[md](lessons/L03-geometry-challenge.md) · [html](lessons/L03-geometry-challenge.html) · [slides PDF](lessons/L03-geometry-challenge/slides-he.pdf) | 0 / 90 | Approved by the teacher |
+| 4 | **Unit 2 Addendum — Coordinates and the Exam Notation**<br>[md](lessons/L04-coordinates-and-exam-notation.md) · [html](lessons/L04-coordinates-and-exam-notation.html) | 45 (addendum) | Addendum: not part of the 30 official meetings |
+
+The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-decks/`](../../tools/lesson-decks/README.md); they have not been reviewed by the teacher. GitHub shows `.html` as source: open a downloaded copy in a browser.
+
+## Teacher-only material (do not distribute)
+
+| File | What it is |
+|---|---|
+| [`teacher/L01-first-moves-notes.md`](teacher/L01-first-moves-notes.md) | Lesson notes: minute-by-minute plan |
+| [`teacher/L02-pen-appearance-and-stamps-notes.md`](teacher/L02-pen-appearance-and-stamps-notes.md) | Lesson notes: minute-by-minute plan |
+| [`teacher/L03-geometry-challenge-notes.md`](teacher/L03-geometry-challenge-notes.md) | Lesson notes: minute-by-minute plan |
+| [`teacher/L04-coordinates-and-exam-notation-notes.md`](teacher/L04-coordinates-and-exam-notation-notes.md) | Lesson notes: minute-by-minute plan |
+| [`teacher/u2-test-a-key-he.docx`](teacher/u2-test-a-key-he.docx) | Answer key |
+| [`teacher/u2-test-a-key-he.pdf`](teacher/u2-test-a-key-he.pdf) | Answer key |
+| [`teacher/u2-test-b-key-he.docx`](teacher/u2-test-b-key-he.docx) | Answer key |
+| [`teacher/u2-test-b-key-he.pdf`](teacher/u2-test-b-key-he.pdf) | Answer key |
+| [`teacher/u2-turtle-test-a-key-he.docx`](teacher/u2-turtle-test-a-key-he.docx) | Answer key |
+| [`teacher/u2-turtle-test-a-key-he.pdf`](teacher/u2-turtle-test-a-key-he.pdf) | Answer key |
+| [`teacher/u2-turtle-test-b-key-he.docx`](teacher/u2-turtle-test-b-key-he.docx) | Answer key |
+| [`teacher/u2-turtle-test-b-key-he.pdf`](teacher/u2-turtle-test-b-key-he.pdf) | Answer key |
+| [`teacher/solutions/`](teacher/solutions) | 16 reference solutions (`*_Reference.py` and extras) |
+
+## Status and open checks
+
+- 3 of 4 lessons approved by the teacher (the addendum, where present, is outside the official meetings).
+- Background paper: not yet added. The anchor-link check cannot run for this unit until it exists.
+- HTML decks: generated from the lab briefs, checked in a browser for layout and printing on one sample deck only; not reviewed by the teacher.
+- Ministry alignment: see [`docs/ministry-program/`](../../docs/ministry-program/README.md) and [`deck-sheet-backlog.md`](../../docs/ministry-program/deck-sheet-backlog.md) for open deck and sheet items.
+
+## Detailed materials index
 
 6 academic hours = 3 meetings = 270 minutes (45 theory / 225 practice).
 
@@ -9,32 +66,32 @@ Unit scope, official topics and hours: [`unit-strategy.md`](unit-strategy.md)
 | Meeting | Type | File | What it is |
 |---|---|---|---|
 | **Unit** | Strategy | [`unit-strategy.md`](unit-strategy.md) | Official scope, topics, hours and the meeting breakdown |
-| **2.1** First Moves | Lesson | [`m1-lesson-notes.md`](m1-lesson-notes.md) | Lesson plan: human-turtle hook, turning, square, lab (staircase, triangle, letter if time) |
-|  | Exercise | [`m1-lab-brief-he.md`](m1-lab-brief-he.md) | Hebrew lab brief |
+| **2.1** First Moves | Lesson | [`teacher/L01-first-moves-notes.md`](teacher/L01-first-moves-notes.md) | Lesson plan: human-turtle hook, turning, square, lab (staircase, triangle, letter if time) |
+|  | Exercise | [`lessons/L01-first-moves.md`](lessons/L01-first-moves.md) | Hebrew lab brief |
 |  | Exercise | [`TurtleFirstMoves_Starter.py`](exercises/TurtleFirstMoves_Starter.py) | Starter file |
-|  | Exercise | [`TurtleFirstMoves_Reference.py`](solutions/TurtleFirstMoves_Reference.py) | Solutions, one function per task |
-|  | Lesson | [`m1-slides-he.pdf`](m1-slides-he.pdf) | Hebrew slides (23 slides, rover theme, made in NotebookLM; slides 8, 12, 14, 17, 19 corrected and exit check 22–23 added) |
-| **2.2** Pen, Appearance and Stamps | Lesson | [`m2-lesson-notes.md`](m2-lesson-notes.md) | Lesson plan: three short demos, each followed by a task; one function per task |
-|  | Exercise | [`m2-lab-brief-he.md`](m2-lab-brief-he.md) | Hebrew lab brief |
+|  | Exercise | [`TurtleFirstMoves_Reference.py`](teacher/solutions/TurtleFirstMoves_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`lessons/L01-first-moves/slides-he.pdf`](lessons/L01-first-moves/slides-he.pdf) | Hebrew slides (23 slides, rover theme, made in NotebookLM; slides 8, 12, 14, 17, 19 corrected and exit check 22–23 added) |
+| **2.2** Pen, Appearance and Stamps | Lesson | [`teacher/L02-pen-appearance-and-stamps-notes.md`](teacher/L02-pen-appearance-and-stamps-notes.md) | Lesson plan: three short demos, each followed by a task; one function per task |
+|  | Exercise | [`lessons/L02-pen-appearance-and-stamps.md`](lessons/L02-pen-appearance-and-stamps.md) | Hebrew lab brief |
 |  | Exercise | [`TurtlePenStamp_Starter.py`](exercises/TurtlePenStamp_Starter.py) | Starter file (warm-up as a function) |
-|  | Exercise | [`TurtlePenStamp_Reference.py`](solutions/TurtlePenStamp_Reference.py) | Solutions, one function per task |
-|  | Lesson | [`m2-slides-he.pdf`](m2-slides-he.pdf) | Hebrew slides (15 slides, made in NotebookLM; slides 2, 6, 10, 15 corrected) |
-| **2.3** Geometry Challenge | Lesson | [`m3-lesson-notes.md`](m3-lesson-notes.md) | Lesson plan |
-|  | Lesson | [`m3-slides-he.pdf`](m3-slides-he.pdf) | Hebrew slides (18 slides, rover theme, made in NotebookLM; slides 8, 9, 17 corrected) |
-|  | Exercise | [`m3-lab-brief-he.md`](m3-lab-brief-he.md) | Hebrew lab brief |
-|  | Exercise | [`m3-exit-check-he.png`](m3-exit-check-he.png) | Exit check |
+|  | Exercise | [`TurtlePenStamp_Reference.py`](teacher/solutions/TurtlePenStamp_Reference.py) | Solutions, one function per task |
+|  | Lesson | [`lessons/L02-pen-appearance-and-stamps/slides-he.pdf`](lessons/L02-pen-appearance-and-stamps/slides-he.pdf) | Hebrew slides (15 slides, made in NotebookLM; slides 2, 6, 10, 15 corrected) |
+| **2.3** Geometry Challenge | Lesson | [`teacher/L03-geometry-challenge-notes.md`](teacher/L03-geometry-challenge-notes.md) | Lesson plan |
+|  | Lesson | [`lessons/L03-geometry-challenge/slides-he.pdf`](lessons/L03-geometry-challenge/slides-he.pdf) | Hebrew slides (18 slides, rover theme, made in NotebookLM; slides 8, 9, 17 corrected) |
+|  | Exercise | [`lessons/L03-geometry-challenge.md`](lessons/L03-geometry-challenge.md) | Hebrew lab brief |
+|  | Exercise | [`lessons/L03-geometry-challenge/exit-check-he.png`](lessons/L03-geometry-challenge/exit-check-he.png) | Exit check |
 |  | Exercise | [`GeometryChallenge_Starter.py`](exercises/GeometryChallenge_Starter.py) | Starter file |
-|  | Exercise | [`GeometryAssessment_Reference.py`](solutions/GeometryAssessment_Reference.py) | Assessment solution |
-| **Addendum** coordinates and exam notation | Lesson | [`addendum-lesson-notes.md`](addendum-lesson-notes.md) | 45-minute session for taught classes, outside the three meetings and the official 270 minutes: coordinates, `goto`, `setx`/`sety`, short names, `backward`, `color`, fill, 10-minute exam-notation translation drill |
-|  | Exercise | [`addendum-handout-he.md`](addendum-handout-he.md) | Hebrew student handout |
+|  | Exercise | [`GeometryAssessment_Reference.py`](teacher/solutions/GeometryAssessment_Reference.py) | Assessment solution |
+| **Addendum** coordinates and exam notation | Lesson | [`L04-coordinates-and-exam-notation-notes.md`](teacher/L04-coordinates-and-exam-notation-notes.md) | 45-minute session for taught classes, outside the three meetings and the official 270 minutes: coordinates, `goto`, `setx`/`sety`, short names, `backward`, `color`, fill, 10-minute exam-notation translation drill |
+|  | Exercise | [`L04-coordinates-and-exam-notation.md`](lessons/L04-coordinates-and-exam-notation.md) | Hebrew student handout |
 |  | Exercise | [`Coordinates_Starter.py`](exercises/Coordinates_Starter.py), [`ExamDialect_Starter.py`](exercises/ExamDialect_Starter.py) | Starter files (new) |
-|  | Exercise | [`Coordinates_Reference.py`](solutions/Coordinates_Reference.py), [`ExamDialect_Reference.py`](solutions/ExamDialect_Reference.py) | Reference solutions (new) |
+|  | Exercise | [`Coordinates_Reference.py`](teacher/solutions/Coordinates_Reference.py), [`ExamDialect_Reference.py`](teacher/solutions/ExamDialect_Reference.py) | Reference solutions (new) |
 | **Extra** 10 turtle exercises | Exercise | [`exercises/`](exercises) | Ten starter files (01 ThickRedRectangle … 10 WelcomeSign): a comment header with the task, and an empty body to fill; see [below](#unit-2-extra-practice--10-turtle-exercises) |
-|  | Exercise | [`solutions/`](solutions) | The ten complete solutions, same file names; the header explains what each one practices |
-| **Test** Forms A and B | Test | [`u2-test-a-students-he.pdf`](u2-test-a-students-he.pdf), [`u2-test-b-students-he.pdf`](u2-test-b-students-he.pdf) | 45-minute multiple-choice test sheets (Word sources: [A](u2-test-a-students-he.docx), [B](u2-test-b-students-he.docx)) |
-|  | Test | [`u2-test-a-key-he.pdf`](u2-test-a-key-he.pdf), [`u2-test-b-key-he.pdf`](u2-test-b-key-he.pdf) | Answer keys and blueprints ([A](u2-test-a-key-he.docx), [B](u2-test-b-key-he.docx)); details [below](#unit-2-test) |
-| **Test** written, basics | Test | [`u2-turtle-test-a-students-he.pdf`](u2-turtle-test-a-students-he.pdf) | 60-minute written test on forward/left/right/penup/pendown only (Word source: [docx](u2-turtle-test-a-students-he.docx)) |
-|  | Test | [`u2-turtle-test-a-key-he.pdf`](u2-turtle-test-a-key-he.pdf) | Key with rubric and sample solutions ([docx](u2-turtle-test-a-key-he.docx)); details [below](#unit-2-written-test) |
+|  | Exercise | [`solutions/`](teacher/solutions) | The ten complete solutions, same file names; the header explains what each one practices |
+| **Test** Forms A and B | Test | [`u2-test-a-students-he.pdf`](assessment/u2-test-a-students-he.pdf), [`u2-test-b-students-he.pdf`](assessment/u2-test-b-students-he.pdf) | 45-minute multiple-choice test sheets (Word sources: [A](assessment/u2-test-a-students-he.docx), [B](assessment/u2-test-b-students-he.docx)) |
+|  | Test | [`u2-test-a-key-he.pdf`](teacher/u2-test-a-key-he.pdf), [`u2-test-b-key-he.pdf`](teacher/u2-test-b-key-he.pdf) | Answer keys and blueprints ([A](teacher/u2-test-a-key-he.docx), [B](teacher/u2-test-b-key-he.docx)); details [below](#unit-2-test) |
+| **Test** written, basics | Test | [`u2-turtle-test-a-students-he.pdf`](assessment/u2-turtle-test-a-students-he.pdf) | 60-minute written test on forward/left/right/penup/pendown only (Word source: [docx](assessment/u2-turtle-test-a-students-he.docx)) |
+|  | Test | [`u2-turtle-test-a-key-he.pdf`](teacher/u2-turtle-test-a-key-he.pdf) | Key with rubric and sample solutions ([docx](teacher/u2-turtle-test-a-key-he.docx)); details [below](#unit-2-written-test) |
 
 ## Unit 2 extra practice — 10 turtle exercises
 

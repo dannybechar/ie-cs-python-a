@@ -49,7 +49,7 @@ Also listed for this chapter in the program overview (p.3–5):
 - nested loops, star patterns with `end=""`.
 - Super Python: a `for` loop over 10 scores with an `elif` chain (rolling condition), counts and an average.
 - checkpoint: practical (a `for` program and a `while` program) + theory in exam style (trace, round count, equivalent loops, purpose, fill the blank, finite or endless).
-- homework: ministry exam-prep sets 18.1 / 18.2 on paper (see `m4-lesson-notes.md` section 9).
+- homework: ministry exam-prep sets 18.1 / 18.2 on paper (see `teacher/L04-loops-inside-loops-notes.md` section 9).
 
 ### Scope decisions
 - The meetings follow the teacher's raw decks (for → range + Turtle → while → nested). 5.1 and 5.3 carry the 90 theory minutes.

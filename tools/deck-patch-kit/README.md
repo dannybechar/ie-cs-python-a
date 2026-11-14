@@ -13,7 +13,7 @@ Requirements: Python 3 with `pymupdf`, `pillow`, `numpy`, `opencv-python`, `pyth
 4. Check every slide against `Downloads/unit<U>-m<M>-slides/1-source-slide-content.md`
    (or, when that folder is gone, the lesson notes and the `_Reference` code): use `sheet()` for overviews, then crop suspicious lines at full size.
 5. Write `p<D>.py` (`from common import *`) that patches only real errors, `save(D, p, im)` each page, then `build(D, '', N)`.
-6. Copy `new_<D>.pdf` to `units/<unit dir>/m<M>-slides-he.pdf` and to `Downloads/python-a/unit U.M - <English unit name>.pdf`;
+6. Copy `new_<D>.pdf` to `units/<unit dir>/lessons/L<MM>-<slug>/slides-he.pdf` and to `Downloads/python-a/unit U.M - <English unit name>.pdf`;
    update the unit README row and the `course-map.md` meeting log; commit and push.
 
 ## Recurring NotebookLM problems

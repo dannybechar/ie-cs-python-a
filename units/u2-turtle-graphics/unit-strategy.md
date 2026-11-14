@@ -4,7 +4,7 @@
 Source: [`python-a.pdf`](../../docs/ministry-source/python-a.pdf) Unit 2. Framing: [`../../docs/annual-strategy.md`](../../docs/annual-strategy.md).
 
 **Build status:** ✅ complete and approved — all 3 meetings built, 270 minutes (45 theory / 225 practice). See [README.md](README.md).
-**Phase 5 (ministry alignment, 2026-11-13):** the unit was already taught, so the missing ministry content sits in a separate 45-minute **addendum session** ([`addendum-lesson-notes.md`](addendum-lesson-notes.md)) outside the three taught minute plans and outside the official 270 minutes. The three taught plans are unchanged (each still 90). Tests are unchanged.
+**Phase 5 (ministry alignment, 2026-11-13):** the unit was already taught, so the missing ministry content sits in a separate 45-minute **addendum session** ([`L04-coordinates-and-exam-notation-notes.md`](teacher/L04-coordinates-and-exam-notation-notes.md)) outside the three taught minute plans and outside the official 270 minutes. The three taught plans are unchanged (each still 90). Tests are unchanged.
 
 ## Official topics and hours
 

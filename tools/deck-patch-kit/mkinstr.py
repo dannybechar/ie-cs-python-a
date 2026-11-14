@@ -67,6 +67,6 @@ Style: bold, clean, big code, one idea per slide, max 4 short lines of text. Stu
 
 ## 6. When it's ready
 
-Save the PDF in Downloads and tell Claude. It will check the deck against this list, patch anything left, add it to the repo as `units/{unitdir}/m{M}-slides-he.pdf`, and log it in `course-map.md`.
+Save the PDF in Downloads and tell Claude. It will check the deck against this list, patch anything left, add it to the repo as `units/{unitdir}/lessons/L{M:02d}-<slug>/slides-he.pdf`, and log it in `course-map.md`.
 '''
     open(f'{folder}/0-START-HERE-instructions.md', 'w', encoding='utf-8', newline='').write(s)

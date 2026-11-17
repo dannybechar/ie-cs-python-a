@@ -13,6 +13,7 @@ Python A, Grade 7 · 4 academic hours = 2 meetings = 180 minutes (45 theory / 13
 | See the lesson sequence, minutes and status | [`unit-plan.md`](unit-plan.md) |
 | Open a lesson (Hebrew lab brief + slide deck) | [Lessons in teaching order](#lessons-in-teaching-order) |
 | Get the student starter code | [`exercises/`](exercises) |
+| Print the 10-minute quiz or the practice mock test | [`assessment/`](assessment) |
 | Plan a lesson, see solutions, answer keys, run of show (**teacher-only, do not distribute**) | [`teacher/`](teacher) |
 | See external reviews | [`docs/reviews/`](../../docs/reviews/README.md) (no per-unit `feedback/` folder) |
 
@@ -38,6 +39,8 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 | [`teacher/L02-from-input-to-result-recap-he.md`](teacher/L02-from-input-to-result-recap-he.md) | Hebrew recap script |
 | [`teacher/L02-from-input-to-result-run-of-show-he.md`](teacher/L02-from-input-to-result-run-of-show-he.md) | Run of show with slide numbers |
 | [`teacher/u3-lab-sheets-key-he.pdf`](teacher/u3-lab-sheets-key-he.pdf) | Answer key |
+| [`teacher/u3-quiz-key-he.pdf`](teacher/u3-quiz-key-he.pdf) | Key and scoring for the 10-minute quiz ([docx](teacher/u3-quiz-key-he.docx)) |
+| [`teacher/u3-mock-test-key-he.pdf`](teacher/u3-mock-test-key-he.pdf) | Key for the practice mock test ([docx](teacher/u3-mock-test-key-he.docx)) |
 | [`teacher/solutions/`](teacher/solutions) | 4 reference solutions (`*_Reference.py` and extras) |
 
 ## Status and open checks
@@ -46,6 +49,12 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 - Background paper: not yet added. The anchor-link check cannot run for this unit until it exists.
 - HTML decks: generated from the lab briefs, checked in a browser for layout and printing on one sample deck only; not reviewed by the teacher.
 - Ministry alignment: see [`docs/ministry-program/`](../../docs/ministry-program/README.md) and [`deck-sheet-backlog.md`](../../docs/ministry-program/deck-sheet-backlog.md) for open deck and sheet items.
+
+## Unit 3 quiz and mock test
+
+A 10-minute written quiz (no computer, 20 points, five questions of 4 points) for the start of the lesson on **22 Nov 2026**, before the lesson goes on to the input/output commands. Questions: types (4 values), legal variable names (circle), order of operations with and without parentheses (`+ - *` only), a two-variable trace table (`a = b` then `b = a`), and a packing question with `//` and `%` that has a small operator key on the page. It uses no `input()`, because input is taught after the quiz. Sheet: [`assessment/u3-quiz-students-he.pdf`](assessment/u3-quiz-students-he.pdf); key: [`teacher/u3-quiz-key-he.pdf`](teacher/u3-quiz-key-he.pdf) ([docx](teacher/u3-quiz-key-he.docx)). The quiz sheet exists only as the PDF the teacher approved; its Word source was edited by the teacher and is not in the repo.
+
+The **mock test** ([`assessment/u3-mock-test-students-he.pdf`](assessment/u3-mock-test-students-he.pdf), [docx](assessment/u3-mock-test-students-he.docx)) has the same five questions with different numbers and wording, for students to practice on (uploaded to Mashov Morim by the teacher). It names no class, and shows "10 minutes" and "20 points". Question 1 there is circling the type from `int, float, str, bool` instead of writing it; the quiz's Question 1 is the write-in version. Key: [`teacher/u3-mock-test-key-he.pdf`](teacher/u3-mock-test-key-he.pdf) ([docx](teacher/u3-mock-test-key-he.docx)). Neither has been given to students yet and no results exist.
 
 ## Detailed materials index
 

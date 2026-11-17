@@ -11,7 +11,7 @@ Python A (Grade 7), in teaching order. Every unit has an entry page; the unit na
 | 0 | [Unit 0 — Environment Setup](units/u0-environment-setup/README.md) | One 90-minute lab meeting (Lab + Lab) | planned | [plan](units/u0-environment-setup/unit-plan.md) | 1 lesson | - | complete, approved |
 | 1 | [Unit 1 — Introduction to Python](units/u1-introduction-python/README.md) | see unit | planned | [plan](units/u1-introduction-python/unit-plan.md) | 1 lesson | - | complete, approved |
 | 2 | [Unit 2 — Turtle & Graphics](units/u2-turtle-graphics/README.md) | 6 academic hours | planned | [plan](units/u2-turtle-graphics/unit-plan.md) | 3 lessons | [test sheets](units/u2-turtle-graphics/assessment) | complete, approved |
-| 3 | [Unit 3 — Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic/README.md) | 4 academic hours | planned | [plan](units/u3-variables-io-arithmetic/unit-plan.md) | 2 lessons | - | complete, approved |
+| 3 | [Unit 3 — Variables, Input/Output & Arithmetic](units/u3-variables-io-arithmetic/README.md) | 4 academic hours | planned | [plan](units/u3-variables-io-arithmetic/unit-plan.md) | 2 lessons | [quiz and mock test](units/u3-variables-io-arithmetic/assessment) | complete, approved |
 | 4 | [Unit 4 — Conditional Execution](units/u4-conditional-execution/README.md) | 6 academic hours | planned | [plan](units/u4-conditional-execution/unit-plan.md) | 3 lessons | - | complete, approved |
 | 5 | [Unit 5 — Repetition and Loops](units/u5-loops/README.md) | 8 academic hours | planned | [plan](units/u5-loops/unit-plan.md) | 4 lessons | - | complete, approved |
 | 6 | [Unit 6 — Strings](units/u6-strings/README.md) | 8 academic hours | planned | [plan](units/u6-strings/unit-plan.md) | 4 lessons | - | complete, approved |

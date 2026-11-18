@@ -36,7 +36,7 @@ Teaching order from [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-20
 | P11 | Feb 7 | Mixed lab + **T2 test** (all chapters, 60 min) | ⏳ | ⏳ | |
 | P12 | Feb 14 | T2 feedback, gap closing (former flex slot) | ⏳ | ⏳ | |
 | P13 | Feb 21 | **R1** rehearsal exam | ⏳ | ⏳ | |
-| P14 | Feb 28 | Review of R1, exam technique + **Q4 quiz** | ⏳ | ⏳ | |
+| P14 | Feb 28 | Review of R1, targeted practice, exam technique | ⏳ | ⏳ | |
 | P15 | Mar 7 | **R2** rehearsal exam | ⏳ | ⏳ | |
 | P16 | Mar 14 | Review of R2, aids sheet, logistics, no new material | ⏳ | ⏳ | |
 | — | **Mar 15** | **Mafmar exam** | | | |

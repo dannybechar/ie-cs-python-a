@@ -43,17 +43,17 @@ Phases: **A** teach exam material (P1–P10) · **B** full-scope tests and gap c
 | P11 | 7 Feb | Mixed lab across all examined chapters | **Test T2** (60 min, all examined chapters, mafmar format) |
 | P12 | 14 Feb | T2 feedback and gap closing by weak topic; Turtle basics refresher (the former flex slot, now used) | Short retake quizzes by topic |
 | P13 | 21 Feb | — | **Rehearsal R1**: past mafmar exam under exam conditions (full session) |
-| P14 | 28 Feb | Item-by-item review of R1; targeted practice; exam technique (reading the task, trace tables, time split) | **Quiz Q4** (10 min) on the weakest chapter |
+| P14 | 28 Feb | Item-by-item review of R1; targeted practice; exam technique (reading the task, trace tables, time split) | — |
 | P15 | 7 Mar | — | **Rehearsal R2**: second past exam or built mock, under exam conditions |
 | P16 | 14 Mar | Review of R2, aids sheet, logistics; quick-fire questions per chapter, Q&A. **No new material** | None (confidence, not stress) |
 
-Totals: 9 meetings of new material (3.2, 4.1–4.3, 5.1, 5.2, 7.1, 7.2, functions), 2 tests (T1, T2), 4 quizzes (Q1–Q4), 2 full rehearsals, 3 review and gap-closing meetings.
+Totals: 9 meetings of new material (3.2, 4.1–4.3, 5.1, 5.2, 7.1, 7.2, functions), 2 tests (T1, T2), 3 quizzes (Q1–Q3), 2 full rehearsals, 3 review and gap-closing meetings.
 
 ## 4. Rules of the plan
 
 - **Exam-first order:** nothing out of scope is taught before 15 Mar. Meetings 5.3, 5.4, 6.1–6.4, 7.3, 8.1, 8.3, 8.4 and 9.1–9.6 (16 meetings) move to **after the exam**, from 21 Mar. The school year then has about 11–14 Sundays for them, so merging will be needed. That is a later decision.
 - **Trim, don't extend:** 5.1–5.2 and 8.2 are compressed to exam scope. Official unit minutes (Unit 5: 360, Unit 8: 360) are not met before the exam; the remainder is taught afterwards.
-- **If a Sunday is lost:** there is no flex slot left (it was used when 3.2 moved to 22 Nov). Drop Q4 and shorten the T1 feedback; if a second is lost, make R2 a half-exam and fold exam technique into P16.
+- **If a Sunday is lost:** there is no flex slot left (it was used when 3.2 moved to 22 Nov). Shorten the T1 feedback and the P14 practice; if a second is lost, make R2 a half-exam and fold exam technique into P16.
 - **Past exams:** use only items inside the focus. The index of past exams is in [`ministry-source/exam-index-python-a-he.pdf`](ministry-source/exam-index-python-a-he.pdf) (links only, so the teacher must download them). Older exams can include `while`, strings or functions with parameters; mark or replace those items before use. Check the aids sheet (דף עזר) of the relevant year.
 - **Pass line before rehearsal:** T2 average and a per-chapter table decide what P12 covers.
 
@@ -69,7 +69,7 @@ Totals: 9 meetings of new material (3.2, 4.1–4.3, 5.1, 5.2, 7.1, 7.2, function
 | Item | For meeting | Status |
 |---|---|---|
 | Trimmed decks and briefs for 4.1–4.3, 5.1–5.2, 7.1–7.2, functions (no Turtle, no `not`) | P2–P10 | Not built; existing decks are pre-alignment |
-| Quizzes Q2, Q3, Q4 (Q1 exists) | P5, P10, P14 | Not built |
+| Quizzes Q2, Q3 (Q1 exists) | P5, P10 | Not built |
 | Tests T1 and T2 with keys | P7, P11 | Not built |
 | Mixed labs and gap-closing stations | P7, P11, P12 | Not built |
 | Mock exam in mafmar format (if the past exams are unsuitable) and keys | P13, P15 | Not built |

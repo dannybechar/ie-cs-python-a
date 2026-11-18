@@ -83,12 +83,12 @@ Exam-first order, approved 18 Nov 2026: [`docs/plan-to-mafmar-2027-03-15.md`](do
 | P11 | Feb 7 | Mixed lab across all examined chapters | **T2** test, all chapters (60 min) | ❌ | ⏳ |
 | P12 | Feb 14 | T2 feedback and gap closing by weak topic, Turtle basics refresher (**the former flex slot, now used**) | Retake quizzes by topic | ❌ | ⏳ |
 | P13 | Feb 21 | Rehearsal | **R1** past exam, exam conditions | ❌ | ⏳ |
-| P14 | Feb 28 | Review of R1, targeted practice, exam technique | **Q4** quiz, weakest chapter (10 min) | ❌ | ⏳ |
+| P14 | Feb 28 | Review of R1, targeted practice, exam technique | | ❌ | ⏳ |
 | P15 | Mar 7 | Rehearsal | **R2** second exam, exam conditions | ❌ | ⏳ |
 | P16 | Mar 14 | Review of R2, aids sheet, logistics, quick-fire questions; **no new material** | | ❌ | ⏳ |
 | — | **Mon Mar 15** | **Mafmar exam** | | | |
 
-No flex slot is left: if a Sunday is lost, shorten Q4 and the T1 feedback, and fold exam technique into P16.
+No flex slot is left: if a Sunday is lost, shorten the T1 feedback and the P14 practice, and fold exam technique into P16.
 
 ### After the exam: not examined on 15 Mar
 
@@ -161,7 +161,7 @@ Unit tests are assessment time on top of the lesson minutes and are not counted 
 | 3–5 | **T1** test Sun Jan 10 (45 min) | not built | — |
 | 7 | **Q3** quiz Sun Jan 31 (15 min) | not built | — |
 | all | **T2** test Sun Feb 7 (60 min) | not built | — |
-| all | **R1** Sun Feb 21, **R2** Sun Mar 7 (past exams, exam conditions); **Q4** Sun Feb 28 (10 min) | not built | — |
+| all | **R1** Sun Feb 21, **R2** Sun Mar 7 (past exams, exam conditions) | not built | — |
 
 ## Keeping this up to date
 

@@ -22,40 +22,40 @@ Status: **approved by the teacher on 18 Nov 2026**. Applies to Grade 7 and Grade
 ## 2. Calendar
 
 Sundays from 22 Nov to 14 Mar, skipping 6 Dec (Hanukkah, as in `course-map.md`): **16 meetings**. The 14 Mar meeting is the day before the exam.
-3.2 was taught on 15 Nov (confirmed). Still to confirm: no other Sunday closures (end-of-semester events, trips); exam length and room are not yet known.
+3.2 was **not** taught on 15 Nov (teacher's correction, 18 Nov): it moves to 22 Nov with the Q1 quiz, and the flex slot absorbs the shift. Still to confirm: no other Sunday closures (end-of-semester events, trips); exam length and room are not yet known.
 
 ## 3. The plan
 
-Phases: **A** teach exam material (meetings 1–9) · **B** full-scope tests and gap closing (10–11) · **C** exam rehearsal and final preparation (12–16).
+Phases: **A** teach exam material (P1–P10) · **B** full-scope tests and gap closing (P11–P12) · **C** exam rehearsal and final preparation (P13–P16).
 
 | # | Sunday | Content | Assessment / practice |
 |---:|---|---|---|
-| 1 | 22 Nov | 4.1 Boolean expressions, truth tables, `and`/`or` | **Quiz Q1** (10 min, Unit 3; already built) |
-| 2 | 29 Nov | 4.2 `if`, `if/else` | Trace-table warm-up (5 min) |
-| 3 | 13 Dec | 4.3 compound conditions, nesting, `elif`; Turtle part cut (not examined) | Exit ticket |
-| 4 | 20 Dec | 5.1 `for` and `range`, loop variable | **Quiz Q2** (15 min, Unit 4) |
-| 5 | 27 Dec | 5.2 `range` with a step; loop with a running total; Turtle shapes only as an optional extra | Trace-table warm-up |
-| 6 | 3 Jan | Mixed lab: ch. 3, 4, 5 together (45 min) | **Test T1** (45 min, Units 3–5) |
-| 7 | 10 Jan | T1 feedback (15 min) + 7.1 counter | Exit ticket |
-| 8 | 17 Jan | 7.2 accumulator, average, minimum and maximum | Trace-table warm-up |
-| 9 | 24 Jan | Functions in exam scope: structure, call, no parameters, no return, naming and documentation (8.2 trimmed) | **Quiz Q3** (15 min, Unit 7) |
-| 10 | 31 Jan | Mixed lab across all examined chapters | **Test T2** (60 min, all examined chapters, mafmar format) |
-| 11 | 7 Feb | Gap closing from T2: stations by weak topic; Turtle basics refresher | Short retake quizzes by topic. **Flex slot**: absorbs any lost Sunday |
-| 12 | 14 Feb | — | **Rehearsal R1**: past mafmar exam under exam conditions (full session) |
-| 13 | 21 Feb | Item-by-item review of R1; targeted practice on the errors seen | Quiz Q4 (10 min) on the weakest chapter |
-| 14 | 28 Feb | — | **Rehearsal R2**: second past exam or built mock, under exam conditions |
-| 15 | 7 Mar | Review of R2; exam technique (reading the task, trace tables, time split, aids sheet); logistics | Individual error lists |
-| 16 | 14 Mar | Light review: quick-fire questions per chapter, Q&A, rules. **No new material** | None (confidence, not stress) |
+| P1 | 22 Nov | **Q1 quiz first**, then 3.2 Input/Output & Arithmetic (not taught on 15 Nov) | **Quiz Q1** (10 min, variables; already built) |
+| P2 | 29 Nov | 4.1 Boolean expressions, truth tables, `and`/`or` | Trace-table warm-up (5 min) |
+| P3 | 13 Dec | 4.2 `if`, `if/else` | Exit ticket |
+| P4 | 20 Dec | 4.3 compound conditions, nesting, `elif`; Turtle part cut (not examined) | Trace-table warm-up |
+| P5 | 27 Dec | 5.1 `for` and `range`, loop variable | **Quiz Q2** (15 min, Unit 4) |
+| P6 | 3 Jan | 5.2 `range` with a step; loop with a running total; Turtle only as an optional extra | Trace-table warm-up |
+| P7 | 10 Jan | Mixed lab: ch. 3, 4, 5 together (45 min) | **Test T1** (45 min, Units 3–5) |
+| P8 | 17 Jan | T1 feedback (15 min) + 7.1 counter | Exit ticket |
+| P9 | 24 Jan | 7.2 accumulator, average, minimum and maximum | Trace-table warm-up |
+| P10 | 31 Jan | Functions in exam scope: structure, call, no parameters, no return, naming and documentation (8.2 trimmed) | **Quiz Q3** (15 min, Unit 7) |
+| P11 | 7 Feb | Mixed lab across all examined chapters | **Test T2** (60 min, all examined chapters, mafmar format) |
+| P12 | 14 Feb | T2 feedback and gap closing by weak topic; Turtle basics refresher (the former flex slot, now used) | Short retake quizzes by topic |
+| P13 | 21 Feb | — | **Rehearsal R1**: past mafmar exam under exam conditions (full session) |
+| P14 | 28 Feb | Item-by-item review of R1; targeted practice; exam technique (reading the task, trace tables, time split) | **Quiz Q4** (10 min) on the weakest chapter |
+| P15 | 7 Mar | — | **Rehearsal R2**: second past exam or built mock, under exam conditions |
+| P16 | 14 Mar | Review of R2, aids sheet, logistics; quick-fire questions per chapter, Q&A. **No new material** | None (confidence, not stress) |
 
-Totals: 8 meetings of new material (4.1–4.3, 5.1, 5.2, 7.1, 7.2, functions), 3 tests (T1, T2 plus the Unit 3 quiz as Q1), 4 quizzes, 2 full rehearsals, 4 review and gap-closing meetings, 1 final light meeting.
+Totals: 9 meetings of new material (3.2, 4.1–4.3, 5.1, 5.2, 7.1, 7.2, functions), 2 tests (T1, T2), 4 quizzes (Q1–Q4), 2 full rehearsals, 3 review and gap-closing meetings.
 
 ## 4. Rules of the plan
 
 - **Exam-first order:** nothing out of scope is taught before 15 Mar. Meetings 5.3, 5.4, 6.1–6.4, 7.3, 8.1, 8.3, 8.4 and 9.1–9.6 (16 meetings) move to **after the exam**, from 21 Mar. The school year then has about 11–14 Sundays for them, so merging will be needed. That is a later decision.
 - **Trim, don't extend:** 5.1–5.2 and 8.2 are compressed to exam scope. Official unit minutes (Unit 5: 360, Unit 8: 360) are not met before the exam; the remainder is taught afterwards.
-- **If a Sunday is lost:** use the flex slot (meeting 11). If a second is lost, shorten R2 into a half-exam and move the review into meeting 15.
+- **If a Sunday is lost:** there is no flex slot left (it was used when 3.2 moved to 22 Nov). Drop Q4 and shorten the T1 feedback; if a second is lost, make R2 a half-exam and fold exam technique into P16.
 - **Past exams:** use only items inside the focus. The index of past exams is in [`ministry-source/exam-index-python-a-he.pdf`](ministry-source/exam-index-python-a-he.pdf) (links only, so the teacher must download them). Older exams can include `while`, strings or functions with parameters; mark or replace those items before use. Check the aids sheet (דף עזר) of the relevant year.
-- **Pass line before rehearsal:** T2 average and a per-chapter table decide what meeting 11 covers.
+- **Pass line before rehearsal:** T2 average and a per-chapter table decide what P12 covers.
 
 ## 5. Open questions
 
@@ -68,9 +68,9 @@ Totals: 8 meetings of new material (4.1–4.3, 5.1, 5.2, 7.1, 7.2, functions), 3
 
 | Item | For meeting | Status |
 |---|---|---|
-| Trimmed decks and briefs for 4.3, 5.1–5.2, functions (no Turtle, no `not`) | 3, 4, 5, 9 | Not built; existing decks are pre-alignment |
-| Quizzes Q2, Q3, Q4 (Q1 exists) | 4, 9, 13 | Not built |
-| Tests T1 and T2 with keys | 6, 10 | Not built |
-| Mixed labs and gap-closing stations | 6, 10, 11 | Not built |
-| Mock exam in mafmar format (if the past exams are unsuitable) and keys | 12, 14 | Not built |
-| Update `course-map.md` and `class-progress.md` to this order | after approval | Not done |
+| Trimmed decks and briefs for 4.1–4.3, 5.1–5.2, 7.1–7.2, functions (no Turtle, no `not`) | P2–P10 | Not built; existing decks are pre-alignment |
+| Quizzes Q2, Q3, Q4 (Q1 exists) | P5, P10, P14 | Not built |
+| Tests T1 and T2 with keys | P7, P11 | Not built |
+| Mixed labs and gap-closing stations | P7, P11, P12 | Not built |
+| Mock exam in mafmar format (if the past exams are unsuitable) and keys | P13, P15 | Not built |
+| Update `course-map.md` and `class-progress.md` to this order | — | Done 18 Nov, revised the same day for 3.2 on 22 Nov |

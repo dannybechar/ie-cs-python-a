@@ -35,10 +35,10 @@ year is 31 meetings.
 ## Deadline and pace
 
 - **Deadline:** the Ministry's Python A exam (בחינת מפמ"ר) is **Monday 15 Mar 2027** (focus document [`focus-python-a-tashpaz-he.pdf`](docs/ministry-source/focus-python-a-tashpaz-he.pdf)). The earlier estimate of May 2027 is obsolete.
-- **Approved plan:** [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-2027-03-15.md): 16 Sundays from 22 Nov to 14 Mar (6 Dec skipped), 9 of them for exam material, then tests, gap closing and two full rehearsals.
-- **Exam scope:** chapters 1–5 and 7, without `not`, `while`, nested loops, strings, random numbers, `global`, parameters, event-driven programming, or Turtle combined with variables, conditions, loops or algorithms. Exam-first order is now the **Schedule** below: before 15 Mar only 4.1–4.3, 5.1–5.2, 7.1–7.2 and exam-scope functions (8.2 trimmed) are taught; meetings 5.3, 5.4, 6.1–6.4, 7.3, 8.1, 8.3, 8.4 and 9.1–9.6 come after the exam.
+- **Approved plan:** [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-2027-03-15.md): 16 Sundays from 22 Nov to 14 Mar (6 Dec skipped), 10 of them for exam material (3.2 on Nov 22 included), then tests, gap closing and two full rehearsals.
+- **Exam scope:** chapters 1–5 and 7, without `not`, `while`, nested loops, strings, random numbers, `global`, parameters, event-driven programming, or Turtle combined with variables, conditions, loops or algorithms. Exam-first order is now the **Schedule** below: before 15 Mar only 3.2, 4.1–4.3, 5.1–5.2, 7.1–7.2 and exam-scope functions (8.2 trimmed) are taught; meetings 5.3, 5.4, 6.1–6.4, 7.3, 8.1, 8.3, 8.4 and 9.1–9.6 come after the exam.
 - **After the exam:** 16 meetings remain for about 11–14 Sundays (from 21 Mar, minus the Passover break and holidays); merging will be needed, to be decided later.
-- **Check after every lesson:** the plan's meeting for that Sunday was taught or the flex slot (7 Feb) was used.
+- **Check after every lesson:** the plan's meeting for that Sunday was taught. There is no flex slot left (it absorbed the move of 3.2 to Nov 22).
 
 ## Open coverage gaps
 
@@ -63,29 +63,32 @@ Exam-first order, approved 18 Nov 2026: [`docs/plan-to-mafmar-2027-03-15.md`](do
 | 2.1–2.3 Turtle & Graphics | Turtle library, pen and shape, geometry challenge | Oct 18 – Nov 1, 2026 |
 | Unit 2 written test | Turtle basics | Grade 8 Oct 29, Grade 7 Nov 6 |
 | 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | Nov 8, 2026 ✅ |
-| 3.2 Variables, Input/Output & Arithmetic | Input → calculation → output | Nov 15, 2026 ✅ |
+
+3.2 was **not** taught on Nov 15 (teacher's correction, 18 Nov); it moves to Nov 22 together with the Q1 quiz. Both grades follow the same schedule.
 
 ### Before the exam: P1–P16 (Sundays, 6 Dec skipped)
 
 | Plan | Sunday | Content (exam scope only) | Quiz / test | Built | Status |
 |---|---|---|---|:---:|:---:|
-| P1 | Nov 22 | 4.1 Boolean expressions, truth tables, `and`/`or` | **Q1** quiz, Unit 3 (10 min) | ✂ / ✅ Q1 | ▶ |
-| P2 | Nov 29 | 4.2 `if`, `if/else`, input filter | | ✂ | ⏳ |
-| P3 | Dec 13 | 4.3 compound conditions, nesting, `elif` (no Turtle part, no `not`) | | ✂ | ⏳ |
-| P4 | Dec 20 | 5.1 `for` and `range`, loop variable, running total | **Q2** quiz, Unit 4 (15 min) | ✂ / ❌ Q2 | ⏳ |
-| P5 | Dec 27 | 5.2 `range` with a step; loops with a total (Turtle only as an optional extra) | | ✂ | ⏳ |
-| P6 | Jan 3 | Mixed lab: chapters 3, 4, 5 | **T1** test, Units 3–5 (45 min) | ❌ | ⏳ |
-| P7 | Jan 10 | T1 feedback (15 min) + 7.1 counter pattern | | ✂ | ⏳ |
-| P8 | Jan 17 | 7.2 accumulator, average, minimum and maximum | | ✂ | ⏳ |
-| P9 | Jan 24 | Functions in exam scope: structure, call, no parameters, no return, naming and documentation (8.2 trimmed) | **Q3** quiz, Unit 7 (15 min) | ✂ / ❌ Q3 | ⏳ |
-| P10 | Jan 31 | Mixed lab across all examined chapters | **T2** test, all chapters (60 min) | ❌ | ⏳ |
-| P11 | Feb 7 | Gap closing from T2, Turtle basics refresher. **Flex slot** for a lost Sunday | Retake quizzes by topic | ❌ | ⏳ |
-| P12 | Feb 14 | Rehearsal | **R1** past exam, exam conditions | ❌ | ⏳ |
-| P13 | Feb 21 | Review of R1, targeted practice | **Q4** quiz, weakest chapter (10 min) | ❌ | ⏳ |
-| P14 | Feb 28 | Rehearsal | **R2** second exam, exam conditions | ❌ | ⏳ |
-| P15 | Mar 7 | Review of R2, exam technique, aids sheet, logistics | | ❌ | ⏳ |
-| P16 | Mar 14 | Light review, quick-fire questions, Q&A; **no new material** | | ❌ | ⏳ |
+| P1 | Nov 22 | **Q1 quiz** first (10 min, variables), then 3.2 Input/Output & Arithmetic: input → calculation → output | **Q1** quiz, Unit 3 | ✅ / ✅ Q1 | ▶ |
+| P2 | Nov 29 | 4.1 Boolean expressions, truth tables, `and`/`or` | | ✂ | ⏳ |
+| P3 | Dec 13 | 4.2 `if`, `if/else`, input filter | | ✂ | ⏳ |
+| P4 | Dec 20 | 4.3 compound conditions, nesting, `elif` (no Turtle part, no `not`) | | ✂ | ⏳ |
+| P5 | Dec 27 | 5.1 `for` and `range`, loop variable, running total | **Q2** quiz, Unit 4 (15 min) | ✂ / ❌ Q2 | ⏳ |
+| P6 | Jan 3 | 5.2 `range` with a step; loops with a total (Turtle only as an optional extra) | | ✂ | ⏳ |
+| P7 | Jan 10 | Mixed lab: chapters 3, 4, 5 | **T1** test, Units 3–5 (45 min) | ❌ | ⏳ |
+| P8 | Jan 17 | T1 feedback (15 min) + 7.1 counter pattern | | ✂ | ⏳ |
+| P9 | Jan 24 | 7.2 accumulator, average, minimum and maximum | | ✂ | ⏳ |
+| P10 | Jan 31 | Functions in exam scope: structure, call, no parameters, no return, naming and documentation (8.2 trimmed) | **Q3** quiz, Unit 7 (15 min) | ✂ / ❌ Q3 | ⏳ |
+| P11 | Feb 7 | Mixed lab across all examined chapters | **T2** test, all chapters (60 min) | ❌ | ⏳ |
+| P12 | Feb 14 | T2 feedback and gap closing by weak topic, Turtle basics refresher (**the former flex slot, now used**) | Retake quizzes by topic | ❌ | ⏳ |
+| P13 | Feb 21 | Rehearsal | **R1** past exam, exam conditions | ❌ | ⏳ |
+| P14 | Feb 28 | Review of R1, targeted practice, exam technique | **Q4** quiz, weakest chapter (10 min) | ❌ | ⏳ |
+| P15 | Mar 7 | Rehearsal | **R2** second exam, exam conditions | ❌ | ⏳ |
+| P16 | Mar 14 | Review of R2, aids sheet, logistics, quick-fire questions; **no new material** | | ❌ | ⏳ |
 | — | **Mon Mar 15** | **Mafmar exam** | | | |
+
+No flex slot is left: if a Sunday is lost, shorten Q4 and the T1 feedback, and fold exam technique into P16.
 
 ### After the exam: not examined on 15 Mar
 
@@ -154,11 +157,11 @@ Unit tests are assessment time on top of the lesson minutes and are not counted 
 | 2 | Turtle & Graphics, 45 min, 25 multiple-choice questions | A and B | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-test) |
 | 2 | Turtle basics (5 commands), 60 min, written: 2 MC + 2 analysis + 2 code | A | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-written-test) |
 | 3 | **Q1** quiz Sun Nov 22 (10 min) and practice mock test | — | [`units/u3-variables-io-arithmetic/assessment`](units/u3-variables-io-arithmetic/assessment) |
-| 4 | **Q2** quiz Sun Dec 20 (15 min) | not built | — |
-| 3–5 | **T1** test Sun Jan 3 (45 min) | not built | — |
-| 7 | **Q3** quiz Sun Jan 24 (15 min) | not built | — |
-| all | **T2** test Sun Jan 31 (60 min) | not built | — |
-| all | **R1** Sun Feb 14, **R2** Sun Feb 28 (past exams, exam conditions); **Q4** Sun Feb 21 (10 min) | not built | — |
+| 4 | **Q2** quiz Sun Dec 27 (15 min) | not built | — |
+| 3–5 | **T1** test Sun Jan 10 (45 min) | not built | — |
+| 7 | **Q3** quiz Sun Jan 31 (15 min) | not built | — |
+| all | **T2** test Sun Feb 7 (60 min) | not built | — |
+| all | **R1** Sun Feb 21, **R2** Sun Mar 7 (past exams, exam conditions); **Q4** Sun Feb 28 (10 min) | not built | — |
 
 ## Keeping this up to date
 

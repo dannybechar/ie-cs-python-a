@@ -28,8 +28,9 @@ Unit 0 is a school addition outside the 30 official meetings. "Background paper:
 | [`course-map.md`](course-map.md) | Schedule, minute budget and meeting log for all 31 meetings |
 | [`class-progress.md`](class-progress.md) | Where the two classes (Grade 7 and Grade 8) actually are |
 | [`docs/annual-strategy.md`](docs/annual-strategy.md) | Year-wide pedagogical strategy |
+| [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-2027-03-15.md) | Approved exam-first plan to the mafmar exam on 15 Mar 2027: dated meetings, quizzes, tests, rehearsals |
 | [`docs/ministry-program/`](docs/ministry-program/README.md) | The ministry Classroom program (content authority), traceability and per-unit audits |
-| [`docs/ministry-source/`](docs/ministry-source) | The official ministry PDFs (hours, circulars) |
+| [`docs/ministry-source/`](docs/ministry-source) | The official ministry PDFs (hours, circulars, exam index, the תשפ"ז exam focus document) |
 | [`docs/reviews/`](docs/reviews/README.md) | External lesson and test reviews |
 | [`docs/standards/`](docs/standards/README.md) | Governing standards for this repository |
 | [`tools/`](tools) | Deck patch kit, lab-sheet builder, unit-test builder, ministry import, lesson-deck generator, `check-repo.py` |

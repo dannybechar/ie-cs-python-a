@@ -34,21 +34,11 @@ year is 31 meetings.
 
 ## Deadline and pace
 
-- **Deadline:** the Ministry's Python A exam (בחינת מפמ"ר) is estimated for **May 2027**, with the exact date to be sent during the year
-  ([`ministry-circular-tashpaz-he.pdf`](docs/ministry-source/ministry-circular-tashpaz-he.pdf), p.2).
-  All 9 units must be taught before it, not by the end of June.
-- **Meetings needed:** 31 = 30 official + Unit 0.
-- **Meetings available:** one double meeting a week, on **Sundays**, starting **Sunday, Oct 4, 2026** (after the Sukkot break).
-  Skipping the Hanukkah Sunday (Dec 6) and the Passover break (Sundays Apr 11, 18 and 25, 2027), there are
-  **26 meetings by the end of April** and 31 only by **Sunday, May 30, 2027**.
-  Sunday-specific checks, to confirm against the school's official calendar:
-  - **Oct 4** is the day after Simchat Torah (Isru Chag). If school is closed, every meeting moves one week later and meeting 31 falls on June 6.
-  - **Apr 11** may still be a school day before the Passover break. If so, one meeting is gained.
-  - The other holidays before the exam fall on weekdays, not Sundays: election day (Oct 27), Purim (Mar 23),
-    Holocaust Remembrance Day (May 4), Memorial/Independence Day (May 11–12) and Lag BaOmer (May 25).
-- **Gap:** 31 meetings are needed, so **meetings 27–31 (Unit 9 m2–m6) fall in May**, the exam month. If the exam is early
-  in May, up to 5 meetings of Unit 9 would come after it. Decide before winter which meetings to merge, or find extra time.
-- **Check after every lesson:** meetings left in the schedule below ≤ meetings left before the exam.
+- **Deadline:** the Ministry's Python A exam (בחינת מפמ"ר) is **Monday 15 Mar 2027** (focus document [`focus-python-a-tashpaz-he.pdf`](docs/ministry-source/focus-python-a-tashpaz-he.pdf)). The earlier estimate of May 2027 is obsolete.
+- **Approved plan:** [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-2027-03-15.md): 16 Sundays from 22 Nov to 14 Mar (6 Dec skipped), 9 of them for exam material, then tests, gap closing and two full rehearsals.
+- **Exam scope:** chapters 1–5 and 7, without `not`, `while`, nested loops, strings, random numbers, `global`, parameters, event-driven programming, or Turtle combined with variables, conditions, loops or algorithms. Exam-first order is now the **Schedule** below: before 15 Mar only 4.1–4.3, 5.1–5.2, 7.1–7.2 and exam-scope functions (8.2 trimmed) are taught; meetings 5.3, 5.4, 6.1–6.4, 7.3, 8.1, 8.3, 8.4 and 9.1–9.6 come after the exam.
+- **After the exam:** 16 meetings remain for about 11–14 Sundays (from 21 Mar, minus the Passover break and holidays); merging will be needed, to be decided later.
+- **Check after every lesson:** the plan's meeting for that Sunday was taught or the flex slot (7 Feb) was used.
 
 ## Open coverage gaps
 
@@ -62,41 +52,60 @@ Ministry alignment (2026-11-13): the ministry Classroom program is the content a
 
 ## Schedule
 
-All 31 meetings in teaching order. Fill in **Target week** once the school calendar is known, and **Taught on** after each lesson. What each class has actually completed is tracked in [`class-progress.md`](class-progress.md).
+Exam-first order, approved 18 Nov 2026: [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-2027-03-15.md). Live status per class is in [`class-progress.md`](class-progress.md). Status: ✅ taught · ▶ next · ⏳ planned. Built: ✅ ready · ✂ built but must be trimmed to the exam scope · ❌ to build.
 
-| # | Meeting | Content | Built | Target week (starts Sunday) | Taught on |
-|---:|---|---|---|---|---|
-| 1 | 0.1 Environment Setup | Install, check, save | ✅ | Oct 4, 2026 | |
-| 2 | 1.1 Introduction to Python | First program: print, comments, first function | ✅ | Oct 11, 2026 | |
-| 3 | 2.1 Turtle & Graphics | Turtle library, work surface, movement | ✅ | Oct 18, 2026 | |
-| 4 | 2.2 Turtle & Graphics | Pen and shape attributes | ✅ | Oct 25, 2026 | |
-| 5 | 2.3 Turtle & Graphics | Geometry challenge | ✅ | Nov 1, 2026 | |
-| 6 | 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | ✅ | Nov 8, 2026 | Nov 8, 2026 |
-| 7 | 3.2 Variables, Input/Output & Arithmetic | Input → calculation → output | ✅ | Nov 15, 2026 | |
-| 8 | 4.1 Conditional Execution | Boolean expressions, truth tables, and/or | ✅ | Nov 22, 2026 | |
-| 9 | 4.2 Conditional Execution | if and if/else, input filter | ✅ | Nov 29, 2026 | |
-| 10 | 4.3 Conditional Execution | Compound conditions, nesting, Turtle, checkpoint | ✅ | Dec 13, 2026 | |
-| 11 | 5.1 Repetition and Loops | Why loops; for and range, loop variable, running total | ✅ | Dec 20, 2026 | |
-| 12 | 5.2 Repetition and Loops | range with a step; Turtle polygons, spiral, star | ✅ | Dec 27, 2026 | |
-| 13 | 5.3 Repetition and Loops | while, update, sentinel, for vs while | ✅ | Jan 3, 2027 | |
-| 14 | 5.4 Repetition and Loops | Nested loops, rolling execution, checkpoint | ✅ | Jan 10, 2027 | |
-| 15 | 6.1 Strings | str, empty string, len, indexes | ✅ | Jan 17, 2027 | |
-| 16 | 6.2 Strings | + and *, strings vs numbers, in, loop over characters | ✅ | Jan 24, 2027 | |
-| 17 | 6.3 Strings | Slicing: start, end, step, reverse | ✅ | Jan 31, 2027 | |
-| 18 | 6.4 Strings | String operations, Turtle write, unit checkpoint | ✅ | Feb 7, 2027 | |
-| 19 | 7.1 Algorithmic Problems | Counter pattern, two counters | ✅ | Feb 14, 2027 | |
-| 20 | 7.2 Algorithmic Problems | Accumulator, average, minimum and maximum | ✅ | Feb 21, 2027 | |
-| 21 | 7.3 Algorithmic Problems | Random numbers, simulation, Turtle random walk, checkpoint | ✅ | Feb 28, 2027 | |
-| 22 | 8.1 Functions with Parameters | Why functions; definition vs call; main() | ✅ | Mar 7, 2027 | |
-| 23 | 8.2 Functions with Parameters | Functions without parameters; input inside; Turtle house | ✅ | Mar 14, 2027 | |
-| 24 | 8.3 Functions with Parameters | Parameters and arguments; Turtle sizes | ✅ | Mar 21, 2027 | |
-| 25 | 8.4 Functions with Parameters | Scope, global, Turtle spiral, checkpoint | ✅ | Mar 28, 2027 | |
-| 26 | 9.1 Event-Driven Programming | Why event-driven; event, listener, response; first click | ✅ | Apr 4, 2027 | |
-| 27 | 9.2 Event-Driven Programming | Clicking the rover: onclick, (x, y), state | ✅ | May 2, 2027 ⚠️ May | |
-| 28 | 9.3 Event-Driven Programming | Clicking the screen: onscreenclick, goto, stamps | ✅ | May 9, 2027 ⚠️ May | |
-| 29 | 9.4 Event-Driven Programming | Keyboard: listen, onkey, borders | ✅ | May 16, 2027 ⚠️ May | |
-| 30 | 9.5 Event-Driven Programming | Animation with a timer: ontimer, bounce, stop/start | ✅ | May 23, 2027 ⚠️ May | |
-| 31 | 9.6 Event-Driven Programming | Final game project and checkpoint | ✅ | May 30, 2027 ⚠️ May | |
+### Taught so far
+
+| Meeting | Content | Date |
+|---|---|---|
+| 0.1 Environment Setup | Install, check, save | Oct 4, 2026 |
+| 1.1 Introduction to Python | First program: print, comments, first function | Oct 11, 2026 |
+| 2.1–2.3 Turtle & Graphics | Turtle library, pen and shape, geometry challenge | Oct 18 – Nov 1, 2026 |
+| Unit 2 written test | Turtle basics | Grade 8 Oct 29, Grade 7 Nov 6 |
+| 3.1 Variables, Input/Output & Arithmetic | Variables, types, input, friendly output | Nov 8, 2026 ✅ |
+| 3.2 Variables, Input/Output & Arithmetic | Input → calculation → output | Nov 15, 2026 ✅ |
+
+### Before the exam: P1–P16 (Sundays, 6 Dec skipped)
+
+| Plan | Sunday | Content (exam scope only) | Quiz / test | Built | Status |
+|---|---|---|---|:---:|:---:|
+| P1 | Nov 22 | 4.1 Boolean expressions, truth tables, `and`/`or` | **Q1** quiz, Unit 3 (10 min) | ✂ / ✅ Q1 | ▶ |
+| P2 | Nov 29 | 4.2 `if`, `if/else`, input filter | | ✂ | ⏳ |
+| P3 | Dec 13 | 4.3 compound conditions, nesting, `elif` (no Turtle part, no `not`) | | ✂ | ⏳ |
+| P4 | Dec 20 | 5.1 `for` and `range`, loop variable, running total | **Q2** quiz, Unit 4 (15 min) | ✂ / ❌ Q2 | ⏳ |
+| P5 | Dec 27 | 5.2 `range` with a step; loops with a total (Turtle only as an optional extra) | | ✂ | ⏳ |
+| P6 | Jan 3 | Mixed lab: chapters 3, 4, 5 | **T1** test, Units 3–5 (45 min) | ❌ | ⏳ |
+| P7 | Jan 10 | T1 feedback (15 min) + 7.1 counter pattern | | ✂ | ⏳ |
+| P8 | Jan 17 | 7.2 accumulator, average, minimum and maximum | | ✂ | ⏳ |
+| P9 | Jan 24 | Functions in exam scope: structure, call, no parameters, no return, naming and documentation (8.2 trimmed) | **Q3** quiz, Unit 7 (15 min) | ✂ / ❌ Q3 | ⏳ |
+| P10 | Jan 31 | Mixed lab across all examined chapters | **T2** test, all chapters (60 min) | ❌ | ⏳ |
+| P11 | Feb 7 | Gap closing from T2, Turtle basics refresher. **Flex slot** for a lost Sunday | Retake quizzes by topic | ❌ | ⏳ |
+| P12 | Feb 14 | Rehearsal | **R1** past exam, exam conditions | ❌ | ⏳ |
+| P13 | Feb 21 | Review of R1, targeted practice | **Q4** quiz, weakest chapter (10 min) | ❌ | ⏳ |
+| P14 | Feb 28 | Rehearsal | **R2** second exam, exam conditions | ❌ | ⏳ |
+| P15 | Mar 7 | Review of R2, exam technique, aids sheet, logistics | | ❌ | ⏳ |
+| P16 | Mar 14 | Light review, quick-fire questions, Q&A; **no new material** | | ❌ | ⏳ |
+| — | **Mon Mar 15** | **Mafmar exam** | | | |
+
+### After the exam: not examined on 15 Mar
+
+16 meetings, but only **12 Sundays** are expected (Mar 21, 28, Apr 4; Passover break Apr 11–25; then May 2 to Jun 27, with the end of the school year still to confirm). Four meetings will need merging or an extra slot: decide after the exam.
+
+| Order | Meeting | Content | Built | Status |
+|---:|---|---|:---:|:---:|
+| 1 | 5.3 Repetition and Loops | `while`, update, sentinel, `for` vs `while` | ✅ | ⏳ |
+| 2 | 5.4 Repetition and Loops | Nested loops, rolling execution, checkpoint | ✅ | ⏳ |
+| 3 | 6.1 Strings | `str`, empty string, `len`, indexes | ✅ | ⏳ |
+| 4 | 6.2 Strings | `+` and `*`, `in`, loop over characters | ✅ | ⏳ |
+| 5 | 6.3 Strings | Slicing | ✅ | ⏳ |
+| 6 | 6.4 Strings | String operations, Turtle `write`, checkpoint | ✅ | ⏳ |
+| 7 | 7.3 Algorithmic Problems | Random numbers, simulation, Turtle random walk | ✅ | ⏳ |
+| 8 | 8.1 Functions with Parameters | Why functions; definition vs call; `main()` | ✅ | ⏳ |
+| 9 | 8.3 Functions with Parameters | Parameters and arguments; Turtle sizes | ✅ | ⏳ |
+| 10 | 8.4 Functions with Parameters | Scope, `global`, Turtle spiral, checkpoint | ✅ | ⏳ |
+| 11–16 | 9.1–9.6 Event-Driven Programming | Events, `onclick`, `onscreenclick`, keyboard, timer, final game | ✅ | ⏳ |
+
+Meeting numbers 1–31 in the **Meeting log** below stay the repository numbers (file names and unit pages); the teaching order is the tables above.
 
 ## Meeting log
 
@@ -144,6 +153,12 @@ Unit tests are assessment time on top of the lesson minutes and are not counted 
 |---|---|---|---|
 | 2 | Turtle & Graphics, 45 min, 25 multiple-choice questions | A and B | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-test) |
 | 2 | Turtle basics (5 commands), 60 min, written: 2 MC + 2 analysis + 2 code | A | [`units/u2-turtle-graphics`](units/u2-turtle-graphics/README.md#unit-2-written-test) |
+| 3 | **Q1** quiz Sun Nov 22 (10 min) and practice mock test | — | [`units/u3-variables-io-arithmetic/assessment`](units/u3-variables-io-arithmetic/assessment) |
+| 4 | **Q2** quiz Sun Dec 20 (15 min) | not built | — |
+| 3–5 | **T1** test Sun Jan 3 (45 min) | not built | — |
+| 7 | **Q3** quiz Sun Jan 24 (15 min) | not built | — |
+| all | **T2** test Sun Jan 31 (60 min) | not built | — |
+| all | **R1** Sun Feb 14, **R2** Sun Feb 28 (past exams, exam conditions); **Q4** Sun Feb 21 (10 min) | not built | — |
 
 ## Keeping this up to date
 

@@ -26,7 +26,7 @@ The unit's background paper (`background-paper.md`) is **not yet added**; it is 
 | # | Lesson (Hebrew lab brief as `.md`; HTML deck; slide PDF) | Level (theory / practice min) | Review status |
 |---|---|---|---|
 | 1 | **Unit 3.1 — Variables, Input/Output & Arithmetic** · The Rover's Memory<br>[md](lessons/L01-the-rovers-memory.md) · [html](lessons/L01-the-rovers-memory.html) · [slides PDF](lessons/L01-the-rovers-memory/slides-he.pdf) | 45 / 45 | Approved by the teacher |
-| 2 | **Unit 3.2 — Variables, Input/Output & Arithmetic** · From Input to Result<br>[md](lessons/L02-from-input-to-result.md) · [html](lessons/L02-from-input-to-result.html) · [slides PDF](lessons/L02-from-input-to-result/slides-he.pdf) | 0 / 90 | Approved by the teacher |
+| 2 | **Unit 3.2 — Variables, Input/Output & Arithmetic** · From Input to Result<br>[md](lessons/L02-from-input-to-result.md) · [html](lessons/L02-from-input-to-result.html) · [slides PDF](lessons/L02-from-input-to-result/slides-he.pdf) · [30-min deck (5 slides)](lessons/L02-from-input-to-result/consolidation-deck-he.html) | 0 / 90 | Approved by the teacher |
 
 The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-decks/`](../../tools/lesson-decks/README.md); they have not been reviewed by the teacher. GitHub shows `.html` as source: open a downloaded copy in a browser.
 
@@ -38,6 +38,8 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 | [`teacher/L02-from-input-to-result-notes.md`](teacher/L02-from-input-to-result-notes.md) | Lesson notes: minute-by-minute plan |
 | [`teacher/L02-from-input-to-result-recap-he.md`](teacher/L02-from-input-to-result-recap-he.md) | Hebrew recap script |
 | [`teacher/L02-from-input-to-result-run-of-show-he.md`](teacher/L02-from-input-to-result-run-of-show-he.md) | Run of show with slide numbers |
+| [`teacher/L02-lab20-key-he.md`](teacher/L02-lab20-key-he.md) | Key for the 20-minute lab sheet (`lessons/L02-from-input-to-result/lab20-sheet-he.html`) |
+| [`teacher/L02-consolidation-deck-notes-he.md`](teacher/L02-consolidation-deck-notes-he.md) | Notes and answers for the 5-slide `input()` + operators deck |
 | [`teacher/u3-lab-sheets-key-he.pdf`](teacher/u3-lab-sheets-key-he.pdf) | Answer key |
 | [`teacher/u3-quiz-key-he.pdf`](teacher/u3-quiz-key-he.pdf) | Key and scoring for the 10-minute quiz ([docx](teacher/u3-quiz-key-he.docx)) |
 | [`teacher/u3-mock-test-key-he.pdf`](teacher/u3-mock-test-key-he.pdf) | Key for the practice mock test ([docx](teacher/u3-mock-test-key-he.docx)) |

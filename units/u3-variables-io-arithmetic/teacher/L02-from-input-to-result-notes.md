@@ -1,5 +1,8 @@
 # Unit 3.2 — Variables, Input/Output & Arithmetic
 
+> **Update 20 Nov 2026:** `input()` was not taught in 3.1. In the lecture half, minutes 0–3 are a shortened recap, **minutes 3–11 teach `input()` for the first time** (script: `L02-input-first-teaching-he.md`, 3.1 deck slides 13–16), and the `**` / order-of-operations block (41–44) and the naming-rules aside moved to 4.1. **Order updated later on 20 Nov:** lecture 0–45, lab 45–75 (30 min), buffer 75–80, Q1 quiz 80–90 as an exit ticket; swap/update moved to 4.1. The authoritative timing is in `L02-from-input-to-result-run-of-show-he.md`; the minute headings below predate this change.
+
+
 ## Grade 7 / Python A · Lesson Strategy v2
 ### Topic: From Input to Result
 

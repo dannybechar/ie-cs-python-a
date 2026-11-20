@@ -30,7 +30,7 @@ Phases: **A** teach exam material (P1–P10) · **B** full-scope tests and gap c
 
 | # | Sunday | Content | Assessment / practice |
 |---:|---|---|---|
-| P1 | 22 Nov | **Q1 quiz first**, then 3.2 Input/Output & Arithmetic (not taught on 15 Nov) | **Quiz Q1** (10 min, variables; already built) |
+| P1 | 22 Nov | 3.2 Input/Output & Arithmetic (not taught on 15 Nov; first teaching of `input()`), then **Q1 quiz as an exit ticket** | **Quiz Q1** (10 min, variables; already built) |
 | P2 | 29 Nov | 4.1 Boolean expressions, truth tables, `and`/`or` | Trace-table warm-up (5 min) |
 | P3 | 13 Dec | 4.2 `if`, `if/else` | Exit ticket |
 | P4 | 20 Dec | 4.3 compound conditions, nesting, `elif`; Turtle part cut (not examined) | Trace-table warm-up |

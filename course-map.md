@@ -70,7 +70,7 @@ Exam-first order, approved 18 Nov 2026: [`docs/plan-to-mafmar-2027-03-15.md`](do
 
 | Plan | Sunday | Content (exam scope only) | Quiz / test | Built | Status |
 |---|---|---|---|:---:|:---:|
-| P1 | Nov 22 | **Q1 quiz** first (10 min, variables), then 3.2 Input/Output & Arithmetic: input → calculation → output | **Q1** quiz, Unit 3 | ✅ / ✅ Q1 | ▶ |
+| P1 | Nov 22 | 3.2 Input/Output & Arithmetic (first teaching of `input()`, operations, 30-min lab), then **Q1 quiz** (10 min, variables) as an exit ticket | **Q1** quiz, Unit 3 | ✅ / ✅ Q1 | ▶ |
 | P2 | Nov 29 | 4.1 Boolean expressions, truth tables, `and`/`or` | | ✂ | ⏳ |
 | P3 | Dec 13 | 4.2 `if`, `if/else`, input filter | | ✂ | ⏳ |
 | P4 | Dec 20 | 4.3 compound conditions, nesting, `elif` (no Turtle part, no `not`) | | ✂ | ⏳ |
@@ -122,7 +122,7 @@ One row per built meeting. Minutes come from the **Duration** and **Structure** 
 | 2 | 2.2 Turtle & Graphics | 90 | 0 / 90 | Lab + Lab | [`L02-pen-appearance-and-stamps-notes.md`](units/u2-turtle-graphics/teacher/L02-pen-appearance-and-stamps-notes.md) | Reviewed by ChatGPT (round 1 fixes applied); slides: `m2-slides-he.pdf` (15 slides, 90 min) |
 | 2 | 2.3 Turtle & Graphics | 90 | 0 / 90 | Lab + Lab | [`L03-geometry-challenge-notes.md`](units/u2-turtle-graphics/teacher/L03-geometry-challenge-notes.md) | Slides: `m3-slides-he.pdf` (18 slides, 90 min); lab brief converted to Markdown |
 | 3 | 3.1 Variables, Input/Output & Arithmetic | 90 | 45 / 45 | 45 knowledge + 45 lab | [`L01-the-rovers-memory-notes.md`](units/u3-variables-io-arithmetic/teacher/L01-the-rovers-memory-notes.md) | New; closes the Turtle-variables and compound-output gaps; slides: `m1-slides-he.pdf` (22 slides) |
-| 3 | 3.2 Variables, Input/Output & Arithmetic | 90 | 0 / 90 | Lab + Lab | [`L02-from-input-to-result-notes.md`](units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min; skip 2-3 and 12-13) + `m2-addon-slides-he.pdf` (8 slides); 5-min recap of 3.1; lab sheet 3 tasks (~20 min); run of show in `m2-run-of-show-he.md` |
+| 3 | 3.2 Variables, Input/Output & Arithmetic | 90 | 0 / 90 | Lab + Lab | [`L02-from-input-to-result-notes.md`](units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-notes.md) | Slides: `m2-slides-he.pdf` (22 slides, 90 min; skip 2-3 and 12-13) + `m2-addon-slides-he.pdf` (8 slides); 3-min recap, 8 min first teaching of `input()`, 30-min lab (lab sheet tasks 1 and 3; swap carried to 4.1), Q1 quiz as exit ticket; run of show in `m2-run-of-show-he.md` |
 | 4 | 4.1 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`L01-the-rovers-sensors-notes.md`](units/u4-conditional-execution/teacher/L01-the-rovers-sensors-notes.md) | Inspired by the teacher's raw deck; slides: `m1-slides-he.pdf` (23 slides, 90 min; NotebookLM, patched) |
 | 4 | 4.2 Conditional Execution | 90 | 45 / 45 | 45 knowledge + 45 lab | [`L02-the-rover-decides-notes.md`](units/u4-conditional-execution/teacher/L02-the-rover-decides-notes.md) | Inspired by the teacher's raw deck; slides: `m2-slides-he.pdf` (25 slides, 90 min; NotebookLM, patched) |
 | 4 | 4.3 Conditional Execution | 90 | 0 / 90 | Lab + Lab | [`L03-the-rover-at-the-junction-notes.md`](units/u4-conditional-execution/teacher/L03-the-rover-at-the-junction-notes.md) | Unit checkpoint (practical + tracing); slides: `m3-slides-he.pdf` (16 slides, 90 min; NotebookLM, patched) |

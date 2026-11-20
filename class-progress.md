@@ -7,9 +7,9 @@ Status: ✅ taught · ▶ next · ⏳ planned. The two classes are at the same p
 ## Where we are (18 Nov 2026)
 
 - **Exam:** the mafmar Python A exam is **Monday 15 Mar 2027**. Approved dated plan: [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-2027-03-15.md); scope: [`docs/ministry-source/focus-python-a-tashpaz-he.pdf`](docs/ministry-source/focus-python-a-tashpaz-he.pdf). Exam-first order: Units 6 and 9, most of 8, and 5.3, 5.4, 7.3 move to after the exam.
-- **Done (both grades, identical):** Unit 0, Unit 1, **Unit 2 including its written test**, and **3.1** (Sun 8 Nov, pre-alignment version).
+- **Done (both grades, identical):** Unit 0, Unit 1, **Unit 2 including its written test**, and **3.1** (Sun 8 Nov, pre-alignment version). **`input()` was NOT taught in 3.1** (teacher, 20 Nov); it is taught for the first time in 3.2.
 - **Not taught:** 3.2. The teacher corrected on 18 Nov that 3.2 did not happen on 15 Nov.
-- **Next, Sun 22 Nov (P1):** the 10-minute **Q1 quiz** on variables (types, variable names, order of operations, trace table, `//` and `%`; no `input()`), then **3.2 Input/Output & Arithmetic**. Quiz sheet, key and a practice mock test: [`units/u3-variables-io-arithmetic/assessment/`](units/u3-variables-io-arithmetic/assessment). 3.2 material: recap of 3.1, 8 add-on slides, the 3-task large-print lab sheet and the run of show ([`teacher/L02-from-input-to-result-run-of-show-he.md`](units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-run-of-show-he.md)).
+- **Next, Sun 22 Nov (P1):** the 10-minute **Q1 quiz** on variables (types, variable names, order of operations, trace table, `//` and `%`; no `input()`), **order changed 20 Nov:** 3.2 first (3-min recap, 8-min first lesson on `input()`, operations, 30-min lab), and the **Q1 quiz last as a 10-min exit ticket**. Swap/update, `**` and naming rules carry over to 4.1 ([`carry-over-from-3.2-he.md`](units/u4-conditional-execution/teacher/carry-over-from-3.2-he.md)). Quiz sheet, key and a practice mock test: [`units/u3-variables-io-arithmetic/assessment/`](units/u3-variables-io-arithmetic/assessment). 3.2 material: recap of 3.1, 8 add-on slides, the 3-task large-print lab sheet and the run of show ([`teacher/L02-from-input-to-result-run-of-show-he.md`](units/u3-variables-io-arithmetic/teacher/L02-from-input-to-result-run-of-show-he.md)) and the `input()` script ([`teacher/L02-input-first-teaching-he.md`](units/u3-variables-io-arithmetic/teacher/L02-input-first-teaching-he.md)). Also built 20 Nov: a **5-slide, 30-min deck** for `input()` + operators ([`consolidation-deck-he.html`](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/consolidation-deck-he.html), notes in [`teacher/L02-consolidation-deck-notes-he.md`](units/u3-variables-io-arithmetic/teacher/L02-consolidation-deck-notes-he.md)) and a **20-min one-page lab sheet** ([`lab20-sheet-he.html`](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/lab20-sheet-he.html), key in [`teacher/L02-lab20-key-he.md`](units/u3-variables-io-arithmetic/teacher/L02-lab20-key-he.md)). Planned day: deck 30 min, lab 20 min, quiz 10 min; the remaining ~30 min are undecided.
 - **Then:** 4.1 (29 Nov), 4.2 (13 Dec), 4.3 (20 Dec, no Turtle part, includes `elif`), 5.1–5.2, 7.1–7.2 and exam-scope functions, per the plan. Decks for Unit 4 onward still show pre-alignment content and need trimming ([`docs/ministry-program/deck-sheet-backlog.md`](docs/ministry-program/deck-sheet-backlog.md)).
 
 ## Progress table
@@ -23,7 +23,7 @@ Teaching order from [`docs/plan-to-mafmar-2027-03-15.md`](docs/plan-to-mafmar-20
 | — | Oct 18 – Nov 1 | 2.1, 2.2, 2.3 Turtle & Graphics | ✅ | ✅ | |
 | — | Oct 29 / Nov 6 | **Unit 2 written test** | ✅ Form B | ✅ Form A | Grade 8 mean 94.6, Grade 7 mean 90 (range 65–100); details in [`tools/unit-test-builder/README.md`](tools/unit-test-builder/README.md) |
 | — | Nov 8 | 3.1 Variables, Input/Output & Arithmetic | ✅ | ✅ | Pre-alignment version. Lab sheet: [`lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/lessons/L01-the-rovers-memory/lab-sheet-he.pdf) |
-| P1 | Nov 22 | **Q1 quiz** (Unit 3, 10 min) + 3.2 Input/Output & Arithmetic | ▶ | ▶ | Not taught on Nov 15. Lab sheet: [`lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/lab-sheet-he.pdf); quiz in [`assessment/`](units/u3-variables-io-arithmetic/assessment) |
+| P1 | Nov 22 | 3.2 Input/Output & Arithmetic, then **Q1 quiz** as exit ticket (Unit 3, 10 min) | ▶ | ▶ | Not taught on Nov 15; quiz moved to the end (20 Nov). Lab sheet: [`lab-sheet-he.pdf`](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/lab-sheet-he.pdf); quiz in [`assessment/`](units/u3-variables-io-arithmetic/assessment) |
 | P2 | Nov 29 | 4.1 Boolean expressions, `and`/`or` | ⏳ | ⏳ | |
 | P3 | Dec 13 | 4.2 `if`, `if/else` | ⏳ | ⏳ | |
 | P4 | Dec 20 | 4.3 compound conditions, `elif` | ⏳ | ⏳ | No Turtle, no `not` |
@@ -52,7 +52,7 @@ Per the focus document. ✅ taught · ⏳ planned (plan ID) · — not on the ex
 | 1 | Function structure and call; no parameters, no return | ✅ intro in 1.1 | ⏳ P10 | Q3 (P10), T2 |
 | 2 | Turtle library, window coordinates, basic commands | ✅ 2.1–2.3 | refresher ⏳ P12 | ✅ Unit 2 test |
 | 3 | Variables, types, assignment | ✅ 3.1 | | Q1 (P1) |
-| 3 | `input`, input → calculation → output | | ⏳ P1 (3.2) | T1 (P7) |
+| 3 | `input`, input → calculation → output | not in 3.1 | ⏳ P1 (3.2, first teaching) | T1 (P7) |
 | 3 | Arithmetic operators, `%` and `//` | ✅ 3.1 | extended in P1 | Q1 (P1) |
 | 4 | Boolean conditions, `and`/`or` | | ⏳ P2 | Q2 (P5) |
 | 4 | `if`, `if/else`, compound conditions, `elif` | | ⏳ P3, P4 | Q2 (P5), T1 |

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מעבדה 20 דקות – קלט וחישובים</title>
+<style>
+@page{size:A4;margin:12mm}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:210mm;padding:10px 14px;font:20px/1.4 "Segoe UI",Arial,sans-serif;color:#000;background:#fff}
+h1{font-size:30px;margin:0 0 2px}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px solid #000;padding-bottom:4px;margin-bottom:8px;font-size:20px}
+h2{font-size:24px;margin:8px 0 2px}
+.t{font-weight:400;font-size:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px;direction:ltr;margin:4px 0 8px}
+.row>div{border:3px solid #000;border-radius:8px;padding:8px 12px;min-height:140px}
+.row .left{text-align:left}
+.row .right{direction:rtl;text-align:right}
+pre,code{font-family:Consolas,"Courier New",monospace;direction:ltr;unicode-bidi:isolate}
+pre{margin:0;font-size:22px;line-height:1.35;text-align:left}
+.lbl{font-weight:700;font-size:18px;display:block;margin:0 0 4px}
+.sp{height:34px}
+.star{border-top:2px dashed #000;margin-top:10px;padding-top:2px}
+.key{font-size:17px;margin:6px 0}
+@media print{body{padding:0}.row>div{break-inside:avoid}h2{break-after:avoid}}
+</style>
+</head>
+<body>
+<div class="top"><h1>מעבדה: קלט וחישובים</h1><span>שם: ____________________ &nbsp; כיתה: ______</span></div>
+<p class="key">כללים: קודם <b>מנחשים</b>, אחר כך <b>מריצים</b> ב-Thonny. הקלט מוקלד ב-Shell. זמן: 20 דקות.</p>
+
+<h2>1 · הריצו וענו <span class="t">(4 דקות)</span></h2>
+<div class="row">
+<div class="left"><pre>a = int(input("a: "))   # 17
+b = int(input("b: "))   # 5
+print(a // b)
+print(a % b)
+print(a / b)</pre></div>
+<div class="right"><span class="lbl">מה הודפס (שלוש שורות)?</span><div class="sp"></div><span class="lbl">מה כל שורה אומרת?</span></div>
+</div>
+
+<h2>2 · הריצו וענו <span class="t">(4 דקות)</span></h2>
+<div class="row">
+<div class="left"><pre>n = int(input("n: "))   # 23
+tens = n // 10
+ones = n % 10
+print(tens, ones)
+print(tens + ones)</pre></div>
+<div class="right"><span class="lbl">מה הודפס?</span><div class="sp"></div><span class="lbl">מה יודפס עבור 47? ולמה?</span></div>
+</div>
+
+<h2>3 · כתבו קוד <span class="t">(8 דקות, משימת הליבה)</span></h2>
+<p style="margin:2px 0">קולטים מספר דקות (מספר שלם) ומדפיסים כמה <b>שעות מלאות</b> וכמה <b>דקות</b> נשארו.<br>למשל: הקלט <code>135</code> ← <code>2 15</code></p>
+<div class="row">
+<div class="left" style="min-height:190px"><span class="lbl">הקוד שלי:</span></div>
+<div class="right" style="min-height:190px"><span class="lbl">בדיקה: הקלט 135 ← מה הודפס?</span><div class="sp"></div><span class="lbl">הקלט 59 ← מה הודפס?</span></div>
+</div>
+
+<div class="star">
+<h2>★ למי שסיים <span class="t">(4 דקות)</span></h2>
+<p style="margin:2px 0">קולטים שני ציונים (מספרים שלמים) ומדפיסים את הממוצע. האם הממוצע יכול להיות עשרוני? איזה אופרטור מתאים?</p>
+<div class="row"><div class="left" style="min-height:90px"><span class="lbl">הקוד שלי:</span></div>
+<div class="right" style="min-height:90px"><span class="lbl">בדיקה: 90 ו-85 ← מה הודפס?</span></div></div>
+</div>
+</body>
+</html>

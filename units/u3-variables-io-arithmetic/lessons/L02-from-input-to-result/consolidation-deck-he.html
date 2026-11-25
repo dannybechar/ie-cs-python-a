@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>קלט וחישובים – 30 דקות</title>
+<title>סיכום יחידה 3 – 30 דקות</title>
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#d7dcea;--code:#eef1f8;--ask:#1d2433;--askfg:#fff}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10141c;--card:#171d29;--fg:#e8ecf5;--muted:#9aa5bd;--accent:#7fb0ff;--line:#2a3347;--code:#0e121a;--ask:#e8ecf5;--askfg:#10141c}}
@@ -40,7 +40,29 @@ button{font:inherit;padding:6px 18px;border-radius:8px;border:1px solid var(--li
 
 <section class="slide">
 <div class="tag">0–7</div>
-<h2>פקודת קלט: <code>input()</code></h2>
+<h2>משתנים וסוגי נתונים</h2>
+<table>
+<tr><th>שורת קוד</th><th>שם</th><th>ערך</th><th>סוג הנתונים</th></tr>
+<tr><td><code>age = 13</code></td><td><code>age</code></td><td><code>13</code></td><td><code>int</code> (מספר שלם)</td></tr>
+<tr><td><code>price = 4.5</code></td><td><code>price</code></td><td><code>4.5</code></td><td><code>float</code> (עשרוני)</td></tr>
+<tr><td><code>city = "Haifa"</code></td><td><code>city</code></td><td><code>"Haifa"</code></td><td><code>str</code> (טקסט)</td></tr>
+<tr><td><code>grade = 'A'</code></td><td><code>grade</code></td><td><code>'A'</code></td><td><code>char</code> (תו בודד)</td></tr>
+<tr><td><code>ready = True</code></td><td><code>ready</code></td><td><code>True</code></td><td><code>bool</code> (אמת / שקר)</td></tr>
+</table>
+<ul>
+<li><code>=</code> היא <b>השמה</b>: הערך מימין נכנס למשתנה משמאל. מרכאות הופכות ערך לטקסט: <code>12</code> מספר, <code>"12"</code> טקסט</li>
+</ul>
+<div class="grid">
+<div><div class="ask">ניחוש: מה ערך <code>y</code> בסוף?</div><p>משתנה שומר את הערך שחושב עד שמשימים לו ערך חדש</p></div>
+<pre>x = 7
+y = x + 1
+x = 20</pre>
+</div>
+</section>
+
+<section class="slide">
+<div class="tag">7–13</div>
+<h2>קלט ופלט: <code>input()</code> ו-<code>print()</code></h2>
 <table>
 <tr><th>קוד</th><th>מקלידים</th><th>נשמר</th><th>טיפוס</th></tr>
 <tr><td><code>name = input("Name: ")</code></td><td><code>Dana</code></td><td><code>"Dana"</code></td><td><code>str</code></td></tr>
@@ -49,54 +71,42 @@ button{font:inherit;padding:6px 18px;border-radius:8px;border:1px solid var(--li
 <tr><td><code>h = float(input("Height: "))</code></td><td><code>1.52</code></td><td><code>1.52</code></td><td><code>float</code></td></tr>
 </table>
 <ul>
-<li><code>input()</code> עוצרת ומחכה; ב-Thonny מקלידים ב-<b>Shell</b> ולוחצים Enter</li>
-<li><b>הקלט תמיד מגיע כטקסט</b>, גם כשמקלידים מספר. מספר שלם: <code>int(...)</code>, עשרוני: <code>float(...)</code></li>
-<li>טקסט שלא מתאים לטיפוס (<code>abc</code> או <code>3.5</code> ל-<code>int</code>) ← <code>ValueError</code></li>
+<li><b>הקלט תמיד מגיע כטקסט</b>, גם כשמקלידים מספר; מספר שלם: <code>int(...)</code>, עשרוני: <code>float(...)</code>. טקסט שלא מתאים (<code>abc</code> או <code>3.5</code> ל-<code>int</code>) ← <code>ValueError</code></li>
+<li><code>print("Hi", name)</code> מדפיס את הערכים עם רווח ביניהם: <code>Hi Dana</code></li>
 </ul>
 </section>
 
 <section class="slide">
-<div class="tag">7–13</div>
-<div class="ask">ניחוש לפני הרצה</div>
-<h2>מה יודפס? (הקלט כתוב בהערה)</h2>
-<div class="grid">
-<pre>x = input()          # 5
-print(x, type(x))</pre>
-<pre>x = int(input())     # 5
-print(x * 2)</pre>
-<pre>x = float(input())   # 4
-print(x)</pre>
-<pre>n = int(input())     # 3.5
-print(n)</pre>
-</div>
-<p>מריצים ב-Thonny ובודקים את הניחוש.</p>
-</section>
-
-<section class="slide">
 <div class="tag">13–20</div>
-<h2>אופרטורים חישוביים</h2>
+<h2>אופרטורים חישוביים וסדר פעולות</h2>
 <table>
 <tr><th>אופרטור</th><th>שם</th><th>דוגמה</th><th>תוצאה</th></tr>
-<tr><td><code>+</code></td><td>חיבור</td><td><code>5 + 7</code></td><td><code>12</code></td></tr>
-<tr><td><code>-</code></td><td>חיסור</td><td><code>6 - 2</code></td><td><code>4</code></td></tr>
-<tr><td><code>*</code></td><td>כפל</td><td><code>3 * 4</code></td><td><code>12</code></td></tr>
-<tr><td><code>/</code></td><td>חילוק (תמיד עשרוני)</td><td><code>7 / 2</code></td><td><code>3.5</code></td></tr>
-<tr><td><code>**</code></td><td>חזקה</td><td><code>2 ** 8</code></td><td><code>256</code></td></tr>
-<tr><td><code>//</code></td><td>חלוקת שלמים: החלק השלם</td><td><code>15 // 6</code></td><td><code>2</code></td></tr>
-<tr><td><code>%</code></td><td>שארית</td><td><code>15 % 6</code></td><td><code>3</code></td></tr>
+<tr><td><code>+</code> <code>-</code> <code>*</code></td><td>חיבור, חיסור, כפל</td><td><code>5 + 7</code>, <code>6 - 2</code>, <code>3 * 4</code></td><td><code>12</code>, <code>4</code>, <code>12</code></td></tr>
+<tr><td><code>/</code></td><td>חילוק (תמיד עשרוני)</td><td><code>7 / 2</code>, <code>6 / 2</code></td><td><code>3.5</code>, <code>3.0</code></td></tr>
+<tr><td><code>//</code></td><td>החלק השלם של החילוק</td><td><code>15 // 6</code></td><td><code>2</code></td></tr>
+<tr><td><code>%</code></td><td>שארית</td><td><code>15 % 6</code>, <code>10 % 2</code></td><td><code>3</code>, <code>0</code> (זוגי)</td></tr>
+<tr><td><code>+</code> על טקסט</td><td>חיבור טקסטים</td><td><code>"4" + "4"</code></td><td><code>"44"</code></td></tr>
 </table>
-<div class="box"><b>סדר פעולות:</b> סוגריים ← <code>**</code> ← <code>*</code> <code>/</code> <code>//</code> <code>%</code> ← <code>+</code> <code>-</code></div>
+<div class="box"><b>סדר פעולות:</b> סוגריים ← <code>*</code> <code>/</code> <code>//</code> <code>%</code> ← <code>+</code> <code>-</code> </div>
+<p>למשל: <code>2 + 3 * 4</code> מול <code>(2 + 3) * 4</code></p>
 </section>
 
 <section class="slide">
 <div class="tag">20–26</div>
 <div class="ask">ניחוש לפני הרצה</div>
 <h2>מה יודפס בכל שורה?</h2>
+<div class="grid">
 <pre>print(17 // 5, 17 % 5)
 print(7 / 2, 6 / 2)
-print(2 + 3 * 4)
-print((2 + 3) * 4)
-print(2 + 3 ** 2)</pre>
+print(2 + 3 * 4, (2 + 3) * 4)
+print(9 % 2, 10 % 2)
+print("4" + "4")</pre>
+<pre>x = input()     # 8
+print(x + x)
+
+n = int(input())  # 8
+print(n + n)</pre>
+</div>
 <p>17 מדבקות, 5 בכל חבילה: כמה חבילות <b>מלאות</b>? כמה מדבקות <b>נשארו</b>? (איזה אופרטור עונה על כל שאלה?)</p>
 </section>
 
@@ -115,8 +125,8 @@ print("Total:", total)</pre>
 </table>
 </div>
 <ul>
-<li>קודם ממירים את הקלט, ורק אחר כך מחשבים</li>
-<li>במעבדה: <b>מחשבון אריזות</b> עם <code>int(input())</code>, <code>//</code> ו-<code>%</code></li>
+<li>קודם ממירים את הקלט, ורק אחר כך מחשבים; בכל שורה אפשר לשאול: מה שם המשתנה, מה הערך, ומה הסוג?</li>
+<li>במעבדה: <b>מחשבון אריזות</b> עם <code>int(input())</code>, <code>//</code> ו-<code>%</code>, ואחריה הבוחן</li>
 </ul>
 </section>
 

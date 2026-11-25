@@ -57,6 +57,7 @@ Unit 0 is a school addition outside the 30 official meetings. "Background paper:
 
 - Unit 3.1 — Variables, Input/Output & Arithmetic · The Rover's Memory: [md](units/u3-variables-io-arithmetic/lessons/L01-the-rovers-memory.md) · [html](units/u3-variables-io-arithmetic/lessons/L01-the-rovers-memory.html)
 - Unit 3.2 — Variables, Input/Output & Arithmetic · From Input to Result: [md](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result.md) · [html](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result.html) · [30-min deck](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/consolidation-deck-he.html) · [20-min lab sheet](units/u3-variables-io-arithmetic/lessons/L02-from-input-to-result/lab20-sheet-he.html)
+- Unit 3 — review materials for 29 Nov 2026 (students, Hebrew, docx): [20-question homework](units/u3-variables-io-arithmetic/assessment/u3-homework-nov29-students-he.docx) · [10-question review quiz](units/u3-variables-io-arithmetic/assessment/u3-review-quiz-nov29-students-he.docx); no answer keys yet
 
 ### [Unit 4 — Conditional Execution](units/u4-conditional-execution/README.md)
 

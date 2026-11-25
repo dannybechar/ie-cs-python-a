@@ -39,7 +39,7 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 | [`teacher/L02-from-input-to-result-recap-he.md`](teacher/L02-from-input-to-result-recap-he.md) | Hebrew recap script |
 | [`teacher/L02-from-input-to-result-run-of-show-he.md`](teacher/L02-from-input-to-result-run-of-show-he.md) | Run of show with slide numbers |
 | [`teacher/L02-lab20-key-he.md`](teacher/L02-lab20-key-he.md) | Key for the 20-minute lab sheet (`lessons/L02-from-input-to-result/lab20-sheet-he.html`) |
-| [`teacher/L02-consolidation-deck-notes-he.md`](teacher/L02-consolidation-deck-notes-he.md) | Notes and answers for the 5-slide `input()` + operators deck |
+| [`teacher/L02-consolidation-deck-notes-he.md`](teacher/L02-consolidation-deck-notes-he.md) | Notes and answers for the 5-slide Unit 3 summary deck (types, `input()`, operators) |
 | [`teacher/u3-lab-sheets-key-he.pdf`](teacher/u3-lab-sheets-key-he.pdf) | Answer key |
 | [`teacher/u3-quiz-key-he.pdf`](teacher/u3-quiz-key-he.pdf) | Key and scoring for the 10-minute quiz ([docx](teacher/u3-quiz-key-he.docx)) |
 | [`teacher/u3-mock-test-key-he.pdf`](teacher/u3-mock-test-key-he.pdf) | Key for the practice mock test ([docx](teacher/u3-mock-test-key-he.docx)) |
@@ -51,6 +51,17 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 - Background paper: not yet added. The anchor-link check cannot run for this unit until it exists.
 - HTML decks: generated from the lab briefs, checked in a browser for layout and printing on one sample deck only; not reviewed by the teacher.
 - Ministry alignment: see [`docs/ministry-program/`](../../docs/ministry-program/README.md) and [`deck-sheet-backlog.md`](../../docs/ministry-program/deck-sheet-backlog.md) for open deck and sheet items.
+
+## Review materials for 29 Nov 2026
+
+Added 24 Nov 2026, after 3.2 was taught as a lecture only (types, `input()`/`print()`, `* / - + // %`; the lab and the Q1 quiz moved to 29 Nov). Both are student-facing Hebrew `.docx` files in [`assessment/`](assessment), black and white, no computer. Neither has an answer key yet.
+
+| File | What it is |
+|---|---|
+| [`assessment/u3-homework-nov29-students-he.docx`](assessment/u3-homework-nov29-students-he.docx) | 20-question homework, 5 points each: types (including a name/value/type table), operators with two word problems, variables and trace tables, `input()`/`print()` output prediction, three write-your-own-code questions. No "complete the broken line" questions. Single characters use single quotes and the type `char`. |
+| [`assessment/u3-review-quiz-nov29-students-he.docx`](assessment/u3-review-quiz-nov29-students-he.docx) | 10-question review quiz, 2 points each, one A4 sheet printed on both sides. Time (20 minutes) is a default. |
+
+Neither uses `int(input())` (text input only) or `**`. The 5-slide summary deck for the same lesson is [`lessons/L02-from-input-to-result/consolidation-deck-he.html`](lessons/L02-from-input-to-result/consolidation-deck-he.html).
 
 ## Unit 3 quiz and mock test
 

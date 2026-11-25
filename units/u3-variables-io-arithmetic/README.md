@@ -43,6 +43,8 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 | [`teacher/u3-lab-sheets-key-he.pdf`](teacher/u3-lab-sheets-key-he.pdf) | Answer key |
 | [`teacher/u3-quiz-key-he.pdf`](teacher/u3-quiz-key-he.pdf) | Key and scoring for the 10-minute quiz ([docx](teacher/u3-quiz-key-he.docx)) |
 | [`teacher/u3-mock-test-key-he.pdf`](teacher/u3-mock-test-key-he.pdf) | Key for the practice mock test ([docx](teacher/u3-mock-test-key-he.docx)) |
+| [`teacher/u3-homework-nov29-key-he.docx`](teacher/u3-homework-nov29-key-he.docx) | Key and scoring for the 20-question homework (29 Nov) |
+| [`teacher/u3-review-quiz-nov29-key-he.docx`](teacher/u3-review-quiz-nov29-key-he.docx) | Key and scoring for the 10-question review quiz (29 Nov) |
 | [`teacher/solutions/`](teacher/solutions) | 4 reference solutions (`*_Reference.py` and extras) |
 
 ## Status and open checks
@@ -54,7 +56,7 @@ The `.html` decks are generated from the `.md` lesson pages by [`tools/lesson-de
 
 ## Review materials for 29 Nov 2026
 
-Added 24 Nov 2026, after 3.2 was taught as a lecture only (types, `input()`/`print()`, `* / - + // %`; the lab and the Q1 quiz moved to 29 Nov). Both are student-facing Hebrew `.docx` files in [`assessment/`](assessment), black and white, no computer. Neither has an answer key yet.
+Added 24 Nov 2026, after 3.2 was taught as a lecture only (types, `input()`/`print()`, `* / - + // %`; the lab and the Q1 quiz moved to 29 Nov). Both are student-facing Hebrew `.docx` files in [`assessment/`](assessment), black and white, no computer. Answer keys are in `teacher/` (below).
 
 | File | What it is |
 |---|---|

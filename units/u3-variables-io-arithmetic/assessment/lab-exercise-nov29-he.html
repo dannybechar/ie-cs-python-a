@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מעבדה: סקירת יחידה 3 – 29 בנובמבר</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#9aa5bd;--code:#eef1f8}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:18px/1.45 "Segoe UI",Arial,sans-serif;max-width:1000px;margin:0 auto;padding:18px}
+h1{font-size:1.4em;text-align:center;margin:.2em 0}
+.meta{display:flex;justify-content:space-between;gap:16px;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:14px;font-size:.95em}
+.meta span{border-bottom:1px solid var(--muted);padding:0 4px 2px}
+.rules{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:8px 16px;margin-bottom:16px;font-size:.95em}
+.task{border:2px solid var(--line);border-radius:10px;margin:0 0 20px;overflow:hidden;break-inside:avoid}
+.task h2{background:var(--accent);color:#fff;font-size:1.05em;margin:0;padding:8px 16px;display:flex;justify-content:space-between}
+.task h2 .min{font-weight:400;font-size:.85em}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.col{padding:12px 16px;min-height:120px}
+.col.code{border-inline-end:2px solid var(--line);background:var(--code)}
+.prompt{padding:12px 16px 2px;font-size:.98em}
+pre{direction:ltr;text-align:left;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:0;font:.95em/1.35 Consolas,"Courier New",monospace}
+.blank{border:1px dashed var(--muted);border-radius:6px;min-height:34px;margin:6px 0}
+.blank.tall{min-height:70px}
+code{direction:ltr;unicode-bidi:isolate;background:#fff;border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+.star{background:#fff6e0;border-inline-start:6px solid #c08a00}
+.star h2{background:#c08a00}
+@media print{body{font-size:14pt}.task{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>מעבדה: סקירת יחידה 3 – משתנים, קלט/פלט, אופרטורים</h1>
+<div class="meta"><span>שם: ________________</span><span>כיתה: ______</span><span>זמן: כ-48 דקות · 100 נקודות</span></div>
+<div class="rules">שני סוגי משימות: <b>הרצה והסבר</b> (מריצים, כותבים מה הודפס ולמה) ו<b>כתיבת קוד</b> (כותבים קוד שעושה מה שמבקשים). משמאל הקוד, מימין התשובות. <code>//</code> = כמה קבוצות שלמות · <code>%</code> = כמה נשאר.</div>
+
+<div class="task">
+<h2><span>משימה 1 — ארבע הצצות לאותו מספר</span><span class="min">6 דקות · 20 נק׳</span></h2>
+<div class="cols">
+<div class="col code"><pre>a = 23
+b = 4
+print("Divide:", a / b)
+print("Floor divide:", a // b)
+print("Remainder:", a % b)
+print("Check:", (a // b) * b + a % b)</pre></div>
+<div class="col">
+<p>נחשו את ארבע השורות, ואז הקלידו והריצו. מה הודפס?</p>
+<div class="blank tall"></div>
+<p>הסבירו: השורה האחרונה (<code>Check</code>) תמיד מחזירה בחזרה את <code>a</code>, לכל שני מספרים <code>a</code> ו-<code>b</code>. למה?</p>
+<div class="blank tall"></div>
+</div>
+</div>
+</div>
+
+<div class="task">
+<h2><span>משימה 2 — ניחוש: הסיבוב של שלושה משתנים</span><span class="min">8 דקות · 20 נק׳</span></h2>
+<div class="cols">
+<div class="col code"><pre>a = 5
+b = 9
+c = 14
+a = b
+b = c
+c = a
+print(a, b, c)</pre></div>
+<div class="col">
+<p>נחשו <b>לפני</b> ההרצה: מה יודפס?</p>
+<div class="blank"></div>
+<p>הקלידו והריצו. מה באמת הודפס?</p>
+<div class="blank"></div>
+<p>רצינו סיבוב אמיתי: שיודפס <code>9 14 5</code> (כל ערך עובר למשתנה הבא בתור). הסבירו במשפט אחד למה השורה <code>c = a</code> לא נותנת את הערך המקורי של <code>a</code> (<code>5</code>).</p>
+<div class="blank tall"></div>
+</div>
+</div>
+</div>
+
+<div class="task">
+<h2><span>משימה 3 — סיבוב אמיתי, עם משתנה <code style="background:transparent;color:#fff">temp</code> אחד בלבד</span><span class="min">10 דקות · 20 נק׳</span></h2>
+<div class="cols">
+<div class="col code">כתבו כאן את הקוד<div class="blank tall" style="min-height:150px"></div></div>
+<div class="col">
+<p>כתבו מחדש את התוכנית ממשימה 2, עם <code>a = 5</code>, <code>b = 9</code>, <code>c = 14</code> כנקודת פתיחה, כך שיתבצע סיבוב אמיתי: בסוף <code>a</code> ו-<code>b</code> ו-<code>c</code> יודפסו <code>9 14 5</code>. מותר להשתמש <b>במשתנה נוסף אחד בלבד</b>, בשם <code>temp</code> (בלי שום משתנה רביעי).</p>
+<p>הריצו. מה הודפס עכשיו?</p>
+<div class="blank"></div>
+</div>
+</div>
+</div>
+
+<div class="task">
+<h2><span>משימה 4 — מחשבון טיול</span><span class="min">12 דקות · 20 נק׳</span></h2>
+<div class="cols">
+<div class="col code">כתבו כאן את הקוד<div class="blank tall" style="min-height:190px"></div></div>
+<div class="col">
+<p>כתבו תוכנית שקולטת שלושה ערכים: כמה תלמידים נוסעים (<code>students</code>, מספר שלם), מחיר לתלמיד בשקלים (<code>price_per_student</code>, עשרוני), וכמה מקומות יש באוטובוס אחד (<code>bus_capacity</code>, מספר שלם). השתמשו ב-<code>int(input(...))</code> ל-<code>students</code> ול-<code>bus_capacity</code>, וב-<code>float(input(...))</code> ל-<code>price_per_student</code>.</p>
+<p>התוכנית מחשבת ומדפיסה שלוש שורות:</p>
+<pre>Total cost: ___
+Full buses: ___
+Students left over: ___</pre>
+<p>(עלות כרטיסים = תלמידים כפול מחיר לתלמיד; אוטובוסים מלאים ותלמידים שנשארו — כמו במחשבון האריזות, רק עם אוטובוסים)</p>
+<p>לפני ההרצה, חזו: 97 תלמידים, 42.5 ש״ח לתלמיד, 40 מקומות באוטובוס ←</p>
+<p>עלות כוללת: ______ &nbsp; אוטובוסים מלאים: ______ &nbsp; תלמידים שנשארו: ______</p>
+<p>הריצו ובדקו. התאים?</p>
+<div class="blank"></div>
+</div>
+</div>
+</div>
+
+<div class="task star">
+<h2><span>★ משימה 5 — מוסיפים דמי ביטוח</span><span class="min">12 דקות · 20 נק׳</span></h2>
+<div class="cols">
+<div class="col code">כתבו כאן את השורה המתוקנת<div class="blank tall" style="min-height:150px"></div></div>
+<div class="col">
+<p>בית הספר מוסיף דמי ביטוח של <code>7</code> ש״ח <b>לכל תלמיד</b>, לפני חישוב העלות הכוללת. כתבו מחדש את שורת החישוב של <code>Total cost</code> ממשימה 4 כך שדמי הביטוח ייכללו עבור <b>כל</b> תלמיד (לא פעם אחת בסך הכול).</p>
+<p>עבור 97 תלמידים ו-42.5 ש״ח לתלמיד, מה העלות הכוללת החדשה?</p>
+<div class="blank"></div>
+<p>חבר כתב: <code>total_cost = price_per_student + insurance_fee * students</code>. הסבירו במשפט אחד למה זו טעות, ואיזו תוצאה שגויה זה נותן.</p>
+<div class="blank tall"></div>
+</div>
+</div>
+</div>
+
+<p style="text-align:center;color:var(--muted)">שמרו: <code>File &gt; Save As</code> ← <code>U3_Review_Lab_&lt;Name&gt;.py</code></p>
+</body>
+</html>

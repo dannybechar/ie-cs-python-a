@@ -65,6 +65,18 @@ Added 24 Nov 2026, after 3.2 was taught as a lecture only (types, `input()`/`pri
 
 Neither uses `int(input())` (text input only) or `**`. The 5-slide summary deck for the same lesson is [`lessons/L02-from-input-to-result/consolidation-deck-he.html`](lessons/L02-from-input-to-result/consolidation-deck-he.html).
 
+### In-class review package for 29 Nov 2026 (deck + 5-question lab + 5-question quiz)
+
+A second, self-contained set for the same meeting, sized so a struggling student scores about 50%, an average student about 75%, and a strong student about 95% (the design and partial-credit rubric are in each teacher key). This is an alternative to the homework/review-quiz pair above, not a replacement for the approved [`assessment/u3-quiz-students-he.pdf`](assessment/u3-quiz-students-he.pdf); the teacher picks which to run.
+
+| File | What it is |
+|---|---|
+| [`lessons/L02-from-input-to-result/review-deck-nov29-he.html`](lessons/L02-from-input-to-result/review-deck-nov29-he.html) | 5-slide, 30-minute review deck (types/naming, input/output, operators, the swap trace-table trap + `temp` fix, packing worked example); teacher notes: [`teacher/L02-review-deck-nov29-notes-he.md`](teacher/L02-review-deck-nov29-notes-he.md) |
+| [`assessment/lab-exercise-nov29-he.html`](assessment/lab-exercise-nov29-he.html) ([PDF](assessment/lab-exercise-nov29-he.pdf)) | 5-task, 100-point lab (run+explain and write-code tasks, increasing difficulty); key and scoring profile: [`teacher/lab-exercise-nov29-key-he.md`](teacher/lab-exercise-nov29-key-he.md) |
+| [`assessment/quiz-5q-nov29-he.html`](assessment/quiz-5q-nov29-he.html) ([PDF](assessment/quiz-5q-nov29-he.pdf)) | 5-question, 20-point quiz (20 minutes, no computer); key and scoring profile: [`teacher/quiz-5q-nov29-key-he.md`](teacher/quiz-5q-nov29-key-he.md) |
+
+None of these three have been reviewed by the teacher yet.
+
 ## Unit 3 quiz and mock test
 
 A 10-minute written quiz (no computer, 20 points, five questions of 4 points) for the start of the lesson on **22 Nov 2026**, before the lesson goes on to the input/output commands. Questions: types (4 values), legal variable names (circle), order of operations with and without parentheses (`+ - *` only), a two-variable trace table (`a = b` then `b = a`), and a packing question using only `* - /` (no `%` or `//`, changed 21 Nov) with a small operator key on the page. It uses no `input()`, because input is taught after the quiz. Sheet: [`assessment/u3-quiz-students-he.pdf`](assessment/u3-quiz-students-he.pdf); key: [`teacher/u3-quiz-key-he.pdf`](teacher/u3-quiz-key-he.pdf) ([docx](teacher/u3-quiz-key-he.docx)). The mock test still uses `//` and `%` (not yet aligned with the quiz). The quiz sheet exists only as the PDF the teacher approved; its Word source was edited by the teacher and is not in the repo.

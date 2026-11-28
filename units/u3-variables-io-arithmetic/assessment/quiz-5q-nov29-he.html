@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בוחן קצר – יחידה 3 (5 שאלות)</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--fg:#1d2433;--muted:#5a6478;--accent:#1f5fbf;--line:#9aa5bd;--code:#eef1f8}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:18px/1.45 "Segoe UI",Arial,sans-serif;max-width:900px;margin:0 auto;padding:18px}
+h1{font-size:1.4em;text-align:center;margin:.2em 0}
+.meta{display:flex;justify-content:space-between;gap:16px;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:16px;font-size:.95em}
+.meta span{border-bottom:1px solid var(--muted);padding:0 4px 2px}
+.q{border:2px solid var(--line);border-radius:10px;margin:0 0 18px;padding:10px 16px;break-inside:avoid}
+.q h2{font-size:1.05em;color:var(--accent);margin:0 0 6px;display:flex;justify-content:space-between}
+table{border-collapse:collapse;margin:.4em 0;width:100%}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:center}
+th{background:var(--code)}
+pre{direction:ltr;text-align:left;background:var(--code);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:.3em 0;font:.95em/1.35 Consolas,"Courier New",monospace}
+code{direction:ltr;unicode-bidi:isolate;background:var(--code);border-radius:4px;padding:0 4px;font-family:Consolas,"Courier New",monospace}
+.blank{border:1px dashed var(--muted);border-radius:6px;min-height:28px;margin:4px 0}
+.blank.tall{min-height:50px}
+.inline{border-bottom:1px solid var(--muted);display:inline-block;min-width:3em}
+@media print{body{font-size:14pt}.q{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>בוחן קצר – יחידה 3: משתנים, קלט/פלט ואופרטורים</h1>
+<div class="meta"><span>שם: ________________</span><span>כיתה: ______</span><span>20 דקות · בלי מחשב · 20 נקודות</span></div>
+
+<div class="q">
+<h2><span>שאלה 1 — טיפוסים</span><span>4 נק׳</span></h2>
+<p>כתבו את הטיפוס של כל ערך: <code>int</code> · <code>float</code> · <code>str</code> · <code>char</code> · <code>bool</code>. שימו לב: <code>char</code> הוא תמיד תו <b>בודד</b> בין מרכאות.</p>
+<table><tr><th>ערך</th><th><code>'12'</code></th><th><code>5.0</code></th><th><code>"True"</code></th><th><code>False</code></th></tr>
+<tr><td>טיפוס</td><td></td><td></td><td></td><td></td></tr></table>
+</div>
+
+<div class="q">
+<h2><span>שאלה 2 — שמות משתנים</span><span>4 נק׳</span></h2>
+<p>הקיפו בעיגול את השמות ש-Python מקבל:</p>
+<p style="text-align:center"><code>_hidden</code> &nbsp;&nbsp; <code>2nd-try</code> &nbsp;&nbsp; <code>class</code> &nbsp;&nbsp; <code>Total_Score</code></p>
+</div>
+
+<div class="q">
+<h2><span>שאלה 3 — סדר פעולות</span><span>4 נק׳</span></h2>
+<p>כתבו מה התוכנית מדפיסה בכל שורה:</p>
+<table>
+<tr><td style="text-align:start"><code>print(20 - 3 * 4 + 10 // 3)</code></td><td class="blank"></td></tr>
+<tr><td style="text-align:start"><code>print((20 - 3) * 4 + 10 // 3)</code></td><td class="blank"></td></tr>
+<tr><td style="text-align:start"><code>print(100 // 9 % 4)</code></td><td class="blank"></td></tr>
+<tr><td style="text-align:start"><code>print(100 % 9 // 2)</code></td><td class="blank"></td></tr>
+</table>
+</div>
+
+<div class="q">
+<h2><span>שאלה 4 — טבלת מעקב: סיבוב של שלושה משתנים</span><span>4 נק׳</span></h2>
+<pre>a = 3
+b = 7
+c = 12
+a = b
+b = c
+c = a
+print(a, b, c)</pre>
+<p>מלאו את הטבלה אחרי כל אחת משלוש שורות ההשמה האחרונות, וכתבו מה מודפס בסוף:</p>
+<table><tr><th>אחרי השורה</th><th>a</th><th>b</th><th>c</th></tr>
+<tr><td><code>a = b</code></td><td></td><td></td><td></td></tr>
+<tr><td><code>b = c</code></td><td></td><td></td><td></td></tr>
+<tr><td><code>c = a</code></td><td></td><td></td><td></td></tr>
+</table>
+<p>מודפס: <span class="inline">&nbsp;</span></p>
+</div>
+
+<div class="q">
+<h2><span>שאלה 5 — הזמנה בבית ספר</span><span>4 נק׳</span></h2>
+<p>בית ספר מזמין 143 מחברות, 9 מחברות בכל קופסה. מחיר קופסה הוא 27 ש״ח, ובנוסף על <b>כל</b> קופסה יש דמי טיפול של 3 ש״ח (כלומר כל קופסה עולה בסך הכול 27 + 3 ש״ח).</p>
+<p><b>א.</b> כתבו ביטוי שמחשב כמה קופסאות מלאות צריך, וחשבו את ערכו:</p>
+<p>ביטוי: <span class="inline">&nbsp;</span>&nbsp;&nbsp; ערך: <span class="inline">&nbsp;</span></p>
+<p><b>ב.</b> כתבו ביטוי <b>אחד</b> שמחשב כמה תעלה ההזמנה של הקופסאות המלאות בסך הכול (מחיר + דמי טיפול, על כל קופסה), וחשבו את ערכו:</p>
+<p>ביטוי: <span class="inline">&nbsp;</span>&nbsp;&nbsp; ערך: <span class="inline">&nbsp;</span></p>
+<p><b>ג.</b> חברה כתבה: <code>143 // 9 * 27 + 3</code>. הסבירו במשפט אחד למה זו טעות, ואיזו תוצאה שגויה זה נותן:</p>
+<div class="blank tall"></div>
+</div>
+
+</body>
+</html>
